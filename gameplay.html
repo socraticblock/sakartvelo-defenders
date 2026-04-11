@@ -3,174 +3,543 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gameplay - Sakartvelo Defenders</title>
-  <meta name="description" content="Learn about the gameplay mechanics, tower types, enemies, and strategies of Sakartvelo Defenders.">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <title>Gameplay — Sakartvelo Defenders</title>
+  <meta name="description" content="Master the core mechanics of Sakartvelo Defenders: maze-building tower defense, hero command, tower synergies, and the progression system across 9 eras of Georgian history.">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Sakartvelo Defenders</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="gameplay.html">Gameplay</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="blockchain.html">Blockchain</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
 
-  <!-- Hero Section -->
-  <section class="hero py-5">
-    <div class="container text-center">
-      <h1 class="display-1 fw-bold mb-4">Gameplay Mechanics</h1>
-      <p class="lead mb-5">Tower defense with cultural depth and strategic complexity</p>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">
+        <span class="brand-icon">SD</span>
+        Sakartvelo Defenders
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gameplay.html" class="active">Gameplay</a></li>
+        <li><a href="blockchain.html">Blockchain</a></li>
+        <li><a href="#waitlist" class="nav-cta">Join Waitlist</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero (shorter) -->
+  <section class="hero" style="min-height: 60vh;">
+    <div class="hero-content fade-in-up">
+      <div class="hero-line"></div>
+      <span class="small-caps" style="margin-bottom: 16px; display: block;">Build. Defend. Command.</span>
+      <h1>Master the <span class="accent">Battlefield</span></h1>
+      <p class="subtitle">
+        Maze-building tower defense meets real-time hero command. Every wall matters, every tower synergizes, every hero ability turns the tide. Here's how it works.
+      </p>
     </div>
   </section>
 
-  <!-- Gameplay Content -->
-  <section class="py-5">
+  <div class="section-divider"></div>
+
+  <!-- Core Game Loop -->
+  <section id="core-loop">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2 class="mb-4">Core Gameplay</h2>
-          <p class="mb-4">Sakartvelo Defenders combines the classic tower defense mechanics with historical accuracy and cultural immersion. Players must strategically place defensive structures to defend against waves of enemies representing different historical periods.</p>
-          
-          <h2 class="mb-4">Tower Types</h2>
-          <p class="mb-4">Each historical era has its own specialized tower types that reflect the technological and cultural capabilities of that period:</p>
-          
-          <div class="row g-4 mb-4">
-            <div class="col-md-6">
-              <div class="feature-card p-4">
-                <h4 class="text-center mb-3">Ancient Defenses (1500 BC - 337 AD)</h4>
-                <ul>
-                  <li>Stone Walls</li>
-                  <li>Battering Rams</li>
-                  <li>Wooden Towers</li>
-                  <li>Slingshots</li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="feature-card p-4">
-                <h4 class="text-center mb-3">Medieval Fortress (337 - 1466)</h4>
-                <ul>
-                  <li>Stone Castles</li>
-                  <li>Ballista</li>
-                  <li>Mounted Archers</li>
-                  <li>Fire Arrows</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          
-          <div class="row g-4 mb-4">
-            <div class="col-md-6">
-              <div class="feature-card p-4">
-                <h4 class="text-center mb-3">Golden Age (1466 - 1502)</h4>
-                <ul>
-                  <li>Gunpowder Towers</li>
-                  <li>Fortifications</li>
-                  <li>Arquebusiers</li>
-                  <li>Cannon</li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="feature-card p-4">
-                <h4 class="text-center mb-3">Modern Era (1502 - present)</h4>
-                <ul>
-                  <li>Modern Artillery</li>
-                  <li>Aircraft Defenses</li>
-                  <li>Advanced Radar</li>
-                  <li>Anti-Tank Weapons</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          
-          <h2 class="mb-4">Enemy Types</h2>
-          <p class="mb-4">Enemies in each era reflect the military tactics and technology of that period:</p>
-          
-          <div class="row g-4 mb-4">
-            <div class="col-md-4">
-              <div class="feature-card p-4">
-                <h4 class="text-center mb-3">Early Warriors</h4>
-                <p>Basic infantry with spears and shields from ancient times.</p>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="feature-card p-4">
-                <h4 class="text-center mb-3">Medieval Knights</h4>
-                <p>Fully armored cavalry from the medieval period.</p>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="feature-card p-4">
-                <h4 class="text-center mb-3">Gunpowder Soldiers</h4>
-                <p>Infantry with rifles and cannon from the modern period.</p>
-              </div>
-            </div>
-          </div>
-          
-          <h2 class="mb-4">Strategic Elements</h2>
-          <p class="mb-4">Gameplay involves complex decisions about resource management and strategic placement:</p>
-          <ul class="mb-4">
-            <li>Resource allocation between different tower types</li>
-            <li>Terrain-based defenses (mountains, rivers, cities)</li>
-            <li>Era-specific upgrades that reflect historical advancement</li>
-            <li>Skill-based progression and unlocking of advanced units</li>
-          </ul>
-          
-          <h2 class="mb-4">Progression System</h2>
-          <p class="mb-4">Players progress through different historical eras, with each era representing a new level of complexity in both gameplay and historical content. The progression system is based on gameplay skill rather than monetary investment.</p>
-          
-          <h2 class="mb-4">Historical Accuracy</h2>
-          <p class="mb-4">Each era's gameplay mechanics, enemy types, and tower capabilities are researched and designed to reflect real historical periods. This isn't just a "history as skin" game - the historical period directly influences gameplay.</p>
-          
-          <h2 class="mb-4">Multiplayer Features</h2>
-          <p class="mb-4">Future multiplayer features are planned to allow players to collaborate or compete in defending historical battles from different periods.</p>
+      <span class="section-label text-center">The Core Loop</span>
+      <h2 class="text-center">Four Phases. Every Level.</h2>
+      <p class="text-center" style="max-width: 640px; margin: 0 auto var(--space-2xl); color: var(--slate-light);">
+        Each level follows a rhythm that deepens with complexity. The loop stays constant — the strategy never stops evolving.
+      </p>
+      <div class="grid grid-4 stagger">
+        <div class="card fade-in-up">
+          <div class="card-icon red">&#9962;</div>
+          <h3>Build</h3>
+          <p>Place walls to shape enemy paths into mazes. Position towers behind walls for maximum coverage. Terrain — rivers, cliffs, ruins — constrains your layout. Every placement is a commitment.</p>
         </div>
+        <div class="card fade-in-up">
+          <div class="card-icon gold">&#9876;</div>
+          <h3>Defend</h3>
+          <p>Waves crash against your maze. Towers auto-attack based on type, range, and targeting priority. Enemies follow the path you built — or breach your walls if you left a gap. Adapt in real-time.</p>
+        </div>
+        <div class="card fade-in-up">
+          <div class="card-icon green">&#9733;</div>
+          <h3>Command</h3>
+          <p>Your hero isn't a statue — you command them directly. Activate abilities on cooldown: area damage, buffs, repositioning, emergency heals. Timing a hero ability at the right moment saves runs.</p>
+        </div>
+        <div class="card fade-in-up">
+          <div class="card-icon blue">&#9734;</div>
+          <h3>Earn</h3>
+          <p>Complete levels to earn gold, stars, and SAKART tokens. Stars unlock the next era. Mastery scrolls unlock harder modes. No pay-to-win — every reward comes from skill, not wallet size.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Tower Types -->
+  <section class="section-dark" id="towers">
+    <div class="container">
+      <span class="section-label text-center">Tower System</span>
+      <h2 class="text-center">Five Archetypes. Infinite Combos.</h2>
+      <p class="text-center" style="max-width: 640px; margin: 0 auto var(--space-2xl); color: var(--slate-light);">
+        Every tower fits one of five categories. Each era reskins them historically — stone throwers become cannon, fire oil becomes naptha — but the mechanics remain consistent and deep.
+      </p>
+      <div class="grid grid-3 stagger">
+
+        <!-- Basic Tower -->
+        <div class="game-card fade-in-up">
+          <div class="gc-header">
+            <div class="gc-icon" style="background: rgba(100,116,139,0.15); color: var(--slate-light);">&#9670;</div>
+            <div>
+              <h4>Basic</h4>
+              <span class="badge badge-red">Single Target</span>
+            </div>
+          </div>
+          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">Stone throwers, slingers, crossbowmen, riflemen. Reliable single-target DPS at low cost. The backbone of every defense. Upgradable for faster attack speed and longer range.</p>
+          <div class="gc-stats">
+            <div class="gc-stat">Cost <span>Low</span></div>
+            <div class="gc-stat">Damage <span>Medium</span></div>
+            <div class="gc-stat">Range <span>Medium</span></div>
+          </div>
+        </div>
+
+        <!-- Splash Tower -->
+        <div class="game-card fade-in-up">
+          <div class="gc-header">
+            <div class="gc-icon" style="background: rgba(214,46,45,0.12); color: var(--geo-red);">&#9733;</div>
+            <div>
+              <h4>Splash</h4>
+              <span class="badge badge-red">Area Damage</span>
+            </div>
+          </div>
+          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">Fire oil, Greek fire, naphtha pots, early cannon. Deals area damage on impact. Devastating against clustered waves. Careful placement at maze chokepoints multiplies effectiveness.</p>
+          <div class="gc-stats">
+            <div class="gc-stat">Cost <span>Medium</span></div>
+            <div class="gc-stat">Damage <span>High (AoE)</span></div>
+            <div class="gc-stat">Range <span>Short</span></div>
+          </div>
+        </div>
+
+        <!-- Slow Tower -->
+        <div class="game-card fade-in-up">
+          <div class="gc-header">
+            <div class="gc-icon" style="background: rgba(0,123,61,0.12); color: var(--geo-green);">&#10052;</div>
+            <div>
+              <h4>Slow</h4>
+              <span class="badge badge-green">Crowd Control</span>
+            </div>
+          </div>
+          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">Net throwers, ice mages, caltrop fields, barbed wire. Reduces enemy movement speed dramatically. Pairs with Splash towers for devastating kill zones. Essential on longer mazes.</p>
+          <div class="gc-stats">
+            <div class="gc-stat">Cost <span>Medium</span></div>
+            <div class="gc-stat">Damage <span>Low</span></div>
+            <div class="gc-stat">Effect <span>-50% Speed</span></div>
+          </div>
+        </div>
+
+        <!-- Amplify Tower -->
+        <div class="game-card fade-in-up">
+          <div class="gc-header">
+            <div class="gc-icon" style="background: var(--geo-gold-dim); color: var(--geo-gold);">&#9834;</div>
+            <div>
+              <h4>Amplify</h4>
+              <span class="badge badge-gold">Buff Adjacent</span>
+            </div>
+          </div>
+          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">War drums, signal flags, religious icons, war horns. Does not attack — instead boosts adjacent towers' damage, speed, or range. Stacking amplifiers creates devastating synergy corridors.</p>
+          <div class="gc-stats">
+            <div class="gc-stat">Cost <span>High</span></div>
+            <div class="gc-stat">Damage <span>None</span></div>
+            <div class="gc-stat">Buff <span>+25-40%</span></div>
+          </div>
+        </div>
+
+        <!-- Special Tower -->
+        <div class="game-card fade-in-up">
+          <div class="gc-header">
+            <div class="gc-icon" style="background: rgba(240,192,64,0.15); color: var(--geo-gold);">&#9883;</div>
+            <div>
+              <h4>Special</h4>
+              <span class="badge badge-gold">Era-Unique</span>
+            </div>
+          </div>
+          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">Unique per era — Golden Fleece artifacts in Colchis, Svan tower-house ballistae, Kakhetian wine trap barrels, Soviet-era radar jammers. Mechanics change each era. Always game-changing.</p>
+          <div class="gc-stats">
+            <div class="gc-stat">Cost <span>Very High</span></div>
+            <div class="gc-stat">Effect <span>Unique</span></div>
+            <div class="gc-stat">Limit <span>1-2 per map</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Enemies -->
+  <section id="enemies">
+    <div class="container">
+      <span class="section-label text-center">Enemy Forces</span>
+      <h2 class="text-center">Know Thy Enemy</h2>
+      <p class="text-center" style="max-width: 640px; margin: 0 auto var(--space-2xl); color: var(--slate-light);">
+        Enemy composition shifts every era. From ancient tribal raiders to Mongol siege engines to Soviet armor — each wave demands a different defensive approach.
+      </p>
+      <div class="grid grid-3 stagger">
+
+        <div class="card fade-in-up">
+          <div class="card-icon red">&#9876;</div>
+          <h3>Infantry Swarms</h3>
+          <p>Fast, numerous, individually weak. Ancient tribal warriors, Arab raiders, Ottoman janissaries. They overwhelm through sheer numbers. Splash towers and slow fields are the answer.</p>
+        </div>
+
+        <div class="card fade-in-up">
+          <div class="card-icon gold">&#9760;</div>
+          <h3>Armored Units</h3>
+          <p>Slow, tough, resistant to basic damage. Mongol heavy cavalry, Timurid war elephants, Persian siege towers. Require focused fire from upgraded Basic towers or Special abilities to crack.</p>
+        </div>
+
+        <div class="card fade-in-up">
+          <div class="card-icon green">&#9762;</div>
+          <h3>Elites &amp; Bosses</h3>
+          <p>Era-ending boss enemies with unique mechanics. Persian Immortals that revive once. Mongol Khans that buff nearby units. Boss levels demand hero abilities and maze optimization.</p>
+        </div>
+
+        <div class="card fade-in-up">
+          <div class="card-icon blue">&#9889;</div>
+          <h3>Speed Runners</h3>
+          <p>Scouts, cavalry, and raiders that move at double speed with low HP. They race through mazes before towers can cycle. Slow towers and hero area attacks are critical to stop them.</p>
+        </div>
+
+        <div class="card fade-in-up">
+          <div class="card-icon red">&#9764;</div>
+          <h3>Healers &amp; Buffers</h3>
+          <p>Shamans, priests, and medics that heal or shield nearby enemies. Prioritize them with manual targeting — if a healer reaches the middle of a swarm, the wave stalls and leaks.</p>
+        </div>
+
+        <div class="card fade-in-up">
+          <div class="card-icon gold">&#9813;</div>
+          <h3>Siege Engines</h3>
+          <p>Battering rams, catapults, and cannon that directly attack your walls and towers. They don't follow the path — they destroy it. Forces you to defend the maze itself, not just the endpoint.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Heroes -->
+  <section class="section-dark" id="heroes">
+    <div class="container">
+      <span class="section-label text-center">Hero System</span>
+      <h2 class="text-center">Legends Walk the Battlefield</h2>
+      <p class="text-center" style="max-width: 640px; margin: 0 auto var(--space-2xl); color: var(--slate-light);">
+        Each hero has 2-3 active abilities with cooldowns. You command them directly — positioning, timing, and ability combos define high-level play. Each era introduces new heroes drawn from Georgian history and legend.
+      </p>
+      <div class="grid grid-2 stagger">
+
+        <!-- Medea -->
+        <div class="game-card fade-in-up">
+          <div class="gc-header">
+            <div class="gc-icon" style="background: rgba(0,123,61,0.12); color: var(--geo-green); font-size: 1.25rem;">&#9762;</div>
+            <div>
+              <h4>Medea</h4>
+              <span class="badge badge-green">Era 0 — Ancient Colchis</span>
+            </div>
+          </div>
+          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">The legendary sorceress of Colchis. Master of poisons and ancient toxins. Enemies that enter her zone take increasing damage over time. Her ultimate coats an entire lane in toxic mist.</p>
+          <div class="gc-stats">
+            <div class="gc-stat">Type <span>Poison / Toxic</span></div>
+            <div class="gc-stat">Ability 1 <span>Toxic Cloud</span></div>
+            <div class="gc-stat">Ability 2 <span>Venomous Chains</span></div>
+            <div class="gc-stat">Ultimate <span>Miasma</span></div>
+          </div>
+        </div>
+
+        <!-- Queen Tamar -->
+        <div class="game-card fade-in-up">
+          <div class="gc-header">
+            <div class="gc-icon" style="background: var(--geo-gold-dim); color: var(--geo-gold); font-size: 1.25rem;">&#9813;</div>
+            <div>
+              <h4>Queen Tamar</h4>
+              <span class="badge badge-gold">Era 5 — Golden Age</span>
+            </div>
+          </div>
+          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">The king of kings. Tamar's presence on the battlefield inspires all towers and units globally. Her buff scales with the number of tower types in play — synergy builds are her domain.</p>
+          <div class="gc-stats">
+            <div class="gc-stat">Type <span>Global Buff</span></div>
+            <div class="gc-stat">Ability 1 <span>Royal Decree</span></div>
+            <div class="gc-stat">Ability 2 <span>Divine Shield</span></div>
+            <div class="gc-stat">Ultimate <span>Golden Age</span></div>
+          </div>
+        </div>
+
+        <!-- David the Builder -->
+        <div class="game-card fade-in-up">
+          <div class="gc-header">
+            <div class="gc-icon" style="background: rgba(214,46,45,0.12); color: var(--geo-red); font-size: 1.25rem;">&#9962;</div>
+            <div>
+              <h4>David the Builder</h4>
+              <span class="badge badge-red">Era 2 — Renaissance</span>
+            </div>
+          </div>
+          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">The great reformer king. David instantly upgrades towers in an area — no gold cost, no wait time. In emergencies, he can rebuild destroyed walls. The ultimate tempo hero for aggressive strategies.</p>
+          <div class="gc-stats">
+            <div class="gc-stat">Type <span>Instant Upgrade</span></div>
+            <div class="gc-stat">Ability 1 <span>Fortify</span></div>
+            <div class="gc-stat">Ability 2 <span>Rebuild</span></div>
+            <div class="gc-stat">Ultimate <span>Builder's Will</span></div>
+          </div>
+        </div>
+
+        <!-- Giorgi Saakadze -->
+        <div class="game-card fade-in-up">
+          <div class="gc-header">
+            <div class="gc-icon" style="background: rgba(214,46,45,0.12); color: var(--geo-red); font-size: 1.25rem;">&#9876;</div>
+            <div>
+              <h4>Giorgi Saakadze</h4>
+              <span class="badge badge-red">Era 4 — Kakheti</span>
+            </div>
+          </div>
+          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">The Grand Mouravi. Cavalry commander who charges across the battlefield, trampling enemies in a line. His flanking strikes deal bonus damage to enemies already engaged by towers. Pure aggression.</p>
+          <div class="gc-stats">
+            <div class="gc-stat">Type <span>Cavalry / Melee</span></div>
+            <div class="gc-stat">Ability 1 <span>Cavalry Charge</span></div>
+            <div class="gc-stat">Ability 2 <span>Flanking Strike</span></div>
+            <div class="gc-stat">Ultimate <span>Mouravi's Fury</span></div>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="text-center mt-2xl" style="color: var(--slate-light); font-size: 0.9375rem;">
+        Each era introduces 4-6 new heroes. 45+ heroes planned across all 9 eras. Heroes persist across levels within an era — level them up to unlock ability upgrades and reduced cooldowns.
+      </p>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Progression System -->
+  <section id="progression">
+    <div class="container">
+      <span class="section-label text-center">Progression</span>
+      <h2 class="text-center">Skill Opens Every Door</h2>
+      <p class="text-center" style="max-width: 640px; margin: 0 auto var(--space-2xl); color: var(--slate-light);">
+        No loot boxes. No paywalls. Progression is purely skill-based with transparent requirements for every unlock.
+      </p>
+      <div class="grid grid-3 stagger">
+
+        <!-- Stars -->
+        <div class="card fade-in-up">
+          <div class="card-icon gold">&#9733;</div>
+          <h3>Star Rating</h3>
+          <p>Earn 1 to 3 stars per level based on performance: lives remaining, gold efficiency, and clear time. Three-starring a level is the core skill challenge. Stars are tracked per difficulty tier — Normal 3-stars are separate from Hard 3-stars.</p>
+        </div>
+
+        <!-- Era Unlocking -->
+        <div class="card fade-in-up">
+          <div class="card-icon red">&#128274;</div>
+          <h3>Era Unlocking</h3>
+          <p>To unlock the next era, you must 3-star all levels in the current era on Normal difficulty <em>and</em> pay a SAKART token fee. The fee prevents idle unlocking — you must be both skilled and economically engaged. No shortcuts.</p>
+        </div>
+
+        <!-- Mastery Scrolls -->
+        <div class="card fade-in-up">
+          <div class="card-icon green">&#128220;</div>
+          <h3>Mastery Scrolls</h3>
+          <p>Mastery scrolls unlock harder modes and modifiers. Earned by completing optional challenge objectives — "no tower sells," "hero only," "maze under 40 walls." Each scroll is a trophy of genuine mastery, not grind time.</p>
+        </div>
+
+      </div>
+
+      <div class="stat-row mt-2xl" style="padding: 48px 0;">
+        <div class="stat">
+          <div class="stat-value">150</div>
+          <div class="stat-label">Levels at Launch</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">3</div>
+          <div class="stat-label">Stars per Level</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">450</div>
+          <div class="stat-label">Total Stars</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">9</div>
+          <div class="stat-label">Eras to Master</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Difficulty Tiers -->
+  <section class="section-darker" id="difficulty">
+    <div class="container">
+      <span class="section-label text-center">Difficulty Tiers</span>
+      <h2 class="text-center">Three Ways to Suffer</h2>
+      <p class="text-center" style="max-width: 640px; margin: 0 auto var(--space-2xl); color: var(--slate-light);">
+        Every level can be played on three difficulties. Same map, same towers — exponentially harder. Higher difficulties earn more SAKART and unlock exclusive rewards.
+      </p>
+      <div class="grid grid-3 stagger">
+
+        <div class="game-card fade-in-up">
+          <div class="gc-header">
+            <div class="gc-icon" style="background: rgba(0,123,61,0.12); color: var(--geo-green);">&#9734;</div>
+            <div>
+              <h4>Normal</h4>
+              <span class="badge badge-green">Baseline</span>
+            </div>
+          </div>
+          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">The intended experience. Standard enemy HP, normal wave pacing, generous gold economy. Completing Normal 3-stars unlocks the next era. Where you learn the map and develop your maze.</p>
+          <div class="gc-stats">
+            <div class="gc-stat">Enemy HP <span>x1.0</span></div>
+            <div class="gc-stat">Gold <span>x1.0</span></div>
+            <div class="gc-stat">SAKART Earn <span>Base</span></div>
+          </div>
+        </div>
+
+        <div class="game-card fade-in-up">
+          <div class="gc-header">
+            <div class="gc-icon" style="background: var(--geo-gold-dim); color: var(--geo-gold);">&#9733;</div>
+            <div>
+              <h4>Hard</h4>
+              <span class="badge badge-gold">Challenge</span>
+            </div>
+          </div>
+          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">Enemies gain +50% HP and move 20% faster. Gold income is reduced. Elite enemies appear in earlier waves. Demands near-perfect maze design and tight hero ability timing. Unlocked with mastery scrolls.</p>
+          <div class="gc-stats">
+            <div class="gc-stat">Enemy HP <span>x1.5</span></div>
+            <div class="gc-stat">Gold <span>x0.8</span></div>
+            <div class="gc-stat">SAKART Earn <span>x2.0</span></div>
+          </div>
+        </div>
+
+        <div class="game-card fade-in-up">
+          <div class="gc-header">
+            <div class="gc-icon" style="background: rgba(214,46,45,0.12); color: var(--geo-red);">&#9733;&#9733;&#9733;</div>
+            <div>
+              <h4>Elite</h4>
+              <span class="badge badge-red">Brutal</span>
+            </div>
+          </div>
+          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">Double HP, fast enemies, reduced gold, random modifiers per wave. Bosses gain new mechanics. Designed for players who 3-starred Hard. Elite 3-stars are the ultimate badge of skill in Sakartvelo Defenders.</p>
+          <div class="gc-stats">
+            <div class="gc-stat">Enemy HP <span>x2.0</span></div>
+            <div class="gc-stat">Gold <span>x0.6</span></div>
+            <div class="gc-stat">SAKART Earn <span>x4.0</span></div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="section-divider mt-2xl"></div>
+
+      <!-- Extra Modes -->
+      <div class="grid grid-2 mt-2xl stagger">
+
+        <div class="card fade-in-up">
+          <div class="card-icon red">&#9876;</div>
+          <h3>PvP Tournament Brackets</h3>
+          <p>Available from Era 4+. Compete in tournament brackets where you design a maze and an attacker sends waves through it — then swap. Best-of-three. Winner earns SAKART and tournament ranking. No pay-to-enter, no advantage for spenders.</p>
+        </div>
+
+        <div class="card fade-in-up">
+          <div class="card-icon green">&#9760;</div>
+          <h3>Survival Mode</h3>
+          <p>Available from Era 6+. Endless waves with escalating difficulty. No star rewards — just a pure leaderboard chase. How long can your maze hold? Survival mode features unique enemies not found in the campaign and weekly global leaderboards.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- CTA -->
+  <section class="cta-section" id="waitlist">
+    <div class="container">
+      <div class="fade-in-up" style="position: relative; z-index: 1;">
+        <span class="section-label text-center">Ready to Defend?</span>
+        <h2 class="text-center">Join the Waitlist</h2>
+        <p class="text-center" style="max-width: 500px; margin: 0 auto var(--space-xl); color: var(--slate-light);">
+          Be first to play when Eras 0-2 launch. No crypto knowledge needed. Just skill.
+        </p>
+        <form onsubmit="event.preventDefault(); alert('Thanks for joining! We\'ll be in touch.'); this.reset();" style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; max-width: 480px; margin: 0 auto;">
+          <input type="email" placeholder="your@email.com" required style="
+            flex: 1;
+            min-width: 200px;
+            padding: 12px 16px;
+            background: var(--surface-1);
+            border: 1px solid rgba(238,238,242,0.1);
+            border-radius: var(--radius-sm);
+            color: var(--spectral);
+            font-family: var(--font-primary);
+            font-size: 0.9375rem;
+            outline: none;
+            transition: border-color 0.3s;
+          " onfocus="this.style.borderColor='rgba(238,238,242,0.3)'" onblur="this.style.borderColor='rgba(238,238,242,0.1)'">
+          <button type="submit" class="btn btn-primary">Join Waitlist</button>
+        </form>
+        <p style="font-size: 0.75rem; color: var(--slate); margin-top: var(--space-md); text-align: center;">
+          We'll never share your email. No blockchain knowledge required.
+        </p>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="py-4 bg-dark text-white">
-    <div class="container text-center">
-      <p class="mb-0">&copy; 2026 Sakartvelo Defenders | A cultural celebration through historical gameplay</p>
-      <small class="mt-2">No blockchain knowledge required. Earn tokens through skill, not wallet size.</small>
-      <div class="mt-3">
-        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
-        <a href="#" class="text-white me-3"><i class="fab fa-discord"></i></a>
-        <a href="#" class="text-white me-3"><i class="fab fa-github"></i></a>
-        <a href="#" class="text-white me-3"><i class="fab fa-youtube"></i></a>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-left">
+          <p>&copy; 2026 Sakartvelo Defenders. A cultural celebration through historical gameplay.</p>
+          <p class="footer-georgian">საქართველო</p>
+        </div>
+        <div class="footer-right">
+          <a href="https://twitter.com" target="_blank">Twitter</a>
+          <a href="https://discord.gg" target="_blank">Discord</a>
+          <a href="https://github.com" target="_blank">GitHub</a>
+          <a href="https://youtube.com" target="_blank">YouTube</a>
+        </div>
       </div>
     </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/main.js"></script>
+  <script>
+    // Mobile nav toggle
+    const toggle = document.getElementById('navToggle');
+    const links = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth' });
+        links.classList.remove('open');
+      });
+    });
+
+    // Intersection Observer for fade-in animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in-up');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.card, .game-card').forEach(el => observer.observe(el));
+  </script>
+
 </body>
 </html>

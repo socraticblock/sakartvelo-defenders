@@ -3,97 +3,261 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Sakartvelo Defenders</title>
-  <meta name="description" content="Learn about the inspiration and development of Sakartvelo Defenders - a historical tower defense game with blockchain integration.">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <title>About -- Sakartvelo Defenders</title>
+  <meta name="description" content="The vision behind Sakartvelo Defenders: cultural education through tower defense gameplay spanning 3,000 years of Georgian history.">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Sakartvelo Defenders</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="gameplay.html">Gameplay</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="blockchain.html">Blockchain</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
 
-  <!-- Hero Section -->
-  <section class="hero py-5">
-    <div class="container text-center">
-      <h1 class="display-1 fw-bold mb-4">About Sakartvelo Defenders</h1>
-      <p class="lead mb-5">A cultural celebration through historical gameplay</p>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">
+        <span class="brand-icon">SD</span>
+        Sakartvelo Defenders
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="gameplay.html">Gameplay</a></li>
+        <li><a href="blockchain.html">Blockchain</a></li>
+        <li><a href="index.html#waitlist" class="nav-cta">Join Waitlist</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero (shorter, vision-focused) -->
+  <section class="hero" style="min-height: 50vh;">
+    <div class="hero-content fade-in-up">
+      <div class="hero-line"></div>
+      <span class="small-caps" style="margin-bottom: 16px; display: block;">About the Vision</span>
+      <h1>A Game That Honors<br><span class="accent">3,000 Years</span> of History.</h1>
+      <p class="subtitle">
+        Sakartvelo Defenders was born from a simple question: what if playing a tower defense game could teach you real history? No textbooks. No lectures. Just strategy, skill, and the story of a nation that refused to fall.
+      </p>
+      <div class="btn-group">
+        <a href="#why-this-game" class="btn btn-primary">Why This Game</a>
+        <a href="gameplay.html" class="btn btn-ghost">See Gameplay</a>
+      </div>
     </div>
   </section>
 
-  <!-- About Content -->
-  <section class="py-5">
+  <div class="section-divider"></div>
+
+  <!-- Why This Game -->
+  <section id="why-this-game">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2 class="mb-4">Our Vision</h2>
-          <p class="mb-4">Sakartvelo Defenders is more than just a game - it's a journey through 9,000 years of Georgian history. We set out to create a tower defense game that truly respects and celebrates Georgia's rich cultural heritage while incorporating modern game design principles and blockchain technology.</p>
-          
-          <h2 class="mb-4">The Idea</h2>
-          <p class="mb-4">The concept emerged from a desire to preserve and share Georgian history with younger generations. Tower defense games are popular, but there's a lack of historical context and cultural authenticity in most titles. Our mission was to create a game that would teach players about Georgian history while providing the fun, engaging gameplay they expect.</p>
-          
-          <h2 class="mb-4">Developer Background</h2>
-          <p class="mb-4">Built by a solo developer passionate about both gaming and Georgian culture, Sakartvelo Defenders represents a personal project with a global impact. The developer has spent countless hours researching historical battles, cultural practices, and military strategies from each era of Georgian history.</p>
-          
-          <h2 class="mb-4">Why This Approach</h2>
-          <p class="mb-4">Traditional historical games often fall into two categories: overly simplified or too academic to be engaging. Sakartvelo Defenders aims for the sweet spot where history is authentically represented, but in a fun, accessible way that anyone can enjoy.</p>
-          
-          <h2 class="mb-4">Educational Value</h2>
-          <p class="mb-4">Each era in the game is designed to educate players about real historical events, strategies, and cultural practices while providing engaging gameplay that makes learning memorable and fun.</p>
-          
-          <h2 class="mb-4">Community Focus</h2>
-          <p class="mb-4">We're building a community of history enthusiasts and gamers passionate about Georgian culture. Early access participants will be involved in development, with their feedback helping to shape the final experience.</p>
-          
-          <h2 class="mb-4">Sustainability</h2>
-          <p class="mb-4">Sakartvelo Defenders is designed to be sustainable with minimal resources. The game can run on modest servers, with blockchain only being used for token economy, not game state storage.</p>
+      <span class="section-label text-center">Cultural Education Through Gameplay</span>
+      <h2 class="text-center">Why This Game</h2>
+      <div class="prose" style="max-width: 760px; margin: 0 auto;">
+        <p>
+          Georgia -- Sakartvelo -- sits at the crossroads of Europe and Asia, a small nation that has endured invasion, occupation, and assimilation for over three millennia. Through it all, the Georgian people preserved their language, their faith, their wine, and their identity.
+        </p>
+        <p>
+          Most people outside the Caucasus have never heard of King Tamar, the warrior queen who ruled a Golden Age. They don't know about the ancient Colchians who inspired the myth of the Golden Fleece, or the Svan tower-houses that held mountain passes against empires. Georgia's history is as dramatic and epic as anything in Game of Thrones -- and it's <em>real</em>.
+        </p>
+        <p>
+          Sakartvelo Defenders exists to change that. Every tower type, enemy formation, hero ability, and map layout is drawn from historical research. When you defend a mountain pass in Era 2, you're engaging with the same strategic dilemmas Svan defenders faced against Arab raiders in the 9th century. When you command Queen Tamar's royal guard in Era 5, you're learning about the political and military genius of one of history's most remarkable leaders.
+        </p>
+        <p>
+          This isn't "culture as cosmetic skin." The history is the gameplay. And because it's wrapped in a genuinely fun tower defense experience, players learn without feeling like they're being taught.
+        </p>
+      </div>
+
+      <div class="stat-row" style="margin-top: var(--space-2xl);">
+        <div class="stat">
+          <div class="stat-value">3,000+</div>
+          <div class="stat-label">Years of History</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">9</div>
+          <div class="stat-label">Historical Eras</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">45+</div>
+          <div class="stat-label">Historical Heroes</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">100%</div>
+          <div class="stat-label">Free to Complete</div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Design Philosophy -->
+  <section class="section-dark" id="philosophy">
+    <div class="container">
+      <span class="section-label text-center">Design Philosophy</span>
+      <h2 class="text-center">Four Principles. Zero Compromise.</h2>
+      <p class="text-center" style="max-width: 600px; margin: 0 auto var(--space-2xl); color: var(--slate-light);">
+        Every decision in Sakartvelo Defenders traces back to these four pillars. They aren't marketing slogans -- they're the constraints that shape every design choice.
+      </p>
+      <div class="grid grid-4 stagger">
+
+        <div class="card fade-in-up">
+          <div class="card-icon green">&#9654;</div>
+          <h3>Play First, Blockchain Second</h3>
+          <p>The blockchain is invisible infrastructure. Players never see a wallet address, never pay gas, never learn what "zkEVM" means. They click "Play" and tokens appear when they earn them. Passport wallet abstraction handles everything behind the scenes. If the blockchain disappeared tomorrow, the game would still be fun. That's the test.</p>
+        </div>
+
+        <div class="card fade-in-up">
+          <div class="card-icon red">&#9876;</div>
+          <h3>Skill Over Wallet</h3>
+          <p>A free player has the exact same gameplay experience as someone who spends thousands. Every tower, every hero, every gameplay-affecting item is unlocked through skilled play. SAKART tokens reward three-starring levels on first completion -- you can't grind, farm, or buy your way to advantage. The leaderboard reflects skill, not spending.</p>
+        </div>
+
+        <div class="card fade-in-up">
+          <div class="card-icon gold">&#9733;</div>
+          <h3>History Drives Gameplay</h3>
+          <p>Georgian history isn't window dressing. Era 1's tower synergy mechanics reflect how Iberian kingdoms coordinated defense against Roman and Parthian threats. Era 4's wine trap system is modeled on Kakhetian defensive innovations against Persian sieges. The history team and game design team are the same person -- and every mechanic has a historical anchor.</p>
+        </div>
+
+        <div class="card fade-in-up">
+          <div class="card-icon blue">&#9881;</div>
+          <h3>Solo-Dev Sustainable</h3>
+          <p>Built by one developer, designed to run on $1-42/month. Godot 4.x exports to PWA -- zero server costs, no app store fees, runs in any browser. Revenue comes from a 1.8% marketplace fee on cosmetic trading, which scales naturally with the player base. The game doesn't need a million users to survive. It needs a community that cares.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- The Vision -->
+  <section id="vision">
+    <div class="container">
+      <span class="section-label text-center">The Vision</span>
+      <h2 class="text-center">3,000 Years. One Game. Infinite Stories.</h2>
+
+      <div class="content-split">
+        <div class="prose">
+          <h3>From the Black Sea to the Caucasus Peaks</h3>
+          <p>
+            Imagine starting in ancient Colchis -- dense forests, stone ruins, the salt air of the Black Sea coast. You're learning the basics: placing towers, building mazes, timing hero abilities. The enemies are simple, the stakes are low. This is 1500 BC, and you're defending one of the world's oldest civilizations.
+          </p>
+          <p>
+            Fast forward through the centuries. Era by era, the mechanics deepen. By Era 5 -- King Tamar's Golden Age -- you're managing complex tower synergy chains, commanding multiple heroes with interlocking abilities, and defending against the most diverse enemy compositions in the game. Every level is a real historical engagement, researched and adapted for gameplay.
+          </p>
+          <p>
+            The full vision spans 9 eras and 150 levels. At launch, Eras 0 through 2 deliver 60 levels of polished, complete gameplay -- the ancient foundations. Each subsequent era will be developed and released based on community engagement and sustainable growth.
+          </p>
+          <h3>More Than a Game</h3>
+          <p>
+            Sakartvelo Defenders is also a proof of concept. It demonstrates that blockchain gaming doesn't have to be extractive. That cultural education doesn't have to be boring. That a solo developer can build something sustainable without venture capital, without predatory monetization, without compromising on quality.
+          </p>
+          <p>
+            The Georgian flag has five crosses on it -- one large, four small. They represent the five holy wounds. It's a symbol of a nation that endured. This game is built in that spirit: small, resilient, proud.
+          </p>
+        </div>
+
+        <div>
+          <div class="card fade-in-up" style="border-left: 3px solid var(--red);">
+            <h4>Era 0: Ancient Colchis</h4>
+            <p style="color: var(--slate-light);">~1500 - 500 BC. The Golden Fleece. Tutorial and onboarding.</p>
+          </div>
+          <div class="card fade-in-up" style="border-left: 3px solid var(--gold);">
+            <h4>Era 1: Kingdom of Iberia</h4>
+            <p style="color: var(--slate-light);">~300 BC - 300 AD. Roman and Parthian threats. Hero synergies begin.</p>
+          </div>
+          <div class="card fade-in-up" style="border-left: 3px solid var(--green);">
+            <h4>Era 2: Golden Age of Svaneti</h4>
+            <p style="color: var(--slate-light);">~800 - 1200 AD. Mountain fortresses. Advanced synergy chains.</p>
+          </div>
+          <div class="card fade-in-up" style="border-left: 3px solid var(--blue);">
+            <h4>Eras 3-8: The Road Ahead</h4>
+            <p style="color: var(--slate-light);">Renaissance, Kakheti, King Tamar, occupation, independence, modern Georgia. 90 more levels to come.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <span class="section-label text-center">Be Part of the Story</span>
+      <h2 class="text-center">Join the Waitlist</h2>
+      <p class="text-center" style="max-width: 480px; margin: 0 auto var(--space-xl); color: var(--slate-light);">
+        Get notified when the first 3 eras launch. No spam, no crypto required. Just history, strategy, and skill.
+      </p>
+      <form style="display: flex; gap: var(--space-sm); max-width: 420px; margin: 0 auto; flex-wrap: wrap; justify-content: center;">
+        <input type="email" placeholder="Your email address" style="
+          flex: 1;
+          min-width: 200px;
+          padding: 12px 16px;
+          background: var(--surface-1);
+          border: 1px solid rgba(238,238,242,0.1);
+          border-radius: var(--radius-sm);
+          color: var(--spectral);
+          font-family: var(--font-primary);
+          font-size: 0.9375rem;
+          outline: none;
+          transition: border-color 0.3s;
+        " onfocus="this.style.borderColor='rgba(238,238,242,0.3)'" onblur="this.style.borderColor='rgba(238,238,242,0.1)'">
+        <button type="submit" class="btn btn-primary">Join Waitlist</button>
+      </form>
+      <p style="font-size: 0.75rem; color: var(--slate); margin-top: var(--space-md); margin-bottom: 0;">
+        We'll never share your email. No blockchain knowledge required.
+      </p>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="py-4 bg-dark text-white">
-    <div class="container text-center">
-      <p class="mb-0">&copy; 2026 Sakartvelo Defenders | A cultural celebration through historical gameplay</p>
-      <small class="mt-2">No blockchain knowledge required. Earn tokens through skill, not wallet size.</small>
-      <div class="mt-3">
-        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
-        <a href="#" class="text-white me-3"><i class="fab fa-discord"></i></a>
-        <a href="#" class="text-white me-3"><i class="fab fa-github"></i></a>
-        <a href="#" class="text-white me-3"><i class="fab fa-youtube"></i></a>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-left">
+          <p>&copy; 2026 Sakartvelo Defenders. A cultural celebration through historical gameplay.</p>
+          <p class="footer-georgian">საქართველო</p>
+        </div>
+        <div class="footer-right">
+          <a href="https://twitter.com" target="_blank">Twitter</a>
+          <a href="https://discord.gg" target="_blank">Discord</a>
+          <a href="https://github.com" target="_blank">GitHub</a>
+          <a href="https://youtube.com" target="_blank">YouTube</a>
+        </div>
       </div>
     </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/main.js"></script>
+  <script>
+    // Mobile nav toggle
+    const toggle = document.getElementById('navToggle');
+    const links = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth' });
+        links.classList.remove('open');
+      });
+    });
+
+    // Intersection Observer for fade-in animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in-up');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.card').forEach(el => observer.observe(el));
+  </script>
+
 </body>
 </html>

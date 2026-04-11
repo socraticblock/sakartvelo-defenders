@@ -3,180 +3,316 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sakartvelo Defenders - Historical Tower Defense with Blockchain</title>
-  <meta name="description" content="Sakartvelo Defenders: The world's first tower defense game rooted in 9 historical eras of Georgian culture with blockchain integration.">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <title>Sakartvelo Defenders -- Tower Defense Across 3,000 Years of Georgian History</title>
+  <meta name="description" content="Sakartvelo Defenders: A tower defense game set across 3,000 years of Georgian history. Build mazes, command heroes, earn SAKART tokens. Free to play, zero server costs, play-to-earn done right.">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Sakartvelo Defenders</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="gameplay.html">Gameplay</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="blockchain.html">Blockchain</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
 
-  <!-- Hero Section -->
-  <section class="hero py-5">
-    <div class="container text-center">
-      <h1 class="display-1 fw-bold mb-4">Sakartvelo Defenders</h1>
-      <p class="lead mb-5">The world's first tower defense game rooted in 9 historical eras of Georgian culture, with blockchain integration</p>
-      <a href="#features" class="btn btn-lg cta-button px-5 py-3 fw-bold">Discover History</a>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">
+        <span class="brand-icon">SD</span>
+        Sakartvelo Defenders
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gameplay.html">Gameplay</a></li>
+        <li><a href="blockchain.html">Blockchain</a></li>
+        <li><a href="#waitlist" class="nav-cta">Join Waitlist</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content fade-in-up">
+      <div class="hero-line"></div>
+      <span class="small-caps" style="margin-bottom: 16px; display: block;">Tower Defense x Georgian History x Blockchain</span>
+      <h1>Defend a Nation.<br>Across <span class="accent">3,000 Years</span>.</h1>
+      <p class="subtitle">
+        Build mazes. Command heroes from Georgian legend. Earn SAKART through skill, not wallet size. Nine historical eras. One epic saga.
+      </p>
+      <div class="btn-group">
+        <a href="#features" class="btn btn-primary">Discover the Vision</a>
+        <a href="#waitlist" class="btn btn-ghost">Join Waitlist</a>
+      </div>
     </div>
   </section>
 
-  <!-- Key Features -->
-  <section id="features" class="py-5">
+  <!-- Stats Bar -->
+  <div class="section-dark">
     <div class="container">
-      <h2 class="text-center mb-5">Why Sakartvelo Defenders Stands Apart</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="feature-card p-4 h-100">
-            <div class="text-center mb-3">
-              <i class="fas fa-flag"></i>
-            </div>
-            <h4 class="mb-3 text-center">Authentic Cultural Depth</h4>
-            <p>Each era (1,500 BC - present) features historically accurate battles, enemies, and mechanics. No 'culture as skin' - history drives gameplay itself.</p>
-          </div>
+      <div class="stat-row" style="padding: 48px 0;">
+        <div class="stat">
+          <div class="stat-value">9</div>
+          <div class="stat-label">Historical Eras</div>
         </div>
-        <div class="col-md-4">
-          <div class="feature-card p-4 h-100">
-            <div class="text-center mb-3">
-              <i class="fas fa-cash-stack"></i>
-            </div>
-            <h4 class="mb-3 text-center">Blockchain Done Right</h4>
-            <p>Zero wallet friction, skill-based SAKART rewards, and 1.8% transparent fee. No pay-to-win, no seed phrases.</p>
-          </div>
+        <div class="stat">
+          <div class="stat-value">150</div>
+          <div class="stat-label">Levels</div>
         </div>
-        <div class="col-md-4">
-          <div class="feature-card p-4 h-100">
-            <div class="text-center mb-3">
-              <i class="fas fa-person-workspace"></i>
-            </div>
-            <h4 class="mb-3 text-center">Solo-Dev Sustainable</h4>
-            <p>Built for $100/month hosting with no servers. Game state stored off-chain, blockchain only for tokens.</p>
-          </div>
+        <div class="stat">
+          <div class="stat-value">45+</div>
+          <div class="stat-label">Heroes</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">0</div>
+          <div class="stat-label">Pay-to-Win</div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
 
-  <!-- Historical Eras -->
-  <section class="py-5 bg-light">
+  <div class="section-divider"></div>
+
+  <!-- Core Pillars -->
+  <section id="features">
     <div class="container">
-      <h2 class="text-center mb-5">Nine Historical Eras of Georgia</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="feature-card p-4 h-100">
-            <h4 class="text-center mb-3">1. Mtskheta Period (1500 BC - 337 AD)</h4>
-            <p>Early Georgian kingdoms, including the legendary city of Mtskheta and early Christian influences.</p>
-          </div>
+      <span class="section-label text-center">Core Design Principles</span>
+      <h2 class="text-center">Built Different. Built Right.</h2>
+      <div class="grid grid-3 stagger">
+        <div class="card fade-in-up">
+          <div class="card-icon red">&#9876;</div>
+          <h3>Play First, Blockchain Second</h3>
+          <p>The blockchain is invisible infrastructure. Players never need to understand crypto, wallets, or gas fees. They click "Play" and earn tokens naturally through skilled gameplay. No MetaMask tutorials. No seed phrases. Just play.</p>
         </div>
-        <div class="col-md-4">
-          <div class="feature-card p-4 h-100">
-            <h4 class="text-center mb-3">2. Kingdom of Iberia (337 - 888 AD)</h4>
-            <p>Christianization period, including the legendary Queen Tamar's reign and the development of Georgian culture.</p>
-          </div>
+        <div class="card fade-in-up">
+          <div class="card-icon gold">&#9733;</div>
+          <h3>Skill &gt; Wallet</h3>
+          <p>Every gameplay-affecting item is earned through skill. A player who spends $0 has the exact same experience as someone who spends $1,000. SAKART tokens are earned by three-starring levels, not by swiping a credit card.</p>
         </div>
-        <div class="col-md-4">
-          <div class="feature-card p-4 h-100">
-            <h4 class="text-center mb-3">3. Medieval Kingdoms (888 - 1466)</h4>
-            <p>Golden age of Georgian art, literature, and architecture with the development of the Georgian Orthodox Church.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="feature-card p-4 h-100">
-            <h4 class="text-center mb-3">4. Georgian Principality (1466 - 1502)</h4>
-            <p>Period of division and conflict, leading to eventual unification.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="feature-card p-4 h-100">
-            <h4 class="text-center mb-3">5. Kingdom of Kartli (1502 - 1614)</h4>
-            <p>Reconstruction and renaissance period under the rule of the Bagrationi dynasty.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="feature-card p-4 h-100">
-            <h4 class="text-center mb-3">6. Russian Period (1614 - 1801)</h4>
-            <p>Influence of Russian rule and cultural integration with the broader European trends.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="feature-card p-4 h-100">
-            <h4 class="text-center mb-3">7. Russian Empire (1801 - 1917)</h4>
-            <p>Period of Russian control and gradual loss of autonomy.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="feature-card p-4 h-100">
-            <h4 class="text-center mb-3">8. Democratic Period (1918 - 1921)</h4>
-            <p>Moment of independence, with the rise of the Georgian Democratic Republic.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="feature-card p-4 h-100">
-            <h4 class="text-center mb-3">9. Soviet Period (1921 - 1991)</h4>
-            <p>Integration into the Soviet Union and eventual independence in 1991.</p>
-          </div>
+        <div class="card fade-in-up">
+          <div class="card-icon green">&#9760;</div>
+          <h3>History Drives Gameplay</h3>
+          <p>This isn't "culture as skin." Tower types, enemy formations, hero abilities, and map designs are all drawn from real Georgian history. You're not just playing a tower defense -- you're defending actual historical battles.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Call to Action -->
-  <section class="py-5 bg-light">
-    <div class="container text-center">
-      <h2 class="mb-4">Join Our Early Access</h2>
-      <p class="mb-4">Get notified when the first 3 eras (60 levels) launch. No spam, just updates on historical gameplay.</p>
-      <form class="d-flex justify-content-center mb-4" action="#">
-        <input type="email" class="form-control me-2" placeholder="Your email address" style="max-width: 350px;">
-        <button type="submit" class="btn cta-button px-4">Join Waitlist</button>
+  <div class="section-divider"></div>
+
+  <!-- The Nine Eras -->
+  <section class="section-dark" id="eras">
+    <div class="container">
+      <span class="section-label text-center">Nine Eras of Georgian History</span>
+      <h2 class="text-center">3,000 Years. One Epic Journey.</h2>
+      <p class="text-center" style="max-width: 640px; margin: 0 auto var(--space-2xl); color: var(--slate-light);">
+        Each era introduces unique towers, enemies, heroes, and mechanics. Eras are unlocked sequentially -- you cannot skip ahead. Launch scope: Eras 0-2 (60 levels).
+      </p>
+      <div class="era-grid stagger">
+
+        <div class="era-card" data-era="0">
+          <div class="era-number">Era 0 / Tutorial</div>
+          <h4>Ancient Colchis</h4>
+          <div class="era-period">~1500 BC - 500 BC</div>
+          <p>The legendary kingdom of the Golden Fleece. Dense forests, ancient stone ruins, the Black Sea coast. New player onboarding with simpler mechanics.</p>
+        </div>
+
+        <div class="era-card" data-era="1">
+          <div class="era-number">Era 1</div>
+          <h4>Unified Kartli -- Kingdom of Iberia</h4>
+          <div class="era-period">~300 BC - 300 AD</div>
+          <p>Early Georgian kingdoms unifying against Roman and Parthian influence. Introduces hero abilities and synergy mechanics.</p>
+        </div>
+
+        <div class="era-card" data-era="2">
+          <div class="era-number">Era 2</div>
+          <h4>Golden Age of Svaneti</h4>
+          <div class="era-period">~800 - 1200 AD</div>
+          <p>Svan tower-houses defending mountain passes against Arab raiders and Seljuk invaders. Advanced synergy chains in snow-capped fortresses.</p>
+        </div>
+
+        <div class="era-card" data-era="3">
+          <div class="era-number">Era 3</div>
+          <h4>Renaissance Imereti</h4>
+          <div class="era-period">~1200 - 1500 AD</div>
+          <p>Bagrationi dynasty cultural renaissance. Mongol hordes, Timurid war elephants. Introduces mastery scroll system.</p>
+        </div>
+
+        <div class="era-card" data-era="4">
+          <div class="era-number">Era 4</div>
+          <h4>Kakheti Wine Country</h4>
+          <div class="era-period">~1500 - 1700 AD</div>
+          <p>Wine, trade routes, and defense against Persian and Ottoman incursions. Flammable wine traps and gunpowder emplacements. Introduces PvP.</p>
+        </div>
+
+        <div class="era-card" data-era="5">
+          <div class="era-number">Era 5</div>
+          <h4>King Tamar's Reign</h4>
+          <div class="era-period">~1180 - 1220 AD</div>
+          <p>The zenith of Georgian power. Royal guard towers, cathedral cannons, battlefield engineering. Most complex synergy combinations.</p>
+        </div>
+
+        <div class="era-card" data-era="6">
+          <div class="era-number">Era 6</div>
+          <h4>Russian Annexation</h4>
+          <div class="era-period">~1800 - 1918 AD</div>
+          <p>The long occupation. Guerrilla defense towers, sabotage traps, resistance hideouts. Introduces survival mode.</p>
+        </div>
+
+        <div class="era-card" data-era="7">
+          <div class="era-number">Era 7</div>
+          <h4>First Republic</h4>
+          <div class="era-period">~1918 - 1921 AD</div>
+          <p>Brief independence between empires. Shortest era. Propaganda towers, diplomatic embassies. Final PvP tier.</p>
+        </div>
+
+        <div class="era-card" data-era="8">
+          <div class="era-number">Era 8</div>
+          <h4>Modern Georgia</h4>
+          <div class="era-period">~1991 - Present</div>
+          <p>Rose Revolution, the 2008 war, and modern identity. Hybrid warfare, cyber attacks, economic pressure as enemy types. Endgame content.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- How It Works -->
+  <section>
+    <div class="container">
+      <span class="section-label text-center">Core Game Loop</span>
+      <h2 class="text-center">How It Works</h2>
+      <div class="grid grid-2 stagger" style="max-width: 900px; margin: 0 auto;">
+        <div class="card fade-in-up">
+          <h3>Build Mazes</h3>
+          <p>Place walls to create winding paths. Position towers for overlapping kill zones. Every wall segment and tower position matters -- a well-designed maze turns basic towers into a devastating defense.</p>
+        </div>
+        <div class="card fade-in-up">
+          <h3>Command Heroes</h3>
+          <p>Directly control heroes from Georgian history and legend. Medea's toxic clouds, Queen Tamar's global damage boost, David the Builder's instant tower upgrades. Each hero has 2-3 active abilities with cooldowns.</p>
+        </div>
+        <div class="card fade-in-up">
+          <h3>Earn Stars</h3>
+          <p>1-3 stars per level based on performance. Stars are tracked per-difficulty (Normal, Hard, Elite). First-time star unlocks earn SAKART tokens. Replays earn zero -- no grinding, no farming.</p>
+        </div>
+        <div class="card fade-in-up">
+          <h3>Unlock Eras</h3>
+          <p>Three-star enough levels and pay a SAKART fee to unlock the next era. Each era brings new tower types, enemies, heroes, maps, and mechanics. The journey through Georgian history continues.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Tech Stack -->
+  <section class="section-dark">
+    <div class="container">
+      <span class="section-label text-center">Technology</span>
+      <h2 class="text-center">Solo-Dev Sustainable</h2>
+      <div class="grid grid-4 stagger" style="margin-top: var(--space-xl);">
+        <div class="card fade-in-up" style="text-align: center;">
+          <div class="card-icon blue" style="margin: 0 auto var(--space-md);">G</div>
+          <h4>Godot 4.x</h4>
+          <p>Free, open source, built-in PWA export. GDScript is fast for solo dev.</p>
+        </div>
+        <div class="card fade-in-up" style="text-align: center;">
+          <div class="card-icon blue" style="margin: 0 auto var(--space-md);">P</div>
+          <h4>PWA</h4>
+          <p>Zero server costs. Runs in any browser. Installable on mobile. No app store needed.</p>
+        </div>
+        <div class="card fade-in-up" style="text-align: center;">
+          <div class="card-icon blue" style="margin: 0 auto var(--space-md);">Z</div>
+          <h4>Immutable zkEVM</h4>
+          <p>Zero gas fees. Passport wallet abstraction. Players log in with email -- wallet is created automatically.</p>
+        </div>
+        <div class="card fade-in-up" style="text-align: center;">
+          <div class="card-icon green" style="margin: 0 auto var(--space-md);">$</div>
+          <h4>$1-42/month</h4>
+          <p>Total operating cost. Revenue from 1.8% marketplace fee scales naturally with player activity.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- CTA / Waitlist -->
+  <section class="cta-section" id="waitlist">
+    <div class="container">
+      <span class="section-label text-center">Early Access</span>
+      <h2 class="text-center">Join the Waitlist</h2>
+      <p class="text-center" style="max-width: 480px; margin: 0 auto var(--space-xl); color: var(--slate-light);">
+        Get notified when the first 3 eras (60 levels) launch. No spam, no crypto required. Just updates on historical tower defense gameplay.
+      </p>
+      <form style="display: flex; gap: var(--space-sm); max-width: 420px; margin: 0 auto; flex-wrap: wrap; justify-content: center;">
+        <input type="email" placeholder="Your email address" style="
+          flex: 1;
+          min-width: 200px;
+          padding: 12px 16px;
+          background: var(--surface-1);
+          border: 1px solid rgba(238,238,242,0.1);
+          border-radius: var(--radius-sm);
+          color: var(--spectral);
+          font-family: var(--font-primary);
+          font-size: 0.9375rem;
+          outline: none;
+          transition: border-color 0.3s;
+        " onfocus="this.style.borderColor='rgba(238,238,242,0.3)'" onblur="this.style.borderColor='rgba(238,238,242,0.1)'">
+        <button type="submit" class="btn btn-primary">Join Waitlist</button>
       </form>
-      <small class="text-muted">We'll never share your email. All updates about historical gameplay mechanics will be sent here.</small>
+      <p style="font-size: 0.75rem; color: var(--slate); margin-top: var(--space-md); margin-bottom: 0;">
+        We'll never share your email. No blockchain knowledge required.
+      </p>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="py-4 bg-dark text-white">
-    <div class="container text-center">
-      <p class="mb-0">&copy; 2026 Sakartvelo Defenders | A cultural celebration through historical gameplay</p>
-      <small class="mt-2">No blockchain knowledge required. Earn tokens through skill, not wallet size.</small>
-      <div class="mt-3">
-        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
-        <a href="#" class="text-white me-3"><i class="fab fa-discord"></i></a>
-        <a href="#" class="text-white me-3"><i class="fab fa-github"></i></a>
-        <a href="#" class="text-white me-3"><i class="fab fa-youtube"></i></a>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-left">
+          <p>&copy; 2026 Sakartvelo Defenders. A cultural celebration through historical gameplay.</p>
+          <p class="footer-georgian">საქართველო</p>
+        </div>
+        <div class="footer-right">
+          <a href="https://twitter.com" target="_blank">Twitter</a>
+          <a href="https://discord.gg" target="_blank">Discord</a>
+          <a href="https://github.com" target="_blank">GitHub</a>
+          <a href="https://youtube.com" target="_blank">YouTube</a>
+        </div>
       </div>
     </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/main.js"></script>
+  <script>
+    // Mobile nav toggle
+    const toggle = document.getElementById('navToggle');
+    const links = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth' });
+        links.classList.remove('open');
+      });
+    });
+
+    // Intersection Observer for fade-in animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in-up');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.card, .era-card').forEach(el => observer.observe(el));
+  </script>
+
 </body>
 </html>
