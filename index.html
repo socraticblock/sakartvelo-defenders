@@ -4,21 +4,48 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sakartvelo Defenders - Historical Tower Defense with Blockchain</title>
+  <meta name="description" content="Sakartvelo Defenders: The world's first tower defense game rooted in 9 historical eras of Georgian culture with blockchain integration.">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    :root { --georgia-green: #007b3d; --georgia-red: #d62e2d; }
-    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-    .hero { background: linear-gradient(135deg, #1a2a6c, #2c3e50); color: white; }
-    .feature-card { border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-    .cta-button { background: var(--georgia-red); border: none; }
-  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Sakartvelo Defenders</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gameplay.html">Gameplay</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blockchain.html">Blockchain</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
   <!-- Hero Section -->
   <section class="hero py-5">
     <div class="container text-center">
-      <h1 class="display-3 fw-bold mb-4">Sakartvelo Defenders</h1>
-      <p class="lead mb-5">The world's first tower defense game rooted in 9 historical eras of Georgian culture</p>
+      <h1 class="display-1 fw-bold mb-4">Sakartvelo Defenders</h1>
+      <p class="lead mb-5">The world's first tower defense game rooted in 9 historical eras of Georgian culture, with blockchain integration</p>
       <a href="#features" class="btn btn-lg cta-button px-5 py-3 fw-bold">Discover History</a>
     </div>
   </section>
@@ -30,23 +57,92 @@
       <div class="row g-4">
         <div class="col-md-4">
           <div class="feature-card p-4 h-100">
-            <h3 class="text-center mb-3"><i class="bi bi-flag"></i></h3>
+            <div class="text-center mb-3">
+              <i class="fas fa-flag"></i>
+            </div>
             <h4 class="mb-3 text-center">Authentic Cultural Depth</h4>
             <p>Each era (1,500 BC - present) features historically accurate battles, enemies, and mechanics. No 'culture as skin' - history drives gameplay itself.</p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="feature-card p-4 h-100">
-            <h3 class="text-center mb-3"><i class="bi bi-cash-stack"></i></h3>
+            <div class="text-center mb-3">
+              <i class="fas fa-cash-stack"></i>
+            </div>
             <h4 class="mb-3 text-center">Blockchain Done Right</h4>
             <p>Zero wallet friction, skill-based SAKART rewards, and 1.8% transparent fee. No pay-to-win, no seed phrases.</p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="feature-card p-4 h-100">
-            <h3 class="text-center mb-3"><i class="bi bi-person-workspace"></i></h3>
+            <div class="text-center mb-3">
+              <i class="fas fa-person-workspace"></i>
+            </div>
             <h4 class="mb-3 text-center">Solo-Dev Sustainable</h4>
             <p>Built for $100/month hosting with no servers. Game state stored off-chain, blockchain only for tokens.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Historical Eras -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">Nine Historical Eras of Georgia</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="feature-card p-4 h-100">
+            <h4 class="text-center mb-3">1. Mtskheta Period (1500 BC - 337 AD)</h4>
+            <p>Early Georgian kingdoms, including the legendary city of Mtskheta and early Christian influences.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card p-4 h-100">
+            <h4 class="text-center mb-3">2. Kingdom of Iberia (337 - 888 AD)</h4>
+            <p>Christianization period, including the legendary Queen Tamar's reign and the development of Georgian culture.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card p-4 h-100">
+            <h4 class="text-center mb-3">3. Medieval Kingdoms (888 - 1466)</h4>
+            <p>Golden age of Georgian art, literature, and architecture with the development of the Georgian Orthodox Church.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card p-4 h-100">
+            <h4 class="text-center mb-3">4. Georgian Principality (1466 - 1502)</h4>
+            <p>Period of division and conflict, leading to eventual unification.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card p-4 h-100">
+            <h4 class="text-center mb-3">5. Kingdom of Kartli (1502 - 1614)</h4>
+            <p>Reconstruction and renaissance period under the rule of the Bagrationi dynasty.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card p-4 h-100">
+            <h4 class="text-center mb-3">6. Russian Period (1614 - 1801)</h4>
+            <p>Influence of Russian rule and cultural integration with the broader European trends.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card p-4 h-100">
+            <h4 class="text-center mb-3">7. Russian Empire (1801 - 1917)</h4>
+            <p>Period of Russian control and gradual loss of autonomy.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card p-4 h-100">
+            <h4 class="text-center mb-3">8. Democratic Period (1918 - 1921)</h4>
+            <p>Moment of independence, with the rise of the Georgian Democratic Republic.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card p-4 h-100">
+            <h4 class="text-center mb-3">9. Soviet Period (1921 - 1991)</h4>
+            <p>Integration into the Soviet Union and eventual independence in 1991.</p>
           </div>
         </div>
       </div>
@@ -71,9 +167,16 @@
     <div class="container text-center">
       <p class="mb-0">&copy; 2026 Sakartvelo Defenders | A cultural celebration through historical gameplay</p>
       <small class="mt-2">No blockchain knowledge required. Earn tokens through skill, not wallet size.</small>
+      <div class="mt-3">
+        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-white me-3"><i class="fab fa-discord"></i></a>
+        <a href="#" class="text-white me-3"><i class="fab fa-github"></i></a>
+        <a href="#" class="text-white me-3"><i class="fab fa-youtube"></i></a>
+      </div>
     </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
