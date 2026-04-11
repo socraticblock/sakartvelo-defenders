@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gameplay — Sakartvelo Defenders</title>
-  <meta name="description" content="Master the core mechanics of Sakartvelo Defenders: maze-building tower defense, hero command, tower synergies, and the progression system across 9 eras of Georgian history.">
+  <meta name="description" content="Master the core mechanics of Sakartvelo Defenders: 10 tower types, hero command, tower synergies, scrolls, PvP, survival mode, and the progression system across 10 eras of Georgian history.">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -36,7 +36,7 @@
       <span class="small-caps" style="margin-bottom: 16px; display: block;">Build. Defend. Command.</span>
       <h1>Master the <span class="accent">Battlefield</span></h1>
       <p class="subtitle">
-        Maze-building tower defense meets real-time hero command. Every wall matters, every tower synergizes, every hero ability turns the tide. Here's how it works.
+        10 tower types, real-time hero command, scroll-based tactics, and tower synergies across 200 levels of Georgian history. Here's how it works.
       </p>
     </div>
   </section>
@@ -55,22 +55,22 @@
         <div class="card fade-in-up">
           <div class="card-icon red">&#9962;</div>
           <h3>Build</h3>
-          <p>Place walls to shape enemy paths into mazes. Position towers behind walls for maximum coverage. Terrain — rivers, cliffs, ruins — constrains your layout. Every placement is a commitment.</p>
+          <p>Place towers strategically during a build phase. Assess the map layout, choose your tower composition, and position for maximum coverage. Every placement is a commitment.</p>
         </div>
         <div class="card fade-in-up">
           <div class="card-icon gold">&#9876;</div>
           <h3>Defend</h3>
-          <p>Waves crash against your maze. Towers auto-attack based on type, range, and targeting priority. Enemies follow the path you built — or breach your walls if you left a gap. Adapt in real-time.</p>
+          <p>Enemy waves advance along predetermined paths. Towers auto-attack based on type, range, and targeting priority. Manage your economy — earn resources from kills to build or upgrade.</p>
         </div>
         <div class="card fade-in-up">
           <div class="card-icon green">&#9733;</div>
           <h3>Command</h3>
-          <p>Your hero isn't a statue — you command them directly. Activate abilities on cooldown: area damage, buffs, repositioning, emergency heals. Timing a hero ability at the right moment saves runs.</p>
+          <p>Your hero isn't a statue — trigger 3 active abilities on cooldown: basic (15-20s), advanced (45-60s), and ultimate (120-180s). Timing a hero ability at the right moment saves runs.</p>
         </div>
         <div class="card fade-in-up">
           <div class="card-icon blue">&#9734;</div>
           <h3>Earn</h3>
-          <p>Complete levels to earn gold, stars, and SAKART tokens. Stars unlock the next era. Mastery scrolls unlock harder modes. No pay-to-win — every reward comes from skill, not wallet size.</p>
+          <p>1-3 stars per level. First-time star unlocks earn SAKART tokens. Each star can only be earned once — no replay farming. The progression is pure skill.</p>
         </div>
       </div>
     </div>
@@ -82,22 +82,22 @@
   <section class="section-dark" id="towers">
     <div class="container">
       <span class="section-label text-center">Tower System</span>
-      <h2 class="text-center">Five Archetypes. Infinite Combos.</h2>
+      <h2 class="text-center">Ten Tower Types. Infinite Combos.</h2>
       <p class="text-center" style="max-width: 640px; margin: 0 auto var(--space-2xl); color: var(--slate-light);">
-        Every tower fits one of five categories. Each era reskins them historically — stone throwers become cannon, fire oil becomes naptha — but the mechanics remain consistent and deep.
+        Each tower is introduced one per era, reflecting the military technology of that period. Newer towers add strategic options — they never render older towers obsolete. Every tower upgradeable through 3 levels.
       </p>
-      <div class="grid grid-3 stagger">
+      <div class="grid grid-2 stagger">
 
-        <!-- Basic Tower -->
+        <!-- Archer Tower -->
         <div class="game-card fade-in-up">
           <div class="gc-header">
-            <div class="gc-icon" style="background: rgba(100,116,139,0.15); color: var(--slate-light);">&#9670;</div>
+            <div class="gc-icon" style="background: rgba(100,116,139,0.15); color: var(--slate-light);">&#127993;</div>
             <div>
-              <h4>Basic</h4>
-              <span class="badge badge-red">Single Target</span>
+              <h4>Archer Tower</h4>
+              <span class="badge badge-green">Era 0 — Single-Target DPS</span>
             </div>
           </div>
-          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">Stone throwers, slingers, crossbowmen, riflemen. Reliable single-target DPS at low cost. The backbone of every defense. Upgradable for faster attack speed and longer range.</p>
+          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">Basic single-target damage at low cost. Fast attack speed, reliable output. The backbone of every defense from Ancient Colchis to modern Georgia. Level 3 gains critical hit chance.</p>
           <div class="gc-stats">
             <div class="gc-stat">Cost <span>Low</span></div>
             <div class="gc-stat">Damage <span>Medium</span></div>
@@ -105,74 +105,173 @@
           </div>
         </div>
 
-        <!-- Splash Tower -->
+        <!-- Catapult/Trebuchet -->
         <div class="game-card fade-in-up">
           <div class="gc-header">
             <div class="gc-icon" style="background: rgba(214,46,45,0.12); color: var(--geo-red);">&#9733;</div>
             <div>
-              <h4>Splash</h4>
-              <span class="badge badge-red">Area Damage</span>
+              <h4>Catapult / Trebuchet</h4>
+              <span class="badge badge-red">Era 0 — Area Damage</span>
             </div>
           </div>
-          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">Fire oil, Greek fire, naphtha pots, early cannon. Deals area damage on impact. Devastating against clustered waves. Careful placement at maze chokepoints multiplies effectiveness.</p>
+          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">Area-of-effect splash damage. Devastating against clustered waves. Careful placement at maze chokepoints multiplies effectiveness. Level 3 gains increased splash radius.</p>
           <div class="gc-stats">
             <div class="gc-stat">Cost <span>Medium</span></div>
             <div class="gc-stat">Damage <span>High (AoE)</span></div>
-            <div class="gc-stat">Range <span>Short</span></div>
+            <div class="gc-stat">Range <span>Medium-Long</span></div>
           </div>
         </div>
 
-        <!-- Slow Tower -->
+        <!-- Wall/Barrier -->
         <div class="game-card fade-in-up">
           <div class="gc-header">
-            <div class="gc-icon" style="background: rgba(0,123,61,0.12); color: var(--geo-green);">&#10052;</div>
+            <div class="gc-icon" style="background: rgba(100,116,139,0.15); color: var(--slate-light);">&#9645;</div>
             <div>
-              <h4>Slow</h4>
-              <span class="badge badge-green">Crowd Control</span>
+              <h4>Wall / Barrier</h4>
+              <span class="badge badge-green">Era 0 — Path Control</span>
             </div>
           </div>
-          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">Net throwers, ice mages, caltrop fields, barbed wire. Reduces enemy movement speed dramatically. Pairs with Splash towers for devastating kill zones. Essential on longer mazes.</p>
+          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">Blocks enemy paths and redirects movement. Creates winding mazes that maximize tower coverage. Wooden palisades evolve into stone walls, Soviet barricades, and modern barriers across eras.</p>
+          <div class="gc-stats">
+            <div class="gc-stat">Cost <span>Low</span></div>
+            <div class="gc-stat">Damage <span>None</span></div>
+            <div class="gc-stat">Effect <span>Path Redirection</span></div>
+          </div>
+        </div>
+
+        <!-- Cavalry Outpost -->
+        <div class="game-card fade-in-up">
+          <div class="gc-header">
+            <div class="gc-icon" style="background: rgba(214,46,45,0.12); color: var(--geo-red);">&#9876;</div>
+            <div>
+              <h4>Cavalry Outpost</h4>
+              <span class="badge badge-red">Era 1 — Fast Patrol</span>
+            </div>
+          </div>
+          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">Fast patrol units that intercept enemies along the path. High mobility, ideal for catching speed runners and plugging gaps in your defense. Iberian horsemen evolve through Georgian knights to modern cavalry.</p>
           <div class="gc-stats">
             <div class="gc-stat">Cost <span>Medium</span></div>
-            <div class="gc-stat">Damage <span>Low</span></div>
-            <div class="gc-stat">Effect <span>-50% Speed</span></div>
+            <div class="gc-stat">Damage <span>Medium</span></div>
+            <div class="gc-stat">Speed <span>Fast</span></div>
           </div>
         </div>
 
-        <!-- Amplify Tower -->
+        <!-- Siege Tower -->
         <div class="game-card fade-in-up">
           <div class="gc-header">
-            <div class="gc-icon" style="background: var(--geo-gold-dim); color: var(--geo-gold);">&#9834;</div>
+            <div class="gc-icon" style="background: var(--geo-gold-dim); color: var(--geo-gold);">&#9881;</div>
             <div>
-              <h4>Amplify</h4>
-              <span class="badge badge-gold">Buff Adjacent</span>
+              <h4>Siege Tower</h4>
+              <span class="badge badge-gold">Era 2 — Heavy Damage</span>
             </div>
           </div>
-          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">War drums, signal flags, religious icons, war horns. Does not attack — instead boosts adjacent towers' damage, speed, or range. Stacking amplifiers creates devastating synergy corridors.</p>
+          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">Heavy damage, slow attack speed, excels against armored targets and structures. Fortified gatehouses and battlements designed to crack the toughest enemies of the Age of Invasions.</p>
           <div class="gc-stats">
             <div class="gc-stat">Cost <span>High</span></div>
-            <div class="gc-stat">Damage <span>None</span></div>
-            <div class="gc-stat">Buff <span>+25-40%</span></div>
+            <div class="gc-stat">Damage <span>Very High</span></div>
+            <div class="gc-stat">Speed <span>Slow</span></div>
           </div>
         </div>
 
-        <!-- Special Tower -->
+        <!-- Magic/Shrine Tower -->
         <div class="game-card fade-in-up">
           <div class="gc-header">
-            <div class="gc-icon" style="background: rgba(240,192,64,0.15); color: var(--geo-gold);">&#9883;</div>
+            <div class="gc-icon" style="background: rgba(240,192,64,0.15); color: var(--geo-gold);">&#10023;</div>
             <div>
-              <h4>Special</h4>
-              <span class="badge badge-gold">Era-Unique</span>
+              <h4>Magic / Shrine Tower</h4>
+              <span class="badge badge-gold">Era 3 — Buff/Debuff</span>
             </div>
           </div>
-          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">Unique per era — Golden Fleece artifacts in Colchis, Svan tower-house ballistae, Kakhetian wine trap barrels, Soviet-era radar jammers. Mechanics change each era. Always game-changing.</p>
+          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">Crowd control and buff/debuff effects. Church shrines and monasteries that slow enemies, weaken armor, or boost nearby towers. Essential for Golden Age synergy combinations.</p>
           <div class="gc-stats">
-            <div class="gc-stat">Cost <span>Very High</span></div>
-            <div class="gc-stat">Effect <span>Unique</span></div>
-            <div class="gc-stat">Limit <span>1-2 per map</span></div>
+            <div class="gc-stat">Cost <span>High</span></div>
+            <div class="gc-stat">Damage <span>Low</span></div>
+            <div class="gc-stat">Effect <span>Crowd Control</span></div>
           </div>
         </div>
 
+        <!-- Gunpowder Tower -->
+        <div class="game-card fade-in-up">
+          <div class="gc-header">
+            <div class="gc-icon" style="background: rgba(214,46,45,0.12); color: var(--geo-red);">&#9883;</div>
+            <div>
+              <h4>Gunpowder Tower</h4>
+              <span class="badge badge-red">Era 5 — Long Range</span>
+            </div>
+          </div>
+          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">Long-range piercing projectiles that hit multiple enemies in a line. Cannon emplacements and musketry positions reflecting the early modern warfare between Ottoman and Persian empires.</p>
+          <div class="gc-stats">
+            <div class="gc-stat">Cost <span>High</span></div>
+            <div class="gc-stat">Damage <span>High (Piercing)</span></div>
+            <div class="gc-stat">Range <span>Very Long</span></div>
+          </div>
+        </div>
+
+        <!-- Industrial Tower -->
+        <div class="game-card fade-in-up">
+          <div class="gc-header">
+            <div class="gc-icon" style="background: rgba(100,116,139,0.15); color: var(--slate-light);">&#9889;</div>
+            <div>
+              <h4>Industrial Tower</h4>
+              <span class="badge badge-green">Era 6 — Rapid Fire</span>
+            </div>
+          </div>
+          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">Rapid-fire multi-target suppression. Machine gun nests and artillery emplacements of the Russian Empire era. Hoses down infantry swarms and suppresses cavalry charges with overwhelming fire rate.</p>
+          <div class="gc-stats">
+            <div class="gc-stat">Cost <span>Medium-High</span></div>
+            <div class="gc-stat">Damage <span>Medium (Multi)</span></div>
+            <div class="gc-stat">Speed <span>Very Fast</span></div>
+          </div>
+        </div>
+
+        <!-- Bunker Tower -->
+        <div class="game-card fade-in-up">
+          <div class="gc-header">
+            <div class="gc-icon" style="background: rgba(100,116,139,0.15); color: var(--slate-light);">&#9632;</div>
+            <div>
+              <h4>Bunker Tower</h4>
+              <span class="badge badge-green">Era 8 — Heavy Armor</span>
+            </div>
+          </div>
+          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">Reinforced concrete bunkers and pillboxes. Massive survivability — can absorb damage that would destroy other towers. Soviet-era fortifications that hold the line when all else fails.</p>
+          <div class="gc-stats">
+            <div class="gc-stat">Cost <span>Very High</span></div>
+            <div class="gc-stat">Armor <span>Extreme</span></div>
+            <div class="gc-stat">Survivability <span>Maximum</span></div>
+          </div>
+        </div>
+
+        <!-- Tech Tower -->
+        <div class="game-card fade-in-up">
+          <div class="gc-header">
+            <div class="gc-icon" style="background: var(--geo-gold-dim); color: var(--geo-gold);">&#128225;</div>
+            <div>
+              <h4>Tech Tower</h4>
+              <span class="badge badge-gold">Era 9 — Precision</span>
+            </div>
+          </div>
+          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">Precision strikes and drone support platforms. Modern military outposts with guided targeting. Can mark enemies for other towers to focus. The pinnacle of tower technology in the final era.</p>
+          <div class="gc-stats">
+            <div class="gc-stat">Cost <span>Very High</span></div>
+            <div class="gc-stat">Damage <span>High (Precision)</span></div>
+            <div class="gc-stat">Effect <span>Target Marking</span></div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Synergy + Elevation -->
+      <div class="grid grid-2 stagger" style="margin-top: var(--space-2xl);">
+        <div class="card fade-in-up" style="border-left: 3px solid var(--geo-gold);">
+          <div class="card-icon gold">&#9874;</div>
+          <h3>Tower Synergy System</h3>
+          <p>Place specific tower combinations within a 3-tile adjacency radius to activate powerful synergy bonuses. Archer + Cavalry increases attack speed. Shrine + Wall creates a slowing zone. Each era introduces 2-3 new combos, building to a rich strategic toolkit.</p>
+        </div>
+        <div class="card fade-in-up" style="border-left: 3px solid var(--geo-green);">
+          <div class="card-icon green">&#9968;</div>
+          <h3>Elevation Mechanic</h3>
+          <p>Towers placed on elevated positions gain +15-20% range. Projectile towers also receive a damage bonus from improved attack angle. The best elevated positions are the most exposed — creating risk-reward decisions on every map.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -185,46 +284,47 @@
       <span class="section-label text-center">Enemy Forces</span>
       <h2 class="text-center">Know Thy Enemy</h2>
       <p class="text-center" style="max-width: 640px; margin: 0 auto var(--space-2xl); color: var(--slate-light);">
-        Enemy composition shifts every era. From ancient tribal raiders to Mongol siege engines to Soviet armor — each wave demands a different defensive approach.
+        Five enemy categories with era-specific variants. From tribal warriors to mechanized infantry — each wave demands a different defensive approach.
       </p>
-      <div class="grid grid-3 stagger">
+      <div class="grid grid-3 stagger" style="max-width: 900px; margin: 0 auto;">
 
         <div class="card fade-in-up">
           <div class="card-icon red">&#9876;</div>
-          <h3>Infantry Swarms</h3>
-          <p>Fast, numerous, individually weak. Ancient tribal warriors, Arab raiders, Ottoman janissaries. They overwhelm through sheer numbers. Splash towers and slow fields are the answer.</p>
+          <h3>Infantry</h3>
+          <p>Standard path movement at moderate speed and HP. The backbone of most waves. Ancient tribal warriors, Arab raiders, Ottoman janissaries, Soviet conscripts. Splash towers and chokepoints handle them.</p>
         </div>
 
         <div class="card fade-in-up">
           <div class="card-icon gold">&#9760;</div>
-          <h3>Armored Units</h3>
-          <p>Slow, tough, resistant to basic damage. Mongol heavy cavalry, Timurid war elephants, Persian siege towers. Require focused fire from upgraded Basic towers or Special abilities to crack.</p>
+          <h3>Cavalry</h3>
+          <p>Faster movement and higher HP than infantry. Mongol horse archers with hit-and-run tactics, Persian heavy cavalry, Soviet armor. Require focused fire and speed-reducing effects to counter.</p>
         </div>
 
         <div class="card fade-in-up">
           <div class="card-icon green">&#9762;</div>
-          <h3>Elites &amp; Bosses</h3>
-          <p>Era-ending boss enemies with unique mechanics. Persian Immortals that revive once. Mongol Khans that buff nearby units. Boss levels demand hero abilities and maze optimization.</p>
+          <h3>Siege Units</h3>
+          <p>Slow but devastating — they attack your towers directly. Battering rams, catapults, cannon. They don't follow the path — they destroy it. Forces you to defend the maze itself.</p>
         </div>
 
         <div class="card fade-in-up">
           <div class="card-icon blue">&#9889;</div>
-          <h3>Speed Runners</h3>
-          <p>Scouts, cavalry, and raiders that move at double speed with low HP. They race through mazes before towers can cycle. Slow towers and hero area attacks are critical to stop them.</p>
+          <h3>Flying Units</h3>
+          <p>Ignore path constraints entirely. Only targeted by towers with anti-air capabilities. Mythological devi in early eras, reconnaissance aircraft in later ones. Demands diverse tower compositions.</p>
         </div>
 
         <div class="card fade-in-up">
           <div class="card-icon red">&#9764;</div>
-          <h3>Healers &amp; Buffers</h3>
-          <p>Shamans, priests, and medics that heal or shield nearby enemies. Prioritize them with manual targeting — if a healer reaches the middle of a swarm, the wave stalls and leaks.</p>
+          <h3>Support Enemies</h3>
+          <p>Heal or shield nearby enemies. Shamans, medics, propaganda units. Prioritize them immediately — if a healer reaches the middle of a swarm, the wave stalls and leaks through.</p>
         </div>
 
-        <div class="card fade-in-up">
-          <div class="card-icon gold">&#9813;</div>
-          <h3>Siege Engines</h3>
-          <p>Battering rams, catapults, and cannon that directly attack your walls and towers. They don't follow the path — they destroy it. Forces you to defend the maze itself, not just the endpoint.</p>
-        </div>
+      </div>
 
+      <div class="card fade-in-up" style="max-width: 700px; margin: var(--space-2xl) auto 0; text-align: center; border-top: 3px solid var(--geo-red);">
+        <h3>Boss Encounters</h3>
+        <p style="margin-bottom: 0;">
+          At the end of every 5th level (levels 5, 10, 15, 20), face named historical or mythological bosses with multi-phase fights. The Colchian Dragon, the Arab Emir of Tbilisi, Mongol General Subutai's proxy, Agha Mohammad Khan — each requires specific strategies and diverse tower compositions to defeat.
+        </p>
       </div>
     </div>
   </section>
@@ -237,7 +337,7 @@
       <span class="section-label text-center">Hero System</span>
       <h2 class="text-center">Legends Walk the Battlefield</h2>
       <p class="text-center" style="max-width: 640px; margin: 0 auto var(--space-2xl); color: var(--slate-light);">
-        Each hero has 2-3 active abilities with cooldowns. You command them directly — positioning, timing, and ability combos define high-level play. Each era introduces new heroes drawn from Georgian history and legend.
+        Each hero has 3 active abilities: basic (15-20s cooldown), advanced (45-60s), and ultimate (120-180s). Heroes are era-specific — they can only be used in levels from their historical period. Defeated heroes enter a redeployment cooldown.
       </p>
       <div class="grid grid-2 stagger">
 
@@ -250,12 +350,74 @@
               <span class="badge badge-green">Era 0 — Ancient Colchis</span>
             </div>
           </div>
-          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">The legendary sorceress of Colchis. Master of poisons and ancient toxins. Enemies that enter her zone take increasing damage over time. Her ultimate coats an entire lane in toxic mist.</p>
+          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">The Colchian princess and legendary sorceress. Reclaimed in Georgian tradition as a powerful local figure. Provides poison damage to enemies and healing buffs for nearby towers.</p>
           <div class="gc-stats">
-            <div class="gc-stat">Type <span>Poison / Toxic</span></div>
-            <div class="gc-stat">Ability 1 <span>Toxic Cloud</span></div>
-            <div class="gc-stat">Ability 2 <span>Venomous Chains</span></div>
-            <div class="gc-stat">Ultimate <span>Miasma</span></div>
+            <div class="gc-stat">Type <span>Support / Control</span></div>
+            <div class="gc-stat">Key Ability <span>Poison + Tower Healing</span></div>
+          </div>
+        </div>
+
+        <!-- King Pharnavaz -->
+        <div class="game-card fade-in-up">
+          <div class="gc-header">
+            <div class="gc-icon" style="background: var(--geo-gold-dim); color: var(--geo-gold); font-size: 1.25rem;">&#9813;</div>
+            <div>
+              <h4>King Pharnavaz</h4>
+              <span class="badge badge-gold">Era 1 — Kingdom of Iberia</span>
+            </div>
+          </div>
+          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">Founder of the Iberian kingdom. Provides kingdom-wide buff abilities that boost the economy and reduce tower costs — reflecting his historical role as state builder and reformer.</p>
+          <div class="gc-stats">
+            <div class="gc-stat">Type <span>Kingdom Buff</span></div>
+            <div class="gc-stat">Key Ability <span>Economy Boost, Reduced Costs</span></div>
+          </div>
+        </div>
+
+        <!-- Saint Nino -->
+        <div class="game-card fade-in-up">
+          <div class="gc-header">
+            <div class="gc-icon" style="background: rgba(100,116,139,0.15); color: var(--slate-light); font-size: 1.25rem;">&#10013;</div>
+            <div>
+              <h4>Saint Nino</h4>
+              <span class="badge badge-green">Era 1 — Kingdom of Iberia</span>
+            </div>
+          </div>
+          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">The woman who Christianized Georgia in the 4th century. Healer and protector — shields towers from damage and projects a slow aura that reduces enemy movement speed in a wide radius.</p>
+          <div class="gc-stats">
+            <div class="gc-stat">Type <span>Healer</span></div>
+            <div class="gc-stat">Key Ability <span>Tower Shield, Enemy Slow Aura</span></div>
+          </div>
+        </div>
+
+        <!-- Vakhtang Gorgasali -->
+        <div class="game-card fade-in-up">
+          <div class="gc-header">
+            <div class="gc-icon" style="background: rgba(214,46,45,0.12); color: var(--geo-red); font-size: 1.25rem;">&#9876;</div>
+            <div>
+              <h4>Vakhtang Gorgasali</h4>
+              <span class="badge badge-red">Era 1 — Kingdom of Iberia</span>
+            </div>
+          </div>
+          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">The Wolf-Lion King who founded Tbilisi. Military commander whose aggressive abilities boost tower damage in an area, reflecting his legendary battlefield prowess and relentless campaigns.</p>
+          <div class="gc-stats">
+            <div class="gc-stat">Type <span>Offense</span></div>
+            <div class="gc-stat">Key Ability <span>Area Damage Boost</span></div>
+          </div>
+        </div>
+
+        <!-- David IV -->
+        <div class="game-card fade-in-up">
+          <div class="gc-header">
+            <div class="gc-icon" style="background: rgba(214,46,45,0.12); color: var(--geo-red); font-size: 1.25rem;">&#9962;</div>
+            <div>
+              <h4>David IV (David the Builder)</h4>
+              <span class="badge badge-red">Era 3 — Georgian Golden Age</span>
+            </div>
+          </div>
+          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">The great reformer king who defeated the Seljuk Turks at the Battle of Didgori. Provides military leadership buffs that increase global tower damage and reduce upgrade costs across the map.</p>
+          <div class="gc-stats">
+            <div class="gc-stat">Type <span>Offense / Leadership</span></div>
+            <div class="gc-stat">Key Ability <span>Global Damage Buff, Cost Reduction</span></div>
           </div>
         </div>
 
@@ -265,112 +427,182 @@
             <div class="gc-icon" style="background: var(--geo-gold-dim); color: var(--geo-gold); font-size: 1.25rem;">&#9813;</div>
             <div>
               <h4>Queen Tamar</h4>
-              <span class="badge badge-gold">Era 5 — Golden Age</span>
+              <span class="badge badge-gold">Era 3 — Georgian Golden Age</span>
             </div>
           </div>
-          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">The king of kings. Tamar's presence on the battlefield inspires all towers and units globally. Her buff scales with the number of tower types in play — synergy builds are her domain.</p>
+          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">The king of kings. Tamar's diplomatic and governance abilities generate bonus resources and provide temporary invulnerability to structures, reflecting her reign of unprecedented prosperity and strength.</p>
           <div class="gc-stats">
-            <div class="gc-stat">Type <span>Global Buff</span></div>
-            <div class="gc-stat">Ability 1 <span>Royal Decree</span></div>
-            <div class="gc-stat">Ability 2 <span>Divine Shield</span></div>
-            <div class="gc-stat">Ultimate <span>Golden Age</span></div>
+            <div class="gc-stat">Type <span>Defense / Economy</span></div>
+            <div class="gc-stat">Key Ability <span>Resource Gen, Tower Invulnerability</span></div>
           </div>
         </div>
 
-        <!-- David the Builder -->
+        <!-- Shota Rustaveli -->
         <div class="game-card fade-in-up">
           <div class="gc-header">
-            <div class="gc-icon" style="background: rgba(214,46,45,0.12); color: var(--geo-red); font-size: 1.25rem;">&#9962;</div>
+            <div class="gc-icon" style="background: rgba(0,123,61,0.12); color: var(--geo-green); font-size: 1.25rem;">&#9998;</div>
             <div>
-              <h4>David the Builder</h4>
-              <span class="badge badge-red">Era 2 — Renaissance</span>
+              <h4>Shota Rustaveli</h4>
+              <span class="badge badge-green">Era 3 — Georgian Golden Age</span>
             </div>
           </div>
-          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">The great reformer king. David instantly upgrades towers in an area — no gold cost, no wait time. In emergencies, he can rebuild destroyed walls. The ultimate tempo hero for aggressive strategies.</p>
+          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">Georgia's greatest poet, author of 'The Knight in the Panther's Skin.' His morale-boosting presence increases attack speed for all towers on the map — an inspired defense is a deadly defense.</p>
           <div class="gc-stats">
-            <div class="gc-stat">Type <span>Instant Upgrade</span></div>
-            <div class="gc-stat">Ability 1 <span>Fortify</span></div>
-            <div class="gc-stat">Ability 2 <span>Rebuild</span></div>
-            <div class="gc-stat">Ultimate <span>Builder's Will</span></div>
+            <div class="gc-stat">Type <span>Morale Boost</span></div>
+            <div class="gc-stat">Key Ability <span>Global Attack Speed Increase</span></div>
           </div>
         </div>
 
-        <!-- Giorgi Saakadze -->
+        <!-- King Erekle II -->
         <div class="game-card fade-in-up">
           <div class="gc-header">
-            <div class="gc-icon" style="background: rgba(214,46,45,0.12); color: var(--geo-red); font-size: 1.25rem;">&#9876;</div>
+            <div class="gc-icon" style="background: rgba(100,116,139,0.15); color: var(--slate-light); font-size: 1.25rem;">&#127790;</div>
             <div>
-              <h4>Giorgi Saakadze</h4>
-              <span class="badge badge-red">Era 4 — Kakheti</span>
+              <h4>King Erekle II</h4>
+              <span class="badge badge-green">Era 5 — Between Empires</span>
             </div>
           </div>
-          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">The Grand Mouravi. Cavalry commander who charges across the battlefield, trampling enemies in a line. His flanking strikes deal bonus damage to enemies already engaged by towers. Pure aggression.</p>
+          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">The last great Georgian king, caught between Ottoman and Persian empires. Combines military leadership with diplomatic finesse — temporarily reduces all enemy damage and generates emergency resources.</p>
           <div class="gc-stats">
-            <div class="gc-stat">Type <span>Cavalry / Melee</span></div>
-            <div class="gc-stat">Ability 1 <span>Cavalry Charge</span></div>
-            <div class="gc-stat">Ability 2 <span>Flanking Strike</span></div>
-            <div class="gc-stat">Ultimate <span>Mouravi's Fury</span></div>
+            <div class="gc-stat">Type <span>Defense / Diplomacy</span></div>
+            <div class="gc-stat">Key Ability <span>Enemy Damage Reduction</span></div>
+          </div>
+        </div>
+
+        <!-- Ilia Chavchavadze -->
+        <div class="game-card fade-in-up">
+          <div class="gc-header">
+            <div class="gc-icon" style="background: var(--geo-gold-dim); color: var(--geo-gold); font-size: 1.25rem;">&#128214;</div>
+            <div>
+              <h4>Ilia Chavchavadze</h4>
+              <span class="badge badge-gold">Era 6 — Russian Empire</span>
+            </div>
+          </div>
+          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">The father of modern Georgia. Cultural leader and modernizer whose abilities boost tower efficiency and resource generation — reflecting his historical role in Georgian national awakening and modernization.</p>
+          <div class="gc-stats">
+            <div class="gc-stat">Type <span>Economy / Culture</span></div>
+            <div class="gc-stat">Key Ability <span>Tower Efficiency, Resource Gen</span></div>
+          </div>
+        </div>
+
+        <!-- Noe Jordania -->
+        <div class="game-card fade-in-up">
+          <div class="gc-header">
+            <div class="gc-icon" style="background: rgba(214,46,45,0.12); color: var(--geo-red); font-size: 1.25rem;">&#9878;</div>
+            <div>
+              <h4>Noe Jordania</h4>
+              <span class="badge badge-red">Era 7 — First Democratic Republic</span>
+            </div>
+          </div>
+          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">Leader of Georgia's first democratic government. Diplomatic coordination abilities that temporarily strengthen all towers and generate emergency resources — holding the republic together against overwhelming odds.</p>
+          <div class="gc-stats">
+            <div class="gc-stat">Type <span>Diplomacy</span></div>
+            <div class="gc-stat">Key Ability <span>Global Tower Strength Boost</span></div>
           </div>
         </div>
 
       </div>
 
       <p class="text-center mt-2xl" style="color: var(--slate-light); font-size: 0.9375rem;">
-        Each era introduces 4-6 new heroes. 45+ heroes planned across all 9 eras. Heroes persist across levels within an era — level them up to unlock ability upgrades and reduced cooldowns.
+        Heroes span all 10 eras, with major eras featuring multiple legendary figures. Heroes level up through gameplay — each battle grants XP, improving stats and reducing cooldowns. Max level capped to prevent power inflation.
       </p>
     </div>
   </section>
 
   <div class="section-divider"></div>
 
+  <!-- Scrolls -->
+  <section id="scrolls">
+    <div class="container">
+      <span class="section-label text-center">Scrolls &amp; Mastery</span>
+      <h2 class="text-center">Tactical Consumables. Permanent Upgrades.</h2>
+      <p class="text-center" style="max-width: 640px; margin: 0 auto var(--space-2xl); color: var(--slate-light);">
+        Two types of scrolls: standard consumables for tactical advantage, and mastery scrolls as permanent tradeable NFTs.
+      </p>
+      <div class="grid grid-2 stagger" style="max-width: 900px; margin: 0 auto;">
+
+        <div class="card fade-in-up" style="border-left: 3px solid var(--geo-green);">
+          <div class="card-icon green">&#128220;</div>
+          <h3>Standard Scrolls</h3>
+          <p>Consumable items providing powerful temporary effects: damage boosts, resource generation, crowd control (freeze/slow), tower healing, and temporary invulnerability. 50 inventory cap forces strategic choices.</p>
+          <p style="margin-bottom: 0;">Earned through gameplay or purchased with in-game currency. Not blockchain assets — consumed on use. Cannot be traded between players.</p>
+          <div style="display: flex; gap: var(--space-sm); flex-wrap: wrap; margin-top: var(--space-md);">
+            <span class="badge badge-green">Consumable</span>
+            <span class="badge badge-gold">50 Cap</span>
+            <span class="badge badge-red">Single Use</span>
+          </div>
+        </div>
+
+        <div class="card fade-in-up" style="border-left: 3px solid var(--geo-gold);">
+          <div class="card-icon gold">&#9733;</div>
+          <h3>Mastery Scrolls (NFTs)</h3>
+          <p>Permanent passive bonuses represented as ERC-721 NFTs. Not consumed — activated in your loadout before each level. Stack up to 3 copies of the same type: +3%, +6%, +9% bonus to a specific stat.</p>
+          <p style="margin-bottom: 0;">Tradeable on the marketplace. For example, 3 copies of 'Archer Tower Mastery' grant +9% Archer damage. The stack cap ensures mastery enhances without breaking balance.</p>
+          <div style="display: flex; gap: var(--space-sm); flex-wrap: wrap; margin-top: var(--space-md);">
+            <span class="badge badge-gold">ERC-721</span>
+            <span class="badge badge-green">Permanent</span>
+            <span class="badge badge-gold">3-Stack Max (+9%)</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="card fade-in-up" style="max-width: 700px; margin: var(--space-2xl) auto 0; text-align: center; border-top: 3px solid var(--geo-red);">
+        <h3>No SAKART Boost Scroll</h3>
+        <p style="margin-bottom: 0;">
+          There is no SAKART Boost scroll. Token economy is driven entirely by star-based earning. No consumable item accelerates or modifies SAKART rewards. This prevents economic exploits and keeps distribution clean.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
   <!-- Progression System -->
-  <section id="progression">
+  <section class="section-dark" id="progression">
     <div class="container">
       <span class="section-label text-center">Progression</span>
       <h2 class="text-center">Skill Opens Every Door</h2>
       <p class="text-center" style="max-width: 640px; margin: 0 auto var(--space-2xl); color: var(--slate-light);">
-        No loot boxes. No paywalls. Progression is purely skill-based with transparent requirements for every unlock.
+        No loot boxes. No paywalls. No difficulty tiers. Progression is purely skill-based with transparent requirements for every unlock.
       </p>
       <div class="grid grid-3 stagger">
 
-        <!-- Stars -->
         <div class="card fade-in-up">
           <div class="card-icon gold">&#9733;</div>
           <h3>Star Rating</h3>
-          <p>Earn 1 to 3 stars per level based on performance: lives remaining, gold efficiency, and clear time. Three-starring a level is the core skill challenge. Stars are tracked per difficulty tier — Normal 3-stars are separate from Hard 3-stars.</p>
+          <p>Three tiers of completion per level. 1 star: survive all enemy waves. 2 stars: retain 50% or more lives. 3 stars: complete under a special constraint — time limit, resource cap, tower count limit, or no-upgrade restriction. Each star grants a one-time SAKART reward scaled by era.</p>
         </div>
 
-        <!-- Era Unlocking -->
         <div class="card fade-in-up">
           <div class="card-icon red">&#128274;</div>
           <h3>Era Unlocking</h3>
-          <p>To unlock the next era, you must 3-star all levels in the current era on Normal difficulty <em>and</em> pay a SAKART token fee. The fee prevents idle unlocking — you must be both skilled and economically engaged. No shortcuts.</p>
+          <p>Complete 15 of 20 levels in the current era (earning at least 1 star each) to unlock the next era. Permissive by design — skip the hardest levels and return later with stronger towers and more experience. The journey through Georgian history continues at your pace.</p>
         </div>
 
-        <!-- Mastery Scrolls -->
         <div class="card fade-in-up">
-          <div class="card-icon green">&#128220;</div>
-          <h3>Mastery Scrolls</h3>
-          <p>Mastery scrolls unlock harder modes and modifiers. Earned by completing optional challenge objectives — "no tower sells," "hero only," "maze under 40 walls." Each scroll is a trophy of genuine mastery, not grind time.</p>
+          <div class="card-icon green">&#9650;</div>
+          <h3>Anti-Grind Design</h3>
+          <p>Each star can only be earned once. Replay farming is mathematically impossible. SAKART tokens enter circulation only through first-time achievements. Total supply is bounded by the number of players and levels. This is non-negotiable.</p>
         </div>
 
       </div>
 
       <div class="stat-row mt-2xl" style="padding: 48px 0;">
         <div class="stat">
-          <div class="stat-value">150</div>
-          <div class="stat-label">Levels at Launch</div>
+          <div class="stat-value">200</div>
+          <div class="stat-label">Campaign Levels</div>
         </div>
         <div class="stat">
           <div class="stat-value">3</div>
           <div class="stat-label">Stars per Level</div>
         </div>
         <div class="stat">
-          <div class="stat-value">450</div>
+          <div class="stat-value">600</div>
           <div class="stat-label">Total Stars</div>
         </div>
         <div class="stat">
-          <div class="stat-value">9</div>
+          <div class="stat-value">10</div>
           <div class="stat-label">Eras to Master</div>
         </div>
       </div>
@@ -379,81 +611,42 @@
 
   <div class="section-divider"></div>
 
-  <!-- Difficulty Tiers -->
-  <section class="section-darker" id="difficulty">
+  <!-- PvP + Survival -->
+  <section id="pvp">
     <div class="container">
-      <span class="section-label text-center">Difficulty Tiers</span>
-      <h2 class="text-center">Three Ways to Suffer</h2>
+      <span class="section-label text-center">Competitive Modes</span>
+      <h2 class="text-center">PvP and Survival</h2>
       <p class="text-center" style="max-width: 640px; margin: 0 auto var(--space-2xl); color: var(--slate-light);">
-        Every level can be played on three difficulties. Same map, same towers — exponentially harder. Higher difficulties earn more SAKART and unlock exclusive rewards.
+        Two competitive formats for endgame engagement: asynchronous PvP with identical loadouts, and endless survival against escalating waves.
       </p>
-      <div class="grid grid-3 stagger">
 
-        <div class="game-card fade-in-up">
-          <div class="gc-header">
-            <div class="gc-icon" style="background: rgba(0,123,61,0.12); color: var(--geo-green);">&#9734;</div>
-            <div>
-              <h4>Normal</h4>
-              <span class="badge badge-green">Baseline</span>
-            </div>
-          </div>
-          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">The intended experience. Standard enemy HP, normal wave pacing, generous gold economy. Completing Normal 3-stars unlocks the next era. Where you learn the map and develop your maze.</p>
-          <div class="gc-stats">
-            <div class="gc-stat">Enemy HP <span>x1.0</span></div>
-            <div class="gc-stat">Gold <span>x1.0</span></div>
-            <div class="gc-stat">SAKART Earn <span>Base</span></div>
-          </div>
-        </div>
+      <div class="grid grid-2 stagger" style="max-width: 900px; margin: 0 auto;">
 
-        <div class="game-card fade-in-up">
-          <div class="gc-header">
-            <div class="gc-icon" style="background: var(--geo-gold-dim); color: var(--geo-gold);">&#9733;</div>
-            <div>
-              <h4>Hard</h4>
-              <span class="badge badge-gold">Challenge</span>
-            </div>
-          </div>
-          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">Enemies gain +50% HP and move 20% faster. Gold income is reduced. Elite enemies appear in earlier waves. Demands near-perfect maze design and tight hero ability timing. Unlocked with mastery scrolls.</p>
-          <div class="gc-stats">
-            <div class="gc-stat">Enemy HP <span>x1.5</span></div>
-            <div class="gc-stat">Gold <span>x0.8</span></div>
-            <div class="gc-stat">SAKART Earn <span>x2.0</span></div>
-          </div>
-        </div>
-
-        <div class="game-card fade-in-up">
-          <div class="gc-header">
-            <div class="gc-icon" style="background: rgba(214,46,45,0.12); color: var(--geo-red);">&#9733;&#9733;&#9733;</div>
-            <div>
-              <h4>Elite</h4>
-              <span class="badge badge-red">Brutal</span>
-            </div>
-          </div>
-          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">Double HP, fast enemies, reduced gold, random modifiers per wave. Bosses gain new mechanics. Designed for players who 3-starred Hard. Elite 3-stars are the ultimate badge of skill in Sakartvelo Defenders.</p>
-          <div class="gc-stats">
-            <div class="gc-stat">Enemy HP <span>x2.0</span></div>
-            <div class="gc-stat">Gold <span>x0.6</span></div>
-            <div class="gc-stat">SAKART Earn <span>x4.0</span></div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="section-divider mt-2xl"></div>
-
-      <!-- Extra Modes -->
-      <div class="grid grid-2 mt-2xl stagger">
-
-        <div class="card fade-in-up">
+        <div class="card fade-in-up" style="border-left: 3px solid var(--geo-red);">
           <div class="card-icon red">&#9876;</div>
-          <h3>PvP Tournament Brackets</h3>
-          <p>Available from Era 4+. Compete in tournament brackets where you design a maze and an attacker sends waves through it — then swap. Best-of-three. Winner earns SAKART and tournament ranking. No pay-to-enter, no advantage for spenders.</p>
+          <h3>PvP: Attack-Then-Defend</h3>
+          <p>Asynchronous format — no simultaneous online required. Attack phase: send waves against opponent's preset defense. Defend phase: your defense faces their waves. Winner by total score across both phases.</p>
+          <ul class="feature-list" style="margin-bottom: 0;">
+            <li><strong>Turn order:</strong> Rock-Paper-Scissors decides who attacks first</li>
+            <li><strong>Fair play:</strong> Identical loadouts for both players</li>
+            <li><strong>No re-rolls:</strong> Fixed scroll selection — adapt, don't gamble</li>
+            <li><strong>AI defense:</strong> Your towers fight automatically when you're offline</li>
+            <li><strong>Matchmaking:</strong> League tiers by skill, not era progress</li>
+            <li><strong>Rotating roster:</strong> Weekly hero and scroll selection changes</li>
+          </ul>
         </div>
 
-        <div class="card fade-in-up">
+        <div class="card fade-in-up" style="border-left: 3px solid var(--geo-green);">
           <div class="card-icon green">&#9760;</div>
           <h3>Survival Mode</h3>
-          <p>Available from Era 6+. Endless waves with escalating difficulty. No star rewards — just a pure leaderboard chase. How long can your maze hold? Survival mode features unique enemies not found in the campaign and weekly global leaderboards.</p>
+          <p>Endless wave defense with escalating difficulty. No win condition — survive as long as possible. Use your full tower roster, hero collection, and scroll inventory without restrictions.</p>
+          <ul class="feature-list" style="margin-bottom: 0;">
+            <li><strong>Scaling difficulty:</strong> Even the best loadout falls around wave 50-100</li>
+            <li><strong>Full arsenal:</strong> All unlocked towers, heroes, and scrolls available</li>
+            <li><strong>Global leaderboard:</strong> Highest wave, total kills, score</li>
+            <li><strong>Seasonal resets:</strong> Fresh leaderboards with SAKART prizes for top performers</li>
+            <li><strong>Unique enemies:</strong> Variants not found in the campaign</li>
+          </ul>
         </div>
 
       </div>
@@ -469,7 +662,7 @@
         <span class="section-label text-center">Ready to Defend?</span>
         <h2 class="text-center">Join the Waitlist</h2>
         <p class="text-center" style="max-width: 500px; margin: 0 auto var(--space-xl); color: var(--slate-light);">
-          Be first to play when Eras 0-2 launch. No crypto knowledge needed. Just skill.
+          Be first to play the full campaign — all 10 eras, 200 levels. No crypto knowledge needed. Just skill.
         </p>
         <form onsubmit="event.preventDefault(); alert('Thanks for joining! We\'ll be in touch.'); this.reset();" style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; max-width: 480px; margin: 0 auto;">
           <input type="email" placeholder="your@email.com" required style="
