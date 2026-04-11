@@ -1,0 +1,208 @@
+/* Sakartvelo Defenders - Main CSS */
+:root {
+  --georgia-green: #007b3d;
+  --georgia-red: #d62e2d;
+  --georgia-gold: #f8c440;
+  --dark-blue: #1a2a6c;
+  --light-gray: #f8f9fa;
+  --dark-text: #343a40;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--dark-text);
+  background-color: #fff;
+}
+
+/* Navbar Styles */
+nav.navbar {
+  background: linear-gradient(135deg, var(--dark-blue), #2c3e50);
+  color: white;
+  padding: 0.5rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+nav.navbar .navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: white !important;
+}
+
+nav.navbar .nav-link {
+  color: rgba(255,255,255,0.8) !important;
+  transition: all 0.3s ease;
+  margin: 0 0.5rem;
+}
+
+nav.navbar .nav-link:hover,
+nav.navbar .nav-link.active {
+  color: white !important;
+  transform: translateY(-2px);
+}
+
+nav.navbar .navbar-toggler {
+  border-color: rgba(255,255,255,0.3);
+}
+
+nav.navbar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(26, 42, 108, 0.9), rgba(44, 62, 80, 0.9));
+  background-size: cover;
+  color: white;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.display-1 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero p.lead {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-button {
+  background: var(--georgia-red);
+  border: none;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(214, 46, 45, 0.3);
+}
+
+.cta-button:hover {
+  background: #b52424;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(214, 46, 45, 0.4);
+  color: white;
+}
+
+/* Section Styles */
+section {
+  padding: 5rem 0;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-weight: 700;
+  color: var(--dark-blue);
+  position: relative;
+}
+
+section h2:after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: var(--georgia-red);
+  margin: 0.5rem auto;
+  border-radius: 2px;
+}
+
+.feature-card {
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  padding: 2rem;
+  transition: all 0.3s ease;
+  height: 100%;
+  border: none;
+  background: white;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.feature-card i {
+  font-size: 3rem;
+  color: var(--georgia-green);
+  margin-bottom: 1rem;
+}
+
+/* CTA Section */
+.cta-section {
+  background: linear-gradient(135deg, #1a2a6c, #2c3e50);
+  color: white;
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.btn-cta {
+  background: var(--georgia-red);
+  border: none;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(214, 46, 45, 0.3);
+}
+
+.btn-cta:hover {
+  background: #b52424;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(214, 46, 45, 0.4);
+}
+
+/* Footer */
+footer {
+  background-color: #212529;
+  color: white;
+  padding: 3rem 0 2rem;
+}
+
+footer p {
+  margin-bottom: 0.5rem;
+}
+
+footer small {
+  color: #adb5bd;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero h1.display-1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p.lead {
+    font-size: 1.2rem;
+  }
+
+  section {
+    padding: 3rem 0;
+  }
+
+  .feature-card {
+    margin-bottom: 2rem;
+  }
+}
