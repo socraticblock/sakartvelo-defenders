@@ -22,31 +22,11 @@
         <li><a href="about.html">About</a></li>
         <li><a href="gameplay.html">Gameplay</a></li>
         <li><a href="heroes.html">Heroes</a></li>
-        <li><a href="blockchain.html">Blockchain</a></li>
+        <li><a href="https://sakartvelo-defenders.vercel.app/game" target="_blank">Game</a></li>
         <li><a href="faq.html">FAQ</a></li>
         <li><a href="#waitlist" class="nav-cta">Join Waitlist</a></li>
       </ul>
-      <div style="display: flex; align-items: center; gap: 16px;">
-        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
-          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-          </svg>
-          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="12" cy="12" r="5"></circle>
-            <line x1="12" y1="1" x2="12" y2="3"></line>
-            <line x1="12" y1="21" x2="12" y2="23"></line>
-            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-            <line x1="1" y1="12" x2="3" y2="12"></line>
-            <line x1="21" y1="12" x2="23" y2="12"></line>
-            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-          </svg>
-        </button>
-        <button class="nav-toggle" id="navToggle" aria-label="Menu">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
+      
     </div>
   </nav>
 
@@ -62,7 +42,11 @@
       <div class="btn-group">
         <a href="#features" class="btn btn-primary">Discover the Vision</a>
         <a href="#waitlist" class="btn btn-ghost">Join Waitlist</a>
+        <a href="https://sakartvelo-defenders.vercel.app/game" class="btn btn-ghost" target="_blank">Play the Godot Demo</a>
       </div>
+      <p style="font-size: 0.75rem; color: var(--slate); margin-top: var(--space-md);">
+        Built with Godot 4.x &middot; PWA Installable &middot; Runs in any browser
+      </p>
     </div>
   </section>
 
@@ -79,8 +63,8 @@
           <div class="stat-label">Levels</div>
         </div>
         <div class="stat">
-          <div class="stat-value">0</div>
-          <div class="stat-label">Pay-to-Win</div>
+          <div class="stat-value">200</div>
+          <div class="stat-label">Levels at Launch</div>
         </div>
       </div>
     </div>
@@ -97,17 +81,17 @@
         <div class="card">
           <div class="card-icon red">&#9876;</div>
           <h3>Play First, Blockchain Second</h3>
-          <p>The blockchain is invisible infrastructure. Players never need to understand crypto, wallets, or gas fees. They click "Play" and earn tokens naturally through skilled gameplay. No MetaMask tutorials. No seed phrases. Just play.</p>
+          <p>Players log in with email -- wallet is created automatically. No MetaMask tutorials. No seed phrases. Just play.</p>
         </div>
         <div class="card">
           <div class="card-icon gold">&#9733;</div>
           <h3>Skill &gt; Wallet</h3>
-          <p>Every gameplay-affecting item is earned through skill. A player who spends $0 has the exact same experience as someone who spends $1,000. SAKART tokens are earned by three-starring levels, not by swiping a credit card.</p>
+          <p>Every gameplay-affecting item is earned through skill -- towers, heroes, scrolls, and skins. A player who spends $0 has the exact same experience as someone who spends $1,000.</p>
         </div>
         <div class="card">
           <div class="card-icon green">&#9760;</div>
           <h3>History Drives Gameplay</h3>
-          <p>This isn't "culture as skin." Tower types, enemy formations, hero abilities, and map designs are all drawn from real Georgian history. You're not just playing a tower defense -- you're defending actual historical battles.</p>
+          <p>This isn't "culture as skin." Tower types, enemy formations, hero abilities, and map designs are all drawn from real Georgian history. You're not just playing a tower defense -- you're defending actual historical battles. This is cultural sovereignty in game form.</p>
         </div>
       </div>
     </div>
@@ -217,7 +201,7 @@
         </div>
         <div class="card">
           <h3>Earn Stars</h3>
-          <p>1-3 stars per level. First-time star unlocks earn SAKART tokens. Replays earn zero -- no grinding, no farming.</p>
+          <p>Replay replays earn XP and in-game currency -- no SAKART. Farming is mathematically impossible.</p>
         </div>
         <div class="card">
           <h3>Unlock Eras</h3>
@@ -305,11 +289,12 @@
             <li><a href="about.html">About</a></li>
             <li><a href="gameplay.html">Gameplay</a></li>
             <li><a href="heroes.html">Heroes</a></li>
+            <li><a href="chronicle.html">Chronicle</a></li>
             <li><a href="faq.html">FAQ</a></li>
           </ul>
         </div>
         <div class="footer-right">
-          <a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a>
+          <a href="https://x.com" target="_blank" rel="noopener">X</a>
           <a href="https://discord.gg" target="_blank" rel="noopener">Discord</a>
           <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
           <a href="https://youtube.com" target="_blank" rel="noopener">YouTube</a>
@@ -369,24 +354,7 @@
       });
     }, 100);
 
-    // Dark mode toggle
-    const themeToggle = document.getElementById('themeToggle');
-    const html = document.documentElement;
-    
-    // Check for saved theme preference or system preference
-    const savedTheme = localStorage.getItem('theme');
-    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    
-    if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
-      html.setAttribute('data-theme', 'dark');
-    }
-    
-    themeToggle.addEventListener('click', () => {
-      const currentTheme = html.getAttribute('data-theme');
-      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-      html.setAttribute('data-theme', newTheme);
-      localStorage.setItem('theme', newTheme);
-    });
+    // Dark mode handled via system preference
 
     // Back to top button
     const backToTop = document.getElementById('backToTop');

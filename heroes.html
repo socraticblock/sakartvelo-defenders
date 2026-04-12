@@ -22,31 +22,11 @@
         <li><a href="about.html">About</a></li>
         <li><a href="gameplay.html">Gameplay</a></li>
         <li><a href="heroes.html" class="active">Heroes</a></li>
-        <li><a href="blockchain.html">Blockchain</a></li>
+        <li><a href="https://sakartvelo-defenders.vercel.app/game" target="_blank">Game</a></li>
         <li><a href="faq.html">FAQ</a></li>
         <li><a href="index.html#waitlist" class="nav-cta">Join Waitlist</a></li>
       </ul>
-      <div style="display: flex; align-items: center; gap: 16px;">
-        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
-          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-          </svg>
-          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="12" cy="12" r="5"></circle>
-            <line x1="12" y1="1" x2="12" y2="3"></line>
-            <line x1="12" y1="21" x2="12" y2="23"></line>
-            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-            <line x1="1" y1="12" x2="3" y2="12"></line>
-            <line x1="21" y1="12" x2="23" y2="12"></line>
-            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-          </svg>
-        </button>
-        <button class="nav-toggle" id="navToggle" aria-label="Menu">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
+      
     </div>
   </nav>
 
@@ -347,6 +327,61 @@
     </div>
   </section>
 
+  <!-- Hero Abilities Detail -->
+  <section class="section-dark" id="abilities">
+    <div class="container">
+      <span class="section-label text-center">Active Abilities</span>
+      <h2 class="text-center">Three Abilities. Total Control.</h2>
+      <p class="text-center" style="max-width: 640px; margin: 0 auto var(--space-2xl); color: var(--slate-light);">
+        Each hero has three active abilities on independent cooldowns. Basic abilities are ready frequently -- ultimates require timing and game sense. Heroes are era-locked: you can only deploy a hero in levels from their historical period.
+      </p>
+      <div class="grid grid-3 stagger">
+        <div class="card fade-in-up" style="text-align: center;">
+          <div class="card-icon gold" style="margin: 0 auto var(--space-md);">&#9679;</div>
+          <h4>Basic Ability</h4>
+          <div style="font-size: 1.5rem; font-weight: 600; color: var(--geo-gold); margin: var(--space-sm) 0;">15-20s CD</div>
+          <p style="margin-bottom: 0;">Available frequently. Used to control immediate threats, boost economy, or set up synergy combos. The ability you use most in any given run.</p>
+        </div>
+        <div class="card fade-in-up" style="text-align: center;">
+          <div class="card-icon red" style="margin: 0 auto var(--space-md);">&#9679;&#9679;</div>
+          <h4>Advanced Ability</h4>
+          <div style="font-size: 1.5rem; font-weight: 600; color: var(--geo-red); margin: var(--space-sm) 0;">45-60s CD</div>
+          <p style="margin-bottom: 0;">Higher impact, longer cooldown. Often shapes the flow of a wave or provides critical defensive utility. Requires more deliberate timing.</p>
+        </div>
+        <div class="card fade-in-up" style="text-align: center;">
+          <div class="card-icon green" style="margin: 0 auto var(--space-md);">&#9733;</div>
+          <h4>Ultimate Ability</h4>
+          <div style="font-size: 1.5rem; font-weight: 600; color: var(--geo-green); margin: var(--space-sm) 0;">120-180s CD</div>
+          <p style="margin-bottom: 0;">Map-wide or boss-eliminating power. Saving your ultimate for the right moment -- a boss phase transition, a wave 20 swarm -- is the difference between 2 stars and 3.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Hero Progression -->
+  <section id="progression">
+    <div class="container">
+      <span class="section-label text-center">Hero Progression</span>
+      <h2 class="text-center">Level Up Through Battle</h2>
+      <div class="grid grid-2 stagger" style="max-width: 800px; margin: 0 auto;">
+        <div class="card fade-in-up">
+          <div class="card-icon gold">&#9650;</div>
+          <h3>XP Gain</h3>
+          <p>Every battle grants hero XP proportional to waves survived and enemies defeated. Replay any level -- XP is earned on every attempt, not just first completion. No daily limits, no energy systems.</p>
+        </div>
+        <div class="card fade-in-up">
+          <div class="card-icon green">&#9889;</div>
+          <h3>Level Benefits</h3>
+          <p>Each level improves two random hero stats (damage, cooldown reduction, duration, area) and reduces all ability cooldowns by 1%. Max level is capped to prevent power inflation across the player base.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
   <!-- CTA -->
   <section class="cta-section">
     <div class="container">
@@ -375,11 +410,12 @@
             <li><a href="about.html">About</a></li>
             <li><a href="gameplay.html">Gameplay</a></li>
             <li><a href="heroes.html">Heroes</a></li>
-            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="https://sakartvelo-defenders.vercel.app/game" target="_blank">Game</a></li>
+        <li><a href="faq.html">FAQ</a></li>
           </ul>
         </div>
         <div class="footer-right">
-          <a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a>
+          <a href="https://x.com" target="_blank" rel="noopener">X</a>
           <a href="https://discord.gg" target="_blank" rel="noopener">Discord</a>
           <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
           <a href="https://youtube.com" target="_blank" rel="noopener">YouTube</a>
