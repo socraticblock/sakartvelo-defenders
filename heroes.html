@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heroes -- Sakartvelo Defenders</title>
+  <meta name="description" content="Meet the heroes of Sakartvelo Defenders. Command legendary figures from Georgian history including Medea, Queen Tamar, David the Builder, and more.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">
+        <span class="brand-icon">SD</span>
+        Sakartvelo Defenders
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gameplay.html">Gameplay</a></li>
+        <li><a href="heroes.html" class="active">Heroes</a></li>
+        <li><a href="blockchain.html">Blockchain</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="index.html#waitlist" class="nav-cta">Join Waitlist</a></li>
+      </ul>
+      <div style="display: flex; align-items: center; gap: 16px;">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+        <button class="nav-toggle" id="navToggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" style="min-height: 60vh;">
+    <div class="hero-content">
+      <div class="hero-line"></div>
+      <span class="small-caps">Georgian Legends</span>
+      <h1>Heroes of History</h1>
+      <p class="subtitle">Command legendary figures from across Georgia's 3,000-year history. Each hero brings unique abilities that can turn the tide of battle.</p>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Heroes Grid -->
+  <section>
+    <div class="container">
+      <div class="hero-grid stagger">
+        
+        <!-- Medea -->
+        <div class="hero-card fade-in-up">
+          <div class="hero-portrait">
+            <img src="assets/heroes/e00_ancient_colchis/her_e00_medea_v01.png" alt="Medea" loading="lazy">
+          </div>
+          <div class="hero-content">
+            <div class="hero-era">Era 0 — Ancient Colchis</div>
+            <h3 class="hero-name">Medea</h3>
+            <ul class="hero-abilities">
+              <li>
+                <div class="hero-ability-name">Toxic Cloud</div>
+                <div class="hero-ability-desc">Creates a lingering poison cloud that damages enemies over time.</div>
+              </li>
+              <li>
+                <div class="hero-ability-name">Healing Rain</div>
+                <div class="hero-ability-desc">Restores health to all friendly units in a large area.</div>
+              </li>
+              <li>
+                <div class="hero-ability-name">Golden Fleece Shield</div>
+                <div class="hero-ability-desc">Grants temporary invulnerability to towers within range.</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Pharnavaz -->
+        <div class="hero-card fade-in-up">
+          <div class="hero-portrait">
+            <img src="assets/heroes/e01_kingdom_of_iberia/her_e01_pharnavaz_v01.png" alt="Pharnavaz I" loading="lazy">
+          </div>
+          <div class="hero-content">
+            <div class="hero-era">Era 1 — Kingdom of Iberia</div>
+            <h3 class="hero-name">Pharnavaz I</h3>
+            <ul class="hero-abilities">
+              <li>
+                <div class="hero-ability-name">Royal Authority</div>
+                <div class="hero-ability-desc">Increases attack speed of all towers by 20% for 10 seconds.</div>
+              </li>
+              <li>
+                <div class="hero-ability-name">King's Guard</div>
+                <div class="hero-ability-desc">Summons elite soldiers to defend a choke point.</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Saint Nino -->
+        <div class="hero-card fade-in-up">
+          <div class="hero-portrait">
+            <img src="assets/heroes/e01_kingdom_of_iberia/her_e01_st_nino_v01.png" alt="Saint Nino" loading="lazy">
+          </div>
+          <div class="hero-content">
+            <div class="hero-era">Era 1 — Kingdom of Iberia</div>
+            <h3 class="hero-name">Saint Nino</h3>
+            <ul class="hero-abilities">
+              <li>
+                <div class="hero-ability-name">Divine Light</div>
+                <div class="hero-ability-desc">Reveals all invisible enemies and traps in a wide radius.</div>
+              </li>
+              <li>
+                <div class="hero-ability-name">Blessing of Peace</div>
+                <div class="hero-ability-desc">Stuns all enemies in an area for 3 seconds.</div>
+              </li>
+              <li>
+                <div class="hero-ability-name">Cross of Vine</div>
+                <div class="hero-ability-desc">Creates barriers that slow enemies by 50%.</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Vakhtang Gorgasali -->
+        <div class="hero-card fade-in-up">
+          <div class="hero-portrait">
+            <img src="assets/heroes/e01_kingdom_of_iberia/her_e01_vakhtang_gorgasali_v01.png" alt="Vakhtang Gorgasali" loading="lazy">
+          </div>
+          <div class="hero-content">
+            <div class="hero-era">Era 1 — Kingdom of Iberia</div>
+            <h3 class="hero-name">Vakhtang Gorgasali</h3>
+            <ul class="hero-abilities">
+              <li>
+                <div class="hero-ability-name">Wolf Head Strike</div>
+                <div class="hero-ability-desc">Deals massive damage to a single target, ignoring armor.</div>
+              </li>
+              <li>
+                <div class="hero-ability-name">Founder's Will</div>
+                <div class="hero-ability-desc">Permanently increases the range of all towers on the map.</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- David IV -->
+        <div class="hero-card fade-in-up">
+          <div class="hero-portrait">
+            <img src="assets/heroes/e03_georgian_golden_age/her_e03_david_iv_v01.png" alt="David IV the Builder" loading="lazy">
+          </div>
+          <div class="hero-content">
+            <div class="hero-era">Era 3 — Georgian Golden Age</div>
+            <h3 class="hero-name">David IV the Builder</h3>
+            <ul class="hero-abilities">
+              <li>
+                <div class="hero-ability-name">Instant Upgrade</div>
+                <div class="hero-ability-desc">Instantly upgrades all towers one level at no cost.</div>
+              </li>
+              <li>
+                <div class="hero-ability-name">Didgori Victory</div>
+                <div class="hero-ability-desc">All towers deal 50% more damage for 15 seconds.</div>
+              </li>
+              <li>
+                <div class="hero-ability-name">Stone Wall</div>
+                <div class="hero-ability-desc">Creates an indestructible wall segment.</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Queen Tamar -->
+        <div class="hero-card fade-in-up">
+          <div class="hero-portrait">
+            <img src="assets/heroes/e03_georgian_golden_age/her_e03_queen_tamar_v01.png" alt="Queen Tamar" loading="lazy">
+          </div>
+          <div class="hero-content">
+            <div class="hero-era">Era 3 — Georgian Golden Age</div>
+            <h3 class="hero-name">Queen Tamar</h3>
+            <ul class="hero-abilities">
+              <li>
+                <div class="hero-ability-name">Global Damage Boost</div>
+                <div class="hero-ability-desc">All towers deal 30% more damage for 20 seconds.</div>
+              </li>
+              <li>
+                <div class="hero-ability-name">Queen's Decree</div>
+                <div class="hero-ability-desc">Reduces enemy movement speed by 40% across the entire map.</div>
+              </li>
+              <li>
+                <div class="hero-ability-name">Golden Age Glory</div>
+                <div class="hero-ability-desc">Passive: Generates extra gold from all enemy kills.</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Shota Rustaveli -->
+        <div class="hero-card fade-in-up">
+          <div class="hero-portrait">
+            <img src="assets/heroes/e03_georgian_golden_age/her_e03_shota_rustaveli_v01.png" alt="Shota Rustaveli" loading="lazy">
+          </div>
+          <div class="hero-content">
+            <div class="hero-era">Era 3 — Georgian Golden Age</div>
+            <h3 class="hero-name">Shota Rustaveli</h3>
+            <ul class="hero-abilities">
+              <li>
+                <div class="hero-ability-name">Knight in Panther's Skin</div>
+                <div class="hero-ability-desc">Summons a powerful knight that fights alongside towers.</div>
+              </li>
+              <li>
+                <div class="hero-ability-name">Poetic Justice</div>
+                <div class="hero-ability-desc">Reflects 50% of damage taken back to attacking enemies.</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Erekle II -->
+        <div class="hero-card fade-in-up">
+          <div class="hero-portrait">
+            <img src="assets/heroes/e05_between_empires/her_e05_erekle_ii_v01.png" alt="King Erekle II" loading="lazy">
+          </div>
+          <div class="hero-content">
+            <div class="hero-era">Era 5 — Between Empires</div>
+            <h3 class="hero-name">King Erekle II</h3>
+            <ul class="hero-abilities">
+              <li>
+                <div class="hero-ability-name">Gunpowder Barrage</div>
+                <div class="hero-ability-desc">Fires cannons in a line, damaging all enemies.</div>
+              </li>
+              <li>
+                <div class="hero-ability-name">Strategic Defense</div>
+                <div class="hero-ability-desc">Increases tower armor and resistance by 50%.</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Ilia Chavchavadze -->
+        <div class="hero-card fade-in-up">
+          <div class="hero-portrait">
+            <img src="assets/heroes/e06_russian_empire/her_e06_ilia_chavchavadze_v01.png" alt="Ilia Chavchavadze" loading="lazy">
+          </div>
+          <div class="hero-content">
+            <div class="hero-era">Era 6 — Russian Empire</div>
+            <h3 class="hero-name">Ilia Chavchavadze</h3>
+            <ul class="hero-abilities">
+              <li>
+                <div class="hero-ability-name">National Awakening</div>
+                <div class="hero-ability-desc">Inspires towers to attack 40% faster.</div>
+              </li>
+              <li>
+                <div class="hero-ability-name">Cultural Shield</div>
+                <div class="hero-ability-desc">Creates a barrier that protects towers from special attacks.</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Noe Jordania -->
+        <div class="hero-card fade-in-up">
+          <div class="hero-portrait">
+            <img src="assets/heroes/e07_first_dem._republic/her_e07_noe_jordania_v01.png" alt="Noe Jordania" loading="lazy">
+          </div>
+          <div class="hero-content">
+            <div class="hero-era">Era 7 — First Democratic Republic</div>
+            <h3 class="hero-name">Noe Jordania</h3>
+            <ul class="hero-abilities">
+              <li>
+                <div class="hero-ability-name">Democratic Defense</div>
+                <div class="hero-ability-desc">All towers share damage, preventing any from being overwhelmed.</div>
+              </li>
+              <li>
+                <div class="hero-ability-name">Independence Rally</div>
+                <div class="hero-ability-desc">Boosts all tower stats by 25% for the remainder of the wave.</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- WWII Hero -->
+        <div class="hero-card fade-in-up">
+          <div class="hero-portrait">
+            <img src="assets/heroes/e08_the_soviet_century/her_e08_wwii_hero_v01.png" alt="WWII Hero" loading="lazy">
+          </div>
+          <div class="hero-content">
+            <div class="hero-era">Era 8 — The Soviet Century</div>
+            <h3 class="hero-name">Unknown Soldier</h3>
+            <ul class="hero-abilities">
+              <li>
+                <div class="hero-ability-name">Artillery Strike</div>
+                <div class="hero-ability-desc">Calls in a devastating artillery barrage on target area.</div>
+              </li>
+              <li>
+                <div class="hero-ability-name">Motherland's Call</div>
+                <div class="hero-ability-desc">Temporarily doubles all tower attack power.</div>
+              </li>
+              <li>
+                <div class="hero-ability-name">Survival Instinct</div>
+                <div class="hero-ability-desc">Towers continue attacking at reduced efficiency even when destroyed.</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Modern Figure -->
+        <div class="hero-card fade-in-up">
+          <div class="hero-portrait">
+            <img src="assets/heroes/e09_modern_georgia/her_e09_modern_figure_v01.png" alt="Modern Georgian Figure" loading="lazy">
+          </div>
+          <div class="hero-content">
+            <div class="hero-era">Era 9 — Modern Georgia</div>
+            <h3 class="hero-name">Modern Defender</h3>
+            <ul class="hero-abilities">
+              <li>
+                <div class="hero-ability-name">Drone Strike</div>
+                <div class="hero-ability-desc">Deploy drones that attack multiple targets simultaneously.</div>
+              </li>
+              <li>
+                <div class="hero-ability-name">Precision Targeting</div>
+                <div class="hero-ability-desc">All towers gain 100% critical hit chance for 10 seconds.</div>
+              </li>
+              <li>
+                <div class="hero-ability-name">Technological Superiority</div>
+                <div class="hero-ability-desc">Passive: Towers slowly regenerate health over time.</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <span class="small-caps">Early Access</span>
+      <h2>Join the Waitlist</h2>
+      <p>Get notified when the full campaign launches — all 10 eras, 200 levels of historical tower defense gameplay. No spam, no crypto required.</p>
+      <form id="waitlistForm" style="max-width: 400px; margin: 32px auto; display: flex; gap: 12px;">
+        <input type="email" placeholder="Your email address" required style="flex: 1; padding: 12px 16px; border: 1px solid var(--ghost-border); border-radius: var(--radius-sm); background: var(--ivory); color: var(--charcoal);">
+        <button type="submit" class="btn btn-primary">Join Waitlist</button>
+      </form>
+      <p style="font-size: 0.875rem; color: var(--muted);">We'll never share your email. No blockchain knowledge required.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-left">
+          <div class="footer-content">
+            <p>&copy; 2026 Sakartvelo Defenders. A cultural celebration through historical gameplay.</p>
+            <p class="footer-georgian">საქართველო</p>
+          </div>
+          <ul class="footer-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gameplay.html">Gameplay</a></li>
+            <li><a href="heroes.html">Heroes</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-right">
+          <a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a>
+          <a href="https://discord.gg" target="_blank" rel="noopener">Discord</a>
+          <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://youtube.com" target="_blank" rel="noopener">YouTube</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24">
+      <path d="M12 4l-8 8h6v8h4v-8h6z"></path>
+    </svg>
+  </button>
+
+  <script>
+    // Mobile nav toggle
+    const toggle = document.getElementById('navToggle');
+    const links = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth' });
+        links.classList.remove('open');
+      });
+    });
+
+    // Intersection Observer for fade-in animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in-up');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.hero-card').forEach(el => observer.observe(el));
+
+    // Dark mode toggle
+    const themeToggle = document.getElementById('themeToggle');
+    const html = document.documentElement;
+    
+    const savedTheme = localStorage.getItem('theme');
+    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    
+    if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
+      html.setAttribute('data-theme', 'dark');
+    }
+    
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = html.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+    });
+
+    // Back to top button
+    const backToTop = document.getElementById('backToTop');
+    
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 500) {
+        backToTop.classList.add('visible');
+      } else {
+        backToTop.classList.remove('visible');
+      }
+    });
+    
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Waitlist form
+    document.getElementById('waitlistForm').addEventListener('submit', e => {
+      e.preventDefault();
+      alert('Thanks for joining the waitlist! We\'ll notify you when the game launches.');
+      e.target.reset();
+    });
+  </script>
+
+</body>
+</html>
