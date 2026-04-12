@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sakartvelo Defenders - UI Mockup</title>
+<style>
+  /* ============================================
+     GLOBAL UI PALETTE (Section 2 of Style Guide)
+     ============================================ */
+  :root {
+    --bg-dark: #1A1A1A;
+    --bg-light: #F5F0EB;
+    --text-dark: #FFFFFF;
+    --text-light: #1A1A1A;
+    --text-secondary-dark: #B0B8C0;
+    --text-secondary-light: #6B7280;
+    --accent: #E67E22;
+    --accent-hover: #F39C12;
+    --danger: #E74C3C;
+    --success: #27AE60;
+    --info: #3498DB;
+    --panel-bg-dark: #2C3E50;
+    --panel-bg-light: #FFFFFF;
+    --border-dark: #3D566E;
+    --border-light: #E5E7EB;
+    --disabled-dark: #4A5568;
+    --disabled-light: #D1D5DB;
+
+    /* Era 0: Ancient Colchis accent */
+    --era-accent: #D4A017;
+    --era-base: #2D5A3D;
+    --era-highlight: #4CAF50;
+    --era-shadow: #1B3A26;
+    --era-sky: #87CEEB;
+    --era-vegetation: #3A7D44;
+    --era-stone: #8B7355;
+    --era-water: #2E86AB;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg-dark);
+    color: var(--text-dark);
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  h2 { margin: 30px 0 15px; color: var(--accent); font-size: 18px; text-transform: uppercase; letter-spacing: 2px; }
+  h3 { margin: 15px 0 10px; color: var(--text-secondary-dark); font-size: 13px; text-transform: uppercase; letter-spacing: 1px; }
+
+  .section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    border-bottom: 1px solid var(--border-dark);
+  }
+
+  .section:last-child { border-bottom: none; }
+
+  .row { display: flex; gap: 15px; flex-wrap: wrap; align-items: flex-start; }
+  .col { flex: 1; min-width: 200px; }
+
+  /* ============================================
+     BUTTONS (Section 9.1)
+     ============================================ */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 24px;
+    border-radius: 8px;
+    border: 2px solid var(--border-dark);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    min-width: 120px;
+  }
+
+  .btn-primary {
+    background: var(--accent);
+    color: var(--text-dark);
+    border-color: var(--accent);
+  }
+  .btn-primary:hover {
+    background: var(--accent-hover);
+    border-color: var(--accent-hover);
+  }
+  .btn-primary:active {
+    background: #c96a15;
+    transform: translateY(1px);
+  }
+
+  .btn-secondary {
+    background: var(--panel-bg-dark);
+    color: var(--text-dark);
+  }
+  .btn-secondary:hover {
+    background: #3a5268;
+  }
+
+  .btn-danger {
+    background: var(--danger);
+    color: white;
+    border-color: var(--danger);
+  }
+  .btn-danger:hover { background: #c0392b; }
+
+  .btn-success {
+    background: var(--success);
+    color: white;
+    border-color: var(--success);
+  }
+
+  .btn-info {
+    background: var(--info);
+    color: white;
+    border-color: var(--info);
+  }
+
+  .btn-disabled {
+    background: var(--disabled-dark);
+    color: var(--text-secondary-dark);
+    cursor: not-allowed;
+    border-color: var(--disabled-dark);
+  }
+
+  /* ============================================
+     PANELS (Section 9.1)
+     ============================================ */
+  .panel {
+    background: var(--panel-bg-dark);
+    border: 1px solid var(--border-dark);
+    border-radius: 12px;
+    padding: 20px;
+    position: relative;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.2);
+  }
+
+  .panel-era-accent {
+    border-top: 3px solid var(--era-accent);
+  }
+
+  .panel-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: var(--text-dark);
+  }
+
+  .panel-text {
+    font-size: 13px;
+    color: var(--text-secondary-dark);
+    line-height: 1.6;
+  }
+
+  /* ============================================
+     HEALTH BARS (Section 9.1)
+     ============================================ */
+  .health-bar-container {
+    margin: 8px 0;
+  }
+  .health-bar-label {
+    font-size: 11px;
+    color: var(--text-secondary-dark);
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .health-bar-track {
+    width: 100%;
+    height: 4px;
+    background: var(--disabled-dark);
+    border-radius: 2px;
+    border: 1px solid rgba(0,0,0,0.3);
+    overflow: hidden;
+  }
+  .health-bar-fill {
+    height: 100%;
+    border-radius: 2px;
+    transition: width 0.3s ease;
+  }
+  .health-full { background: var(--success); }
+  .health-mid { background: var(--info); }
+  .health-low { background: var(--danger); }
+
+  /* ============================================
+     HUD LAYOUT (Section 9.2)
+     ============================================ */
+  .game-screen {
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    background: linear-gradient(180deg, var(--era-sky) 0%, var(--era-base) 60%, var(--era-vegetation) 100%);
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--border-dark);
+    margin: 0 auto;
+  }
+
+  /* Top HUD bar */
+  .hud-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 48px;
+    background: rgba(44, 62, 80, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 10;
+  }
+
+  .hud-timer {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text-dark);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .hud-wave {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .hud-wave span {
+    color: var(--text-dark);
+  }
+
+  .hud-controls {
+    display: flex;
+    gap: 8px;
+  }
+
+  .hud-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: var(--text-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+  /* Bottom HUD bar */
+  .hud-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 64px;
+    background: rgba(44, 62, 80, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 10;
+  }
+
+  /* Resource counters (Section 9.1) */
+  .resource-counter {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-right: 20px;
+  }
+
+  .resource-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .resource-icon-gold { background: var(--era-accent); color: #000; }
+  .resource-icon-blue { background: var(--info); color: #fff; }
+  .resource-icon-red { background: var(--danger); color: #fff; }
+
+  .resource-value {
+    font-size: 16px;
+    font-weight: 700;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+  }
+
+  /* Hero ability buttons */
+  .ability-slot {
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    border: 2px solid var(--border-dark);
+    background: var(--panel-bg-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    font-size: 20px;
+  }
+  .ability-slot:hover {
+    border-color: var(--accent);
+  }
+  .ability-slot.on-cooldown {
+    opacity: 0.5;
+  }
+  .ability-slot.on-cooldown::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60%;
+    background: rgba(0,0,0,0.5);
+    border-radius: 0 0 6px 6px;
+  }
+
+  .abilities-group {
+    display: flex;
+    gap: 6px;
+  }
+
+  /* Tower placement zone hint */
+  .placement-grid {
+    position: absolute;
+    top: 48px;
+    left: 0;
+    right: 0;
+    bottom: 64px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 2px;
+    opacity: 0.15;
+    z-index: 1;
+  }
+  .placement-cell {
+    border: 1px dashed var(--text-dark);
+    border-radius: 4px;
+  }
+
+  /* ============================================
+     NOTIFICATION TOASTS (Section 9.3)
+     ============================================ */
+  .toast-container {
+    position: relative;
+    height: 200px;
+  }
+
+  .toast {
+    padding: 12px 20px;
+    background: rgba(26, 26, 26, 0.95);
+    border-radius: 8px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 13px;
+    max-width: 350px;
+    animation: slideIn 0.3s ease;
+    border-left: 2px solid;
+  }
+
+  .toast-success { border-left-color: var(--success); }
+  .toast-error { border-left-color: var(--danger); }
+  .toast-warning { border-left-color: var(--accent); }
+  .toast-info { border-left-color: var(--info); }
+
+  .toast-icon {
+    font-size: 16px;
+    flex-shrink: 0;
+  }
+
+  @keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+
+  /* ============================================
+     SCROLL CARDS (Section 11)
+     ============================================ */
+  .scroll-card {
+    width: 180px;
+    background: #F5E6C8;
+    border-radius: 8px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.15s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  }
+  .scroll-card:hover { transform: translateY(-4px); }
+
+  /* Rarity borders (Section 11.1) */
+  .scroll-common { border: 3px solid #808080; }
+  .scroll-uncommon { border: 3px solid var(--success); box-shadow: 0 0 12px rgba(39,174,96,0.2); }
+  .scroll-rare { border: 3px solid var(--info); box-shadow: 0 0 12px rgba(52,152,219,0.2); }
+  .scroll-epic { border: 3px solid #9B59B6; box-shadow: 0 0 12px rgba(155,89,182,0.2); }
+
+  .scroll-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    margin-bottom: 8px;
+  }
+
+  .scroll-name {
+    font-size: 12px;
+    font-weight: 700;
+    color: #2C1810;
+    text-align: center;
+    margin-bottom: 4px;
+  }
+
+  .scroll-desc {
+    font-size: 10px;
+    color: #6B5B4E;
+    text-align: center;
+    line-height: 1.4;
+  }
+
+  .scroll-stack {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: var(--danger);
+    color: white;
+    font-size: 10px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #F5E6C8;
+  }
+
+  /* Mastery Scroll (Section 11.2) */
+  .mastery-scroll {
+    width: 200px;
+    background: #D4C4A0;
+    border: 3px solid #D4AF37;
+    border-radius: 10px;
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(212,175,55,0.3);
+    overflow: hidden;
+  }
+
+  .mastery-scroll::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 10px,
+      rgba(212,175,55,0.05) 10px,
+      rgba(212,175,55,0.05) 11px
+    );
+  }
+
+  .mastery-scroll .scroll-icon { font-size: 32px; }
+
+  .mastery-bonus {
+    font-size: 18px;
+    font-weight: 900;
+    color: #D4AF37;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+  }
+
+  .mastery-tower-silhouette {
+    width: 40px;
+    height: 40px;
+    background: rgba(0,0,0,0.15);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin: 4px 0;
+  }
+
+  .mastery-shield {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 20px;
+    height: 20px;
+    background: #D4AF37;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+  }
+
+  .mastery-pulse {
+    animation: pulse 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { box-shadow: 0 0 20px rgba(212,175,55,0.3); }
+    50% { box-shadow: 0 0 35px rgba(212,175,55,0.6); }
+  }
+
+  /* ============================================
+     TOWER SELECTION PANEL
+     ============================================ */
+  .tower-grid {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .tower-card {
+    width: 80px;
+    height: 80px;
+    background: var(--panel-bg-dark);
+    border: 2px solid var(--border-dark);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+  .tower-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-2px);
+  }
+  .tower-card.selected {
+    border-color: var(--accent);
+    background: rgba(230,126,34,0.15);
+  }
+
+  .tower-card-icon {
+    font-size: 28px;
+    margin-bottom: 4px;
+  }
+
+  .tower-card-name {
+    font-size: 8px;
+    text-transform: uppercase;
+    color: var(--text-secondary-dark);
+    letter-spacing: 0.5px;
+  }
+
+  .tower-card-cost {
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--era-accent);
+  }
+
+  /* ============================================
+     ERA PALETTE STRIP
+     ============================================ */
+  .era-palette-strip {
+    display: flex;
+    height: 40px;
+    border-radius: 6px;
+    overflow: hidden;
+    margin: 10px 0;
+  }
+  .era-palette-swatch {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 9px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border: 1px solid rgba(0,0,0,0.2);
+  }
+
+  /* ============================================
+     FILE NAMING REFERENCE
+     ============================================ */
+  .code-block {
+    background: rgba(0,0,0,0.4);
+    border: 1px solid var(--border-dark);
+    border-radius: 6px;
+    padding: 12px;
+    font-family: 'Courier New', monospace;
+    font-size: 12px;
+    color: var(--success);
+    line-height: 1.6;
+    overflow-x: auto;
+  }
+
+  /* ============================================
+     LIGHT MODE VARIANT
+     ============================================ */
+  .light-mode .panel {
+    background: var(--panel-bg-light);
+    border-color: var(--border-light);
+    color: var(--text-light);
+  }
+  .light-mode .panel-title { color: var(--text-light); }
+  .light-mode .panel-text { color: var(--text-secondary-light); }
+</style>
+</head>
+<body>
+
+<!-- ============================================
+     SECTION: BUTTONS
+     ============================================ -->
+<div class="section">
+  <h2>Buttons (Section 9.1)</h2>
+  <div class="row">
+    <button class="btn btn-primary">Primary</button>
+    <button class="btn btn-secondary">Secondary</button>
+    <button class="btn btn-danger">Danger</button>
+    <button class="btn btn-success">Success</button>
+    <button class="btn btn-info">Info</button>
+    <button class="btn btn-disabled">Disabled</button>
+  </div>
+</div>
+
+<!-- ============================================
+     SECTION: PANELS
+     ============================================ -->
+<div class="section">
+  <h2>Panels (Section 9.1)</h2>
+  <div class="row">
+    <div class="col">
+      <div class="panel">
+        <div class="panel-title">Standard Panel</div>
+        <div class="panel-text">
+          Rounded rectangle with 12px border radius. Panel background with border color stroke. Subtle inner shadow creates depth.
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="panel panel-era-accent">
+        <div class="panel-title">Era Accent Panel</div>
+        <div class="panel-text">
+          Contains era-specific content. Thin accent strip (3px) at top edge using current era's Accent color. Currently showing Era 0: Ancient Colchis (#D4A017).
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="panel">
+        <div class="panel-title">Tower Info</div>
+        <div class="health-bar-container">
+          <div class="health-bar-label">Health</div>
+          <div class="health-bar-track">
+            <div class="health-bar-fill health-full" style="width:100%"></div>
+          </div>
+        </div>
+        <div class="health-bar-container">
+          <div class="health-bar-label">Health (50%)</div>
+          <div class="health-bar-track">
+            <div class="health-bar-fill health-mid" style="width:50%"></div>
+          </div>
+        </div>
+        <div class="health-bar-container">
+          <div class="health-bar-label">Health (Low)</div>
+          <div class="health-bar-track">
+            <div class="health-bar-fill health-low" style="width:25%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================
+     SECTION: ERA 0 PALETTE
+     ============================================ -->
+<div class="section">
+  <h2>Era 0: Ancient Colchis Palette</h2>
+  <div class="era-palette-strip">
+    <div class="era-palette-swatch" style="background:#2D5A3D;color:#fff">Base<br>#2D5A3D</div>
+    <div class="era-palette-swatch" style="background:#4CAF50;color:#000">Highlight<br>#4CAF50</div>
+    <div class="era-palette-swatch" style="background:#1B3A26;color:#fff">Shadow<br>#1B3A26</div>
+    <div class="era-palette-swatch" style="background:#D4A017;color:#000">Accent<br>#D4A017</div>
+    <div class="era-palette-swatch" style="background:#87CEEB;color:#000">Sky<br>#87CEEB</div>
+    <div class="era-palette-swatch" style="background:#3A7D44;color:#fff">Veg<br>#3A7D44</div>
+    <div class="era-palette-swatch" style="background:#8B7355;color:#fff">Stone<br>#8B7355</div>
+    <div class="era-palette-swatch" style="background:#2E86AB;color:#fff">Water<br>#2E86AB</div>
+  </div>
+</div>
+
+<!-- ============================================
+     SECTION: GAME HUD (Section 9.2)
+     ============================================ -->
+<div class="section">
+  <h2>Game HUD (Section 9.2)</h2>
+  <div class="game-screen">
+    <!-- Placement grid hint -->
+    <div class="placement-grid">
+      <div class="placement-cell"></div><div class="placement-cell"></div><div class="placement-cell"></div>
+      <div class="placement-cell"></div><div class="placement-cell"></div><div class="placement-cell"></div>
+      <div class="placement-cell"></div><div class="placement-cell"></div><div class="placement-cell"></div>
+      <div class="placement-cell"></div><div class="placement-cell"></div><div class="placement-cell"></div>
+      <div class="placement-cell"></div><div class="placement-cell"></div><div class="placement-cell"></div>
+      <div class="placement-cell"></div><div class="placement-cell"></div><div class="placement-cell"></div>
+      <div class="placement-cell"></div><div class="placement-cell"></div><div class="placement-cell"></div>
+      <div class="placement-cell"></div><div class="placement-cell"></div><div class="placement-cell"></div>
+      <div class="placement-cell"></div><div class="placement-cell"></div><div class="placement-cell"></div>
+    </div>
+
+    <!-- Top HUD -->
+    <div class="hud-top">
+      <div class="hud-timer">02:34</div>
+      <div class="hud-wave">Wave <span>3</span> / 10</div>
+      <div class="hud-controls">
+        <div class="hud-btn">&#9776;</div>
+        <div class="hud-btn">&#10074;&#10074;</div>
+      </div>
+    </div>
+
+    <!-- Bottom HUD -->
+    <div class="hud-bottom">
+      <div style="display:flex;align-items:center;">
+        <div class="resource-counter">
+          <div class="resource-icon resource-icon-gold">&#9679;</div>
+          <div class="resource-value" style="color:var(--era-accent)">1,250</div>
+        </div>
+        <div class="resource-counter">
+          <div class="resource-icon resource-icon-blue">&#9679;</div>
+          <div class="resource-value" style="color:var(--info)">340</div>
+        </div>
+        <div class="resource-counter">
+          <div class="resource-icon resource-icon-red">&#9829;</div>
+          <div class="resource-value" style="color:var(--danger)">18</div>
+        </div>
+      </div>
+
+      <div class="abilities-group">
+        <div class="ability-slot">&#9889;</div>
+        <div class="ability-slot">&#128737;</div>
+        <div class="ability-slot on-cooldown">&#128132;</div>
+        <div class="ability-slot">&#9733;</div>
+      </div>
+
+      <div class="hud-controls">
+        <div class="hud-btn">&#128228;</div>
+        <div class="hud-btn">&#128196;</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================
+     SECTION: TOWER SELECTION
+     ============================================ -->
+<div class="section">
+  <h2>Tower Selection Grid</h2>
+  <div class="tower-grid">
+    <div class="tower-card selected">
+      <div class="tower-card-icon">&#127993;</div>
+      <div class="tower-card-name">Archer</div>
+      <div class="tower-card-cost">&#9679; 100</div>
+    </div>
+    <div class="tower-card">
+      <div class="tower-card-icon">&#128163;</div>
+      <div class="tower-card-name">Catapult</div>
+      <div class="tower-card-cost">&#9679; 200</div>
+    </div>
+    <div class="tower-card">
+      <div class="tower-card-icon">&#129517;</div>
+      <div class="tower-card-name">Wall</div>
+      <div class="tower-card-cost">&#9679; 50</div>
+    </div>
+    <div class="tower-card">
+      <div class="tower-card-icon">&#9688;</div>
+      <div class="tower-card-name">Shrine</div>
+      <div class="tower-card-cost">&#9679; 300</div>
+    </div>
+    <div class="tower-card">
+      <div class="tower-card-icon">&#9822;</div>
+      <div class="tower-card-name">Cavalry</div>
+      <div class="tower-card-cost">&#9679; 250</div>
+    </div>
+    <div class="tower-card">
+      <div class="tower-card-icon">&#128296;</div>
+      <div class="tower-card-name">Gunpowder</div>
+      <div class="tower-card-cost">&#9679; 350</div>
+    </div>
+    <div class="tower-card">
+      <div class="tower-card-icon">&#127981;</div>
+      <div class="tower-card-name">Industrial</div>
+      <div class="tower-card-cost">&#9679; 400</div>
+    </div>
+    <div class="tower-card">
+      <div class="tower-card-icon">&#128737;</div>
+      <div class="tower-card-name">Bunker</div>
+      <div class="tower-card-cost">&#9679; 300</div>
+    </div>
+    <div class="tower-card">
+      <div class="tower-card-icon">&#128300;</div>
+      <div class="tower-card-name">Tech</div>
+      <div class="tower-card-cost">&#9679; 500</div>
+    </div>
+    <div class="tower-card">
+      <div class="tower-card-icon">&#10024;</div>
+      <div class="tower-card-name">Special</div>
+      <div class="tower-card-cost">&#9679; 600</div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================
+     SECTION: NOTIFICATIONS (Section 9.3)
+     ============================================ -->
+<div class="section">
+  <h2>Notifications (Section 9.3)</h2>
+  <div class="toast-container">
+    <div class="toast toast-success">
+      <div class="toast-icon">&#10003;</div>
+      <div>Level 3 Complete! +50 SAKART earned.</div>
+    </div>
+    <div class="toast toast-error">
+      <div class="toast-icon">&#10007;</div>
+      <div>Enemy breached! Lives remaining: 18</div>
+    </div>
+    <div class="toast toast-warning">
+      <div class="toast-icon">&#9888;</div>
+      <div>Wave 4 incoming in 10 seconds...</div>
+    </div>
+    <div class="toast toast-info">
+      <div class="toast-icon">&#8505;</div>
+      <div>The Golden Fleece legend originates from ancient Colchis.</div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================
+     SECTION: STANDARD SCROLL CARDS (Section 11.1)
+     ============================================ -->
+<div class="section">
+  <h2>Standard Scroll Cards (Section 11.1)</h2>
+  <h3>Damage Scrolls</h3>
+  <div class="row">
+    <div class="scroll-card scroll-common">
+      <div class="scroll-stack">x3</div>
+      <div class="scroll-icon">&#128293;</div>
+      <div class="scroll-name">Fire Scroll</div>
+      <div class="scroll-desc">Deal 50 damage to all enemies in range</div>
+    </div>
+    <div class="scroll-card scroll-uncommon">
+      <div class="scroll-icon">&#128293;</div>
+      <div class="scroll-name">Fire Scroll II</div>
+      <div class="scroll-desc">Deal 100 damage to all enemies in range</div>
+    </div>
+    <div class="scroll-card scroll-rare">
+      <div class="scroll-icon">&#128293;</div>
+      <div class="scroll-name">Inferno Scroll</div>
+      <div class="scroll-desc">Deal 250 damage + burn for 5s</div>
+    </div>
+    <div class="scroll-card scroll-epic">
+      <div class="scroll-stack">x1</div>
+      <div class="scroll-icon">&#128293;</div>
+      <div class="scroll-name">Colchian Fire</div>
+      <div class="scroll-desc">Ancient flame. 500 damage + stun 3s</div>
+    </div>
+  </div>
+
+  <h3>All Scroll Types</h3>
+  <div class="row">
+    <div class="scroll-card scroll-uncommon">
+      <div class="scroll-icon">&#128176;</div>
+      <div class="scroll-name">Gold Scroll</div>
+      <div class="scroll-desc">Gain +200 gold instantly</div>
+    </div>
+    <div class="scroll-card scroll-uncommon">
+      <div class="scroll-icon">&#10052;</div>
+      <div class="scroll-name">Frost Scroll</div>
+      <div class="scroll-desc">Slow all enemies 50% for 8s</div>
+    </div>
+    <div class="scroll-card scroll-uncommon">
+      <div class="scroll-icon">&#128154;</div>
+      <div class="scroll-name">Heal Scroll</div>
+      <div class="scroll-desc">Restore 200 HP to all towers</div>
+    </div>
+    <div class="scroll-card scroll-uncommon">
+      <div class="scroll-icon">&#128737;</div>
+      <div class="scroll-name">Shield Scroll</div>
+      <div class="scroll-desc">All towers immune for 5s</div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================
+     SECTION: MASTERY SCROLL CARDS (Section 11.2)
+     ============================================ -->
+<div class="section">
+  <h2>Mastery Scroll Cards (Section 11.2)</h2>
+  <div class="row">
+    <div class="mastery-scroll">
+      <div class="mastery-shield">&#128737;</div>
+      <div class="scroll-icon">&#128293;</div>
+      <div class="scroll-name" style="color:#5C4A2E">Archer Mastery</div>
+      <div class="mastery-tower-silhouette">&#127993;</div>
+      <div class="mastery-bonus">+3%</div>
+      <div class="scroll-desc" style="color:#7A6A50;font-size:9px">Archer Tower damage boost</div>
+    </div>
+    <div class="mastery-scroll">
+      <div class="mastery-shield">&#128737;</div>
+      <div class="scroll-icon">&#128163;</div>
+      <div class="scroll-name" style="color:#5C4A2E">Catapult Mastery</div>
+      <div class="mastery-tower-silhouette">&#128163;</div>
+      <div class="mastery-bonus">+6%</div>
+      <div class="scroll-desc" style="color:#7A6A50;font-size:9px">Catapult Tower damage boost</div>
+    </div>
+    <div class="mastery-scroll mastery-pulse">
+      <div class="mastery-shield">&#128737;</div>
+      <div class="scroll-icon">&#9688;</div>
+      <div class="scroll-name" style="color:#5C4A2E">Shrine Mastery</div>
+      <div class="mastery-tower-silhouette">&#9688;</div>
+      <div class="mastery-bonus">+9%</div>
+      <div class="scroll-desc" style="color:#7A6A50;font-size:9px">Shrine Tower ability boost (EQUIPPED)</div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================
+     SECTION: FILE NAMING CONVENTION (Section 12)
+     ============================================ -->
+<div class="section">
+  <h2>File Naming Convention (Section 12.1)</h2>
+  <div class="code-block">
+Format: [category]_[era]_[type]_[variant]_[version].[ext]<br><br>
+Examples:<br>
+  twr_e03_archer_golden_age_v02.png<br>
+  ene_e04_mongol_cavalry_v01.png<br>
+  her_e00_medea_v01.png<br>
+  map_e01_mtskheta_village_v03.jpg<br>
+  scr_standard_damage_rare_v01.png<br>
+  ui_btn_primary_v01.svg<br><br>
+Categories: twr | ene | her | map | ui | scr | fxs | bg<br>
+Eras: e00 (Colchis) through e09 (Modern)
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+# Sakartvelo Defenders - Tower Prompts
+# Era: e01_kingdom_of_iberia
+
+## ARCHER
+isometric tower game sprite, Kingdom of Iberia archer tower with elevated shooting platform and parapets, stone fortress with early church elements and wooden palisades, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #4A3728 #8D6E63 #2C1F17 #C8A96E, isometric view, centered composition, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## CATAPULT
+isometric tower game sprite, Kingdom of Iberia catapult siege tower with throwing arm and stone ammunition, stone fortress with early church elements and wooden palisades, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #4A3728 #8D6E63 #2C1F17 #C8A96E, isometric view, centered composition, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## WALL
+isometric tower game sprite, Kingdom of Iberia defensive wall tower with battlements and reinforced stone, stone fortress with early church elements and wooden palisades, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #4A3728 #8D6E63 #2C1F17 #C8A96E, isometric view, centered composition, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## SHRINE
+isometric tower game sprite, Kingdom of Iberia shrine tower with religious dome and cross decoration, stone fortress with early church elements and wooden palisades, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #4A3728 #8D6E63 #2C1F17 #C8A96E, isometric view, centered composition, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## CAVALRY
+isometric tower game sprite, Kingdom of Iberia cavalry tower with horse stable and mounted unit deployment, stone fortress with early church elements and wooden palisades, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #4A3728 #8D6E63 #2C1F17 #C8A96E, isometric view, centered composition, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## GUNPOWDER
+isometric tower game sprite, Kingdom of Iberia gunpowder cannon tower with gunports and smoke effects, stone fortress with early church elements and wooden palisades, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #4A3728 #8D6E63 #2C1F17 #C8A96E, isometric view, centered composition, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## INDUSTRIAL
+isometric tower game sprite, Kingdom of Iberia industrial area damage tower with smokestack and steam vents, stone fortress with early church elements and wooden palisades, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #4A3728 #8D6E63 #2C1F17 #C8A96E, isometric view, centered composition, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## BUNKER
+isometric tower game sprite, Kingdom of Iberia fortified bunker tower with sandbags and machine gun position, stone fortress with early church elements and wooden palisades, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #4A3728 #8D6E63 #2C1F17 #C8A96E, isometric view, centered composition, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## TECH
+isometric tower game sprite, Kingdom of Iberia high-tech special tower with energy crystal and antenna array, stone fortress with early church elements and wooden palisades, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #4A3728 #8D6E63 #2C1F17 #C8A96E, isometric view, centered composition, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## SPECIAL
+isometric tower game sprite, Kingdom of Iberia special unique tower with ornate gold dome and decorative columns, stone fortress with early church elements and wooden palisades, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #4A3728 #8D6E63 #2C1F17 #C8A96E, isometric view, centered composition, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+

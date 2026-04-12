@@ -1,0 +1,1475 @@
+
+--- Page 1 ---
+
+Sakartvelo
+Defenders
+Art Style Guide v2.1
+Blender Pipeline Edition
+2D Isometric Cel-Shaded Art Direction with 10-Era Color Palette System,
+Blender 3D-to-2D Pipeline, Tower Silhouette System, and Character
+Proportions. Aligned with Game Design Bible v3.0.
+VERSION
+v2.1DATE
+April 2026ENGINE
+Godot 4.x + Blender
+GAME ART DIRECTION DOCUMENT
+CONFIDENTIAL ART PRODUCTION REFERENCE
+
+--- Page 2 ---
+
+Table of Contents
+ 
+5
+1. Art Direction
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 5
+1.1 Overall Style: 2D Isometric Cel-Shaded
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 5
+1.2 Production Pipeline: Blender to 2D Sprites
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 5
+1.3 Rendering Rules (Visual Output)
+6
+2. Global UI Palette
+7
+3. Era Color Palettes
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 8
+3.1 Era 0: Ancient Colchis
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 8
+3.2 Era 1: Kingdom of Iberia
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 8
+3.3 Era 2: Age of Invasions
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 8
+3.4 Era 3: The Georgian Golden Age
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 9
+3.5 Era 4: The Mongol Catastrophe
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 9
+3.6 Era 5: Between Empires
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 9
+3.7 Era 6: Russian Empire
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 9
+3.8 Era 7: First Democratic Republic
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 9
+3.9 Era 8: The Soviet Century
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 10
+3.10 Era 9: Modern Georgia
+10
+4. Tower Silhouette Guidelines
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 10
+4.1 Silhouette Reference
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 11
+4.2 Silhouette Rules
+
+--- Page 3 ---
+
+11
+5. Character Proportion Reference
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 11
+5.1 Standard Proportions (10-Unit System)
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 12
+5.2 Proportion Variations by Character Type
+12
+6. Hero Portrait Guidelines
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 12
+6.1 Composition Rules
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 13
+6.2 Portrait Render Setup
+13
+7. Enemy Design Guidelines
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 13
+7.1 Enemy Category Visual Language
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 13
+7.2 Enemy Color Rules
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 14
+7.3 Cultural Sensitivity Standards
+14
+8. Map Design Guidelines
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 14
+8.1 Map Composition
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 14
+8.2 Elevation Rendering
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 15
+8.3 Era Map Themes
+15
+9. UI Design Language
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 15
+9.1 UI Components
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 16
+9.2 HUD Layout
+16
+10. AI Concept Reference System
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 16
+10.1 Prompt Architecture
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 17
+10.2 Prompt Keywords by Era
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 17
+10.3 Concept-to-Model Workflow
+
+--- Page 4 ---
+
+18
+11. Blender Pipeline
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 18
+11.1 Scene Setup
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 18
+11.2 Material System
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 19
+11.3 Outline Rendering (Freestyle)
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 19
+11.4 Polycount Budgets
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 20
+11.5 Sprite Sheet Export
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 20
+11.5.1 Animation Frames
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 20
+11.5.2 Render Resolution
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 20
+11.5.3 Sprite Sheet Layout
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 21
+11.6 Blender Project Organization
+21
+12. Scroll and Mastery Visual Design
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 21
+12.1 Scroll Appearance
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 22
+12.2 Mastery Badge Display
+22
+13. File Naming Convention
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 22
+13.1 Blender Source Files
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 22
+13.2 Rendered Sprite Files
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 22
+13.3 Material and Palette Files
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 23
+13.4 Naming Rules
+23
+14. Consistency Checklist
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 23
+14.1 Visual Consistency
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 23
+14.2 Pipeline Consistency
+
+--- Page 5 ---
+
+24
+15. Hermes Collaboration Scope
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 24
+15.1 Hermes Responsibilities
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 24
+15.2 Hermes Limitations
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 25
+15.3 Priority Work Order
+25
+16. Version History
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 25
+v2.1 - Blender Pipeline Update
+ .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 26
+v2.0 - Initial Release
+
+--- Page 6 ---
+
+1. Art Direction
+1.1 Overall Style: 2D Isometric Cel-Shaded
+Sakartvelo Defenders uses a 2D isometric art style with cel-shaded lighting. All game assets, including
+towers, enemies, heroes, maps, and UI elements, share this foundational visual language. The isometric
+perspective provides clear spatial awareness for tower placement decisions while maintaining a warm,
+illustrated quality that suits the historical subject matter. Cel-shaded lighting creates sharp shadow
+boundaries and flat color fills that give the art a distinctive, hand-illustrated appearance that
+complements the historical theme.
+The art style draws inspiration from illustrated history books, museum dioramas, and traditional
+Georgian miniature painting. Every asset should feel like it belongs in a high-quality history textbook
+rather than a generic mobile game. The color palette for each era is carefully curated to reflect the
+historical period's visual character, while maintaining overall cohesion through shared rendering
+techniques including consistent shadow direction, outline weight, and texture density across all assets.
+1.2 Production Pipeline: Blender to 2D Sprites
+All game art assets are produced using Blender as the primary 3D modeling and rendering tool, then
+exported as 2D sprite sheets for use in the Godot 4.x game engine. The game displays these assets as flat
+2D images in an isometric perspective; there is no real-time 3D rendering during gameplay. The 3D
+production pipeline provides several critical advantages over direct 2D illustration or AI generation:
+perfectly consistent lighting and shadows across all assets, precise control over proportions through
+shared armatures and reference rigs, efficient iteration through material and texture swaps without
+re-modeling, and automatic generation of rotation angles and animation frames from a single model.
+The workflow follows a strict linear pipeline:
+Concept Reference (AI-generated mood boards, historical photographs, archaeological references)
+3D Modeling (Blender, low-poly models optimized for isometric rendering)
+Texturing (flat color materials matching era palettes, cel-shader node setup)
+Rendering (orthographic camera, Freestyle outlines, sprite sheet export)
+Engine Integration (Godot 4.x sprite import, animation setup)
+Each stage has defined quality gates documented in the Blender Pipeline section (Section 11). AI image
+generation is used exclusively during the Concept Reference stage for mood boards and visual
+exploration, never as final production output.
+1.3 Rendering Rules (Visual Output)
+These rules define the final rendered appearance of all 2D sprites in the game. Whether an asset is a
+tower, enemy, hero, or environmental prop, the rendered output must conform to these specifications.
+
+--- Page 7 ---
+
+These are the rules that the Blender rendering pipeline must reproduce consistently across every asset
+and every era.
+Shadow Direction: All shadows cast to the lower-right at a 45-degree angle, consistent with the
+isometric camera position. Shadow color is a desaturated version of the object's base color at 40%
+opacity. Shadow offset is proportional to object height: taller objects cast longer shadows. In Blender,
+this is achieved with a single directional light (Sun type) rotated to -45 degrees on the X axis and 45
+degrees on the Y axis from the orthographic camera.
+Outline Weight: All objects have a 2px dark outline (#1A1A1A) on all visible edges except where
+objects contact the ground plane. Ground shadows do not have outlines. Character outlines are slightly
+thicker (3px) for readability at small sizes. In Blender, outlines are produced using Freestyle edge
+rendering with line thickness calibrated per object category.
+Color Fills: Flat color fills with no gradients except for metallic surfaces (swords, armor) which use a
+simple two-tone highlight/shadow gradient. Color values must match the era-specific palette exactly; no
+deviations are permitted without explicit approval from the style guide. In Blender, materials use
+Principled BSDF with roughness set to 1.0 for non-metallic surfaces.
+Texture: Minimal texture usage. Stone surfaces may include a subtle noise overlay at 5-10% opacity.
+Wood grain is represented by 2-3 parallel lines rather than photorealistic texture. Fabric is flat colored
+with fold lines only on capes and robes. Normal maps are not used.
+Lighting Model: Single directional light source from the upper-left, creating consistent highlights on all
+surfaces. The highlight color is the era's highlight palette color at 30% opacity, blended additively. No
+ambient occlusion or global illumination effects.
+Anti-Aliasing: All renders use 8x multi-sample anti-aliasing to ensure smooth edges at all output
+resolutions. No post-processing effects (bloom, depth of field, motion blur) are applied.
+2. Global UI Palette
+The global UI palette is used for all user interface elements that are not era-specific: menus, buttons,
+HUD elements, settings panels, the marketplace, and loading screens. Era-specific content uses the era
+palettes defined in Section 3. The global UI palette is designed to be neutral and readable,
+complementing any era's color scheme without clashing.
+Element
+ Color(s)
+ Usage
+ 
+Background
+#1A1A1A / #F5F0EB
+ Dark mode default; light mode in settings
+Primary Text
+#FFFFFF / #1A1A1A
+ White on dark / Black on light
+ 
+Secondary Text
+#B0B8C0 / #6B7280
+ Muted labels and descriptions
+ 
+Accent
+ #E67E22
+ Interactive elements, selected states, CTAs
+
+--- Page 8 ---
+
+Accent Hover
+ #F39C12
+ Button hover state
+ 
+Danger
+ #E74C3C
+ Damage indicators, low-health warnings
+Success
+ #27AE60
+ Level completion, achievement unlocks
+Info
+ #3498DB
+ Tooltips and educational pop-ups
+ 
+Panel Background
+#2C3E50 / #FFFFFF
+ Cards, modals, overlay panels
+ 
+Border
+#3D566E / #E5E7EB
+ Subtle borders between UI sections
+ 
+Disabled
+#4A5568 / #D1D5DB
+ Inactive buttons, locked content
+ Table 2.1: Global UI Palette
+ 
+3. Era Color Palettes
+Each of the 10 eras has a dedicated 8-color palette that defines the visual character of all era-specific
+assets. These palettes are derived from historical research into the architecture, clothing, military
+equipment, and natural environment of each period. The 8 color slots serve specific roles: Base
+(dominant color for large surfaces), Highlight (brightest color, light-facing planes), Shadow (darkest
+color, depth), Accent (era signature color), Sky (background gradient), Vegetation (trees, grass, crops),
+Stone/Earth (building materials), Water (rivers, fountains, coast).
+Er
+a
+Name
+Base
+Highli
+ght
+Shado
+w
+Accent
+Sky
+Veg
+Stone
+Water
+0
+Ancient
+Colchis
+#2D5A
+3D
+#4CAF
+50
+#1B3A
+26
+#D4A0
+17
+#87CE
+EB
+#3A7D
+44
+#8B735
+5
+#2E86
+AB
+1
+Kingdom of
+Iberia
+#4A37
+28
+#8D6E
+63
+#2C1F
+17
+#C8A9
+6E
+#7FB3
+D8
+#5D8A
+3C
+#9E8B
+6E
+#4682B
+4
+2
+Age of
+Invasions
+#5C3A
+21
+#A052
+2D
+#3B251
+0
+#DAA5
+20
+#B8860
+B
+#6B8E
+23
+#8B7D
+6B
+#4A70
+8B
+3
+Georgian
+Golden Age
+#1A4D
+2E
+#D4AF
+37
+#0D28
+18
+#C41E
+3A
+#4A90
+D9
+#4CAF
+50
+#B8860
+B
+#2980B
+9
+4
+Mongol
+Catastrophe
+#3D2B
+1F
+#8B691
+4
+#261A
+11
+#CC55
+00
+#8B451
+3
+#556B2
+F
+#69696
+9
+#4682B
+4
+5
+Between
+Empires
+#1A3C
+5E
+#3498
+DB
+#0D21
+37
+#E74C
+3C
+#F5DE
+B3
+#2E8B
+57
+#CD85
+3F
+#5F9E
+A0
+6
+Russian
+Empire
+#2C2C
+3E
+#7B8D
+B1
+#1A1A
+2E
+#9B59
+B6
+#BDC3
+C7
+#4A7C
+59
+#8B868
+2
+#5B8F
+A8
+7
+First Dem.
+Republic
+#1B433
+2
+#52B78
+8
+#0B261
+8
+#E6394
+6
+#A8DA
+DC
+#40916
+C
+#6B705
+C
+#457B9
+D
+
+--- Page 9 ---
+
+8
+The Soviet
+Century
+#2D2D
+2D
+#75757
+5
+#1A1A
+1A
+#D32F
+2F
+#90A4
+AE
+#558B2
+F
+#79554
+8
+#546E7
+A
+9
+Modern
+Georgia
+#0D1B
+2A
+#415A
+77
+#070E1
+8
+#E6394
+6
+#E0E1
+DD
+#2D6A
+4F
+#77777
+7
+#1D35
+57
+ Table 3.0: Complete Era Palette Reference
+ 
+3.1 Era 0: Ancient Colchis
+The Colchis palette is dominated by deep forest greens and rich earth tones, reflecting the lush Black Sea
+coastal environment described in Greek sources. The golden accent (#D4A017) references the Golden
+Fleece legend and the historical gold-mining activities of the Colchian civilization. The base green
+(#2D5A3D) evokes the dense Colchian forests that were a major strategic asset in ancient warfare,
+providing timber for fortifications and concealment for defenders. Tower skins in this era use the
+Stone/Earth palette for foundations and the Base green for wooden superstructures. The Accent gold is
+used for decorative elements on important structures and for Medea's hero design. Enemy designs for
+tribal raiders use the Shadow palette for leather armor and the Accent gold for jewelry and ceremonial
+items.
+3.2 Era 1: Kingdom of Iberia
+The Iberian palette shifts to warm browns and muted golds, reflecting the stone architecture and arid
+highland landscapes of early Georgian statehood. The period covers the transition from pagan to
+Christian Georgia, and the palette balances the warm earth tones of pre-Christian architecture with the
+nascent use of cross symbols in decorative elements. The highlight brown (#8D6E63) represents the
+sandstone used in Iberian fortresses, while the accent gold (#C8A96E) evokes the royal Bagrationi
+regalia that would become iconic in later eras. Tower skins in this era feature more substantial stone
+construction compared to Era 0. The introduction of Christianity is reflected in the subtle use of cross
+motifs on tower decorations.
+3.3 Era 2: Age of Invasions
+The Age of Invasions palette is deliberately harsh and desaturated, reflecting the devastation of the Arab
+conquest period and the ongoing military pressure on Georgian lands. The base brown (#5C3A21) is
+darker and more austere than Era 1, representing fortresses under siege and a civilization under threat.
+The accent gold (#DAA520) is muted and battle-worn, symbolizing the resilience of Georgian culture
+under occupation rather than its prosperity. This era's visual language is defined by contrast between the
+worn, battle-scarred Georgian architecture and the imposing, geometric forms of Arab military
+architecture.
+3.4 Era 3: The Georgian Golden Age
+
+--- Page 10 ---
+
+The Golden Age palette is the richest and most vibrant in the game, reflecting the historical period of
+Georgia's greatest power and cultural achievement. The deep green base (#1A4D2E) represents the lush
+Georgian countryside during a period of agricultural prosperity. The accent gold (#D4AF37) is pure and
+brilliant, symbolizing the legendary wealth of Queen Tamar's court. The accent red (#C41E3A)
+represents both the Georgian cross and the military banners of the unified Georgian army. Tower skins
+in this era are the most ornate in the game, featuring intricate stone carvings, gold decorative elements,
+and the distinctive Georgian cross motif.
+3.5 Era 4: The Mongol Catastrophe
+The Mongol Catastrophe palette is the darkest and most somber in the game, reflecting the destruction
+and despair of the Mongol conquest period. The base brown (#3D2B1F) is nearly black, representing
+burned and abandoned cities. The accent orange (#CC5500) is harsh and industrial, evoking fire and
+destruction rather than the warm gold of earlier eras. The vegetation color (#556B2F) is desaturated,
+suggesting scorched earth and dying crops. Visual storytelling in this era emphasizes contrast between
+the ruined Georgian architecture and the imposing, utilitarian forms of Mongol military camps.
+3.6 Era 5: Between Empires
+The Between Empires palette reflects the cosmopolitan character of Georgian culture during the
+Ottoman-Persian rivalry period. The blue base (#1A3C5E) represents the expanding influence of both
+empires on Georgian territory. The accent red (#E74C3C) is vivid and dramatic, symbolizing both the
+blood of constant warfare and the rich Persian-influenced textile traditions. This era's visual language is
+defined by cultural fusion. Tower skins feature a blend of Georgian, Persian, and Ottoman architectural
+elements.
+3.7 Era 6: Russian Empire
+The Russian Empire palette is cool and institutional, reflecting the period of annexation and the imposed
+European architectural influence on Georgian cities. The purple-gray base (#2C2C3E) represents the
+bureaucratic and melancholic character of the era, while the accent purple (#9B59B6) subtly references
+the Russian imperial aesthetic. Tower skins in this era mark the transition from traditional Georgian
+military architecture to European-influenced fortifications.
+3.8 Era 7: First Democratic Republic
+The First Republic palette is surprisingly optimistic, using fresh greens and blues to reflect the hope and
+democratic aspirations of Georgia's brief independence period (1918-1921). The base green (#1B4332)
+is lighter and more vibrant than earlier military eras, suggesting renewal and national rebirth. The accent
+red (#E63946) represents both the revolutionary spirit and the sacrifice of the independence wars.
+3.9 Era 8: The Soviet Century
+
+--- Page 11 ---
+
+The Soviet Century palette is stark and utilitarian, dominated by grays and the iconic Soviet red. The
+base gray (#2D2D2D) represents the concrete brutalism of Soviet architecture, while the accent red
+(#D32F2F) is the unmistakable symbol of Soviet power. The desaturated blue-gray sky (#90A4AE)
+conveys the oppressive atmosphere of the period. Educational content for this era is presented with
+factual neutrality, and the visual design avoids both glorification and demonization.
+3.10 Era 9: Modern Georgia
+The Modern Georgia palette is dark and sophisticated, using deep navy blues and strategic pops of red to
+convey a contemporary, forward-looking aesthetic. The base navy (#0D1B2A) represents the night-time
+urban environment of modern Tbilisi, while the accent red (#E63946) connects to the Georgian flag and
+the ongoing national identity. Tower skins in this era feature cutting-edge military technology:
+precision-guided weapon systems, drone surveillance platforms, and fortified military outposts with
+modern communications equipment.
+4. Tower Silhouette Guidelines
+Each of the 10 tower types has a unique silhouette that must be recognizable at small sizes
+(approximately 64x64 pixels on mobile, 128x128 on desktop) without relying on color or detail.
+Silhouette distinctiveness is critical for gameplay readability: players must be able to identify tower
+types instantly during combat.
+4.1 Silhouette Reference
+Tower Type
+Silhouette Shape
+Height
+Width
+ Key Identifier
+ 
+Archer Tower
+Tall narrow spire
+8-10
+3-4
+ Pointed roof, flag pole
+ 
+Catapult/Trebuche
+t
+Wide base, elevated
+ arm
+ 5-6
+6-7
+ Pivoting arm, bucket
+ 
+Wall/Barrier
+Low wide rectangle
+2-3
+6-8
+ Crenellations, flat top
+ 
+Cavalry Outpost
+Medium organic horse
+5-6
+5-6
+ Horse head, rider
+ 
+Siege Tower
+Tall boxy w/
+battlements
+ 9-10
+5-6
+ Square top, arrow slits
+ 
+Magic/Shrine
+Domed, ornate w/ spire
+7-8
+4-5
+Dome, cross/crescent top
+ 
+Gunpowder Tower
+Medium cylindrical
+5-6
+4-5
+Cannon barrel protrusion
+ 
+Industrial Tower
+Tall mechanical
+8-9
+4-5
+Chimney, gear mechanisms
+ 
+Bunker Tower
+Low flat angular
+3-4
+5-6
+Slotted window, angled walls
+ 
+Tech Tower
+Sleek angular
+ 6-7
+3-4
+Dish/antenna, LED elements
+
+--- Page 12 ---
+
+Table 4.1: Tower Silhouette Reference
+ 
+4.2 Silhouette Rules
+No Overlap: No two tower types should share the same basic silhouette shape. If two towers appear
+identical in silhouette, the design must be revised. In Blender, silhouette comparison is performed by
+rendering all towers as flat black shapes against a white background and checking for visual confusion.
+Scale Consistency: All towers are designed on the same grid scale. A 10-unit tall Archer Tower and a
+3-unit tall Wall/Barrier must appear correctly proportioned when placed next to each other. The Blender
+unit system uses 1 Blender unit = 1 game unit for direct proportion mapping.
+Era Skin Layering: Era-specific skins are applied as a material and geometry overlay on the base model.
+The silhouette shape never changes across eras; only the surface materials, decorative geometry, and
+colors vary.
+Readability at Small Size: All tower designs must be tested at 64x64 pixel resolution in the Godot
+engine. If a tower cannot be identified at this size, the design is too complex and must be simplified.
+Upgrade Visual Feedback: Tower upgrades (Level 1 to Level 3) must be visually distinguishable. Level
+2 adds minor decorative elements. Level 3 adds significant visual changes: additional height, new
+structural elements, or glowing emission materials.
+5. Character Proportion Reference
+All humanoid characters (heroes, enemies, NPCs) follow a standardized 10-unit proportion system. This
+system ensures visual consistency across all character models and provides clear guidelines for Blender
+modeling. The 10-unit system divides the character's total height into 10 equal Blender units, with
+specific body parts occupying defined proportions.
+5.1 Standard Proportions (10-Unit System)
+Unit
+Body Part
+ Proportion
+ Notes
+ 
+1-2
+Head
+2 units (20%)
+Larger than realistic for readability at small sizes
+3
+Neck + Shoulders
+1 unit (10%)
+Broad shoulders for heroes, narrower for civilians
+4-5
+Torso (upper)
+2 units (20%)
+ Armor/clothing detail zone
+ 
+6
+Torso (lower) + Belt
+1 unit (10%)
+ Belt/buckle as era identifier
+ 
+7-8
+Legs (upper)
+2 units (20%)
+ Armor/clothing varies by era
+ 
+9-10
+Legs (lower) + Feet
+2 units (20%)
+Footwear reflects era technology
+ Table 5.1: Standard 10-Unit Proportions
+
+--- Page 13 ---
+
+5.2 Proportion Variations by Character Type
+Heroes: 11 units total. Head is 2.5 units for greater facial detail visibility. Shoulders are 1.2 units wider
+than standard. Torso is elongated by 0.5 units to convey authority. These subtle modifications make
+heroes visually distinct from standard units without breaking the overall proportion system.
+Boss Enemies: 12-14 units total. Entire body scaled up uniformly by 20-40%. This uniform scaling
+ensures that boss silhouettes are immediately recognizable as larger versions of their unit type. Boss
+proportions follow the same 10-unit ratios applied to the larger frame.
+Cavalry Units: 12 units total (10 for rider + 2 for horse head). Horse body extends 3 units behind the
+rider's center point. Cavalry proportions only apply to the rider; the horse follows separate animal
+proportion guidelines.
+Flying Units: 8 units total (more compact to suggest agility). Wings extend 3-4 units from the shoulder
+line on each side. Wing membranes use the era's Shadow color at 60% opacity for a translucent effect,
+achieved through Blender alpha blend mode on the wing material.
+6. Hero Portrait Guidelines
+Hero portraits are the most detailed character art in the game, appearing in the hero selection screen,
+level loading screens, and the collection gallery. Each portrait is a half-body or three-quarter view
+composition rendered from the hero's 3D model with a dedicated portrait camera setup. Portraits must
+work at both large sizes (gallery view) and small sizes (selection thumbnails, 80x80 pixels).
+6.1 Composition Rules
+Framing: Half-body composition, cropped at the waist. The hero's face occupies the upper third of the
+portrait, centered horizontally. The hero's body is angled 15-30 degrees from the camera (three-quarter
+view), never a flat profile or direct front-facing pose.
+Background: A blurred, desaturated version of the hero's era palette as a gradient. The hero's Accent
+color appears as a subtle radial glow behind the head, creating visual separation from the background
+without adding a visible halo effect.
+Expression: Each hero has a defined expression that reflects their personality. Military heroes have
+determined, focused expressions. Cultural heroes have thoughtful, contemplative expressions. Support
+heroes have calm, serene expressions. No hero has an aggressive or angry expression; even in a war
+game, the tone is dignified rather than hostile.
+Era Markers: Each portrait includes 2-3 small era-identifying elements in the background or clothing
+details: a cross for Christian-era heroes, a crown for royalty, a manuscript for literary figures, military
+insignia for commanders. These markers must be subtle enough to not distract from the portrait but clear
+
+--- Page 14 ---
+
+enough to communicate the hero's era at a glance.
+6.2 Portrait Render Setup
+Each hero portrait is rendered from a dedicated Blender scene using the following standardized setup.
+The portrait camera uses a 50mm focal length lens for natural perspective, positioned at eye level with
+the hero angled 20 degrees from center. Lighting uses the same single-directional Sun light as gameplay
+assets, supplemented by a very subtle fill light at 10% intensity to soften facial shadows. The render
+resolution is 512x512 pixels for the source asset, which Godot downscales for thumbnails. The
+background plane uses the era palette gradient with a Gaussian blur node in the compositor.
+7. Enemy Design Guidelines
+Enemy design follows the same 10-unit proportion system as heroes but with distinct visual language
+that makes enemies immediately distinguishable from player units at a glance. The enemy design
+philosophy is based on three principles: historical authenticity, mechanical clarity, and cultural
+sensitivity.
+7.1 Enemy Category Visual Language
+Category
+Body Type
+Movement
+Color Treatment
+ Silhouette Key
+ 
+Infantry
+Standard 10-unit
+Ground path
+Era shadow + base
+ Shield/spear shape
+ 
+Cavalry
+10-unit + mount
+Fast ground
+Era base + highlight
+ Horse silhouette
+ 
+Siege
+Boxy, 6-8 units
+ wide
+ Slow ground
+Era stone + shadow
+ Wheeled/wide frame
+ 
+Flying
+Compact 8-unit
+Air path
+Era shadow, translucent wings
+Wing spread shape
+ 
+Boss
+12-14 unit scale
+Ground
+(varies)
+Full era palette + glow
+Unique per boss
+ 
+ Table 7.1: Enemy Category Visual Language
+ 
+7.2 Enemy Color Rules
+Enemies use a deliberately restricted palette subset to create visual contrast with player towers. While
+towers use the full 8-color era palette, enemies are rendered primarily in the Shadow and Stone/Earth
+colors of their era, with the Accent color used sparingly for shields, banners, and weapons. This color
+restriction ensures that player towers are visually dominant on the battlefield, making it easy to
+distinguish defensive structures from enemy units at a glance.
+
+--- Page 15 ---
+
+Enemy faction colors provide additional differentiation within each era. When an era features multiple
+enemy factions (such as Ottoman and Persian forces in Era 5), each faction receives a subtle color tint:
+Ottoman forces lean toward the blue end of the palette range, while Persian forces lean toward the red
+end. This faction tinting is achieved by shifting the Base and Stone/Earth materials by 15-20 hue degrees
+in the Blender color ramp.
+7.3 Cultural Sensitivity Standards
+Enemy designs must never use exaggerated ethnic features, caricatured facial structures, or stereotypical
+clothing that could be interpreted as mocking a real cultural group. Enemies are military units, depicted
+with the same dignity and accuracy as player units. Historical accuracy means showing real military
+equipment and tactics of the period, not reinforcing ethnic stereotypes. This principle is especially
+important for eras involving ongoing political sensitivities (Era 8 Soviet period, Era 9 modern conflicts)
+where enemy designs must be factually accurate and neutrally presented. All enemy models must pass a
+cultural sensitivity review before being approved for production rendering.
+8. Map Design Guidelines
+Maps are the visual backdrop for gameplay, providing the context for tower placement, enemy pathing,
+and strategic decision-making. Each of the 200 levels has a unique map, but maps within each era share
+visual characteristics defined by the era palette and the map design rules below. Maps must be visually
+interesting without distracting from the gameplay elements.
+8.1 Map Composition
+Layered Depth: Maps use three depth layers: foreground (interactive zone where towers are placed),
+midground (enemy path with terrain features), and background (sky, distant mountains, horizon). The
+foreground occupies the bottom 40% of the screen, the midground the middle 35%, and the background
+the top 25%.
+Path Visibility: Enemy paths must be clearly visible against the terrain. Paths are rendered as lighter or
+darker strips that contrast with the surrounding vegetation. Path width is consistent within a map but
+may vary between maps. Paths never overlap or cross at the same elevation.
+Placement Zones: Tower placement zones are indicated by subtle grid markers on the foreground
+terrain. These markers are visible enough to guide placement but not so prominent that they dominate
+the visual composition. Grid markers use the era's Shadow color at 30% opacity.
+8.2 Elevation Rendering
+Maps use visual elevation cues to communicate the height mechanic. Elevated positions are rendered
+with a visible base/foundation that shows the height difference from the ground level. The foundation
+uses the era's Stone/Earth color, and the elevated platform uses the era's Base color. Towers placed on
+
+--- Page 16 ---
+
+elevated positions appear visually higher on the screen, with a visible shadow beneath them indicating
+their height advantage. Elevation levels follow a simple two-tier system: ground level and elevated.
+Maps typically have 2-4 elevated positions, providing meaningful but not overwhelming strategic
+options.
+8.3 Era Map Themes
+Era
+Primary Environment
+Key Terrain Features
+ Weather/Atmosphere
+ 
+0
+Colchian forests, Black Sea
+coast
+Dense forests, river crossings, gold mines
+Misty, humid, golden light
+1
+Caucasian highlands, early
+cities
+Mountain passes, cave cities
+(Uplistsikhe)
+Crisp mountain air, bright sunlight
+2
+Fortified borderlands
+Siege-damaged fortresses, mountain
+passes
+Dusty, stormy, smoke from burning
+cities
+3
+Prosperous towns, grand
+castles
+Cathedrals, monasteries (Gelati, Vardzia)
+Warm golden light, clear skies
+4
+Devastated countryside
+Burned cities, abandoned villages
+Overcast, ash-choked, red sky
+5
+Three-kingdom diverse
+terrain
+Wine country, fortified cities
+Warm Mediterranean, dusty
+campaigns
+6
+Modernizing Tbilisi
+Railway lines, European-style buildings
+Industrial haze, mixed old/new
+7
+War-torn countryside
+Trenches, barricaded streets
+Dramatic clouds, tension lighting
+8
+Soviet industrial zones
+Concrete blocks, factory complexes
+Gray overcast, utilitarian
+9
+Modern Tbilisi, conflict
+zones
+Contemporary military installations
+Night-time urban, digital displays
+ Table 8.1: Era Map Themes
+ 
+9. UI Design Language
+The UI design language defines the visual treatment of all in-game interface elements: buttons, panels,
+health bars, resource counters, hero ability cooldowns, and notification systems. The UI language is
+era-independent (always using the Global UI Palette from Section 2) but adapts its border style and
+background opacity to complement the current era's visual character.
+9.1 UI Components
+Buttons: Rounded rectangles with 8px border radius. Primary buttons use Accent fill (#E67E22) with
+white text. Secondary buttons use Panel Background fill with Primary text. All buttons have a 2px
+
+--- Page 17 ---
+
+border in Border color. Hover state brightens fill by 15%. Press state darkens fill by 10% and shifts
+content 1px down. Disabled state uses Disabled fill with Disabled text.
+Panels: Rounded rectangles with 12px border radius. Panel Background fill with Border color stroke.
+Panels have a subtle inner shadow (2px, 10% opacity) to create depth. Panels containing era-specific
+content include a thin accent strip (3px) at the top edge using the current era's Accent color.
+Health Bars: Horizontal bars with 4px height, rounded ends. Full health uses Success green (#27AE60).
+Mid health (50-80%) uses Info blue (#3498DB). Low health (under 50%) uses Danger red (#E74C3C).
+Background bar uses Disabled color. Health bars include a 1px dark outline for readability.
+Resource Counters: Icon + number combination, right-aligned in the HUD. Resource icons use 24x24px
+sprites. Numbers use Primary Text color with a 1px dark shadow for readability. Values update with a
+smooth count-up animation (0.3s duration).
+Cooldown Indicators: Circular progress overlay on hero ability icons. The unfilled portion uses Disabled
+color at 60% opacity, while the filled portion uses the Info blue. A numerical countdown appears in the
+center when cooldown exceeds 3 seconds.
+9.2 HUD Layout
+The in-game HUD occupies fixed positions on the screen and must never overlap with tower placement
+zones or enemy paths. The top bar contains: resource counters (left), era/level indicator (center), and
+pause/settings buttons (right). The bottom bar contains: hero portrait and ability buttons (left), tower
+build menu (center), and wave/score information (right). All HUD elements use the Global UI Palette
+and have a semi-transparent Panel Background with Border stroke to ensure readability against any map
+background.
+The HUD adapts minimally to screen size: on mobile (portrait), the tower build menu moves to the right
+edge as a vertical scrollable list. On desktop (landscape), it remains as a horizontal bar at the bottom.
+10. AI Concept Reference System
+AI image generation tools are used exclusively during the Concept Reference stage of the production
+pipeline, never as final production output. Their role is to generate mood boards, explore visual
+directions, and provide reference material for Blender 3D modeling.
+10.1 Prompt Architecture
+All AI concept prompts follow a standardized structure to ensure the generated reference images align
+with the era palettes and visual direction established in this guide:
+[era name] Georgian [subject], [environment], [mood/atmosphere], historical
+reference, concept art, isometric perspective, cel-shaded style, [era base
+color] dominant palette, [era accent color] highlights, illustrated history
+book quality, clean composition, no text, no watermark
+
+--- Page 18 ---
+
+Example (Era 3 Concept): "Georgian Golden Age castle fortress, Caucasus mountains background,
+warm golden light, prosperous medieval kingdom, concept art, isometric perspective, cel-shaded style,
+deep green dominant palette, gold and red highlights, illustrated history book quality, clean
+composition"
+10.2 Prompt Keywords by Era
+Era
+Subject Keywords
+ Atmosphere Keywords
+Material Keywords
+ 
+0
+Colchian, ancient, mythological,
+Bronze Age
+Misty, lush, golden, river delta
+Wood, bronze, gold, stone, animal hide
+1
+Iberian, early Christian,
+Roman-Parthian era
+Mountainous, sacred, transitional
+Stone, wood, iron, early brick, mosaic
+2
+Arab conquest, fortified, besieged
+Harsh, dusty, war-torn, defiant
+Dark stone, weathered wood, iron,
+leather
+3
+Golden Age, medieval Georgian,
+cathedral
+Prosperous, divine, triumphant,
+golden
+Ornate stone, gold leaf, silk, fresco
+4
+Mongol invasion, devastation,
+burning
+Ash-filled, dark, desperate,
+scorched
+Burned wood, cracked stone, ash, mud
+5
+Ottoman-Persian, early modern,
+wine country
+Cosmopolitan, tense, cultural
+fusion
+Brick, tile, bronze cannon, silk, wool
+6
+Russian imperial, industrializing,
+European
+Institutional, melancholic,
+transitional
+Brick, iron, glass, railway steel
+7
+Democratic republic,
+independence, 1918-1921
+Hopeful, fragile, revolutionary,
+brief
+Concrete, sandbag, early steel, canvas
+8
+Soviet, brutalist, industrial, WWII
+Gray, oppressive, utilitarian,
+controlled
+Reinforced concrete, steel, red paint
+9
+Modern Georgia, contemporary,
+high-tech
+Sleek, nighttime, digital, resilient
+Glass, steel, composite, LED, concrete
+ Table 10.1: Prompt Keywords by Era
+ 
+10.3 Concept-to-Model Workflow
+The workflow from AI concept reference to Blender model follows a structured process:
+Generate 4-8 concept images per asset using the prompt architecture above.
+Select the best composition and design elements from the generated images, noting specific features
+to incorporate into the 3D model.
+
+--- Page 19 ---
+
+Create a concept brief document that lists the approved design elements, palette assignments, and
+key reference images.
+Model in Blender using the concept brief as the guide, not the raw AI images. This ensures the final
+3D model serves the game's visual language rather than being constrained by AI generation
+limitations.
+AI concept images are stored in the project's reference folder organized by era and asset type. They are
+never used directly in game builds or marketing materials. Their sole purpose is to inform 3D modeling
+decisions and provide visual direction for the Blender artist.
+11. Blender Pipeline
+This section defines the complete Blender production pipeline for Sakartvelo Defenders. All game assets
+are produced through this pipeline, which is designed for a solo developer workflow, prioritizing
+consistency, reusability, and efficiency over cinematic quality.
+11.1 Scene Setup
+Camera: Orthographic camera positioned for isometric view. Camera rotation: X = 60.0 degrees, Y = 0.0
+degrees, Z = 45.0 degrees. This produces the standard 2:1 isometric pixel ratio. Camera scale adjusts per
+asset type to fit the asset within the render frame while maintaining consistent unit-to-pixel ratio across
+all assets.
+Lighting: Single Sun light with Direction = (-1, -1, -1) normalized to produce upper-left illumination
+with lower-right shadows. Strength = 1.0. Color = White (#FFFFFF). No fill lights, no rim lights, no
+HDRI environment lighting. A single ambient light at 0.15 intensity prevents completely black shadow
+areas.
+Background: Plain color (#808080) for transparency compositing, or a gradient backdrop plane for
+portrait renders. The render output uses PNG with alpha channel for all gameplay assets. Map
+backgrounds use a separate opaque render with the era's Sky gradient.
+11.2 Material System
+All materials in the project use a standardized cel-shading material setup, designed for simplicity and
+consistency, using flat colors with sharp shadow boundaries.
+Base Material (Non-Metallic): Principled BSDF shader with Roughness = 1.0, Metallic = 0.0, Specular
+= 0.0. The Base Color input uses the era palette color directly. No texture maps, no normal maps. A
+Geometry node (Normal > Dot Product > Facing) drives a MixRGB node that blends between the era's
+Shadow and Highlight colors.
+Metal Material: Principled BSDF shader with Roughness = 0.4, Metallic = 1.0, Specular = 0.5. The Base
+Color uses the era's Stone/Earth color with a simple two-tone gradient simulating metallic reflection.
+
+--- Page 20 ---
+
+Used exclusively for weapons, armor plates, and metallic structural elements.
+Emission Material: Emission shader used sparingly for glowing elements (boss auras, tech tower LEDs,
+UI indicators). Emission color uses the era's Accent color at strength 2.0. Overuse of emission materials
+breaks the cel-shaded aesthetic and is prohibited.
+Transparency Material: Principled BSDF with Alpha = 0.6 for translucent elements (dragon wings,
+water surfaces, smoke effects). Blend mode set to Alpha Blend. No refraction, no subsurface scattering.
+11.3 Outline Rendering (Freestyle)
+All gameplay assets use Blender's Freestyle line rendering system to produce the distinctive dark
+outlines required by the art direction. Freestyle is configured as a render layer post-processing effect.
+Edge type: Silhouette + Border + Crease (all three enabled)
+Crease angle threshold: 60 degrees
+Line thickness: 2.0 pixels for standard assets, 3.0 pixels for character models
+Line color: #1A1A1A (near-black)
+No line thickness modulation along stroke; uniform width throughout
+Exclusion Rules: Ground planes, shadow catchers, and background elements do not receive Freestyle
+outlines. Only gameplay objects are outlined. In scenes with multiple objects, use Freestyle Collection
+masks to restrict outline rendering.
+11.4 Polycount Budgets
+Polygon budgets are set for isometric sprite rendering, not real-time 3D display. Models can afford
+higher poly counts because they are rendered once and displayed as static images. However, reasonable
+budgets keep file sizes manageable and render times short.
+Asset Type
+ Target Polycount
+Max Polycount
+ LOD Levels
+ 
+Tower (standard)
+500 - 1,500 tris
+ 2,500 tris
+ 1 (LOD0 only)
+ 
+Tower (hero/upgrade 3)
+1,500 - 3,000 tris
+ 5,000 tris
+ 1 (LOD0 only)
+ 
+Enemy (infantry)
+800 - 1,500 tris
+ 2,500 tris
+ 1 (LOD0 only)
+ 
+Enemy (cavalry)
+1,500 - 3,000 tris
+ 5,000 tris
+ 1 (LOD0 only)
+ 
+Enemy (siege)
+2,000 - 4,000 tris
+ 6,000 tris
+ 1 (LOD0 only)
+ 
+Enemy (boss)
+3,000 - 6,000 tris
+ 10,000 tris
+ 1 (LOD0 only)
+ 
+Hero (portrait)
+3,000 - 5,000 tris
+ 8,000 tris
+ N/A (portrait only)
+Hero (in-game)
+2,000 - 4,000 tris
+ 6,000 tris
+ 1 (LOD0 only)
+ 
+Map (terrain tile)
+200 - 500 tris
+ 1,000 tris
+ 1 (LOD0 only)
+
+--- Page 21 ---
+
+Prop (environmental)
+100 - 300 tris
+ 500 tris
+ 1 (LOD0 only)
+ Table 11.1: Polycount Budgets
+ 
+11.5 Sprite Sheet Export
+Gameplay assets are exported as sprite sheets, not individual frames. Each sprite sheet contains all
+animation frames and rotation angles for a single asset arranged in a standardized grid layout.
+11.5.1 Animation Frames
+Asset Type
+ Animations
+Frames
+ Notes
+ 
+Tower (idle)
+idle
+ 1
+ Static pose; no animation needed
+ 
+Tower (attack)
+attack
+ 4-6
+Firing/recoil cycle; loop at last frame
+ 
+Enemy (walk)
+walk
+ 6-8
+Standard walk cycle; loop seamlessly
+ 
+Enemy (attack)
+attack
+ 4-6
+ Attack animation; return to walk
+ 
+Enemy (death)
+death
+ 4-6
+ Death/fade; do not loop
+ 
+Hero (idle)
+idle
+ 4-6
+ Breathing/presence animation
+ 
+Hero (ability)
+ability
+ 6-10
+ Ability activation; return to idle
+ 
+Boss (phase 1)
+attack_1
+ 6-8
+ First phase attack pattern
+ 
+Boss (phase 2)
+attack_2
+ 6-8
+Second phase (triggered at HP threshold)
+ Table 11.2: Animation Frame Specifications
+ 
+11.5.2 Render Resolution
+All gameplay sprites are rendered at 256x256 pixels per frame and downscaled to the target display
+resolution in Godot. This 4x oversampling provides clean edges when displayed at 64x64 or 128x128.
+Portrait renders use 512x512 source resolution. Map background tiles use 1024x1024 source resolution,
+split into 256x256 tiles for Godot import.
+Render settings: Output format = PNG with RGBA (alpha channel). Color depth = 8-bit per channel
+(sRGB). Compression = PNG lossless. No post-processing effects. Anti-aliasing = 8x multisample. The
+render layer outputs are composited using Blender's compositor only to combine the Freestyle outline
+layer with the color render layer.
+11.5.3 Sprite Sheet Layout
+Sprite sheets follow a standardized grid layout: frames are arranged horizontally (columns = time, rows
+= animation type). Each frame occupies a square cell whose size equals the render resolution (256x256).
+
+--- Page 22 ---
+
+The sheet header (first row, first column) is left blank as a padding pixel. Sheet naming follows the file
+naming convention in Section 13. For example: tower_archer_era00_spritesheet.png.
+11.6 Blender Project Organization
+The Blender project follows a strict file organization structure to maintain consistency across the solo
+developer workflow.
+/assets/blender/library/ - Shared materials, lights, cameras, armatures
+/assets/blender/era_00_colchis/ - Era 0 models, scenes, renders
+/assets/blender/era_01_iberia/ - Era 1 models, scenes, renders
+/assets/blender/era_02_invasions/ - Era 2 models, scenes, renders
+/assets/blender/era_03_golden_age/ - Era 3 models, scenes, renders
+/assets/blender/era_04_mongol/ - Era 4 models, scenes, renders
+/assets/blender/era_05_empires/ - Era 5 models, scenes, renders
+/assets/blender/era_06_russian/ - Era 6 models, scenes, renders
+/assets/blender/era_07_republic/ - Era 7 models, scenes, renders
+/assets/blender/era_08_soviet/ - Era 8 models, scenes, renders
+/assets/blender/era_09_modern/ - Era 9 models, scenes, renders
+/assets/blender/reference/ - AI concept images, historical photos
+/assets/sprites/ - Final rendered sprite sheets
+12. Scroll and Mastery Visual Design
+Mastery scrolls are ERC-721 NFTs that provide permanent passive bonuses to the player's account.
+Their visual design must convey value, rarity, and cultural significance while remaining readable at the
+small sizes used in the marketplace and inventory UI. Scrolls are rendered in Blender using the same
+orthographic camera and cel-shading setup as gameplay assets.
+12.1 Scroll Appearance
+Each mastery scroll is depicted as a rolled parchment or Georgian-style manuscript page. The scroll
+body uses the era-appropriate Stone/Earth color for the parchment material, with the era's Accent color
+used for wax seals, decorative borders, and the scroll type icon. The scroll text area contains the scroll's
+name and bonus description in a stylized Georgian-inspired font, rendered as a texture on the scroll
+model.
+Scroll rarity is indicated through a subtle glow effect using the Emission material:
+Common scrolls have no glow.
+Rare scrolls use the era's Highlight color at 0.5 emission strength.
+Epic scrolls use the era's Accent color at 1.0 emission strength.
+
+--- Page 23 ---
+
+Legendary scrolls use the Global UI Accent (#E67E22) at 2.0 emission strength, making them
+visually unmistakable in any collection view.
+12.2 Mastery Badge Display
+When a player has 3 stacked copies of the same scroll (the maximum), a mastery badge appears on the
+scroll icon in the inventory. The badge is a small circular emblem using the Global UI Success color
+(#27AE60) with a checkmark icon, rendered at 24x24 pixels. The badge is composited in the Godot
+engine as a UI overlay, not rendered in Blender.
+13. File Naming Convention
+All project files follow a strict naming convention that encodes the asset type, era, variant, and version.
+This convention applies to Blender source files (.blend), rendered sprite outputs (.png), and Godot
+import files (.tres, .tscn). Consistent naming enables automated asset processing scripts and prevents
+naming conflicts across 200 levels and 10 eras.
+13.1 Blender Source Files
+Format: [type]_[name]_era[XX]_[variant].blend
+tower_archer_era00_base.blend
+enemy_infantry_era05_ottoman.blend
+hero_david_era03_portrait.blend
+map_level03_era02_siege.blend
+Type Prefixes: tower_, enemy_, hero_, prop_, map_
+13.2 Rendered Sprite Files
+Format: [type]_[name]_era[XX]_[variant]_spritesheet.png
+Portrait Format: hero_[name]_era[XX]_portrait.png
+Map Format: map_level[XXX]_era[XX]_bg.png
+tower_archer_era00_base_spritesheet.png
+hero_tamar_era03_portrait.png
+map_level045_era02_bg.png
+13.3 Material and Palette Files
+Era Palette: palette_era[XX]_[name].hex (loaded into Blender's color palette system)
+Material Library: materials_era[XX]_[name].blend (linked into era project files)
+
+--- Page 24 ---
+
+Example: palette_era03_golden_age.hex, materials_era03_golden_age.blend
+13.4 Naming Rules
+All lowercase, no spaces, no special characters except underscores
+Era numbers are zero-padded two digits: era00 through era09
+Level numbers are zero-padded three digits: level001 through level200
+Variant names are single words: base, alternate, damaged, winter, etc.
+Version suffix for iterative updates: _v2, _v3 (appended before file extension)
+14. Consistency Checklist
+Every asset must pass this checklist before being approved for production rendering. The checklist is
+divided into visual consistency (how the asset looks) and pipeline consistency (how the asset is built).
+Each check corresponds to a specific rule in this style guide.
+14.1 Visual Consistency
+ Check
+ Reference
+Priority
+ Method
+ 
+Era palette colors match exactly
+Section 3
+Critical
+Eyedropper against .hex palette
+ 
+Shadow direction lower-right 45
+degrees
+Section 1.3
+Critical
+Visual inspection of render
+ 
+Outline weight 2px (3px characters)
+Section 1.3
+Critical
+Pixel measurement at 100% zoom
+ 
+Color fills flat (no gradients except
+metal)
+Section 1.3
+Critical
+Visual inspection of material
+ 
+Silhouette matches tower type
+reference
+Section 4
+Critical
+Black silhouette overlay comparison
+Proportions match 10-unit system
+Section 5
+Critical
+Blender unit measurement
+ 
+Era skin does not alter base silhouette
+Section 4.2
+Critical
+ Overlay comparison
+ 
+Visible at 64x64 target resolution
+Section 4.2
+High
+Downscaled render in Godot
+ 
+Enemy visually distinct from towers
+Section 7
+Critical
+Side-by-side at gameplay scale
+ 
+Cultural sensitivity review passed
+Section 7.3
+Critical
+ Manual review
+ Table 14.1: Visual Consistency Checklist
+ 
+14.2 Pipeline Consistency
+
+--- Page 25 ---
+
+Check
+ Reference
+Priority
+ Method
+ 
+File naming follows convention
+Section 13
+Critical
+Automated naming script
+ 
+Materials use shared era palette .hex
+Section 11.2
+Critical
+Blender material verification
+ 
+Freestyle line set matches standard
+Section 11.3
+Critical
+Freestyle settings comparison
+ 
+Render resolution matches spec
+Section
+11.5.2
+Critical
+Output dimensions verification
+ 
+Alpha channel present in PNG
+Section
+11.5.2
+Critical
+ PNG metadata check
+ 
+Polycount within budget
+Section 11.4
+High
+Blender triangle count
+ 
+Sprite sheet layout follows grid
+Section
+11.5.3
+High
+Frame grid alignment
+ 
+Scene uses single Sun light only
+Section 11.1
+Critical
+Outliner light list check
+ 
+Orthographic camera correct rotation
+Section 11.1
+Critical
+Camera transform values
+ 
+Concept brief document exists
+Section 10.3
+Medium
+ File existence check
+ Table 14.2: Pipeline Consistency Checklist
+ 
+15. Hermes Collaboration Scope
+Hermes (the AI art collaborator) assists with the Concept Reference stage of the pipeline (Section 10)
+and initial Blender blocking. Hermes does not produce final game-ready assets; all final assets are
+produced by the developer through the Blender pipeline defined in Section 11.
+15.1 Hermes Responsibilities
+Generate AI concept images using the prompt architecture (Section 10.1) for mood board
+exploration
+Create concept brief documents that translate AI concepts into Blender modeling specifications
+Suggest material and color assignments based on era palette research
+Provide initial Blender blocking geometry (basic shapes scaled to 10-unit proportion system)
+Review rendered sprite output against the consistency checklist (Section 14) and flag issues
+Suggest era-appropriate architectural and military details based on historical research
+15.2 Hermes Limitations
+Hermes cannot directly edit .blend files or run Blender renders
+
+--- Page 26 ---
+
+Hermes cannot produce final sprite sheets; the developer renders all production assets
+Hermes cannot modify the Freestyle line set or material system configuration
+Hermes does not have authority to change era palette colors or silhouette definitions
+All Hermes suggestions are advisory; the developer makes all final art direction decisions
+15.3 Priority Work Order
+The following work items are prioritized for Hermes collaboration, in order of dependency:
+Priority 1: Tower Silhouette Reference Sheet - Render all 10 tower types as flat black silhouettes on
+white background at 256x256px
+Priority 2: Era 0 Palette Validation - Generate concept images using the Era 0 palette to validate the
+color scheme
+Priority 3: Character Proportion Reference Armature - Create a Blender armature with the 10-unit
+proportion system and all character type variants
+Priority 4: Shared Scene Template - Create a Blender scene file with the standardized camera,
+lighting, and Freestyle setup
+Priority 5: Era Concept Batches - Generate concept reference sets for each era (10-15 images per
+era)
+16. Version History
+v2.1 - Blender Pipeline Update
+This version incorporates the transition from AI-only asset production to a Blender-based 3D-to-2D
+sprite pipeline. The visual style and art direction remain unchanged; only the production methodology
+and pipeline specifications are new. Key changes include:
+Section 1.2 (NEW): Production Pipeline - Blender to 2D Sprites workflow documentation
+Section 1.3 (UPDATED): Rendering Rules - Added Blender-specific implementation details
+Section 5 (UPDATED): Character Proportions - Added Blender armature and unit system
+references
+Section 6.2 (NEW): Portrait Render Setup - Standardized Blender scene for hero portraits
+Section 10 (REPLACED): AI Concept Reference System - AI generation downgraded to concept
+reference stage
+Section 11 (NEW): Blender Pipeline - Complete production pipeline specifications
+Section 12.1 (UPDATED): Scroll Appearance - Added Blender material and emission
+specifications
+
+--- Page 27 ---
+
+Section 13 (UPDATED): File Naming - Added .blend source file naming and material/palette
+naming
+Section 14 (UPDATED): Consistency Checklist - Split into Visual and Pipeline subsections
+Section 15 (UPDATED): Hermes Scope - Updated deliverables for Blender pipeline
+v2.0 - Initial Release
+Initial Art Style Guide release aligned with Game Design Bible v3.0. Established the 10-era color palette
+system, tower silhouette guidelines, character proportion system, hero portrait guidelines, enemy design
+standards, map design rules, and UI design language. Defined the AI prompt architecture as the primary
+production tool. Included file naming convention, consistency checklist, and Hermes collaboration
+scope.

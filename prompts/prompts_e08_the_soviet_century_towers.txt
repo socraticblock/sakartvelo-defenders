@@ -1,0 +1,33 @@
+# Sakartvelo Defenders - Tower Prompts
+# Era: e08_the_soviet_century
+
+## ARCHER
+isometric tower game sprite, The Soviet Century archer tower with elevated shooting platform and parapets, brutalist concrete bunker with Soviet monument and factory elements, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #2D2D2D #757575 #1A1A1A #D32F2F, isometric view, centered composition, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## CATAPULT
+isometric tower game sprite, The Soviet Century catapult siege tower with throwing arm and stone ammunition, brutalist concrete bunker with Soviet monument and factory elements, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #2D2D2D #757575 #1A1A1A #D32F2F, isometric view, centered composition, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## WALL
+isometric tower game sprite, The Soviet Century defensive wall tower with battlements and reinforced stone, brutalist concrete bunker with Soviet monument and factory elements, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #2D2D2D #757575 #1A1A1A #D32F2F, isometric view, centered composition, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## SHRINE
+isometric tower game sprite, The Soviet Century shrine tower with religious dome and cross decoration, brutalist concrete bunker with Soviet monument and factory elements, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #2D2D2D #757575 #1A1A1A #D32F2F, isometric view, centered composition, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## CAVALRY
+isometric tower game sprite, The Soviet Century cavalry tower with horse stable and mounted unit deployment, brutalist concrete bunker with Soviet monument and factory elements, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #2D2D2D #757575 #1A1A1A #D32F2F, isometric view, centered composition, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## GUNPOWDER
+isometric tower game sprite, The Soviet Century gunpowder cannon tower with gunports and smoke effects, brutalist concrete bunker with Soviet monument and factory elements, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #2D2D2D #757575 #1A1A1A #D32F2F, isometric view, centered composition, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## INDUSTRIAL
+isometric tower game sprite, The Soviet Century industrial area damage tower with smokestack and steam vents, brutalist concrete bunker with Soviet monument and factory elements, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #2D2D2D #757575 #1A1A1A #D32F2F, isometric view, centered composition, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## BUNKER
+isometric tower game sprite, The Soviet Century fortified bunker tower with sandbags and machine gun position, brutalist concrete bunker with Soviet monument and factory elements, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #2D2D2D #757575 #1A1A1A #D32F2F, isometric view, centered composition, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## TECH
+isometric tower game sprite, The Soviet Century high-tech special tower with energy crystal and antenna array, brutalist concrete bunker with Soviet monument and factory elements, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #2D2D2D #757575 #1A1A1A #D32F2F, isometric view, centered composition, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## SPECIAL
+isometric tower game sprite, The Soviet Century special unique tower with ornate gold dome and decorative columns, brutalist concrete bunker with Soviet monument and factory elements, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #2D2D2D #757575 #1A1A1A #D32F2F, isometric view, centered composition, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+

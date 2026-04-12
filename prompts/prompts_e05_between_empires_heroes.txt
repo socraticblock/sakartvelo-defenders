@@ -1,0 +1,6 @@
+# Sakartvelo Defenders - Hero Portrait Prompts
+# Era: e05_between_empires
+
+## EREKLE II
+Erekle II portrait, Between Empires Georgian Georgian king and military reformer, half-body three-quarter view, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, #1A3C5E background with #E74C3C radial glow, #1A3C5E and #E74C3C clothing highlights, determined focused expression, royal armor and chokha, crown, Persian-influenced palace architecture, 3px dark outline, flat color fills, no gradients except metallic, no text no watermark, game sprite style, high resolution 1024x1024
+

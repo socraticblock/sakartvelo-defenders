@@ -1,0 +1,9 @@
+# Sakartvelo Defenders - Hero Portrait Prompts
+# Era: e00_ancient_colchis
+
+## MEDEA
+Medea portrait, Ancient Colchis Georgian sorceress and healer, half-body three-quarter view, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, #2D5A3D background with #D4A017 radial glow, #2D5A3D and #D4A017 clothing highlights, calm serene expression, golden amulet and ceremonial robes, ancient Vani ruins and Greek artifacts, 3px dark outline, flat color fills, no gradients except metallic, no text no watermark, game sprite style, high resolution 1024x1024
+
+## PHARNAVAZ
+Pharnavaz portrait, Ancient Colchis Georgian first king of Iberia, military commander, half-body three-quarter view, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, #2D5A3D background with #D4A017 radial glow, #2D5A3D and #D4A017 clothing highlights, determined focused expression, crown and royal armor, early Georgian cross symbol, 3px dark outline, flat color fills, no gradients except metallic, no text no watermark, game sprite style, high resolution 1024x1024
+

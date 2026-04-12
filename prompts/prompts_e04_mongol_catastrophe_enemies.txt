@@ -1,0 +1,15 @@
+# Sakartvelo Defenders - Enemy Prompts
+# Era: e04_mongol_catastrophe
+
+## MONGOL_WARRIOR_INFANTRY
+isometric enemy game sprite, Mongol Catastrophe Mongol warrior infantry with leather-lamellar armor and composite bow, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #261A11 #696969 #CC5500, 3px dark outline, no text, isometric view, action pose, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## MONGOL_HORSE_ARCHER
+isometric enemy game sprite, Mongol Catastrophe Mongol horse archer with fur-trimmed helmet and quiver, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #261A11 #696969 #CC5500, 3px dark outline, no text, isometric view, action pose, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## MONGOL_SIEGE_ENGINE
+isometric enemy game sprite, Mongol Catastrophe Mongol siege engine operator with battering ram crew, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #261A11 #696969 #CC5500, 3px dark outline, no text, isometric view, action pose, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## MONGOL_BOSS_KHAN
+isometric enemy game sprite, Mongol Catastrophe Mongol Khan boss, 12-unit scale, ornate fur-trimmed armor with war banner, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #261A11 #696969 #CC5500, 3px dark outline, no text, isometric view, action pose, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+

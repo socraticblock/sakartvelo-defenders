@@ -1,0 +1,33 @@
+# Sakartvelo Defenders - Tower Prompts
+# Era: e03_georgian_golden_age
+
+## ARCHER
+isometric tower game sprite, Georgian Golden Age archer tower with elevated shooting platform and parapets, ornate stone castle with gold cross and intricate carvings, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #1A4D2E #D4AF37 #0D2818 #C41E3A, isometric view, centered composition, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## CATAPULT
+isometric tower game sprite, Georgian Golden Age catapult siege tower with throwing arm and stone ammunition, ornate stone castle with gold cross and intricate carvings, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #1A4D2E #D4AF37 #0D2818 #C41E3A, isometric view, centered composition, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## WALL
+isometric tower game sprite, Georgian Golden Age defensive wall tower with battlements and reinforced stone, ornate stone castle with gold cross and intricate carvings, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #1A4D2E #D4AF37 #0D2818 #C41E3A, isometric view, centered composition, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## SHRINE
+isometric tower game sprite, Georgian Golden Age shrine tower with religious dome and cross decoration, ornate stone castle with gold cross and intricate carvings, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #1A4D2E #D4AF37 #0D2818 #C41E3A, isometric view, centered composition, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## CAVALRY
+isometric tower game sprite, Georgian Golden Age cavalry tower with horse stable and mounted unit deployment, ornate stone castle with gold cross and intricate carvings, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #1A4D2E #D4AF37 #0D2818 #C41E3A, isometric view, centered composition, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## GUNPOWDER
+isometric tower game sprite, Georgian Golden Age gunpowder cannon tower with gunports and smoke effects, ornate stone castle with gold cross and intricate carvings, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #1A4D2E #D4AF37 #0D2818 #C41E3A, isometric view, centered composition, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## INDUSTRIAL
+isometric tower game sprite, Georgian Golden Age industrial area damage tower with smokestack and steam vents, ornate stone castle with gold cross and intricate carvings, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #1A4D2E #D4AF37 #0D2818 #C41E3A, isometric view, centered composition, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## BUNKER
+isometric tower game sprite, Georgian Golden Age fortified bunker tower with sandbags and machine gun position, ornate stone castle with gold cross and intricate carvings, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #1A4D2E #D4AF37 #0D2818 #C41E3A, isometric view, centered composition, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## TECH
+isometric tower game sprite, Georgian Golden Age high-tech special tower with energy crystal and antenna array, ornate stone castle with gold cross and intricate carvings, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #1A4D2E #D4AF37 #0D2818 #C41E3A, isometric view, centered composition, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## SPECIAL
+isometric tower game sprite, Georgian Golden Age special unique tower with ornate gold dome and decorative columns, ornate stone castle with gold cross and intricate carvings, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #1A4D2E #D4AF37 #0D2818 #C41E3A, isometric view, centered composition, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+

@@ -1,0 +1,12 @@
+# Sakartvelo Defenders - Enemy Prompts
+# Era: e02_age_of_invasions
+
+## ARAB_WARRIOR_INFANTRY
+isometric enemy game sprite, Age of Invasions Arab desert warrior infantry with scimitar and chain mail, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #3B2510 #8B7D6B #DAA520, 3px dark outline, no text, isometric view, action pose, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## SELJUK_TURK_CAVALRY
+isometric enemy game sprite, Age of Invasions Seljuk Turk cavalry with composite bow and lamellar armor, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #3B2510 #8B7D6B #DAA520, 3px dark outline, no text, isometric view, action pose, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## GEORGIAN_GUERRILLA
+isometric enemy game sprite, Age of Invasions Georgian guerrilla fighter in worn armor defending mountain pass, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #3B2510 #8B7D6B #DAA520, 3px dark outline, no text, isometric view, action pose, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+

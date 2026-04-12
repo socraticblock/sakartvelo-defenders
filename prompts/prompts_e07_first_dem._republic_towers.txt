@@ -1,0 +1,33 @@
+# Sakartvelo Defenders - Tower Prompts
+# Era: e07_first_dem._republic
+
+## ARCHER
+isometric tower game sprite, First Dem. Republic archer tower with elevated shooting platform and parapets, sandbag reinforced concrete bunker with democratic sash banners, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #1B4332 #52B788 #0B2618 #E63946, isometric view, centered composition, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## CATAPULT
+isometric tower game sprite, First Dem. Republic catapult siege tower with throwing arm and stone ammunition, sandbag reinforced concrete bunker with democratic sash banners, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #1B4332 #52B788 #0B2618 #E63946, isometric view, centered composition, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## WALL
+isometric tower game sprite, First Dem. Republic defensive wall tower with battlements and reinforced stone, sandbag reinforced concrete bunker with democratic sash banners, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #1B4332 #52B788 #0B2618 #E63946, isometric view, centered composition, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## SHRINE
+isometric tower game sprite, First Dem. Republic shrine tower with religious dome and cross decoration, sandbag reinforced concrete bunker with democratic sash banners, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #1B4332 #52B788 #0B2618 #E63946, isometric view, centered composition, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## CAVALRY
+isometric tower game sprite, First Dem. Republic cavalry tower with horse stable and mounted unit deployment, sandbag reinforced concrete bunker with democratic sash banners, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #1B4332 #52B788 #0B2618 #E63946, isometric view, centered composition, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## GUNPOWDER
+isometric tower game sprite, First Dem. Republic gunpowder cannon tower with gunports and smoke effects, sandbag reinforced concrete bunker with democratic sash banners, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #1B4332 #52B788 #0B2618 #E63946, isometric view, centered composition, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## INDUSTRIAL
+isometric tower game sprite, First Dem. Republic industrial area damage tower with smokestack and steam vents, sandbag reinforced concrete bunker with democratic sash banners, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #1B4332 #52B788 #0B2618 #E63946, isometric view, centered composition, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## BUNKER
+isometric tower game sprite, First Dem. Republic fortified bunker tower with sandbags and machine gun position, sandbag reinforced concrete bunker with democratic sash banners, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #1B4332 #52B788 #0B2618 #E63946, isometric view, centered composition, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## TECH
+isometric tower game sprite, First Dem. Republic high-tech special tower with energy crystal and antenna array, sandbag reinforced concrete bunker with democratic sash banners, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #1B4332 #52B788 #0B2618 #E63946, isometric view, centered composition, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## SPECIAL
+isometric tower game sprite, First Dem. Republic special unique tower with ornate gold dome and decorative columns, sandbag reinforced concrete bunker with democratic sash banners, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #1B4332 #52B788 #0B2618 #E63946, isometric view, centered composition, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+

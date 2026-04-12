@@ -1,0 +1,15 @@
+# Sakartvelo Defenders - Enemy Prompts
+# Era: e01_kingdom_of_iberia
+
+## ROMAN_LEGIONARY_INFANTRY
+isometric enemy game sprite, Kingdom of Iberia Roman legionary infantry with rectangular scutum shield and gladius, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #2C1F17 #9E8B6E #C8A96E, 3px dark outline, no text, isometric view, action pose, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## ROMAN_LEGIONARY_CAVALRY
+isometric enemy game sprite, Kingdom of Iberia Roman auxiliary cavalry with lance and oval shield, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #2C1F17 #9E8B6E #C8A96E, 3px dark outline, no text, isometric view, action pose, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## PERSIAN_IMMORTAL_INFANTRY
+isometric enemy game sprite, Kingdom of Iberia Persian Immortal infantry with wicker shield and composite bow, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #2C1F17 #9E8B6E #C8A96E, 3px dark outline, no text, isometric view, action pose, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## PERSIAN_ARCHER
+isometric enemy game sprite, Kingdom of Iberia Persian mounted archer with caftan and recurve bow, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #2C1F17 #9E8B6E #C8A96E, 3px dark outline, no text, isometric view, action pose, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+

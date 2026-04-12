@@ -1,0 +1,1180 @@
+
+--- Page 1 ---
+
+Sakartvelo Defenders
+Art Style Guide v2.0
+2D Isometric Cel-Shaded Art Direction
+10 Era Color Palettes | AI Prompt Architecture | Consistency System
+Companion to Game Design Bible v3.0
+Confidential Design Document
+
+--- Page 2 ---
+
+ITable of Contents
+1. Art Direction........................................................................................................................... 1
+1.1 Overall Style: 2D Isometric Cel-Shaded ........................................................................ 1
+1.2 Rendering Rules ............................................................................................................. 2
+2. Global UI Palette .................................................................................................................... 2
+3. Era Color Palettes ................................................................................................................... 4
+3.1 Era 0: Ancient Colchis ................................................................................................... 4
+3.2 Era 1: Kingdom of Iberia ................................................................................................ 6
+3.3 Era 2: Age of Invasions .................................................................................................. 6
+3.4 Era 3: The Georgian Golden Age ................................................................................... 7
+3.5 Era 4: The Mongol Catastrophe ..................................................................................... 7
+3.6 Era 5: Between Empires ................................................................................................. 7
+3.7 Era 6: Russian Empire .................................................................................................... 8
+3.8 Era 7: First Democratic Republic ................................................................................... 8
+3.9 Era 8: The Soviet Century .............................................................................................. 8
+3.10 Era 9: Modern Georgia ................................................................................................. 9
+4. Tower Silhouette Guidelines .................................................................................................. 9
+4.1 Silhouette Reference ....................................................................................................... 9
+4.2 Silhouette Rules ............................................................................................................ 10
+5. Character Proportion Reference ........................................................................................... 10
+5.1 Standard Proportions (10-Unit System) ....................................................................... 11
+5.2 Proportion Variations by Character Type .................................................................... 11
+6. Hero Portrait Guidelines ....................................................................................................... 11
+6.1 Composition Rules ....................................................................................................... 12
+6.2 Portrait Prompt Template ............................................................................................. 12
+7. Enemy Design Guidelines .................................................................................................... 13
+
+--- Page 3 ---
+
+II7.1 Enemy Category Visual Language ............................................................................... 13
+7.2 Enemy Color Rules ...................................................................................................... 13
+7.3 Cultural Sensitivity Standards ...................................................................................... 13
+8. Map Design Guidelines ........................................................................................................ 14
+8.1 Map Composition ......................................................................................................... 14
+8.2 Elevation Rendering ..................................................................................................... 14
+8.3 Era Map Themes .......................................................................................................... 15
+9. UI Design Language ............................................................................................................. 15
+9.1 UI Components ............................................................................................................. 15
+9.2 HUD Layout................................................................................................................. 16
+9.3 Notification System ...................................................................................................... 16
+10. AI Prompt Architecture ...................................................................................................... 16
+10.1 Master Prompt Template ............................................................................................ 17
+10.2 Era Keyword Libraries ............................................................................................... 18
+10.3 Example Prompts ....................................................................................................... 18
+11. Scroll and Mastery Visual Design ...................................................................................... 18
+11.1 Standard Scroll Design ............................................................................................... 19
+11.2 Mastery Scroll Design ................................................................................................ 19
+12. File Naming Convention .................................................................................................... 19
+12.1 Naming Format ........................................................................................................... 20
+12.2 Directory Structure ..................................................................................................... 21
+12.3 Version Control .......................................................................................................... 23
+13. Consistency Checklist ........................................................................................................ 23
+13.1 Color Compliance ....................................................................................................... 23
+13.2 Silhouette Compliance ............................................................................................... 24
+13.3 Proportion Compliance ............................................................................................... 24
+13.4 Style Compliance ....................................................................................................... 24
+13.5 Era Compliance .......................................................................................................... 24
+13.6 Technical Quality ....................................................................................................... 25
+
+--- Page 4 ---
+
+III13.7 Cultural Sensitivity Review ........................................................................................ 25
+14. Hermes Collaboration Scope .............................................................................................. 25
+14.1 Priority 1: Core Visual Foundation ............................................................................ 25
+14.2 Priority 2: Era 0-1 Full Asset Set ............................................................................... 26
+14.3 Priority 3: Era 2-4 Assets ........................................................................................... 26
+14.4 Priority 4: Remaining Eras and Polish ....................................................................... 26
+15. Changelog (v1.0 to v2.0) .................................................................................................... 27
+
+--- Page 5 ---
+
+Sakartvelo Defenders | Art Style Guide v2.0
+11. Art Direction
+1.1 Overall Style: 2D Isometric Cel-Shaded
+Sakartvelo Defenders uses a 2D isometric art style with cel-shaded lighting. All game assets,  
+including towers, enemies, heroes, maps, and UI elements, share this foundational visual  
+language. The isometric perspective provides clear spatial awareness for tower placement  
+decisions while maintaining a warm, illustrated quality that suits the historical subject  
+matter. Cel-shaded lighting creates sharp shadow boundaries and flat color fills that give the  
+art a distinctive, hand-illustrated appearance consistent with AI-generated art pipelines.
+The art style draws inspiration from illustrated history books, museum dioramas, and  
+traditional Georgian miniature painting. Every asset should feel like it belongs in a high-
+quality history textbook rather than a generic mobile game. The color palette for each era is  
+carefully curated to reflect the historical period's visual character, while maintaining overall  
+cohesion through shared rendering techniques (consistent shadow direction, outline weight,  
+and texture density).
+All art is generated using AI image generation tools, guided by this style guide. Consistency  
+is maintained through standardized prompt templates, era-specific keyword libraries, and a  
+rigorous review process against the consistency checklist in Section 13. No hand-drawn art is  
+used; instead, the style guide ensures that AI-generated assets from different generation  
+sessions are visually indistinguishable when placed side by side.
+1.2 Rendering Rules
+Shadow Direction: All shadows cast to the lower-right at a 45-degree angle, consistent with  
+the isometric camera position. Shadow color is a desaturated version of the object's base  
+color at 40% opacity. Shadow offset is proportional to object height: taller objects cast longer  
+shadows.
+Outline Weight: All objects have a 2px dark outline (#1A1A1A) on all edges except where  
+objects overlap the ground plane. Ground shadows do not have outlines. Character outlines  
+are slightly thicker (3px) for readability at small sizes.
+Color Fills: Flat color fills with no gradients except for metallic surfaces (swords, armor)  
+which use a simple two-tone highlight/shadow gradient. Color values must match the era-
+specific palette exactly; no deviations are permitted without explicit approval.
+Texture: Minimal texture usage. Stone surfaces may include a subtle noise overlay at 5-10%  
+opacity. Wood grain is represented by 2-3 parallel lines rather than photorealistic texture.
+
+--- Page 6 ---
+
+Sakartvelo Defenders | Art Style Guide v2.0
+2Fabric is flat colored with fold lines only on capes and robes. This minimal texture approach  
+ensures consistency across AI generation sessions.
+Lighting Model:  Single directional light source from the upper-left, creating consistent  
+highlights on all surfaces. The highlight color is the era's highlight palette color at 30%  
+opacity, blended additively. No ambient occlusion or global illumination effects.
+2. Global UI Palette
+The global UI palette is used for all user interface elements that are not era-specific: menus,  
+buttons, HUD elements, settings panels, the marketplace, and loading screens. Era-specific  
+content (maps, towers, enemies, heroes) uses the era palettes defined in Section 3. The global  
+UI palette is designed to be neutral and readable, complementing any era's color scheme  
+without clashing.
+Background:  #1A1A1A (Dark) / #F5F0EB (Light) — Dark mode is default; light mode  
+available in settings.
+Primary Text: #FFFFFF on dark / #1A1A1A on light.
+Secondary Text: #B0B8C0 on dark / #6B7280 on light.
+Accent: #E67E22 (Warm Orange) — Used for interactive elements, selected states, and call-
+to-action buttons.
+Accent Hover: #F39C12 (Lighter Orange) — Button hover state.
+Danger:  #E74C3C — Used for damage indicators, low-health warnings, and destructive  
+actions.
+Success:  #27AE60  —  Used  for  level  completion,  achievement  unlocks,  and  positive  
+feedback.
+Info: #3498DB — Used for informational tooltips and educational pop-ups.
+Panel Background:  #2C3E50 (Dark) / #FFFFFF (Light) — Cards, modals, and overlay  
+panels.
+Border: #3D566E (Dark) / #E5E7EB (Light) — Subtle borders between UI sections.
+Disabled: #4A5568 on dark / #D1D5DB on light — Inactive buttons and locked content.
+3. Era Color Palettes
+Each of the 10 eras has a dedicated 8-color palette that defines the visual character of all era-
+specific assets. These palettes are not arbitrary aesthetic choices; each is derived from
+
+--- Page 7 ---
+
+Sakartvelo Defenders | Art Style Guide v2.0
+3historical  research  into  the  architecture,  clothing,  military  equipment,  and  natural  
+environment of the period. The 8 color slots serve specific roles across all asset types within  
+the era.
+The palette slots are defined as follows: Base is the dominant color for large surfaces  
+(building walls, terrain). Highlight is the brightest color in the palette, used for exposed  
+surfaces and light-facing planes. Shadow is the darkest color, used for shadowed surfaces  
+and depth. Accent is the era's signature color, used for banners, flags, hero clothing, and  
+important interactive elements. Sky is the background gradient color for outdoor maps.  
+Vegetation covers trees, grass, and crops. Stone/Earth covers building materials and terrain  
+textures. Water covers rivers, fountains, and coastal areas.
+EraNameBaseHighlig
+htShadowAccentSkyVegetat
+ionStone/
+EarthWater
+0Ancient 
+Colchis#2D5A
+3D#4CAF
+50#1B3A
+26#D4A0
+17#87CE
+EB#3A7D
+44#8B735
+5#2E86
+AB
+1Kingdo
+m of 
+Iberia#4A372
+8#8D6E
+63#2C1F1
+7#C8A9
+6E#7FB3
+D8#5D8A
+3C#9E8B
+6E#4682B
+4
+2Age of 
+Invasio
+ns#5C3A
+21#A0522
+D#3B251
+0#DAA5
+20#B8860
+B#6B8E
+23#8B7D
+6B#4A708
+B
+3Georgia
+n 
+Golden 
+Age#1A4D
+2E#D4AF
+37#0D281
+8#C41E
+3A#4A90
+D9#4CAF
+50#B8860
+B#2980B
+9
+4Mongol 
+Catastr
+ophe#3D2B
+1F#8B691
+4#261A1
+1#CC55
+00#8B451
+3#556B2
+F#69696
+9#4682B
+4
+5Betwee
+n 
+Empire
+s#1A3C
+5E#3498D
+B#0D213
+7#E74C
+3C#F5DE
+B3#2E8B
+57#CD85
+3F#5F9E
+A0
+6Russian 
+Empire#2C2C
+3E#7B8D
+B1#1A1A
+2E#9B59
+B6#BDC3
+C7#4A7C
+59#8B868
+2#5B8F
+A8
+7First 
+Dem. 
+Republi
+c#1B433
+2#52B78
+8#0B261
+8#E6394
+6#A8DA
+DC#40916
+C#6B705
+C#457B9
+D
+
+--- Page 8 ---
+
+Sakartvelo Defenders | Art Style Guide v2.0
+4EraNameBaseHighlig
+htShadowAccentSkyVegetat
+ionStone/
+EarthWater
+8The 
+Soviet 
+Century#2D2D
+2D#75757
+5#1A1A
+1A#D32F
+2F#90A4
+AE#558B2
+F#79554
+8#546E7
+A
+9Modern 
+Georgia#0D1B
+2A#415A7
+7#070E1
+8#E6394
+6#E0E1
+DD#2D6A
+4F#77777
+7#1D355
+7
+3.1 Era 0: Ancient Colchis
+The Colchis palette is dominated by deep forest greens and rich earth tones, reflecting the  
+lush  Black  Sea  coastal  environment  described  in  Greek  sources.  The  golden  accent  
+(#D4A017) references the Golden Fleece legend and the historical gold-mining activities of  
+the Colchian civilization. The base green (#2D5A3D) evokes the dense Colchian forests that  
+were a major strategic asset in ancient warfare, providing timber for fortifications and  
+concealment for defenders.
+Tower skins in this era use the Stone/Earth palette for foundations and the Base green for  
+wooden superstructures. The Accent gold is used for decorative elements on important  
+structures and for Medea's hero design. Enemy designs for tribal raiders use the Shadow  
+palette for leather armor and the Accent gold for jewelry and ceremonial items. Map  
+backgrounds feature the Sky blue for the Black Sea horizon, Vegetation green for dense  
+forests, and Water blue for rivers and coastline.
+ ■Base: #2D5A3D
+ ■Highlight: #4CAF50
+ ■Shadow: #1B3A26
+ ■Accent: #D4A017
+ ■Sky: #87CEEB
+ ■Vegetation: #3A7D44
+ ■Stone/Earth: #8B7355
+ ■Water: #2E86AB
+3.2 Era 1: Kingdom of Iberia
+The Iberian palette shifts to warm browns and muted golds, reflecting the stone architecture  
+and arid highland landscapes of early Georgian statehood. The period covers the transition  
+from pagan to Christian Georgia, and the palette balances the warm earth tones of pre-
+Christian architecture with the nascent use of cross symbols in decorative elements. The
+
+--- Page 9 ---
+
+Sakartvelo Defenders | Art Style Guide v2.0
+5highlight brown (#8D6E63) represents the sandstone used in Iberian fortresses, while the  
+accent gold (#C8A96E) evokes the royal Bagrationi regalia that would become iconic in later  
+eras.
+Tower skins in this era feature more substantial stone construction compared to Era 0. Archer  
+towers are built on stone foundations with wooden platforms, using the Base and Stone/Earth  
+colors. The introduction of Christianity is reflected in the subtle use of cross motifs on tower  
+decorations, particularly on the Shrine tower type introduced later. Enemy designs for  
+Roman and Persian forces use distinct palette subsets: Roman enemies use cooler grays  
+within the Stone/Earth range, while Persian enemies introduce the warm red-brown that will  
+become dominant in Era 2.
+3.3 Era 2: Age of Invasions
+The Age of Invasions palette is deliberately harsh and desaturated, reflecting the devastation  
+of the Arab conquest period and the ongoing military pressure on Georgian lands. The base  
+brown (#5C3A21) is darker and more austere than Era 1, representing fortresses under siege  
+and a civilization under threat. The accent gold (#DAA520) is muted and battle-worn,  
+symbolizing the resilience of Georgian culture under occupation rather than its prosperity.
+This era's visual language is defined by contrast between the worn, battle-scarred Georgian  
+architecture and the imposing, geometric forms of Arab military architecture. Enemy designs  
+for Arab forces use the Accent and Shadow palette for their distinctive desert military colors,  
+while Georgian defensive structures use the muted Base and Stone/Earth colors to convey a  
+sense of endurance under pressure. Map backgrounds feature darker, more dramatic sky  
+colors (#B8860B) suggesting dust storms and the smoke of burning cities.
+3.4 Era 3: The Georgian Golden Age
+The Golden Age palette is the richest and most vibrant in the game, reflecting the historical  
+period  of  Georgia's  greatest  power  and  cultural  achievement.  The  deep  green  base  
+(#1A4D2E)  represents  the  lush  Georgian  countryside  during  a  period  of  agricultural  
+prosperity. The accent gold (#D4AF37) is pure and brilliant, symbolizing the legendary  
+wealth of Queen Tamar's court. The accent red (#C41E3A) represents both the Georgian  
+cross (adopted during this period) and the military banners of the unified Georgian army.
+Tower skins in this era are the most ornate in the game. Fortresses feature intricate stone  
+carvings, gold decorative elements, and the distinctive Georgian cross motif. The Shrine  
+tower type, introduced in this era, uses the full palette to create visually stunning religious  
+structures with gold domes, red crosses, and green surrounding vegetation. Hero designs for  
+David IV and Tamar use the gold and red accents prominently, with David IV in military
+
+--- Page 10 ---
+
+Sakartvelo Defenders | Art Style Guide v2.0
+6armor (Stone/Earth + Highlight) and Tamar in royal robes (Base green + Accent gold +  
+Accent red).
+3.5 Era 4: The Mongol Catastrophe
+The Mongol Catastrophe palette is the darkest and most somber in the game, reflecting the  
+destruction and despair of the Mongol conquest period. The base brown (#3D2B1F) is nearly  
+black, representing burned and abandoned cities. The accent orange (#CC5500) is harsh and  
+industrial, evoking fire and destruction rather than the warm gold of earlier eras. The  
+vegetation color (#556B2F) is desaturated, suggesting scorched earth and dying crops.
+Visual storytelling in this era emphasizes contrast between the ruined Georgian architecture  
+and the imposing, utilitarian forms of Mongol military camps. Georgian towers appear  
+damaged, with missing sections and smoke effects. Enemy designs for Mongol forces use a  
+distinctive palette subset: dark leather armor in the Base range, fur-trimmed helmets in the  
+Shadow range, and the accent orange for Mongol banners and fire effects. Maps feature  
+dramatic, smoke-filled skies and barren landscapes interrupted by the occasional defiant  
+mountain fortress.
+3.6 Era 5: Between Empires
+The Between Empires palette reflects the cosmopolitan character of Georgian culture during  
+the Ottoman-Persian rivalry period. The blue base (#1A3C5E) represents the expanding  
+influence of both empires on Georgian territory. The accent red (#E74C3C) is vivid and  
+dramatic, symbolizing both the blood of constant warfare and the rich Persian-influenced  
+textile  traditions  that  flourished  despite  political  instability.  The  warm  cream  sky  
+(#F5DEB3) evokes the sun-drenched landscapes of eastern Georgia's wine country.
+This era's visual language is defined by cultural fusion. Tower skins feature a blend of  
+Georgian, Persian, and Ottoman architectural elements: Georgian stone foundations with  
+Persian  tile  decorations  and  Ottoman-style  crenellations.  The  Gunpowder  tower  type,  
+introduced in this era, uses the metallic Stone/Earth palette (#CD853F) for bronze cannon  
+barrels and the accent red for muzzle flashes. Enemy designs alternate between Ottoman  
+(blue-white palette subset) and Persian (blue-red palette subset) forces, each visually distinct.
+3.7 Era 6: Russian Empire
+The Russian Empire palette is cool and institutional, reflecting the period of annexation and  
+the imposed European architectural influence on Georgian cities. The purple-gray base  
+(#2C2C3E) represents the bureaucratic and melancholic character of the era, while the accent  
+purple (#9B59B6) subtly references the Russian imperial aesthetic that was overlaid on
+
+--- Page 11 ---
+
+Sakartvelo Defenders | Art Style Guide v2.0
+7Georgian cities. The steel-blue sky (#BDC3C7) suggests the industrial pollution of a rapidly  
+modernizing Tbilisi.
+Tower skins in this era mark the transition from traditional Georgian military architecture to  
+European-influenced  fortifications.  Stone  towers  give  way  to  brick  structures  with  
+European-style windows and doors. The Industrial tower type, introduced in this era, uses the  
+metallic  Stone/Earth  palette  (#8B8682)  for  iron  framework  and  machinery.  Map  
+backgrounds  show  Tbilisi's transformation:  traditional  Georgian houses alongside  new  
+European-style  buildings,  with  the  emerging  industrial  skyline  creating  visual  tension  
+between old and new.
+3.8 Era 7: First Democratic Republic
+The First Republic palette is surprisingly optimistic, using fresh greens and blues to reflect  
+the hope and democratic aspirations of Georgia's brief independence period (1918-1921).  
+The base green (#1B4332) is lighter and more vibrant than earlier military eras, suggesting  
+renewal and national rebirth. The accent red (#E63946) represents both the revolutionary  
+spirit and the sacrifice of the independence wars. The sky blue (#A8DADC) is clear and  
+bright, conveying the openness and possibility of a new democratic state.
+Visual design for this era bridges the gap between the Russian imperial aesthetic and the  
+modern  world.  Tower  skins  feature  early  20th-century  military  architecture:  concrete  
+bunkers, sandbag emplacements, and improvised fortifications. The transition from 19th-
+century to 20th-century military technology is visually represented through the mixture of  
+older stone structures with modern concrete additions. Enemy designs represent the multiple  
+threats the republic faced simultaneously, each with distinct visual identities within the  
+palette.
+3.9 Era 8: The Soviet Century
+The Soviet Century palette is stark and utilitarian, dominated by grays and the iconic Soviet  
+red. The base gray (#2D2D2D) represents the concrete brutalism of Soviet architecture,  
+while  the  accent  red  (#D32F2F)  is  the  unmistakable  symbol  of  Soviet  power.  The  
+desaturated blue-gray sky (#90A4AE) conveys the oppressive atmosphere of the period, and  
+the muted green vegetation (#558B2F) suggests controlled, utilitarian landscaping rather  
+than natural beauty.
+Tower skins in this era are the most standardized and industrial in the game. Reinforced  
+concrete  bunkers,  anti-aircraft  positions,  and  fortified  checkpoints  replace  the  ornate  
+structures of earlier eras. The Bunker tower type uses the concrete gray palette (#757575)  
+with red Soviet stars as the only decorative element. Map backgrounds show Soviet-era
+
+--- Page 12 ---
+
+Sakartvelo Defenders | Art Style Guide v2.0
+8Tbilisi with its  characteristic  block housing, industrial  zones, and monumental Soviet  
+architecture. Educational content for this era is presented with factual neutrality, and the  
+visual design avoids both glorification and demonization.
+3.10 Era 9: Modern Georgia
+The Modern Georgia palette is dark and sophisticated, using deep navy blues and strategic  
+pops of red to convey a contemporary, forward-looking aesthetic. The base navy (#0D1B2A)  
+represents  the  night-time  urban  environment  of  modern  Tbilisi,  while  the  accent  red  
+(#E63946) connects to the Georgian flag and the ongoing national identity. The steel blue  
+(#415A77) represents modern military technology and infrastructure.
+Tower skins in this era feature cutting-edge military technology: precision-guided weapon  
+systems,  drone  surveillance  platforms,  and  fortified  military  outposts  with  modern  
+communications equipment. The Tech tower type uses a sleek, minimalist design language  
+with the navy and steel blue palette. Map backgrounds show modern Tbilisi's mix of  
+contemporary architecture and historic landmarks, the strategic Georgian Military Highway,  
+and the dramatic mountain landscapes that define Georgia's geopolitical significance. The  
+visual language conveys both the technological modernity of the present and the enduring  
+weight of Georgian history.
+4. Tower Silhouette Guidelines
+Each of the 10 tower types has a unique silhouette that must be recognizable at small sizes  
+(approximately 64x64 pixels on mobile, 128x128 on desktop) without relying on color or  
+detail. Silhouette distinctiveness is critical for gameplay readability: players must be able to  
+identify tower types instantly during combat. The following guidelines define the silhouette  
+shape, proportions, and key identifying features for each tower type.
+4.1 Silhouette Reference
+Tower TypeSilhouette ShapeHeight (units)Width (units)Key Identifier
+Archer TowerTall, narrow spire 
+with pointed top8-103-4Pointed roof, flag 
+pole
+Catapult/
+TrebuchetWide base with 
+elevated arm5-66-7Pivoting arm, 
+bucket
+Wall/BarrierLow, wide 
+rectangle2-36-8Crenellations, flat 
+top
+
+--- Page 13 ---
+
+Sakartvelo Defenders | Art Style Guide v2.0
+9Tower TypeSilhouette ShapeHeight (units)Width (units)Key Identifier
+Cavalry OutpostMedium, organic 
+horse shape5-65-6Horse head, rider 
+silhouette
+Siege TowerTall, boxy with 
+battlements9-105-6Square top, arrow 
+slits
+Magic/ShrineDomed, ornate 
+with spire7-84-5Dome, 
+cross/crescent top
+Gunpowder 
+TowerMedium, 
+cylindrical with 
+barrel5-64-5Cannon barrel 
+protrusion
+Industrial TowerTall, mechanical 
+with chimney8-94-5Chimney, gear 
+mechanisms
+Bunker TowerLow, flat, angular 
+concrete3-45-6Slotted window, 
+angled walls
+Tech TowerSleek, angular 
+with antenna6-73-4Dish/antenna, 
+LED elements
+4.2 Silhouette Rules
+1. No Overlap: No two tower types should share the same basic silhouette shape. If two  
+towers  appear  identical  in  silhouette,  the  design  must  be  revised  until  they  are  
+distinguishable.
+2. Scale Consistency: All towers are designed on the same grid scale. A 10-unit tall Archer  
+Tower and a 3-unit tall Wall/Barrier must appear correctly proportioned when placed next to  
+each other on the same map.
+3. Era Skin Layering: Era-specific skins are applied as a visual layer over the base silhouette.  
+The  silhouette  shape  never  changes  across  eras;  only  the  surface  details,  colors,  and  
+decorative elements vary. An Archer Tower in Era 0 (wooden watchtower) and an Archer  
+Tower in Era 9 (modern guard post) must have the same pointed-tower silhouette.
+4. Readability at Small Size: All tower designs must be tested at 64x64 pixel resolution. If a  
+tower cannot be identified at this size, the design is too complex and must be simplified. Key  
+identifying features (listed in the table above) must remain visible at minimum resolution.
+5. Upgrade Visual Feedback:  Tower upgrades (Level 1 to Level 3) must be visually  
+distinguishable. Level 2 adds minor decorative elements to the base silhouette. Level 3 adds  
+significant visual changes: additional height, new structural elements, or glowing effects that  
+make the upgrade status immediately obvious.
+
+--- Page 14 ---
+
+Sakartvelo Defenders | Art Style Guide v2.0
+105. Character Proportion Reference
+All humanoid characters (heroes, enemies, NPCs) follow a standardized 10-unit proportion  
+system. This system ensures visual consistency across all AI-generated character art and  
+provides clear guidelines for prompt engineering. The 10-unit system divides the character's  
+total height into 10 equal units, with specific body parts occupying defined proportions.
+5.1 Standard Proportions (10-Unit System)
+Unit Body Part Proportion Notes
+1-2 Head 2 units (20%) Larger than realistic for  
+readability at small 
+sizes
+3 Neck + Shoulders 1 unit (10%) Broad shoulders for 
+heroes, narrower for 
+civilians
+4-5 Torso (upper) 2 units (20%) Armor/clothing detail 
+zone
+6 Torso (lower) + Belt 1 unit (10%) Belt/buckle as era 
+identifier
+7-8 Legs (upper) 2 units (20%) Armor/clothing varies 
+by era
+9-10 Legs (lower) + Feet 2 units (20%) Footwear reflects era 
+technology
+5.2 Proportion Variations by Character Type
+Heroes: 11 units total. Head is 2.5 units for greater facial detail visibility. Shoulders are 1.2  
+units wider than standard. Torso is elongated by 0.5 units to convey authority. These subtle  
+modifications make heroes visually distinct from standard units without breaking the overall  
+proportion system.
+Boss Enemies: 12-14 units total. Entire body scaled up uniformly by 20-40%. This uniform  
+scaling ensures that boss silhouettes are immediately recognizable as larger versions of their  
+unit type. Boss proportions follow the same 10-unit ratios applied to the larger frame.
+Cavalry Units: 12 units total (10 for rider + 2 for horse head). Horse body extends 3 units  
+behind the rider's center point. Cavalry proportions only apply to the rider; the horse follows  
+separate animal proportion guidelines.
+
+--- Page 15 ---
+
+Sakartvelo Defenders | Art Style Guide v2.0
+11Flying Units: 8 units total (more compact to suggest agility). Wings extend 3-4 units from the  
+shoulder line on each side. Wing membranes use the era's Shadow color at 60% opacity for a  
+translucent effect.
+6. Hero Portrait Guidelines
+Hero portraits are the most detailed character art in the game, appearing in the hero selection  
+screen, level loading screens, and the collection gallery. Each portrait is a half-body or three-
+quarter  view  composition  that  showcases  the  hero's  era-specific  clothing,  distinctive  
+features, and personality. Portraits must work at both large sizes (gallery view) and small  
+sizes (selection thumbnails, 80x80 pixels).
+6.1 Composition Rules
+Framing: Half-body composition, cropped at the waist. The hero's face occupies the upper  
+third of the portrait, centered horizontally. The hero's body is angled 15-30 degrees from the  
+camera (three-quarter view), never a flat profile or direct front-facing pose.
+Background: A blurred, desaturated version of the hero's era palette as a gradient. The hero's  
+Accent color appears as a subtle radial glow behind the head, creating visual separation from  
+the background without adding a visible halo effect.
+Expression:  Each hero has a defined expression that reflects their personality. Military  
+heroes (David IV, Erekle II) have determined, focused expressions. Cultural heroes (Ilia  
+Chavchavadze,  Rustaveli)  have  thoughtful,  contemplative  expressions.  Support  heroes  
+(Medea, Saint Nino) have calm, serene expressions. No hero has an aggressive or angry  
+expression; even in a war game, the tone is dignified rather than hostile.
+Era Markers: Each portrait includes 2-3 small era-identifying elements in the background or  
+clothing details: a cross for Christian-era heroes, a crown for royalty, a manuscript for  
+literary figures, military insignia for commanders. These markers must be subtle enough to  
+not distract from the portrait but clear enough to communicate the hero's era at a glance.
+6.2 Portrait Prompt Template
+The following template should be adapted for each hero by filling in the bracketed fields.  
+This template has been tested for consistency across AI generation sessions:
+Base Prompt:  "[hero name] portrait, [era name] Georgian [role], half-body three-quarter  
+view, 2D isometric cel-shaded game art, [era base color] background, [era accent color]  
+clothing highlights, [expression], [distinctive feature], [era marker], clean lines, 2px dark  
+outline, flat color fills, no gradients, no text, no watermark, game sprite style"
+
+--- Page 16 ---
+
+Sakartvelo Defenders | Art Style Guide v2.0
+127. Enemy Design Guidelines
+Enemy design follows the same 10-unit proportion system as heroes but with distinct visual  
+language that makes enemies immediately distinguishable from player units at a glance. The  
+enemy design philosophy is based on three principles: historical authenticity (enemies reflect  
+the real military forces of each era), mechanical clarity (enemy type is visible at small sizes),  
+and cultural sensitivity (enemies are depicted as soldiers, never as caricatures of ethnic or  
+national groups).
+7.1 Enemy Category Visual Language
+CategoryBody TypeMovementColor TreatmentSilhouette Key
+InfantryStandard 10-unitGround pathEra shadow + 
+baseShield/spear 
+shape
+Cavalry10-unit + mountFast groundEra base + 
+highlightHorse silhouette
+SiegeBoxy, 6-8 units 
+wideSlow groundEra stone + 
+shadowWheeled/wide 
+frame
+FlyingCompact 8-unitAir pathEra shadow, 
+translucent wingsWing spread 
+shape
+Boss12-14 unit scaleGround (varies)Full era palette + 
+glowUnique per boss
+7.2 Enemy Color Rules
+Enemies use a deliberately restricted palette subset to create visual contrast with player  
+towers. While towers use the full 8-color era palette, enemies are rendered primarily in the  
+Shadow and Stone/Earth colors of their era, with the Accent color used sparingly for shields,  
+banners, and weapons. This color restriction ensures that player towers (which use the full  
+palette) are visually dominant on the battlefield, making it easy to distinguish defensive  
+structures from enemy units at a glance.
+Enemy faction colors provide additional differentiation within each era. When an era  
+features multiple enemy factions (such as Ottoman and Persian forces in Era 5), each faction  
+receives a subtle color tint: Ottoman forces lean toward the blue end of the palette range,  
+while Persian forces lean toward the red end. This faction tinting is achieved by shifting the  
+Base and Stone/Earth colors 15-20 hue degrees in the appropriate direction, maintaining  
+readability while communicating faction identity.
+
+--- Page 17 ---
+
+Sakartvelo Defenders | Art Style Guide v2.0
+137.3 Cultural Sensitivity Standards
+Enemy designs must never use exaggerated ethnic features, caricatured facial structures, or  
+stereotypical clothing that could be interpreted as mocking a real cultural group. Enemies are  
+military units, depicted with the same dignity and accuracy as player units. Historical  
+accuracy means showing real military equipment and tactics of the period, not reinforcing  
+ethnic stereotypes. This principle is especially important for eras involving ongoing political  
+sensitivities (Era 8 Soviet period, Era 9 modern conflicts) where enemy designs must be  
+factually accurate and neutrally presented.
+8. Map Design Guidelines
+Maps are the visual backdrop for gameplay, providing the context for tower placement,  
+enemy pathing, and strategic decision-making. Each of the 200 levels has a unique map, but  
+maps within each era share visual characteristics defined by the era palette and the map  
+design rules below. Maps must be visually interesting without distracting from the gameplay  
+elements (towers, enemies, projectiles) that are overlaid on them.
+8.1 Map Composition
+Layered Depth: Maps use three depth layers: foreground (interactive zone where towers are  
+placed),  midground  (enemy  path  with  terrain  features),  and  background  (sky,  distant  
+mountains, horizon). The foreground occupies the bottom 40% of the screen, the midground  
+the middle 35%, and the background the top 25%. This proportion ensures that the interactive  
+zone  is  the  largest  and  most  detailed  area  while  maintaining  a  sense  of  depth  and  
+environment.
+Path Visibility: Enemy paths must be clearly visible against the terrain. Paths are rendered as  
+lighter or darker strips (depending on terrain brightness) that contrast with the surrounding  
+vegetation. Path width is consistent within a map but may vary between maps (narrow  
+mountain passes vs. wide plains). Paths never overlap or cross at the same elevation; multi-
+path maps use elevation differences (bridges, tunnels) for crossings.
+Placement Zones:  Tower placement zones are indicated by subtle grid markers on the  
+foreground  terrain.  These  markers  are  visible  enough  to  guide  placement  but  not  so  
+prominent that they dominate the visual composition. Grid markers use the era's Shadow  
+color at 30% opacity, creating a faint guide pattern that blends with the terrain texture.
+
+--- Page 18 ---
+
+Sakartvelo Defenders | Art Style Guide v2.0
+148.2 Elevation Rendering
+Maps use visual elevation cues to communicate the height mechanic. Elevated positions are  
+rendered with a visible base/foundation that shows the height difference from the ground  
+level. The foundation uses the era's Stone/Earth color, and the elevated platform uses the  
+era's Base color, creating a clear visual distinction between ground-level and elevated terrain.  
+Towers placed on elevated positions appear visually higher on the screen, with a visible  
+shadow beneath them indicating their height advantage.
+Elevation levels follow a simple two-tier system: ground level and elevated. Elevated  
+positions are always on the midground layer, creating a natural visual separation from  
+ground-level  placement  zones.  Maps  typically  have  2-4  elevated  positions,  providing  
+meaningful but not overwhelming strategic options. The visual height difference between  
+ground and elevated positions is approximately 20-30% of the map's total height, making the  
+elevation clearly visible without disrupting the isometric perspective.
+8.3 Era Map Themes
+Era Primary Environment Key Terrain Features Weather/Atmosphere
+0 Colchian forests, Black  
+Sea coastDense forests, river 
+crossings, gold minesMisty, humid, golden 
+light
+1 Caucasian highlands, 
+early citiesMountain passes, cave 
+cities (Uplistsikhe)Crisp mountain air, 
+bright sunlight
+2 Fortified borderlands Siege-damaged 
+fortresses, mountain 
+passesDusty, stormy, smoke 
+from burning cities
+3 Prosperous towns, 
+grand castlesCathedrals, 
+monasteries (Gelati, 
+Vardzia)Warm golden light, 
+clear skies
+4 Devastated countryside Burned cities, 
+abandoned villages, 
+mountain retreatsOvercast, ash-choked, 
+red sky
+5 Three-kingdom diverse  
+terrainWine country, fortified 
+cities, border fortressesWarm Mediterranean, 
+dusty campaigns
+6 Modernizing Tbilisi, 
+mountain villagesRailway lines, 
+European-style 
+buildingsIndustrial haze, mixed 
+old/new
+7 War-torn countryside, 
+Black Sea coastTrenches, barricaded 
+streets, border postsDramatic clouds, 
+tension lighting
+
+--- Page 19 ---
+
+Sakartvelo Defenders | Art Style Guide v2.0
+15Era Primary Environment Key Terrain Features Weather/Atmosphere
+8 Soviet industrial zones,  
+mountain villagesConcrete blocks, 
+factory complexes, 
+Soviet monumentsGray overcast, 
+utilitarian
+9 Modern Tbilisi, 
+conflict zonesContemporary military 
+installations, highwaysNight-time urban, 
+digital displays
+9. UI Design Language
+The UI design language defines the visual treatment of all in-game interface elements:  
+buttons, panels, health bars, resource counters, hero ability cooldowns, and notification  
+systems. The UI language is era-independent (always using the Global UI Palette from  
+Section 2) but adapts its border style and background opacity to complement the current era's  
+visual character.
+9.1 UI Components
+Buttons:  Rounded rectangles with 8px border radius. Primary buttons use Accent fill  
+(#E67E22) with white text. Secondary buttons use Panel Background fill with Primary text.  
+All buttons have a 2px border in Border color. Hover state brightens fill by 15%. Press state  
+darkens fill by 10% and shifts content 1px down. Disabled state uses Disabled fill with  
+Disabled text.
+Panels:  Rounded rectangles with 12px border radius. Panel Background fill with Border  
+color stroke. Panels have a subtle inner shadow (2px, 10% opacity) to create depth. Panels  
+containing era-specific content (tower info, hero details) include a thin accent strip (3px) at  
+the top edge using the current era's Accent color.
+Health Bars: Horizontal bars with 4px height, rounded ends. Full health uses Success green  
+(#27AE60). Mid health (50-80%) uses Info blue (#3498DB). Low health (under 50%) uses  
+Danger red (#E74C3C). Background bar uses Disabled color. Health bars include a 1px dark  
+outline for readability against any background.
+Resource Counters: Icon + number combination, right-aligned in the HUD. Icon is 24x24px  
+in the appropriate color (gold for SAKART, blue for in-game resources, red for lives).  
+Number uses Primary Text color with a subtle text shadow for readability. Counters update  
+with a smooth counting animation (not instant jumps).
+
+--- Page 20 ---
+
+Sakartvelo Defenders | Art Style Guide v2.0
+169.2 HUD Layout
+The heads-up display (HUD) occupies the top and bottom edges of the screen, leaving the  
+central area clear for gameplay. The top HUD bar contains: level timer (left), wave counter  
+(center), and pause/settings buttons (right). The bottom HUD bar contains: resource counters  
+(left), hero ability buttons with cooldown indicators (center), and scroll inventory access  
+(right). The HUD is semi-transparent (80% opacity Panel Background) to not obscure the  
+game view.
+The HUD design follows the invisible blockchain principle. SAKART-related UI elements  
+(token balance, marketplace access) are accessible from a secondary menu, not displayed  
+prominently  in  the  gameplay  HUD.  The  gameplay  HUD  shows  only  game-relevant  
+information: in-game resources, lives, wave progress, and hero abilities. This separation  
+ensures that the gameplay experience feels like a traditional tower defense game regardless  
+of blockchain engagement.
+9.3 Notification System
+Notifications use a consistent toast system: brief messages that appear at the top-center of the  
+screen, slide down with a smooth animation, remain visible for 3 seconds, then slide up and  
+fade out. Success notifications use Success green. Error notifications use Danger red.  
+Information notifications use Info blue. Warning notifications use Accent orange. All  
+notifications have a dark semi-transparent background for readability and a 2px left-border  
+accent stripe in the appropriate color.
+10. AI Prompt Architecture
+All AI-generated art for Sakartvelo Defenders follows a standardized prompt architecture  
+designed  for consistency  across  generation  sessions.  Every  prompt  includes  the  same  
+structural elements in the same order, with era-specific values substituted from the era  
+keyword libraries. This section provides the master prompt template and the era-specific  
+keyword libraries that feed into it.
+10.1 Master Prompt Template
+The master prompt is the base structure used for all asset types. Era-specific values are  
+substituted from the keyword libraries below:
+Template:  "[ASSET TYPE], [ERA KEYWORDS], [STYLE TAGS], [COMPOSITION  
+TAGS], [TECHNICAL TAGS]"
+
+--- Page 21 ---
+
+Sakartvelo Defenders | Art Style Guide v2.0
+17Asset Type: Defines what is being generated (e.g., 'isometric tower game sprite', 'character  
+portrait', 'game map background'). This determines the composition and framing.
+Era Keywords: Era-specific descriptors that define the visual character (see Section 10.2).  
+These include era name, architectural style, clothing style, and environmental keywords.
+Style Tags: "2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A),  
+no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent  
+lighting from upper-left"
+Composition Tags:  Varies by asset type. Towers: 'isometric view, centered composition,  
+transparent background PNG'. Portraits: 'half-body three-quarter view, centered face, blurred  
+era-color gradient background'. Maps: 'wide landscape, three-layer depth, parallax-ready'.
+Technical Tags: "high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line  
+art, production game art"
+10.2 Era Keyword Libraries
+EraArchitectureClothing/MilitaryEnvironmentMood
+0: Ancient 
+Colchiswooden 
+watchtowers, 
+stone foundations, 
+thatched roofs, 
+gold-panning 
+sluicesbronze armor, 
+leather cuirass, 
+tribal jewelry, 
+linen tunicsdense Black Sea 
+forests, river 
+valleys, gold 
+mines, ancient 
+Vanimythological, 
+mysterious, lush
+1: Kingdom of 
+Iberiastone fortresses, 
+early churches, 
+cave cities, 
+wooden palisadeschain mail, 
+Roman-
+influenced 
+helmets, early 
+Christian robes, 
+cloaksMtskheta, 
+Uplistsikhe, 
+Tbilisi founding, 
+Caucasus 
+mountainssacred, 
+transitional, 
+defiant
+2: Age of 
+Invasionssiege-damaged 
+walls, fortified 
+monasteries, 
+mountain 
+redoubtsArab desert 
+armor, Seljuk 
+Turk helmets, 
+worn Georgian 
+chain mailTbilisi Emirate, 
+battle-scarred 
+countryside, 
+mountain passesaustere, desperate, 
+resilient
+3: Georgian 
+Golden Ageornate stone 
+castles, gold-
+domed churches, 
+Gelati monastery, 
+Vardzia cave cityGeorgian royal 
+armor, queen's 
+robes, monaspa 
+guard regalia, 
+religious 
+vestmentsprosperous towns, 
+grand cathedrals, 
+fertile valleysgolden, 
+triumphant, ornate
+
+--- Page 22 ---
+
+Sakartvelo Defenders | Art Style Guide v2.0
+18EraArchitectureClothing/MilitaryEnvironmentMood
+4: Mongol 
+Catastrophecrumbling 
+fortresses, burned 
+cities, mountain 
+retreats, refugee 
+campsMongol leather-
+lamellar armor, 
+fur-trimmed 
+helmets, worn 
+Georgian armorscorched earth, 
+smoke-filled 
+skies, barren 
+mountainssomber, 
+devastating, 
+defiant
+5: Between 
+EmpiresPersian-
+influenced 
+palaces, Ottoman 
+forts, wine 
+country estatesgunpowder-era 
+uniforms, Persian-
+style caftans, 
+Ottoman janissary 
+armorKartli-Kakheti 
+vineyards, three 
+kingdoms, border 
+fortressescosmopolitan, 
+turbulent, rich
+6: Russian EmpireEuropean-style 
+buildings, brick 
+factories, railway 
+stations, theatersRussian imperial 
+uniforms, 
+Georgian national 
+dress (chokha), 
+formal suitsmodernizing 
+Tbilisi, Svaneti 
+towers, Black Sea 
+Batumimelancholic, 
+transitional, 
+cultured
+7: First Dem. 
+Republicsandbag bunkers, 
+barricaded streets, 
+early concrete 
+structuresWWI-era 
+uniforms, 
+democratic 
+sashes, mixed 
+civilian-military 
+clothingwar-torn 
+countryside, 
+Black Sea coast, 
+Tbilisi streetshopeful, fragile, 
+determined
+8: Soviet Centuryconcrete brutalist 
+blocks, factory 
+complexes, Soviet 
+monuments, panel 
+housingSoviet military 
+uniforms, 
+workers' clothing, 
+dissident plain 
+clothingindustrial zones, 
+Soviet Tbilisi, 
+mountain villagesoppressive, 
+utilitarian, 
+resilient
+9: Modern 
+Georgiacontemporary 
+glass buildings, 
+military outposts, 
+highway 
+infrastructuremodern military 
+gear, NATO-
+influenced 
+uniforms, civilian 
+fashionmodern Tbilisi, 
+conflict zones, 
+Georgian Military 
+Highwaysleek, 
+sophisticated, 
+tense
+10.3 Example Prompts
+Archer Tower, Era 3:  "isometric tower game sprite, Georgian Golden Age ornate stone  
+watchtower with gold cross and pointed roof, 2D isometric cel-shaded game art, flat color  
+fills in #1A4D2E #D4AF37 #C41E3A, 2px dark outline, clean lines, no text, isometric view,  
+centered composition, transparent background PNG, high resolution, crisp edges, production  
+game art"
+
+--- Page 23 ---
+
+Sakartvelo Defenders | Art Style Guide v2.0
+19Hero Portrait, David IV: "King David IV of Georgia portrait, Georgian Golden Age royal  
+military  commander,  half-body  three-quarter  view, 2D  isometric  cel-shaded  game  art,  
+#1A4D2E background with #D4AF37 radial glow, royal armor in #B8860B with gold  
+accents, determined focused expression, crown, Georgian cross on shield, clean lines, 2px  
+dark outline, flat color fills, no gradients except metallic armor, no text no watermark, game  
+sprite style, high resolution"
+Enemy, Mongol Cavalry: "isometric cavalry game sprite, Mongol Catastrophe horse archer  
+in leather-lamellar armor with fur-trimmed helmet, 2D isometric cel-shaded game art, flat  
+color fills in #3D2B1F #8B6914 #CC5500, 2px dark outline, clean lines, no text, isometric  
+view, action pose, transparent background PNG, high resolution, crisp edges, production  
+game art"
+Map Background, Era 5: "wide game map background, Between Empires Georgian wine  
+country with Persian-influenced fortress and vineyards, 2D isometric cel-shaded game art,  
+#1A3C5E sky gradient to #F5DEB3 horizon, #2E8B57 vineyards, #CD853F stone fortress,  
+#E74C3C banners, three-layer depth parallax, clear path road, no characters no text, high  
+resolution, production game art"
+11. Scroll and Mastery Visual Design
+Scrolls and mastery scrolls are visual items that appear in the player's inventory, the shop,  
+and the marketplace. Their design must be distinctive, readable at small sizes, and clearly  
+communicate their function and rarity. The visual design language for scrolls draws on  
+Georgian manuscript illumination traditions, particularly the distinctive calligraphic style of  
+medieval Georgian gospel books.
+11.1 Standard Scroll Design
+Standard scrolls are rendered as rectangular cards with a parchment texture background. The  
+card dimensions are 3:4 aspect ratio (portrait orientation). The top 30% of the card contains  
+the scroll type icon (a simple, symbolic representation of the scroll's effect: a flame for  
+damage, a coin for economy, a snowflake for crowd control, a heart for healing, a shield for  
+protection). The middle 40% contains the scroll's name in a clean sans-serif font. The bottom  
+30% contains a brief one-line description in secondary text color.
+Scroll rarity is indicated by a colored border: Common (gray), Uncommon (green), Rare  
+(blue), Epic (purple). The rarity border is 3px wide with a subtle glow effect (era accent color  
+at 20% opacity). The parchment background color is consistent across all rarities (#F5E6C8)  
+to maintain the manuscript aesthetic. Stack count (when applicable) is shown as a small  
+badge in the top-right corner of the card.
+
+--- Page 24 ---
+
+Sakartvelo Defenders | Art Style Guide v2.0
+2011.2 Mastery Scroll Design
+Mastery scrolls use a more elaborate card design than standard scrolls, reflecting their status  
+as blockchain assets (ERC-721 NFTs). The card dimensions are the same 3:4 ratio but with  
+additional visual elements. The background uses a darker parchment (#D4C4A0) with a  
+subtle geometric pattern overlay (Georgian cross motif at 5% opacity) to communicate the  
+blockchain connection without using crypto terminology.
+Mastery scroll cards include: the scroll type icon (larger and more detailed than standard  
+scrolls), the tower or hero it affects (shown as a small silhouette), the bonus percentage (3%,  
+6%, or 9% depending on stack count), and a small blockchain verification indicator (a  
+stylized shield icon) in the top-right corner. The card border uses the accent gold color  
+(#D4AF37) to visually distinguish mastery scrolls from standard scrolls. When a mastery  
+scroll is activated (equipped for a level), the card gains a subtle pulsing glow effect.
+12. File Naming Convention
+All game art assets follow a standardized file naming convention to ensure easy organization,  
+searchability,  and  version  tracking.  The  naming  convention  is  designed  to  sort  
+chronologically in file browsers and to be parseable by build scripts for automatic asset  
+processing.
+12.1 Naming Format
+Format: [category]_[era]_[type]_[variant]_[version].[ext]
+Example: tower_e03_archer_golden_age_v02.png
+Category Codes: twr (tower), ene (enemy), her (hero), map (map), ui (interface), scr (scroll),  
+fxs (effects), bg (background)
+Era Codes: e00 through e09 (Era 0 through Era 9)
+Type: Descriptive name in lowercase with underscores (archer, catapult, wall, cavalry, siege,  
+shrine, gunpowder, industrial, bunker, tech, infantry, cavalry_enemy, flying, boss, medea,  
+david_iv, tamar, etc.)
+Variant: Optional descriptor for alternate versions (default, premium, legendary, damaged,  
+winter, night, etc.)
+Version: Two-digit version number with leading zero (v01, v02, v03...)
+Extension: png (all game sprites), jpg (maps and backgrounds only), svg (UI icons only)
+
+--- Page 25 ---
+
+Sakartvelo Defenders | Art Style Guide v2.0
+2112.2 Directory Structure
+/assets/
+  /towers/
+    /e00_colchis/
+    /e01_iberia/
+    ... /e09_modern/
+  /enemies/
+    /e00_colchis/ ... /e09_modern/
+  /heroes/
+    /e00_colchis/ ... /e09_modern/
+  /maps/
+    /e00_colchis/ ... /e09_modern/
+  /ui/
+    /buttons/ /panels/ /icons/ /hud/
+  /scrolls/
+    /standard/ /mastery/
+  /effects/
+12.3 Version Control
+Asset versions are tracked through the file naming convention. When an asset is revised, the  
+version  number  is  incremented  and  the  previous  version  is  moved  to  an  /archive/  
+subdirectory within the relevant category folder. The /archive/ directory preserves the full  
+version history for reference and rollback purposes. No asset is ever permanently deleted; all  
+versions are archived with their era and type codes intact.
+The  Art  Style  Guide  itself  follows  semantic  versioning:  major  versions  (v1.0,  v2.0)  
+correspond to Bible versions and involve significant structural changes (era additions, palette  
+overhauls). Minor versions (v2.1, v2.2) involve refinements to existing content (new prompt  
+keywords,  adjusted  proportions,  updated  consistency  checks).  Patch  versions  (v2.1.1)  
+involve typo corrections and formatting fixes.
+
+--- Page 26 ---
+
+Sakartvelo Defenders | Art Style Guide v2.0
+2213. Consistency Checklist
+Every AI-generated asset must pass the following checklist before being accepted into the  
+game. The checklist is applied during the review process and documented in the asset log.  
+Any asset that fails a checklist item must be regenerated or manually corrected before  
+inclusion.
+13.1 Color Compliance
+All visible colors in the asset match the era palette exactly (Section 3). No unauthorized color  
+substitutions. Colors are verified by sampling pixel values from the generated image and  
+comparing them to the hex values in the palette. Tolerance: plus or minus 10 units per RGB  
+channel  to  account  for  AI  rendering  variation.  Colors  outside  this  tolerance  require  
+regeneration.
+13.2 Silhouette Compliance
+Tower silhouettes match the reference shapes defined in Section 4. The silhouette is verified  
+by converting the asset to a solid black silhouette and comparing it against the reference  
+silhouette at 64x64 pixel resolution. The silhouette match must be at least 90% similar  
+(measured by pixel overlap). Silhouettes that differ significantly indicate an AI generation  
+error.
+13.3 Proportion Compliance
+Humanoid characters follow the 10-unit proportion system defined in Section 5. Proportions  
+are verified by measuring key body landmarks (head top, chin, shoulders, waist, feet) and  
+confirming that each segment falls within the defined unit range. Tolerance: plus or minus  
+0.3 units per segment.
+13.4 Style Compliance
+The asset matches the 2D isometric cel-shaded style defined in Section 1. Key checks  
+include: consistent shadow direction (lower-right, 45 degrees), correct outline weight (2px  
+for objects, 3px for characters), flat color fills (no unintended gradients), and correct lighting  
+(highlights on upper-left surfaces). Any deviation from the style rules requires regeneration.
+13.5 Era Compliance
+Architectural details, clothing, military equipment, and environmental elements match the  
+era keyword library (Section 10.2). Anachronistic elements (a gun in Era 0, a smartphone in
+
+--- Page 27 ---
+
+Sakartvelo Defenders | Art Style Guide v2.0
+23Era 3) are immediate failures. Era compliance is verified by comparing the asset against the  
+era keyword list and confirming that all visible elements are period-appropriate.
+13.6 Technical Quality
+The asset has no visible artifacts: no JPEG compression artifacts, no blurry edges, no  
+unintended transparency, no text or watermark overlays, and no AI generation artifacts (extra  
+fingers, merged objects, distorted perspective). Resolution meets the minimum standard:  
+512x512 pixels for towers, 1024x1024 for hero portraits, 2048x2048 for map backgrounds.
+13.7 Cultural Sensitivity Review
+The asset does not contain caricatured ethnic features, stereotypical depictions of any  
+cultural group, or historically inaccurate representations that could cause offense. Enemy  
+designs  depict  military  units  with  dignity  and  accuracy.  Religious  symbols  are  used  
+respectfully and in historically appropriate contexts. Any asset that raises cultural sensitivity  
+concerns is escalated for review before inclusion.
+14. Hermes Collaboration Scope
+This section defines the scope of work for Hermes (the design agent) when generating visual  
+assets based on this style guide. The scope is organized by priority, with Priority 1 items  
+being the immediate deliverables needed for the game's first playable build.
+14.1 Priority 1: Core Visual Foundation
+Tower Silhouette Sheet: A single reference image showing all 10 tower types side by side in  
+their default (Era 0) skins, rendered at production quality. This sheet serves as the definitive  
+visual reference for tower design and must be generated first, before any individual tower  
+assets are produced.
+Era 0 Palette Validation: Generate sample assets for Era 0 (1 tower, 1 enemy, 1 hero portrait,  
+1 map background) using the Colchis palette. These samples validate that the palette, style  
+tags, and prompt architecture produce consistent, acceptable results before scaling to full  
+production.
+Style Guide Calibration:  Based on the Priority 1 samples, identify any inconsistencies  
+between  the  style  guide  specifications  and  AI  generation  output.  Propose  specific  
+adjustments to the style guide, prompt templates, or palette values to improve consistency.
+
+--- Page 28 ---
+
+Sakartvelo Defenders | Art Style Guide v2.0
+2414.2 Priority 2: Era 0-1 Full Asset Set
+After Priority 1 validation, produce the full asset set for Eras 0 and 1 (40 levels): all tower  
+skins for both eras, all enemy types, hero portraits (Medea, Pharnavaz, St. Nino, Vakhtang  
+Gorgasali), and all 40 map backgrounds. This is the minimum asset set needed for the Phase  
+1 playable prototype.
+14.3 Priority 3: Era 2-4 Assets
+Full asset set for Eras 2, 3, and 4, covering the Arab invasion, Golden Age, and Mongol  
+Catastrophe periods. This is the largest and most diverse asset set in the game, requiring the  
+most era-specific visual variation. The Golden Age (Era 3) assets are expected to be the most  
+visually complex and time-intensive.
+14.4 Priority 4: Remaining Eras and Polish
+Full asset sets for Eras 5-9, plus any additional assets needed for UI elements, scroll designs,  
+loading screens, and marketing materials. This priority also includes the final polish pass:  
+reviewing all assets for consistency, regenerating any that fail the checklist, and producing  
+the high-resolution versions needed for marketing and store listings.
+15. Changelog (v1.0 to v2.0)
+Section Change Reason
+3: Era Palettes Expanded from 9 to 10 palettes New era structure: 10 eras (not 
+9)
+3.1-3.5 Eras 0-4 updated Colchis, Iberia, Invasions, 
+Golden Age, Mongol 
+Catastrophe
+3.6-3.10 Eras 5-9 updated Between Empires, Russian 
+Empire, First Republic, Soviet, 
+Modern
+4: Tower Silhouettes Added 
+Gunpowder/Industrial/Bunker/T
+ech towersEras 5-9 introduce 4 new tower 
+types
+7: Enemy Design Updated faction color rules Ottoman/Persian faction tinting 
+for Era 5
+8: Map Design Era map themes expanded to 10 New era-specific terrain and 
+atmosphere descriptions
+
+--- Page 29 ---
+
+Sakartvelo Defenders | Art Style Guide v2.0
+25Section Change Reason
+10: AI Prompts Era keyword libraries expanded 
+to 10New architectural, clothing, and  
+environment keywords
+10.3 New example prompts added Era 3 Archer Tower, David IV 
+portrait, Mongol cavalry
+11: Scroll Design Mastery scroll visual design 
+addedERC-721 NFT scrolls need 
+distinct visual identity
+13: Consistency Added Cultural Sensitivity 
+ReviewStalin era (Era 8) requires 
+sensitivity review
+14: Hermes Scope Updated for 10-era structure Priority 1 starts with Era 0 
+palette validation

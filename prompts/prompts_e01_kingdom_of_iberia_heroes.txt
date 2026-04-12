@@ -1,0 +1,9 @@
+# Sakartvelo Defenders - Hero Portrait Prompts
+# Era: e01_kingdom_of_iberia
+
+## ST. NINO
+St. Nino portrait, Kingdom of Iberia Georgian Christian missionary and healer, half-body three-quarter view, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, #4A3728 background with #C8A96E radial glow, #4A3728 and #C8A96E clothing highlights, calm serene expression, grapevine cross necklace and simple robes, cross symbol and early church, 3px dark outline, flat color fills, no gradients except metallic, no text no watermark, game sprite style, high resolution 1024x1024
+
+## VAKHTANG GORGASALI
+Vakhtang Gorgasali portrait, Kingdom of Iberia Georgian warrior king of Iberia, half-body three-quarter view, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, #4A3728 background with #C8A96E radial glow, #4A3728 and #C8A96E clothing highlights, determined focused expression, crown and wolf-skin pelt on armor, Tbilisi sulfur springs in background, 3px dark outline, flat color fills, no gradients except metallic, no text no watermark, game sprite style, high resolution 1024x1024
+

@@ -1,0 +1,12 @@
+# Sakartvelo Defenders - Enemy Prompts
+# Era: e05_between_empires
+
+## OTTOMAN_JANISSARY
+isometric enemy game sprite, Between Empires Ottoman Janissary infantry with musket and distinctive tall hat, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #0D2137 #CD853F #E74C3C, 3px dark outline, no text, isometric view, action pose, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## PERSIAN_QIZILBASH
+isometric enemy game sprite, Between Empires Persian Qizilbash cavalry with saber and shield, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #0D2137 #CD853F #E74C3C, 3px dark outline, no text, isometric view, action pose, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## OTTOMAN_CANNON_CREW
+isometric enemy game sprite, Between Empires Ottoman cannon crew with bronze artillery piece, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #0D2137 #CD853F #E74C3C, 3px dark outline, no text, isometric view, action pose, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+

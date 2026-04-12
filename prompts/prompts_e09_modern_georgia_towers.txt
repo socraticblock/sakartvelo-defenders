@@ -1,0 +1,33 @@
+# Sakartvelo Defenders - Tower Prompts
+# Era: e09_modern_georgia
+
+## ARCHER
+isometric tower game sprite, Modern Georgia archer tower with elevated shooting platform and parapets, modern glass and steel military outpost with digital displays, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #0D1B2A #415A77 #070E18 #E63946, isometric view, centered composition, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## CATAPULT
+isometric tower game sprite, Modern Georgia catapult siege tower with throwing arm and stone ammunition, modern glass and steel military outpost with digital displays, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #0D1B2A #415A77 #070E18 #E63946, isometric view, centered composition, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## WALL
+isometric tower game sprite, Modern Georgia defensive wall tower with battlements and reinforced stone, modern glass and steel military outpost with digital displays, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #0D1B2A #415A77 #070E18 #E63946, isometric view, centered composition, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## SHRINE
+isometric tower game sprite, Modern Georgia shrine tower with religious dome and cross decoration, modern glass and steel military outpost with digital displays, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #0D1B2A #415A77 #070E18 #E63946, isometric view, centered composition, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## CAVALRY
+isometric tower game sprite, Modern Georgia cavalry tower with horse stable and mounted unit deployment, modern glass and steel military outpost with digital displays, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #0D1B2A #415A77 #070E18 #E63946, isometric view, centered composition, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## GUNPOWDER
+isometric tower game sprite, Modern Georgia gunpowder cannon tower with gunports and smoke effects, modern glass and steel military outpost with digital displays, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #0D1B2A #415A77 #070E18 #E63946, isometric view, centered composition, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## INDUSTRIAL
+isometric tower game sprite, Modern Georgia industrial area damage tower with smokestack and steam vents, modern glass and steel military outpost with digital displays, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #0D1B2A #415A77 #070E18 #E63946, isometric view, centered composition, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## BUNKER
+isometric tower game sprite, Modern Georgia fortified bunker tower with sandbags and machine gun position, modern glass and steel military outpost with digital displays, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #0D1B2A #415A77 #070E18 #E63946, isometric view, centered composition, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## TECH
+isometric tower game sprite, Modern Georgia high-tech special tower with energy crystal and antenna array, modern glass and steel military outpost with digital displays, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #0D1B2A #415A77 #070E18 #E63946, isometric view, centered composition, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## SPECIAL
+isometric tower game sprite, Modern Georgia special unique tower with ornate gold dome and decorative columns, modern glass and steel military outpost with digital displays, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #0D1B2A #415A77 #070E18 #E63946, isometric view, centered composition, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+

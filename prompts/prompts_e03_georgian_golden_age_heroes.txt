@@ -1,0 +1,9 @@
+# Sakartvelo Defenders - Hero Portrait Prompts
+# Era: e03_georgian_golden_age
+
+## DAVID IV
+David IV portrait, Georgian Golden Age Georgian Georgian Golden Age royal military commander, half-body three-quarter view, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, #1A4D2E background with #C41E3A radial glow, #1A4D2E and #C41E3A clothing highlights, determined focused expression, crown, royal armor in gold accents, Georgian cross on shield, Gelati monastery and grand cathedral, 3px dark outline, flat color fills, no gradients except metallic, no text no watermark, game sprite style, high resolution 1024x1024
+
+## QUEEN TAMAR
+Queen Tamar portrait, Georgian Golden Age Georgian Georgian Golden Age queen ruler, half-body three-quarter view, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, #1A4D2E background with #C41E3A radial glow, #1A4D2E and #C41E3A clothing highlights, thoughtful contemplative expression, royal robes in green and gold with crown, gold-domed church and Georgian cross banner, 3px dark outline, flat color fills, no gradients except metallic, no text no watermark, game sprite style, high resolution 1024x1024
+

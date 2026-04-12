@@ -1,56 +1,56 @@
 /* ============================================================
-   SAKARTVELO DEFENDERS — DESIGN SYSTEM v2
-   "Historical Epic" — Cream, Red, Gold, Georgian Heritage
-   Identity: Georgian flag colors + parchment warmth
-   Typography: Serif headings (Cormorant Garamond) + clean body (Inter)
+   SAKARTVELO DEFENDERS — DESIGN SYSTEM
+   Blend: SpaceX (cinematic dark) + Stripe (elegant refinement)
+   Identity: Georgian flag colors (red, gold, green)
    ============================================================ */
 
-/* --- Google Fonts --- */
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+/* --- Google Fonts (Stripe substitute stack) --- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Sans+3:wght@300;400;500;600&display=swap');
 
 /* --- 1. DESIGN TOKENS --- */
 :root {
-  /* Georgian Flag Identity */
-  --geo-red: #c1272d;
-  --geo-red-dark: #a01f24;
-  --geo-red-light: #e84045;
+  /* Georgian Identity */
+  --geo-red: #d62e2d;
+  --geo-red-dark: #a82222;
   --geo-green: #007b3d;
-  --geo-green-dark: #005e2d;
-  --geo-gold: #d4a836;
-  --geo-gold-light: #f0c040;
-  --geo-gold-dim: rgba(212, 168, 54, 0.12);
+  --geo-gold: #f0c040;
+  --geo-gold-dim: rgba(240, 192, 64, 0.15);
 
-  /* Cream Foundation */
-  --parchment: #faf6f0;
-  --cream: #f3ece1;
-  --warm-white: #fffdf9;
-  --ivory: #ffffff;
-  --linen: #ede5d8;
+  /* Dark Foundation (SpaceX lineage) */
+  --void: #050508;
+  --deep: #0a0a10;
+  --surface-1: #111118;
+  --surface-2: #18181f;
+  --surface-3: #1f1f28;
+  --surface-4: #28283a;
+  --spectral: #eeeef2;
+  --spectral-dim: rgba(238, 238, 242, 0.6);
+  --spectral-ghost: rgba(238, 238, 242, 0.1);
 
-  /* Text hierarchy on light backgrounds */
-  --charcoal: #1a1a2e;
-  --stone: #4a4a5a;
-  --muted: #7a7a8a;
-  --ghost: rgba(26, 26, 46, 0.06);
-  --ghost-strong: rgba(26, 26, 46, 0.10);
-  --ghost-border: rgba(26, 26, 46, 0.08);
+  /* Refined Navy (Stripe lineage) */
+  --navy: #0c1a2e;
+  --navy-heading: #0a1628;
+  --slate: #64748d;
+  --slate-light: #94a3b8;
 
-  /* Shadows — warm, papery */
-  --shadow-elevated: 0 8px 30px rgba(26, 26, 46, 0.08),
-                     0 2px 8px rgba(26, 26, 46, 0.04);
-  --shadow-card: 0 2px 12px rgba(26, 26, 46, 0.06),
-                 0 1px 3px rgba(26, 26, 46, 0.04);
-  --shadow-hover: 0 12px 40px rgba(26, 26, 46, 0.12),
-                  0 4px 12px rgba(26, 26, 46, 0.06);
-  --shadow-glow-red: 0 0 40px rgba(193, 39, 45, 0.12);
-  --shadow-glow-gold: 0 0 40px rgba(212, 168, 54, 0.10);
+  /* Accent — Georgian Red replaces Stripe Purple as primary */
+  --accent: var(--geo-red);
+  --accent-hover: var(--geo-red-dark);
+  --gold-accent: var(--geo-gold);
+
+  /* Shadows (Stripe blue-tinted, adapted) */
+  --shadow-elevated: rgba(50, 50, 93, 0.25) 0px 30px 45px -30px,
+                     rgba(0, 0, 0, 0.15) 0px 18px 36px -18px;
+  --shadow-ambient: rgba(23, 23, 23, 0.08) 0px 15px 35px 0px;
+  --shadow-subtle: rgba(23, 23, 23, 0.06) 0px 3px 6px 0px;
+  --shadow-glow-red: 0 0 40px rgba(214, 46, 45, 0.15);
+  --shadow-glow-gold: 0 0 40px rgba(240, 192, 64, 0.1);
 
   /* Typography */
-  --font-heading: 'Cormorant Garamond', 'Georgia', 'Times New Roman', serif;
-  --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-primary: 'Inter', 'Source Sans 3', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 
-  /* Spacing (unchanged) */
+  /* Spacing */
   --space-xs: 4px;
   --space-sm: 8px;
   --space-md: 16px;
@@ -88,99 +88,55 @@ html {
 }
 
 body {
-  font-family: var(--font-body);
-  font-weight: 400;
+  font-family: var(--font-primary);
+  font-weight: 300;
   font-size: 16px;
   line-height: 1.6;
-  color: var(--stone);
-  background: var(--parchment);
+  color: var(--spectral-dim);
+  background: var(--void);
   overflow-x: hidden;
-}
-
-/* Animated Georgian Five-Cross Flag — prominent watermark */
-body::before {
-  content: '';
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  width: 75vmin;
-  height: 45vmin; /* 3:5 ratio */
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  z-index: 0;
-  opacity: 0.07;
-  will-change: transform;
-  animation: flag-wave 20s ease-in-out infinite;
-  /* Authentic Georgian five-cross flag */
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 180'%3E%3Crect width='300' height='180' fill='%23fff'/%3E%3C!-- Central St. George's Cross (large red cross) --%3E%3Crect x='132' y='0' width='36' height='180' fill='%23c1272d'/%3E%3Crect x='0' y='72' width='300' height='36' fill='%23c1272d'/%3E%3C!-- Top-left Bolnisi cross --%3E%3Cg fill='%23c1272d'%3E%3Crect x='54' y='15' width='18' height='50'/%3E%3Crect x='38' y='28' width='50' height='18'/%3E%3C/g%3E%3C!-- Top-right Bolnisi cross --%3E%3Cg fill='%23c1272d'%3E%3Crect x='228' y='15' width='18' height='50'/%3E%3Crect x='212' y='28' width='50' height='18'/%3E%3C/g%3E%3C!-- Bottom-left Bolnisi cross --%3E%3Cg fill='%23c1272d'%3E%3Crect x='54' y='115' width='18' height='50'/%3E%3Crect x='38' y='128' width='50' height='18'/%3E%3C/g%3E%3C!-- Bottom-right Bolnisi cross --%3E%3Cg fill='%23c1272d'%3E%3Crect x='228' y='115' width='18' height='50'/%3E%3Crect x='212' y='128' width='50' height='18'/%3E%3C/g%3E%3C/svg%3E");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-@keyframes flag-wave {
-  0%, 100% {
-    transform: translate(-50%, -50%) perspective(1200px) rotateY(0deg) scaleX(1);
-  }
-  25% {
-    transform: translate(-50%, -50%) perspective(1200px) rotateY(2deg) scaleX(1.008);
-  }
-  50% {
-    transform: translate(-50%, -50%) perspective(1200px) rotateY(0deg) scaleX(1.015);
-  }
-  75% {
-    transform: translate(-50%, -50%) perspective(1200px) rotateY(-2deg) scaleX(1.008);
-  }
-}
-
-/* Respect reduced-motion preference */
-@media (prefers-reduced-motion: reduce) {
-  body::before {
-    animation: none;
-  }
 }
 
 /* --- 3. TYPOGRAPHY --- */
 h1, h2, h3, h4, h5, h6 {
-  color: var(--charcoal);
-  font-family: var(--font-heading);
-  font-weight: 500;
-  letter-spacing: -0.01em;
+  color: var(--spectral);
+  font-weight: 300;
+  letter-spacing: -0.02em;
   line-height: 1.15;
 }
 
 h1 {
-  font-size: clamp(2.5rem, 6vw, 3.75rem);
-  font-weight: 500;
-  letter-spacing: -0.02em;
-  line-height: 1.08;
+  font-size: clamp(2.5rem, 6vw, 3.75rem);  /* 40-60px */
+  font-weight: 300;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
 }
 
 h2 {
-  font-size: clamp(1.75rem, 4vw, 2.5rem);
-  font-weight: 500;
-  letter-spacing: -0.01em;
-  line-height: 1.15;
+  font-size: clamp(1.75rem, 4vw, 2.5rem);  /* 28-40px */
+  font-weight: 300;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
   margin-bottom: var(--space-lg);
 }
 
 h3 {
   font-size: clamp(1.25rem, 2.5vw, 1.5rem);
-  font-weight: 500;
-  line-height: 1.3;
+  font-weight: 400;
+  line-height: 1.25;
   margin-bottom: var(--space-sm);
 }
 
 h4 {
   font-size: 1.125rem;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.3;
   margin-bottom: var(--space-xs);
 }
 
 p {
   margin-bottom: var(--space-md);
-  color: var(--stone);
+  color: var(--spectral-dim);
 }
 
 a {
@@ -190,7 +146,7 @@ a {
 }
 
 a:hover {
-  color: var(--geo-red-dark);
+  color: var(--geo-gold);
 }
 
 strong, b {
@@ -202,11 +158,10 @@ strong, b {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  color: var(--muted);
+  color: var(--slate-light);
 }
 
 .section-label {
-  font-family: var(--font-body);
   font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -216,21 +171,12 @@ strong, b {
   display: block;
 }
 
-/* Decorative section divider — Georgian vine motif */
-.section-divider {
-  width: 100%;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, var(--ghost-strong), transparent);
-}
-
 /* --- 4. LAYOUT --- */
 .container {
   width: 100%;
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 0 var(--space-lg);
-  position: relative;
-  z-index: 1;
 }
 
 section {
@@ -259,7 +205,7 @@ section {
   section { padding: var(--space-3xl) 0; }
 }
 
-/* --- 5. NAVIGATION --- */
+/* --- 5. NAVIGATION (SpaceX translucent + Stripe blur) --- */
 .nav {
   position: fixed;
   top: 0;
@@ -267,10 +213,10 @@ section {
   right: 0;
   height: var(--nav-height);
   z-index: 1000;
-  background: rgba(250, 246, 240, 0.9);
+  background: rgba(5, 5, 8, 0.85);
   backdrop-filter: saturate(180%) blur(20px);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
-  border-bottom: 1px solid var(--ghost-border);
+  border-bottom: 1px solid var(--spectral-ghost);
   transition: background var(--duration) var(--ease);
 }
 
@@ -285,10 +231,9 @@ section {
 }
 
 .nav-brand {
-  font-family: var(--font-heading);
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 600;
-  color: var(--charcoal);
+  color: var(--spectral);
   letter-spacing: 0.04em;
   text-transform: uppercase;
   text-decoration: none;
@@ -298,14 +243,13 @@ section {
 }
 
 .nav-brand .brand-icon {
-  width: 28px;
-  height: 28px;
+  width: 24px;
+  height: 24px;
   background: var(--geo-red);
   border-radius: var(--radius-sm);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: var(--font-body);
   font-size: 0.75rem;
   font-weight: 700;
   color: white;
@@ -320,8 +264,8 @@ section {
 
 .nav-links a {
   font-size: 0.8125rem;
-  font-weight: 500;
-  color: var(--stone);
+  font-weight: 400;
+  color: var(--spectral-dim);
   text-transform: uppercase;
   letter-spacing: 0.1em;
   transition: color var(--duration) var(--ease);
@@ -329,7 +273,7 @@ section {
 
 .nav-links a:hover,
 .nav-links a.active {
-  color: var(--geo-red);
+  color: var(--spectral);
 }
 
 .nav-cta {
@@ -360,7 +304,7 @@ section {
   display: block;
   width: 20px;
   height: 2px;
-  background: var(--charcoal);
+  background: var(--spectral);
   margin: 4px 0;
   transition: all var(--duration) var(--ease);
 }
@@ -372,18 +316,18 @@ section {
     top: var(--nav-height);
     left: 0;
     right: 0;
-    background: rgba(250, 246, 240, 0.97);
+    background: rgba(5, 5, 8, 0.95);
     backdrop-filter: blur(20px);
     flex-direction: column;
     padding: var(--space-lg);
     gap: var(--space-lg);
-    border-bottom: 1px solid var(--ghost-border);
+    border-bottom: 1px solid var(--spectral-ghost);
   }
   .nav-links.open { display: flex; }
   .nav-toggle { display: block; }
 }
 
-/* --- 6. HERO --- */
+/* --- 6. HERO (SpaceX full-viewport + Stripe weight-300) --- */
 .hero {
   min-height: 100vh;
   display: flex;
@@ -392,39 +336,17 @@ section {
   text-align: center;
   position: relative;
   overflow: hidden;
-  background: var(--parchment);
+  background: var(--void);
 }
 
-/* Georgian flag-inspired radial glow behind hero text */
 .hero::before {
   content: '';
   position: absolute;
   inset: 0;
-  background:
-    radial-gradient(ellipse at 50% 70%, rgba(193, 39, 45, 0.06) 0%, transparent 55%),
-    radial-gradient(ellipse at 20% 20%, rgba(212, 168, 54, 0.04) 0%, transparent 45%),
-    radial-gradient(ellipse at 80% 30%, rgba(0, 123, 61, 0.04) 0%, transparent 45%);
+  background: radial-gradient(ellipse at 50% 80%, rgba(214, 46, 45, 0.08) 0%, transparent 60%),
+              radial-gradient(ellipse at 20% 20%, rgba(240, 192, 64, 0.05) 0%, transparent 50%),
+              radial-gradient(ellipse at 80% 30%, rgba(0, 123, 61, 0.05) 0%, transparent 50%);
   pointer-events: none;
-}
-
-/* Subtle cross pattern inspired by Bolnisi cross */
-.hero::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 600px;
-  height: 600px;
-  opacity: 0.015;
-  pointer-events: none;
-  background:
-    /* Vertical bar */
-    linear-gradient(0deg, var(--charcoal) 0%, var(--charcoal) 100%) no-repeat
-      center / 2px 100%,
-    /* Horizontal bar */
-    linear-gradient(90deg, var(--charcoal) 0%, var(--charcoal) 100%) no-repeat
-      center / 100% 2px;
 }
 
 .hero-content {
@@ -444,7 +366,7 @@ section {
 
 .hero .subtitle {
   font-size: clamp(1rem, 2vw, 1.25rem);
-  color: var(--stone);
+  color: var(--spectral-dim);
   line-height: 1.6;
   margin-bottom: var(--space-2xl);
   max-width: 600px;
@@ -466,7 +388,7 @@ section {
   align-items: center;
   justify-content: center;
   gap: var(--space-sm);
-  font-family: var(--font-body);
+  font-family: var(--font-primary);
   font-weight: 500;
   font-size: 0.9375rem;
   padding: 12px 28px;
@@ -492,14 +414,14 @@ section {
 
 .btn-ghost {
   background: transparent;
-  color: var(--charcoal);
-  border: 1px solid var(--ghost-strong);
+  color: var(--spectral);
+  border: 1px solid rgba(238, 238, 242, 0.2);
 }
 
 .btn-ghost:hover {
-  background: var(--ghost);
-  color: var(--geo-red);
-  border-color: var(--geo-red);
+  background: var(--spectral-ghost);
+  color: var(--spectral);
+  border-color: rgba(238, 238, 242, 0.4);
 }
 
 .btn-pill {
@@ -518,21 +440,20 @@ section {
   flex-wrap: wrap;
 }
 
-/* --- 8. CARDS --- */
+/* --- 8. CARDS (Stripe elevation + dark surface) --- */
 .card {
-  background: var(--ivory);
-  border: 1px solid var(--ghost-border);
+  background: var(--surface-1);
+  border: 1px solid rgba(238, 238, 242, 0.06);
   border-radius: var(--radius-lg);
   padding: var(--space-2xl);
   transition: all var(--duration) var(--ease);
   position: relative;
-  box-shadow: var(--shadow-card);
 }
 
 .card:hover {
-  border-color: rgba(193, 39, 45, 0.15);
+  border-color: rgba(238, 238, 242, 0.12);
   transform: translateY(-4px);
-  box-shadow: var(--shadow-hover);
+  box-shadow: var(--shadow-elevated);
 }
 
 .card-icon {
@@ -547,7 +468,7 @@ section {
 }
 
 .card-icon.red {
-  background: rgba(193, 39, 45, 0.08);
+  background: rgba(214, 46, 45, 0.12);
   color: var(--geo-red);
 }
 
@@ -557,17 +478,17 @@ section {
 }
 
 .card-icon.green {
-  background: rgba(0, 123, 61, 0.08);
+  background: rgba(0, 123, 61, 0.12);
   color: var(--geo-green);
 }
 
 .card-icon.blue {
-  background: rgba(74, 74, 90, 0.08);
-  color: var(--muted);
+  background: rgba(100, 116, 139, 0.15);
+  color: var(--slate-light);
 }
 
 .card h3 {
-  color: var(--charcoal);
+  color: var(--spectral);
 }
 
 .card p {
@@ -575,7 +496,7 @@ section {
   line-height: 1.6;
 }
 
-/* --- 9. ERA CARDS --- */
+/* --- 9. ERA CARDS (Unique to Sakartvelo) --- */
 .era-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -591,14 +512,13 @@ section {
 }
 
 .era-card {
-  background: var(--ivory);
-  border: 1px solid var(--ghost-border);
+  background: var(--surface-1);
+  border: 1px solid rgba(238, 238, 242, 0.06);
   border-radius: var(--radius-lg);
   padding: var(--space-xl);
   transition: all var(--duration) var(--ease);
   position: relative;
   overflow: hidden;
-  box-shadow: var(--shadow-card);
 }
 
 .era-card::before {
@@ -612,9 +532,8 @@ section {
 }
 
 .era-card:hover {
-  border-color: rgba(193, 39, 45, 0.12);
+  border-color: rgba(238, 238, 242, 0.1);
   transform: translateY(-2px);
-  box-shadow: var(--shadow-hover);
 }
 
 .era-card .era-number {
@@ -624,52 +543,58 @@ section {
   text-transform: uppercase;
   letter-spacing: 0.12em;
   margin-bottom: var(--space-sm);
-  color: var(--muted);
+  opacity: 0.5;
 }
 
 .era-card h4 {
-  font-family: var(--font-heading);
-  color: var(--charcoal);
-  font-weight: 600;
-  font-size: 1.05rem;
+  color: var(--spectral);
+  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: var(--space-xs);
 }
 
 .era-card .era-period {
   font-size: 0.75rem;
-  color: var(--geo-red);
+  color: var(--slate);
   margin-bottom: var(--space-sm);
-  font-weight: 500;
 }
 
 .era-card p {
   font-size: 0.8125rem;
   line-height: 1.55;
-  color: var(--stone);
+  color: var(--spectral-dim);
 }
 
-/* Era color accents — warm historical palette */
+/* Era color accents */
 .era-card[data-era="0"]::before { background: #8B7355; }
 .era-card[data-era="1"]::before { background: #C65D3E; }
 .era-card[data-era="2"]::before { background: #7B8FA1; }
-.era-card[data-era="3"]::before { background: var(--geo-gold); }
+.era-card[data-era="3"]::before { background: #4169E1; }
 .era-card[data-era="4"]::before { background: #722F37; }
 .era-card[data-era="5"]::before { background: #DAA520; }
 .era-card[data-era="6"]::before { background: #4A6A8A; }
-.era-card[data-era="7"]::before { background: var(--geo-red); }
+.era-card[data-era="7"]::before { background: #CC4422; }
 .era-card[data-era="8"]::before { background: #22A7F0; }
-.era-card[data-era="9"]::before { background: var(--geo-green); }
+.era-card[data-era="9"]::before { background: #E8E8E8; }
 
 /* --- 10. SECTION VARIANTS --- */
 .section-dark {
-  background: var(--cream);
+  background: var(--deep);
 }
 
 .section-darker {
-  background: var(--linen);
+  background: var(--surface-1);
 }
 
 .section-gradient {
-  background: linear-gradient(180deg, var(--parchment) 0%, var(--cream) 100%);
+  background: linear-gradient(180deg, var(--void) 0%, var(--deep) 100%);
+}
+
+/* Divider line between sections */
+.section-divider {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(238, 238, 242, 0.08), transparent);
 }
 
 /* --- 11. FEATURE LIST --- */
@@ -681,7 +606,7 @@ section {
 .feature-list li {
   counter-increment: feature;
   padding: var(--space-md) 0;
-  border-bottom: 1px solid var(--ghost-border);
+  border-bottom: 1px solid rgba(238, 238, 242, 0.06);
   display: flex;
   gap: var(--space-md);
   align-items: flex-start;
@@ -710,11 +635,10 @@ section {
 }
 
 .stat-value {
-  font-family: var(--font-heading);
   font-size: clamp(2rem, 4vw, 3rem);
-  font-weight: 400;
-  color: var(--charcoal);
-  letter-spacing: -0.02em;
+  font-weight: 300;
+  color: var(--spectral);
+  letter-spacing: -0.04em;
   line-height: 1;
   margin-bottom: var(--space-xs);
 }
@@ -723,22 +647,20 @@ section {
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: var(--muted);
+  color: var(--slate);
 }
 
 /* --- 13. TOWER/ENEMY/HERO CARDS --- */
 .game-card {
-  background: var(--ivory);
-  border: 1px solid var(--ghost-border);
+  background: var(--surface-1);
+  border: 1px solid rgba(238, 238, 242, 0.06);
   border-radius: var(--radius-lg);
   padding: var(--space-xl);
   transition: all var(--duration) var(--ease);
-  box-shadow: var(--shadow-card);
 }
 
 .game-card:hover {
-  border-color: rgba(193, 39, 45, 0.12);
-  box-shadow: var(--shadow-hover);
+  border-color: rgba(238, 238, 242, 0.12);
 }
 
 .game-card .gc-header {
@@ -773,11 +695,11 @@ section {
   font-size: 0.6875rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--muted);
+  color: var(--slate);
 }
 
 .game-card .gc-stat span {
-  color: var(--charcoal);
+  color: var(--spectral);
   font-weight: 500;
 }
 
@@ -792,15 +714,14 @@ section {
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at 50% 50%, rgba(193, 39, 45, 0.04) 0%, transparent 70%);
+  background: radial-gradient(ellipse at 50% 50%, rgba(214, 46, 45, 0.06) 0%, transparent 70%);
   pointer-events: none;
 }
 
 /* --- 15. FOOTER --- */
 .footer {
-  background: var(--charcoal);
-  color: rgba(255, 255, 255, 0.6);
-  border-top: 3px solid var(--geo-red);
+  background: var(--surface-1);
+  border-top: 1px solid rgba(238, 238, 242, 0.06);
   padding: var(--space-3xl) 0 var(--space-2xl);
 }
 
@@ -814,7 +735,7 @@ section {
 
 .footer-left p {
   font-size: 0.8125rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--slate);
   margin-bottom: var(--space-xs);
 }
 
@@ -825,20 +746,20 @@ section {
 
 .footer-right a {
   font-size: 0.75rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--slate);
   text-transform: uppercase;
   letter-spacing: 0.08em;
   transition: color var(--duration) var(--ease);
 }
 
 .footer-right a:hover {
-  color: var(--geo-gold);
+  color: var(--spectral);
 }
 
 .footer-georgian {
   font-size: 0.875rem;
   color: var(--geo-gold);
-  opacity: 0.7;
+  opacity: 0.6;
   margin-top: var(--space-xs);
 }
 
@@ -887,7 +808,7 @@ section {
 
 .prose li {
   margin-bottom: var(--space-sm);
-  color: var(--stone);
+  color: var(--spectral-dim);
   line-height: 1.6;
 }
 
@@ -904,7 +825,7 @@ section {
 }
 
 .badge-red {
-  background: rgba(193, 39, 45, 0.08);
+  background: rgba(214, 46, 45, 0.12);
   color: var(--geo-red);
 }
 
@@ -914,7 +835,7 @@ section {
 }
 
 .badge-green {
-  background: rgba(0, 123, 61, 0.08);
+  background: rgba(0, 123, 61, 0.12);
   color: var(--geo-green);
 }
 

@@ -1,0 +1,18 @@
+# Sakartvelo Defenders - Enemy Prompts
+# Era: e00_ancient_colchis
+
+## TRIBAL_RAIDER_INFANTRY
+isometric enemy game sprite, Ancient Colchis tribal raider infantry with leather armor, bronze spear, and round shield, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #1B3A26 #8B7355 #D4A017, 3px dark outline, no text, isometric view, action pose, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## TRIBAL_RAIDER_CAVALRY
+isometric enemy game sprite, Ancient Colchis tribal raider cavalry on horseback with javelins and tribal jewelry, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #1B3A26 #8B7355 #D4A017, 3px dark outline, no text, isometric view, action pose, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## GREEK_COLONIST_INFANTRY
+isometric enemy game sprite, Ancient Colchis Greek colonist infantry with bronze aspis shield and dory spear, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #1B3A26 #8B7355 #D4A017, 3px dark outline, no text, isometric view, action pose, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## GREEK_COLONIST_ARCHER
+isometric enemy game sprite, Ancient Colchis Greek colonist archer with linen tunic and composite bow, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #1B3A26 #8B7355 #D4A017, 3px dark outline, no text, isometric view, action pose, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## MYTHICAL_GUARDIAN
+isometric enemy game sprite, Ancient Colchis mythical Colchian guardian beast with golden scales, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #1B3A26 #8B7355 #D4A017, 3px dark outline, no text, isometric view, action pose, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+

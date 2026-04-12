@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blockchain — Sakartvelo Defenders</title>
+  <meta name="description" content="The invisible blockchain behind Sakartvelo Defenders. Zero gas fees, email login, SAKART tokens earned through skill. 1B fixed supply, ERC-20/1155/721 on Immutable zkEVM.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">
+        <span class="brand-icon">SD</span>
+        Sakartvelo Defenders
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gameplay.html">Gameplay</a></li>
+        <li><a href="blockchain.html" class="active">Blockchain</a></li>
+        <li><a href="index.html#waitlist" class="nav-cta">Join Waitlist</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero (shorter, economy-focused) -->
+  <section class="hero" style="min-height: 50vh;">
+    <div class="hero-content fade-in-up">
+      <div class="hero-line"></div>
+      <span class="small-caps" style="margin-bottom: 16px; display: block;">The Invisible Economy</span>
+      <h1>Blockchain You <span class="accent">Never See</span>.<br>Economy That Just Works.</h1>
+      <p class="subtitle">
+        Immutable zkEVM. Zero gas fees. Passport wallet abstraction. Players log in with email, earn SAKART through skill, and trade cosmetic skins. The blockchain is infrastructure — not a feature you're forced to think about.
+      </p>
+      <div class="btn-group">
+        <a href="#invisible" class="btn btn-primary">How It Works</a>
+        <a href="#tokenomics" class="btn btn-ghost">SAKART Token</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Quick Stats -->
+  <div class="section-dark">
+    <div class="container">
+      <div class="stat-row" style="padding: 48px 0;">
+        <div class="stat">
+          <div class="stat-value">0</div>
+          <div class="stat-label">Gas Fees</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">1B</div>
+          <div class="stat-label">Max SAKART Supply</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">1.8%</div>
+          <div class="stat-label">Marketplace Fee</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">$100</div>
+          <div class="stat-label">Monthly Operating Cost</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-divider"></div>
+
+  <!-- Invisible Blockchain -->
+  <section id="invisible">
+    <div class="container">
+      <span class="section-label text-center">Player Experience</span>
+      <h2 class="text-center">The Invisible Blockchain</h2>
+      <p class="text-center" style="max-width: 640px; margin: 0 auto var(--space-2xl); color: var(--slate-light);">
+        Most blockchain games lead with crypto. We don't. The blockchain is silent infrastructure that players never interact with directly. Here's what the experience actually looks like.
+      </p>
+
+      <div class="grid grid-3 stagger">
+        <div class="card fade-in-up">
+          <div class="card-icon green">&#9993;</div>
+          <h3>Log In With Email</h3>
+          <p>Players sign up with email, Google, or Apple. Immutable Passport automatically creates and manages a wallet behind the scenes. No seed phrases, no browser extensions, no crypto tutorials. You click "Sign Up" and you're in.</p>
+        </div>
+        <div class="card fade-in-up">
+          <div class="card-icon gold">&#9733;</div>
+          <h3>Earn Through Gameplay</h3>
+          <p>Earn a star for the first time and SAKART tokens appear in your balance. No mining. No staking. No daily quests to grind. You play the game well, the game rewards you. 600 total stars across 200 levels.</p>
+        </div>
+        <div class="card fade-in-up">
+          <div class="card-icon red">&#9881;</div>
+          <h3>Spend on Cosmetics</h3>
+          <p>Use SAKART to buy cosmetic tower skins and hero visual effects. Gameplay-affecting items are never sold — only earned. The marketplace lets players trade skins with each other, with a 1.8% fee sustaining development.</p>
+        </div>
+      </div>
+
+      <div style="margin-top: var(--space-2xl); max-width: 760px; margin-left: auto; margin-right: auto;">
+        <div class="content-split">
+          <div class="prose">
+            <h3>What Players See</h3>
+            <ul class="feature-list">
+              <li>Email or social sign-up form</li>
+              <li>SAKART token balance in the UI</li>
+              <li>A cosmetic skin shop ("Shop")</li>
+              <li>A player-to-player marketplace</li>
+              <li>Historical pop-ups and cultural footer</li>
+              <li>Tournament leaderboards</li>
+            </ul>
+          </div>
+          <div class="prose">
+            <h3>What Players Never See</h3>
+            <ul class="feature-list">
+              <li>Wallet addresses or seed phrases</li>
+              <li>Gas fees or transaction signing</li>
+              <li>Smart contract interactions</li>
+              <li>Token approval prompts</li>
+              <li>Blockchain jargon of any kind</li>
+              <li>A mandatory blockchain tutorial</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Tokenomics -->
+  <section class="section-dark" id="tokenomics">
+    <div class="container">
+      <span class="section-label text-center">Token Details</span>
+      <h2 class="text-center">SAKART Tokenomics</h2>
+      <p class="text-center" style="max-width: 640px; margin: 0 auto var(--space-2xl); color: var(--slate-light);">
+        SAKART is a utility token with a fixed hard cap of 1 billion. Zero pre-mine. Zero team allocation. All tokens enter circulation exclusively through player gameplay.
+      </p>
+
+      <div class="grid grid-2 stagger" style="max-width: 900px; margin: 0 auto;">
+        <div class="card fade-in-up" style="border-left: 3px solid var(--geo-gold);">
+          <h3>Supply &amp; Distribution</h3>
+          <ul class="feature-list">
+            <li><strong>Hard Cap:</strong> 1,000,000,000 SAKART (fixed)</li>
+            <li><strong>Pre-mine:</strong> Zero</li>
+            <li><strong>Team allocation:</strong> Zero</li>
+            <li><strong>Campaign rewards:</strong> ~700M (70% of cap)</li>
+            <li><strong>Reserved:</strong> ~300M for seasons, competitive prizes, liquidity</li>
+            <li><strong>Emission:</strong> First-time star unlocks only</li>
+            <li><strong>Grinding:</strong> Replaying levels earns zero tokens</li>
+            <li><strong>Purchase:</strong> SAKART cannot be bought from the game</li>
+          </ul>
+        </div>
+        <div class="card fade-in-up" style="border-left: 3px solid var(--geo-green);">
+          <h3>Design Principles</h3>
+          <ul class="feature-list">
+            <li><strong>No pay-to-earn:</strong> Spending money gives zero gameplay advantage</li>
+            <li><strong>No grinding:</strong> Each star can only earn tokens once</li>
+            <li><strong>Skill-gated:</strong> Better play = more tokens, period</li>
+            <li><strong>Fixed supply:</strong> No inflation, no new tokens beyond the cap</li>
+            <li><strong>Deflationary:</strong> Tokens spent on fees are burned</li>
+            <li><strong>Circulation:</strong> Tokens move between players via marketplace</li>
+            <li><strong>Separate economies:</strong> Gameplay resources and SAKART are independent</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="stat-row" style="margin-top: var(--space-2xl);">
+        <div class="stat">
+          <div class="stat-value">1B</div>
+          <div class="stat-label">Hard-Cap Supply</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">600</div>
+          <div class="stat-label">Total Stars</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">0</div>
+          <div class="stat-label">Tokens for Sale</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">100%</div>
+          <div class="stat-label">Earned by Skill</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Earning -->
+  <section id="earning">
+    <div class="container">
+      <span class="section-label text-center">Token Emission</span>
+      <h2 class="text-center">Earning SAKART</h2>
+      <p class="text-center" style="max-width: 640px; margin: 0 auto var(--space-2xl); color: var(--slate-light);">
+        There is exactly one way to earn SAKART tokens: demonstrate skill for the first time. No exceptions. No loopholes. No grind.
+      </p>
+
+      <div class="grid grid-3 stagger">
+        <div class="card fade-in-up">
+          <div class="card-icon gold">&#9733;</div>
+          <h3>Star-Based Earning</h3>
+          <p>Each of the 200 levels offers 3 stars (600 total). When you earn a star for the first time, you receive SAKART tokens. Rewards scale with era — later eras grant more. The key word is <em>first time</em> — replaying earns nothing.</p>
+        </div>
+        <div class="card fade-in-up">
+          <div class="card-icon red">&#9876;</div>
+          <h3>Era Scaling</h3>
+          <p>Early era stars grant smaller rewards. Later era stars grant progressively more, reflecting both increased difficulty and the economic goal of distributing tokens over the long term rather than front-loading rewards.</p>
+        </div>
+        <div class="card fade-in-up">
+          <div class="card-icon green">&#9650;</div>
+          <h3>Bounded Supply</h3>
+          <p>Total SAKART in circulation is directly proportional to active players and their campaign progress. A player earning all 600 stars accumulates a substantial but finite amount. No mechanism exists for earning beyond first-time completions.</p>
+        </div>
+      </div>
+
+      <div class="card fade-in-up" style="max-width: 700px; margin: var(--space-2xl) auto 0; text-align: center; border-top: 3px solid var(--geo-red);">
+        <h3>The Anti-Grind Guarantee</h3>
+        <p style="margin-bottom: 0;">
+          Every token reward in Sakartvelo Defenders is <strong>one-time-only</strong>. You cannot replay content for tokens. You cannot pay to earn. You cannot bot your way to wealth. SAKART enters circulation only when a player achieves something they haven't achieved before. Replay farming is mathematically impossible.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Burn Mechanisms -->
+  <section class="section-dark" id="burns">
+    <div class="container">
+      <span class="section-label text-center">Token Burns</span>
+      <h2 class="text-center">Deflationary by Design</h2>
+      <p class="text-center" style="max-width: 640px; margin: 0 auto var(--space-2xl); color: var(--slate-light);">
+        Multiple burn mechanisms create sustained deflationary pressure. Target: 2-5% annual deflation of circulating supply — enough to maintain token health without encouraging hoarding.
+      </p>
+
+      <div class="grid grid-3 stagger">
+        <div class="card fade-in-up">
+          <div class="card-icon gold">&#128176;</div>
+          <h3>Marketplace Fees</h3>
+          <p>Partial burn on marketplace transactions. Every skin trade removes SAKART from circulation, creating continuous deflationary pressure proportional to player activity.</p>
+        </div>
+        <div class="card fade-in-up">
+          <div class="card-icon red">&#128274;</div>
+          <h3>Skin Bind/Unbind</h3>
+          <p>Equipping a skin binds it to a tower instance. Unbinding costs SAKART — which is burned. Common skins have minimal fees; rare and legendary skins have higher fees reflecting their marketplace value.</p>
+        </div>
+        <div class="card fade-in-up">
+          <div class="card-icon green">&#127942;</div>
+          <h3>Seasons &amp; Cosmetics</h3>
+          <p>Season pass purchases, exclusive cosmetic effect unlocks, and tournament entry fees all consume SAKART. Each season introduces new burn mechanisms alongside new content.</p>
+        </div>
+      </div>
+
+      <div class="card fade-in-up" style="max-width: 700px; margin: var(--space-2xl) auto 0; text-align: center;">
+        <h3>Anti-Inflation Architecture</h3>
+        <p style="margin-bottom: 0;">
+          Five structural safeguards: capped earning per player, no replay farming, fixed 1B hard cap, continuous burn mechanisms, and completely separate gameplay economy. Token inflation cannot affect gameplay balance because the two economies never intersect.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Smart Contract Architecture -->
+  <section id="architecture">
+    <div class="container">
+      <span class="section-label text-center">Technical Architecture</span>
+      <h2 class="text-center">Smart Contract Architecture</h2>
+      <p class="text-center" style="max-width: 640px; margin: 0 auto var(--space-2xl); color: var(--slate-light);">
+        Three contracts. One chain. Zero gas fees. Built on Immutable zkEVM for Ethereum-grade security with a player-friendly experience.
+      </p>
+
+      <div class="grid grid-3 stagger">
+        <div class="card fade-in-up">
+          <div class="card-icon red">&#9670;</div>
+          <h3>SAKART Token (ERC-20)</h3>
+          <p>Fixed 1B supply with no minting function. Gasless transfers via Immutable account abstraction. Includes blacklist function for fraud prevention and multi-account detection, governed by multisig wallet.</p>
+          <div style="display: flex; gap: var(--space-sm); flex-wrap: wrap;">
+            <span class="badge badge-red">ERC-20</span>
+            <span class="badge badge-gold">1B Fixed</span>
+            <span class="badge badge-green">Gasless</span>
+          </div>
+        </div>
+        <div class="card fade-in-up">
+          <div class="card-icon gold">&#9670;</div>
+          <h3>Skin Contract (ERC-1155)</h3>
+          <p>Supports both fungible (common skins, multiple copies) and non-fungible (rare/legendary, limited edition). Metadata on IPFS for censorship-resistant asset storage. Era-specific skins with distinct visual styles.</p>
+          <div style="display: flex; gap: var(--space-sm); flex-wrap: wrap;">
+            <span class="badge badge-gold">ERC-1155</span>
+            <span class="badge badge-green">IPFS Metadata</span>
+            <span class="badge badge-red">Cosmetic Only</span>
+          </div>
+        </div>
+        <div class="card fade-in-up">
+          <div class="card-icon green">&#9670;</div>
+          <h3>Mastery Scroll (ERC-721)</h3>
+          <p>Each scroll is a distinct non-fungible asset tracking type, stack count, and activation status. Verifies ownership before applying bonuses. Manages bind/unbind with automatic SAKART burn on unbind.</p>
+          <div style="display: flex; gap: var(--space-sm); flex-wrap: wrap;">
+            <span class="badge badge-green">ERC-721</span>
+            <span class="badge badge-gold">3-Stack Max</span>
+            <span class="badge badge-red">Tradeable</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card fade-in-up" style="max-width: 700px; margin: var(--space-2xl) auto 0; text-align: center;">
+        <h3>Built on Immutable zkEVM</h3>
+        <p>
+          Immutable zkEVM provides Ethereum-level security with zero gas fees for players. A Layer 2 zk-rollup — all transactions are cryptographically proven and settled on Ethereum mainnet. Combined with Passport for wallet abstraction, players get decentralized ownership without crypto friction.
+        </p>
+        <div style="display: flex; gap: var(--space-md); justify-content: center; flex-wrap: wrap; margin-top: var(--space-lg);">
+          <span class="badge badge-red">zk-Rollup</span>
+          <span class="badge badge-gold">Zero Gas</span>
+          <span class="badge badge-green">Passport Wallet</span>
+          <span class="badge badge-red">Ethereum Security</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Skin Binding & Marketplace -->
+  <section class="section-dark" id="marketplace">
+    <div class="container">
+      <span class="section-label text-center">Skins &amp; Marketplace</span>
+      <h2 class="text-center">True Ownership. Transparent Trading.</h2>
+      <p class="text-center" style="max-width: 640px; margin: 0 auto var(--space-2xl); color: var(--slate-light);">
+        Cosmetic skins change tower and hero visuals without affecting gameplay. Implemented as ERC-1155 tokens for frictionless trading. Every marketplace item shows exactly what it does.
+      </p>
+
+      <div class="grid grid-2 stagger" style="max-width: 900px; margin: 0 auto;">
+        <div class="card fade-in-up">
+          <div class="card-icon gold">&#127912;</div>
+          <h3>Skin Binding</h3>
+          <p>When equipped, a skin binds to a specific tower instance. Bound skins cannot be traded until unbound, which costs SAKART (burned). Common skins have minimal fees; rare and legendary skins have higher fees reflecting marketplace value.</p>
+          <p style="margin-bottom: 0;">This creates a SAKART token sink while preventing rapid marketplace speculation on actively-used skins.</p>
+        </div>
+        <div class="card fade-in-up">
+          <div class="card-icon green">&#128270;</div>
+          <h3>Marketplace Tooltips</h3>
+          <p>Every marketplace item displays a clear tooltip showing: what the item does, which era/level it applies to, current bind status, and cost to unbind if applicable.</p>
+          <p style="margin-bottom: 0;">For mastery scrolls, the tooltip shows the full stack progression: +3% (1 copy), +6% (2 copies), +9% (3 copies max). Complete transparency — no external resources needed.</p>
+        </div>
+      </div>
+
+      <div class="grid grid-3 stagger" style="margin-top: var(--space-2xl);">
+        <div class="card fade-in-up" style="text-align: center;">
+          <div class="card-icon gold" style="margin: 0 auto var(--space-md);">&#128176;</div>
+          <h3>1.8% Fee</h3>
+          <p>1.3% to development treasury. 0.5% auto-compounded to marketplace liquidity pool. No hidden costs. One rate for everyone.</p>
+        </div>
+        <div class="card fade-in-up" style="text-align: center;">
+          <div class="card-icon green" style="margin: 0 auto var(--space-md);">&#128274;</div>
+          <h3>True Ownership</h3>
+          <p>All cosmetic skins are NFTs on Immutable zkEVM. No centralized server can revoke them. Trade, sell, or hold — your skins, your choice.</p>
+        </div>
+        <div class="card fade-in-up" style="text-align: center;">
+          <div class="card-icon red" style="margin: 0 auto var(--space-md);">&#9878;</div>
+          <h3>Zero Pay-to-Win</h3>
+          <p>Marketplace items are cosmetic only. No tower upgrades, no hero boosts, no gameplay advantages. A player with zero skins has the exact same power as one with a full collection.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Chain Outage Fallback & Wallet -->
+  <section id="fallback">
+    <div class="container">
+      <span class="section-label text-center">Resilience</span>
+      <h2 class="text-center">Never Interrupted. Never Offline.</h2>
+      <p class="text-center" style="max-width: 640px; margin: 0 auto var(--space-2xl); color: var(--slate-light);">
+        The game works regardless of blockchain status. Full PWA architecture with offline support and automatic sync.
+      </p>
+
+      <div class="grid grid-2 stagger" style="max-width: 900px; margin: 0 auto;">
+        <div class="card fade-in-up" style="border-left: 3px solid var(--geo-green);">
+          <div class="card-icon green">&#9889;</div>
+          <h3>Chain Outage Fallback</h3>
+          <p>If Immutable zkEVM experiences downtime, gameplay continues uninterrupted. All gameplay state — level progress, star completions, hero experience — is tracked locally and synced when connectivity resumes.</p>
+          <p style="margin-bottom: 0;">Blockchain transactions (marketplace trades, token transfers, NFT operations) are queued locally and submitted automatically in order when the chain comes back online. Players never lose progress due to infrastructure issues.</p>
+        </div>
+        <div class="card fade-in-up" style="border-left: 3px solid var(--geo-gold);">
+          <div class="card-icon gold">&#128274;</div>
+          <h3>Wallet Integration</h3>
+          <p><strong>Immutable Passport</strong> handles wallet creation and management. New players create a wallet through simple social login (email, Google, Apple) without understanding blockchain concepts.</p>
+          <p style="margin-bottom: 0;">Experienced Web3 users can connect existing wallets via MetaMask or WalletConnect. Wallet connection is optional and deferrable indefinitely — the full 200-level campaign plays identically without one.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Multi-Account Prevention -->
+  <section class="section-dark" id="security">
+    <div class="container">
+      <span class="section-label text-center">Security</span>
+      <h2 class="text-center">Multi-Account Prevention</h2>
+      <p class="text-center" style="max-width: 640px; margin: 0 auto var(--space-2xl); color: var(--slate-light);">
+        Without prevention, one person could farm SAKART across multiple accounts. Multiple layers ensure economic integrity.
+      </p>
+
+      <div class="grid grid-3 stagger">
+        <div class="card fade-in-up">
+          <div class="card-icon blue">&#128100;</div>
+          <h3>Identity Layer</h3>
+          <p>Passport ties each account to a verified identity (email, phone, social login). Creating large numbers of accounts is difficult by design.</p>
+        </div>
+        <div class="card fade-in-up">
+          <div class="card-icon gold">&#9201;</div>
+          <h3>Time Investment</h3>
+          <p>Progression requires completing 15/20 levels per era. Farming accounts must invest significant time before earning meaningful SAKART, making mass creation impractical.</p>
+        </div>
+        <div class="card fade-in-up">
+          <div class="card-icon red">&#128270;</div>
+          <h3>Pattern Monitoring</h3>
+          <p>The marketplace monitors for farming patterns — multiple accounts sending tokens to a single address within short timeframes. Suspicious activity flagged for investigation. Conservative thresholds prevent false positives (shared IPs, family members).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Fee Structure -->
+  <section id="fees">
+    <div class="container">
+      <span class="section-label text-center">Transparency</span>
+      <h2 class="text-center">Fee Structure</h2>
+      <p class="text-center" style="max-width: 640px; margin: 0 auto var(--space-2xl); color: var(--slate-light);">
+        No hidden fees. No premium tiers. No surprise costs. Here is every fee in the game, in one place, forever.
+      </p>
+
+      <div class="grid grid-2 stagger" style="max-width: 900px; margin: 0 auto;">
+        <div class="card fade-in-up">
+          <h3>Player Fees</h3>
+          <ul class="feature-list">
+            <li><strong>Marketplace trading:</strong> 1.8% on sales (1.3% dev + 0.5% LP)</li>
+            <li><strong>Skin bind/unbind:</strong> SAKART fee (burned, varies by rarity)</li>
+            <li><strong>Season passes:</strong> SAKART fee for premium track</li>
+            <li><strong>Tournament entry:</strong> SAKART fee (funds prize pool)</li>
+            <li><strong>Gas fees:</strong> $0.00 — Immutable covers this</li>
+            <li><strong>Wallet creation:</strong> $0.00 — Passport handles it</li>
+            <li><strong>Account fees:</strong> $0.00 — free forever</li>
+            <li><strong>Historical pop-ups:</strong> Free — education is never paywalled</li>
+          </ul>
+        </div>
+        <div class="card fade-in-up">
+          <h3>Development Revenue</h3>
+          <ul class="feature-list">
+            <li><strong>Marketplace fee:</strong> 1.8% — the only revenue source</li>
+            <li><strong>NFT sale revenue:</strong> 0% — all go to the seller</li>
+            <li><strong>Token sale revenue:</strong> 0% — SAKART is never sold</li>
+            <li><strong>Advertising:</strong> 0% — no ads, ever</li>
+            <li><strong>Pay-to-win:</strong> 0% — not part of the model</li>
+          </ul>
+          <p style="margin-top: var(--space-md); margin-bottom: 0; font-size: 0.875rem; color: var(--slate-light);">
+            <strong>Treasury safeguards:</strong> Monthly withdrawal cap. 48-hour timelock on all withdrawals. Fully auditable on-chain. Transparent by design.
+          </p>
+        </div>
+      </div>
+
+      <div class="card fade-in-up" style="max-width: 700px; margin: var(--space-2xl) auto 0; text-align: center;">
+        <h3>Sustainable by Design</h3>
+        <p>
+          With operating costs of $100/month (PWA = zero server costs, Immutable = zero gas, Vercel free tier), the 1.8% marketplace fee breaks even at minimal activity. The game doesn't need viral success to survive — it needs a community that cares.
+        </p>
+        <div class="stat-row" style="margin-top: var(--space-lg);">
+          <div class="stat">
+            <div class="stat-value">$100</div>
+            <div class="stat-label">Monthly Cost</div>
+          </div>
+          <div class="stat">
+            <div class="stat-value">1.8%</div>
+            <div class="stat-label">Only Revenue Source</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <span class="section-label text-center">Early Access</span>
+      <h2 class="text-center">Join the Waitlist</h2>
+      <p class="text-center" style="max-width: 480px; margin: 0 auto var(--space-xl); color: var(--slate-light);">
+        Get notified when the full campaign launches. No spam, no crypto required. Just history, strategy, and a sustainable game economy.
+      </p>
+      <form onsubmit="event.preventDefault(); alert('Thanks for joining! We\'ll be in touch.'); this.reset();" style="display: flex; gap: var(--space-sm); max-width: 420px; margin: 0 auto; flex-wrap: wrap; justify-content: center;">
+        <input type="email" placeholder="Your email address" required style="
+          flex: 1;
+          min-width: 200px;
+          padding: 12px 16px;
+          background: var(--surface-1);
+          border: 1px solid rgba(238,238,242,0.1);
+          border-radius: var(--radius-sm);
+          color: var(--spectral);
+          font-family: var(--font-primary);
+          font-size: 0.9375rem;
+          outline: none;
+          transition: border-color 0.3s;
+        " onfocus="this.style.borderColor='rgba(238,238,242,0.3)'" onblur="this.style.borderColor='rgba(238,238,242,0.1)'">
+        <button type="submit" class="btn btn-primary">Join Waitlist</button>
+      </form>
+      <p style="font-size: 0.75rem; color: var(--slate); margin-top: var(--space-md); margin-bottom: 0;">
+        We'll never share your email. No blockchain knowledge required.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-left">
+          <p>&copy; 2026 Sakartvelo Defenders. A cultural celebration through historical gameplay.</p>
+          <p class="footer-georgian">საქართველო</p>
+        </div>
+        <div class="footer-right">
+          <a href="https://twitter.com" target="_blank">Twitter</a>
+          <a href="https://discord.gg" target="_blank">Discord</a>
+          <a href="https://github.com" target="_blank">GitHub</a>
+          <a href="https://youtube.com" target="_blank">YouTube</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const toggle = document.getElementById('navToggle');
+    const links = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth' });
+        links.classList.remove('open');
+      });
+    });
+
+    // Intersection Observer for fade-in animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in-up');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.card').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>

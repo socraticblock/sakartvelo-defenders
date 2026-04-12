@@ -1,0 +1,33 @@
+# Sakartvelo Defenders - Tower Prompts
+# Era: e04_mongol_catastrophe
+
+## ARCHER
+isometric tower game sprite, Mongol Catastrophe archer tower with elevated shooting platform and parapets, damaged crumbling stone fortress with smoke and fire damage, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #3D2B1F #8B6914 #261A11 #CC5500, isometric view, centered composition, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## CATAPULT
+isometric tower game sprite, Mongol Catastrophe catapult siege tower with throwing arm and stone ammunition, damaged crumbling stone fortress with smoke and fire damage, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #3D2B1F #8B6914 #261A11 #CC5500, isometric view, centered composition, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## WALL
+isometric tower game sprite, Mongol Catastrophe defensive wall tower with battlements and reinforced stone, damaged crumbling stone fortress with smoke and fire damage, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #3D2B1F #8B6914 #261A11 #CC5500, isometric view, centered composition, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## SHRINE
+isometric tower game sprite, Mongol Catastrophe shrine tower with religious dome and cross decoration, damaged crumbling stone fortress with smoke and fire damage, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #3D2B1F #8B6914 #261A11 #CC5500, isometric view, centered composition, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## CAVALRY
+isometric tower game sprite, Mongol Catastrophe cavalry tower with horse stable and mounted unit deployment, damaged crumbling stone fortress with smoke and fire damage, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #3D2B1F #8B6914 #261A11 #CC5500, isometric view, centered composition, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## GUNPOWDER
+isometric tower game sprite, Mongol Catastrophe gunpowder cannon tower with gunports and smoke effects, damaged crumbling stone fortress with smoke and fire damage, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #3D2B1F #8B6914 #261A11 #CC5500, isometric view, centered composition, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## INDUSTRIAL
+isometric tower game sprite, Mongol Catastrophe industrial area damage tower with smokestack and steam vents, damaged crumbling stone fortress with smoke and fire damage, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #3D2B1F #8B6914 #261A11 #CC5500, isometric view, centered composition, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## BUNKER
+isometric tower game sprite, Mongol Catastrophe fortified bunker tower with sandbags and machine gun position, damaged crumbling stone fortress with smoke and fire damage, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #3D2B1F #8B6914 #261A11 #CC5500, isometric view, centered composition, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## TECH
+isometric tower game sprite, Mongol Catastrophe high-tech special tower with energy crystal and antenna array, damaged crumbling stone fortress with smoke and fire damage, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #3D2B1F #8B6914 #261A11 #CC5500, isometric view, centered composition, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
+## SPECIAL
+isometric tower game sprite, Mongol Catastrophe special unique tower with ornate gold dome and decorative columns, damaged crumbling stone fortress with smoke and fire damage, 2D isometric cel-shaded game art, flat color fills, 2px dark outline (#1A1A1A), no gradients except metallic, clean lines, no text, no watermark, game sprite style, consistent lighting from upper-left, flat color fills in #3D2B1F #8B6914 #261A11 #CC5500, isometric view, centered composition, transparent background PNG, high resolution, crisp edges, no JPEG artifacts, no blur, vector-quality line art, production game art
+
