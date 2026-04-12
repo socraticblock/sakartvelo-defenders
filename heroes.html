@@ -68,7 +68,7 @@
       <div class="hero-grid stagger">
         
         <!-- Medea -->
-        <div class="hero-card fade-in-up">
+        <div class="hero-card">
           <div class="hero-portrait">
             <img src="assets/heroes/e00_ancient_colchis/her_e00_medea_v01.png" alt="Medea" loading="lazy">
           </div>
@@ -93,7 +93,7 @@
         </div>
 
         <!-- Pharnavaz -->
-        <div class="hero-card fade-in-up">
+        <div class="hero-card">
           <div class="hero-portrait">
             <img src="assets/heroes/e01_kingdom_of_iberia/her_e01_pharnavaz_v01.png" alt="Pharnavaz I" loading="lazy">
           </div>
@@ -114,7 +114,7 @@
         </div>
 
         <!-- Saint Nino -->
-        <div class="hero-card fade-in-up">
+        <div class="hero-card">
           <div class="hero-portrait">
             <img src="assets/heroes/e01_kingdom_of_iberia/her_e01_st_nino_v01.png" alt="Saint Nino" loading="lazy">
           </div>
@@ -139,7 +139,7 @@
         </div>
 
         <!-- Vakhtang Gorgasali -->
-        <div class="hero-card fade-in-up">
+        <div class="hero-card">
           <div class="hero-portrait">
             <img src="assets/heroes/e01_kingdom_of_iberia/her_e01_vakhtang_gorgasali_v01.png" alt="Vakhtang Gorgasali" loading="lazy">
           </div>
@@ -160,7 +160,7 @@
         </div>
 
         <!-- David IV -->
-        <div class="hero-card fade-in-up">
+        <div class="hero-card">
           <div class="hero-portrait">
             <img src="assets/heroes/e03_georgian_golden_age/her_e03_david_iv_v01.png" alt="David IV the Builder" loading="lazy">
           </div>
@@ -185,7 +185,7 @@
         </div>
 
         <!-- Queen Tamar -->
-        <div class="hero-card fade-in-up">
+        <div class="hero-card">
           <div class="hero-portrait">
             <img src="assets/heroes/e03_georgian_golden_age/her_e03_queen_tamar_v01.png" alt="Queen Tamar" loading="lazy">
           </div>
@@ -210,7 +210,7 @@
         </div>
 
         <!-- Shota Rustaveli -->
-        <div class="hero-card fade-in-up">
+        <div class="hero-card">
           <div class="hero-portrait">
             <img src="assets/heroes/e03_georgian_golden_age/her_e03_shota_rustaveli_v01.png" alt="Shota Rustaveli" loading="lazy">
           </div>
@@ -231,7 +231,7 @@
         </div>
 
         <!-- Erekle II -->
-        <div class="hero-card fade-in-up">
+        <div class="hero-card">
           <div class="hero-portrait">
             <img src="assets/heroes/e05_between_empires/her_e05_erekle_ii_v01.png" alt="King Erekle II" loading="lazy">
           </div>
@@ -252,7 +252,7 @@
         </div>
 
         <!-- Ilia Chavchavadze -->
-        <div class="hero-card fade-in-up">
+        <div class="hero-card">
           <div class="hero-portrait">
             <img src="assets/heroes/e06_russian_empire/her_e06_ilia_chavchavadze_v01.png" alt="Ilia Chavchavadze" loading="lazy">
           </div>
@@ -273,7 +273,7 @@
         </div>
 
         <!-- Noe Jordania -->
-        <div class="hero-card fade-in-up">
+        <div class="hero-card">
           <div class="hero-portrait">
             <img src="assets/heroes/e07_first_dem._republic/her_e07_noe_jordania_v01.png" alt="Noe Jordania" loading="lazy">
           </div>
@@ -294,7 +294,7 @@
         </div>
 
         <!-- WWII Hero -->
-        <div class="hero-card fade-in-up">
+        <div class="hero-card">
           <div class="hero-portrait">
             <img src="assets/heroes/e08_the_soviet_century/her_e08_wwii_hero_v01.png" alt="WWII Hero" loading="lazy">
           </div>
@@ -319,7 +319,7 @@
         </div>
 
         <!-- Modern Figure -->
-        <div class="hero-card fade-in-up">
+        <div class="hero-card">
           <div class="hero-portrait">
             <img src="assets/heroes/e09_modern_georgia/her_e09_modern_figure_v01.png" alt="Modern Georgian Figure" loading="lazy">
           </div>
@@ -411,17 +411,33 @@
       });
     });
 
-    // Intersection Observer for fade-in animations
+    // Intersection Observer for scroll animations
+    const animateElements = document.querySelectorAll('.hero-card');
+    
+    // Add animate-on-scroll class to elements that should animate
+    animateElements.forEach(el => el.classList.add('animate-on-scroll'));
+    
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('fade-in-up');
+          entry.target.classList.add('visible');
           observer.unobserve(entry.target);
         }
       });
     }, { threshold: 0.1 });
-
-    document.querySelectorAll('.hero-card').forEach(el => observer.observe(el));
+    
+    // Observe elements
+    animateElements.forEach(el => observer.observe(el));
+    
+    // For elements already in viewport, show them immediately
+    setTimeout(() => {
+      animateElements.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+          el.classList.add('visible');
+        }
+      });
+    }, 100);
 
     // Dark mode toggle
     const themeToggle = document.getElementById('themeToggle');

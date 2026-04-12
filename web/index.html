@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sakartvelo Defenders -- Tower Defense Across 10 Eras and 200 Levels of Georgian History</title>
   <meta name="description" content="Sakartvelo Defenders: A tower defense game spanning 10 historical eras and 200 levels of Georgian history. Build mazes, command heroes, earn SAKART tokens. Free to play, zero server costs, play-to-earn done right.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -20,18 +21,38 @@
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="gameplay.html">Gameplay</a></li>
+        <li><a href="heroes.html">Heroes</a></li>
         <li><a href="blockchain.html">Blockchain</a></li>
+        <li><a href="faq.html">FAQ</a></li>
         <li><a href="#waitlist" class="nav-cta">Join Waitlist</a></li>
       </ul>
-      <button class="nav-toggle" id="navToggle" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
+      <div style="display: flex; align-items: center; gap: 16px;">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+        <button class="nav-toggle" id="navToggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </nav>
 
   <!-- Hero -->
   <section class="hero">
-    <div class="hero-content fade-in-up">
+    <div class="hero-content">
       <div class="hero-line"></div>
       <span class="small-caps" style="margin-bottom: 16px; display: block;">Tower Defense x Georgian History x Blockchain</span>
       <h1>Defend a Nation.<br>Across <span class="accent">10 Eras</span>.</h1>
@@ -73,17 +94,17 @@
       <span class="section-label text-center">Core Design Principles</span>
       <h2 class="text-center">Built Different. Built Right.</h2>
       <div class="grid grid-3 stagger">
-        <div class="card fade-in-up">
+        <div class="card">
           <div class="card-icon red">&#9876;</div>
           <h3>Play First, Blockchain Second</h3>
           <p>The blockchain is invisible infrastructure. Players never need to understand crypto, wallets, or gas fees. They click "Play" and earn tokens naturally through skilled gameplay. No MetaMask tutorials. No seed phrases. Just play.</p>
         </div>
-        <div class="card fade-in-up">
+        <div class="card">
           <div class="card-icon gold">&#9733;</div>
           <h3>Skill &gt; Wallet</h3>
           <p>Every gameplay-affecting item is earned through skill. A player who spends $0 has the exact same experience as someone who spends $1,000. SAKART tokens are earned by three-starring levels, not by swiping a credit card.</p>
         </div>
-        <div class="card fade-in-up">
+        <div class="card">
           <div class="card-icon green">&#9760;</div>
           <h3>History Drives Gameplay</h3>
           <p>This isn't "culture as skin." Tower types, enemy formations, hero abilities, and map designs are all drawn from real Georgian history. You're not just playing a tower defense -- you're defending actual historical battles.</p>
@@ -186,19 +207,19 @@
       <span class="section-label text-center">Core Game Loop</span>
       <h2 class="text-center">How It Works</h2>
       <div class="grid grid-2 stagger" style="max-width: 900px; margin: 0 auto;">
-        <div class="card fade-in-up">
+        <div class="card">
           <h3>Build Mazes</h3>
           <p>Place walls to create winding paths. Position towers for overlapping kill zones. Every wall segment and tower position matters -- a well-designed maze turns basic towers into a devastating defense.</p>
         </div>
-        <div class="card fade-in-up">
+        <div class="card">
           <h3>Command Heroes</h3>
           <p>Directly control heroes from Georgian history and legend. Medea's toxic clouds, Queen Tamar's global damage boost, David the Builder's instant tower upgrades. Each hero has 2-3 active abilities with cooldowns.</p>
         </div>
-        <div class="card fade-in-up">
+        <div class="card">
           <h3>Earn Stars</h3>
           <p>1-3 stars per level. First-time star unlocks earn SAKART tokens. Replays earn zero -- no grinding, no farming.</p>
         </div>
-        <div class="card fade-in-up">
+        <div class="card">
           <h3>Unlock Eras</h3>
           <p>Complete 15 of 20 levels in the current era to unlock the next. No SAKART fee required -- progression is purely skill-based. Each era brings new tower types, enemies, heroes, maps, and mechanics.</p>
         </div>
@@ -214,22 +235,22 @@
       <span class="section-label text-center">Technology</span>
       <h2 class="text-center">Solo-Dev Sustainable</h2>
       <div class="grid grid-4 stagger" style="margin-top: var(--space-xl);">
-        <div class="card fade-in-up" style="text-align: center;">
+        <div class="card" style="text-align: center;">
           <div class="card-icon blue" style="margin: 0 auto var(--space-md);">G</div>
           <h4>Godot 4.x</h4>
           <p>Free, open source, built-in PWA export. GDScript is fast for solo dev.</p>
         </div>
-        <div class="card fade-in-up" style="text-align: center;">
+        <div class="card" style="text-align: center;">
           <div class="card-icon blue" style="margin: 0 auto var(--space-md);">P</div>
           <h4>PWA</h4>
           <p>Zero server costs. Runs in any browser. Installable on mobile. No app store needed.</p>
         </div>
-        <div class="card fade-in-up" style="text-align: center;">
+        <div class="card" style="text-align: center;">
           <div class="card-icon blue" style="margin: 0 auto var(--space-md);">Z</div>
           <h4>Immutable zkEVM</h4>
           <p>Zero gas fees. Passport wallet abstraction. Players log in with email -- wallet is created automatically.</p>
         </div>
-        <div class="card fade-in-up" style="text-align: center;">
+        <div class="card" style="text-align: center;">
           <div class="card-icon green" style="margin: 0 auto var(--space-md);">$</div>
           <h4>$100/month</h4>
           <p>Total operating cost. Revenue from 1.8% marketplace fee scales naturally with player activity.</p>
@@ -275,18 +296,34 @@
     <div class="container">
       <div class="footer-inner">
         <div class="footer-left">
-          <p>&copy; 2026 Sakartvelo Defenders. A cultural celebration through historical gameplay.</p>
-          <p class="footer-georgian">საქართველო</p>
+          <div class="footer-content">
+            <p>&copy; 2026 Sakartvelo Defenders. A cultural celebration through historical gameplay.</p>
+            <p class="footer-georgian">საქართველო</p>
+          </div>
+          <ul class="footer-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gameplay.html">Gameplay</a></li>
+            <li><a href="heroes.html">Heroes</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
         </div>
         <div class="footer-right">
-          <a href="https://twitter.com" target="_blank">Twitter</a>
-          <a href="https://discord.gg" target="_blank">Discord</a>
-          <a href="https://github.com" target="_blank">GitHub</a>
-          <a href="https://youtube.com" target="_blank">YouTube</a>
+          <a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a>
+          <a href="https://discord.gg" target="_blank" rel="noopener">Discord</a>
+          <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://youtube.com" target="_blank" rel="noopener">YouTube</a>
         </div>
       </div>
     </div>
   </footer>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24">
+      <path d="M12 4l-8 8h6v8h4v-8h6z"></path>
+    </svg>
+  </button>
 
   <script>
     // Mobile nav toggle
@@ -304,17 +341,67 @@
       });
     });
 
-    // Intersection Observer for fade-in animations
+    // Intersection Observer for scroll animations
+    const animateElements = document.querySelectorAll('.card, .era-card, .hero-card');
+    
+    // Add animate-on-scroll class to elements that should animate
+    animateElements.forEach(el => el.classList.add('animate-on-scroll'));
+    
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('fade-in-up');
+          entry.target.classList.add('visible');
           observer.unobserve(entry.target);
         }
       });
     }, { threshold: 0.1 });
+    
+    // Observe elements
+    animateElements.forEach(el => observer.observe(el));
+    
+    // For elements already in viewport, show them immediately
+    setTimeout(() => {
+      animateElements.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+          el.classList.add('visible');
+        }
+      });
+    }, 100);
 
-    document.querySelectorAll('.card, .era-card').forEach(el => observer.observe(el));
+    // Dark mode toggle
+    const themeToggle = document.getElementById('themeToggle');
+    const html = document.documentElement;
+    
+    // Check for saved theme preference or system preference
+    const savedTheme = localStorage.getItem('theme');
+    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    
+    if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
+      html.setAttribute('data-theme', 'dark');
+    }
+    
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = html.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+    });
+
+    // Back to top button
+    const backToTop = document.getElementById('backToTop');
+    
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 500) {
+        backToTop.classList.add('visible');
+      } else {
+        backToTop.classList.remove('visible');
+      }
+    });
+    
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
   </script>
 
 </body>
