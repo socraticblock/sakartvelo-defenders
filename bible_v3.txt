@@ -1,0 +1,1551 @@
+
+--- Page 1 ---
+
+Sakartvelo Defenders
+Game Design Bible v3.0
+Chronologically Accurate Georgian History Tower Defense
+10 Eras | 200 Levels | Blockchain-Powered
+Godot 4.x | PWA | Immutable zkEVM
+Confidential Design Document
+
+--- Page 2 ---
+
+ITable of Contents
+1. Vision..................................................................................................................................... 1
+2. Game Overview ...................................................................................................................... 2
+2.1 Core Gameplay Loop ..................................................................................................... 2
+2.2 Genre and Platform ........................................................................................................ 2
+2.3 Target Audience ............................................................................................................. 3
+3. Eras......................................................................................................................................... 3
+3.1 Era 0: Ancient Colchis (~1500 BC – ~300 BC) ............................................................. 3
+3.2 Era 1: Kingdom of Iberia (~300 BC – ~630 AD) .......................................................... 4
+3.3 Era 2: Age of Invasions (~630 – ~1089 AD) ................................................................. 4
+3.4 Era 3: The Georgian Golden Age (~1089 – ~1225 AD) ................................................ 5
+3.5 Era 4: The Mongol Catastrophe (~1225 – ~1500 AD) ................................................... 5
+3.6 Era 5: Between Empires (~1500 – ~1801 AD) .............................................................. 6
+3.7 Era 6: Russian Empire (~1801 – ~1918 AD) ................................................................. 6
+3.8 Era 7: First Democratic Republic (1918 – 1921 AD) .................................................... 7
+3.9 Era 8: The Soviet Century (1921 – ~1991 AD) ............................................................. 7
+3.10 Era 9: Modern Georgia (~1991 – Present) ................................................................... 8
+4. Tower System......................................................................................................................... 8
+4.1 Tower Upgrade System .................................................................................................. 9
+4.2 Tower Synergy System .................................................................................................. 9
+5. Enemies................................................................................................................................ 10
+5.1 Enemy Categories ......................................................................................................... 10
+5.2 Boss Encounters ........................................................................................................... 10
+6. Heroes................................................................................................................................... 11
+6.1 Hero Abilities and Cooldowns ..................................................................................... 11
+6.2 Hero Progression .......................................................................................................... 11
+
+--- Page 3 ---
+
+II7. Maps..................................................................................................................................... 12
+7.1 Map Themes by Era ..................................................................................................... 12
+7.2 Elevation Mechanic ...................................................................................................... 12
+8. Tutorial................................................................................................................................. 13
+9. Progression........................................................................................................................... 13
+9.1 Era Unlock Requirements ............................................................................................ 14
+9.2 Star System................................................................................................................... 14
+10. Scrolls and Mastery ............................................................................................................ 14
+10.1 Standard Scrolls .......................................................................................................... 15
+10.2 Mastery Scrolls (ERC-721) ........................................................................................ 15
+10.3 SAKART Boost Scroll ............................................................................................... 16
+11. Skins and Binding .............................................................................................................. 16
+11.1 Skin Binding............................................................................................................... 16
+11.2 Marketplace Tooltip ................................................................................................... 17
+12. Player vs. Player (PvP) ....................................................................................................... 17
+12.1 Attack-Then-Defend Format ...................................................................................... 17
+12.2 Loadout System .......................................................................................................... 17
+12.3 Defense Setup ............................................................................................................. 18
+12.4 Hero and Scroll Selection ........................................................................................... 18
+13. Survival Mode.................................................................................................................... 18
+14. Seasons............................................................................................................................... 19
+15. Endgame............................................................................................................................. 19
+16. Educational System ............................................................................................................ 20
+16.1 Cultural Footer ........................................................................................................... 20
+16.2 Historical Accuracy Policy ......................................................................................... 21
+17. Mythology Integration ........................................................................................................ 21
+18. SAKART Token Economy ................................................................................................ 21
+18.1 Token Distribution ..................................................................................................... 22
+18.2 Burn Mechanisms ....................................................................................................... 22
+
+--- Page 4 ---
+
+III18.3 Anti-Inflation Design ................................................................................................. 22
+19. Fees and Revenue Model ................................................................................................... 23
+19.1 Treasury and Developer Withdrawal ......................................................................... 23
+20. Smart Contracts .................................................................................................................. 23
+20.1 SAKART Token Contract (ERC-20) ......................................................................... 24
+20.2 Skin Contract (ERC-1155) ......................................................................................... 24
+20.3 Mastery Scroll Contract (ERC-721) ........................................................................... 24
+21. Blockchain Integration ....................................................................................................... 24
+21.1 Wallet Integration ....................................................................................................... 25
+21.2 Chain Outage Fallback ............................................................................................... 25
+21.3 Invisible Blockchain Philosophy ................................................................................ 25
+22. Multi-Account Prevention .................................................................................................. 25
+23. Competitive Analysis ......................................................................................................... 26
+23.1 Web2 Tower Defense Landscape ............................................................................... 26
+23.2 Web3 Gaming Landscape .......................................................................................... 27
+24. Art Pipeline......................................................................................................................... 27
+24.1 Style Bible System ..................................................................................................... 27
+24.2 AI Generation Workflow ............................................................................................ 27
+25. Tech Stack.......................................................................................................................... 28
+25.1 Godot 4.x and PWA Architecture .............................................................................. 28
+25.2 Blockchain Infrastructure ........................................................................................... 28
+26. Design Principles ................................................................................................................ 29
+26.1 No-Nerf Rule .............................................................................................................. 29
+26.2 Invisible Blockchain ................................................................................................... 29
+26.3 Historical Accuracy .................................................................................................... 30
+26.4 Solo Developer Feasibility ......................................................................................... 30
+26.5 Accessibility............................................................................................................... 30
+27. Roadmap............................................................................................................................. 30
+27.1 Phase 1: Foundation (Months 1-3) ............................................................................. 31
+
+--- Page 5 ---
+
+IV27.2 Phase 2: Expansion (Months 4-6) .............................................................................. 31
+27.3 Phase 3: Blockchain Integration (Months 7-9) ........................................................... 31
+27.4 Phase 4: Full Campaign (Months 10-14) ................................................................... 32
+27.5 Phase 5: Polish and Phase 6: Launch ......................................................................... 32
+28. Changelog (v2.0 to v3.0) .................................................................................................... 32
+
+--- Page 6 ---
+
+Sakartvelo Defenders | Game Design Bible v3.0
+11. Vision
+Sakartvelo Defenders is a historically accurate tower defense game set across the full sweep  
+of Georgian history, from the ancient Kingdom of Colchis to the modern Republic of  
+Georgia. The game is built on three foundational pillars: education through gameplay,  
+invisible blockchain integration, and cultural preservation. Players defend Georgian lands  
+against historically authentic waves of invaders across ten distinct eras, each meticulously  
+researched and visually distinct.
+The core philosophy is that players should never feel like they are interacting with a  
+blockchain product. All Web3 elements, including the SAKART token economy, NFT-based  
+mastery scrolls, and tradable cosmetic skins, operate beneath the surface. The gameplay  
+experience is indistinguishable from a premium Web2 tower defense title, with blockchain  
+providing true asset ownership and player-driven economies as invisible infrastructure rather  
+than visible friction.
+Georgia's history is one of the most dramatic and underrepresented narratives in gaming.  
+Positioned at the crossroads of Europe and Asia, Georgia has faced invasions from virtually  
+every regional power: Persians, Romans, Arabs, Mongols, Ottomans, Persians again, and  
+Russians. Each era produced unique military technologies, heroic figures, and cultural  
+achievements that translate naturally into compelling tower defense mechanics. The game's  
+ten-era  structure  ensures  players  experience  this  entire  arc,  learning  Georgian  history  
+organically through hundreds of levels of strategic gameplay.
+2. Game Overview
+2.1 Core Gameplay Loop
+The fundamental gameplay loop of Sakartvelo Defenders follows the classic tower defense  
+formula, refined with historical authenticity and strategic depth. Players progress through  
+levels by placing defensive towers along enemy approach paths, utilizing heroes with unique  
+abilities, and activating consumable scrolls at critical moments. Each level presents a map  
+inspired by real Georgian landscapes and fortifications, with enemy waves that reflect the  
+actual historical invaders of each era.
+The loop begins with level selection within an era. Players assess the map layout, choose  
+their tower composition from their available roster, and place towers strategically during a  
+build phase. Enemy waves then advance along predetermined paths, and players must  
+manage their economy by earning resources from defeated enemies to build additional
+
+--- Page 7 ---
+
+Sakartvelo Defenders | Game Design Bible v3.0
+2towers  or  upgrade  existing  ones.  Heroes  provide  active  abilities  that  players  trigger  
+manually, adding a layer of real-time decision-making. Scrolls offer powerful one-time  
+effects that can turn the tide of difficult engagements.
+Completion is measured through a three-star system. Each star represents a progressively  
+harder challenge tier within the same level: surviving all waves (1 star), completing with a  
+life threshold (2 stars), and completing under a strict time or resource constraint (3 stars).  
+Each star earns a one-time SAKART token reward, establishing a natural economy where  
+progression drives token distribution without allowing replay farming.
+2.2 Genre and Platform
+Sakartvelo Defenders is a 2D isometric tower defense game. The isometric perspective  
+provides clear visibility of enemy paths, tower ranges, and strategic positioning while  
+maintaining the aesthetic warmth of illustrated historical environments. The 2D approach  
+enables efficient asset production using AI-generated art with strict style bible consistency  
+controls, making the project feasible for a solo developer.
+The game is developed in Godot 4.x and deployed as a Progressive Web App (PWA). This  
+architectural choice eliminates server hosting costs entirely, as the game runs client-side in  
+any modern browser. The PWA wrapper enables offline gameplay for the full campaign,  
+with  blockchain  transactions  queued  locally  during  chain  outages  and  submitted  
+automatically when connectivity resumes. This ensures the player experience is never  
+interrupted by infrastructure issues.
+2.3 Target Audience
+The primary audience encompasses tower defense enthusiasts, Web3 gaming early adopters,  
+and players interested in history and cultural education. Tower defense fans will appreciate  
+the strategic depth of synergy combinations, hero ability management, and the challenge of  
+three-star completion across hundreds of levels. Web3 players will find genuine utility in the  
+SAKART token economy without the usual crypto-game friction of mandatory wallet  
+connections or pay-to-win mechanics.
+A secondary but equally important audience is the Georgian diaspora community and  
+cultural preservation advocates. Georgia has a rich cultural heritage that is underrepresented  
+in mainstream gaming. By presenting this history through an accessible, engaging format,  
+the game serves as both entertainment and educational tool. Historical pop-ups appear  
+between levels, offering context about real events, figures, and locations depicted in the  
+gameplay.
+
+--- Page 8 ---
+
+Sakartvelo Defenders | Game Design Bible v3.0
+33. Eras
+The game spans ten chronological eras, each representing a major period in Georgian history.  
+Every era contains 20 levels, totaling 200 levels across the full campaign. The era structure  
+follows a strict chronological progression, ensuring historical accuracy and allowing players  
+to experience the complete narrative arc of Georgian civilization. Each era introduces new  
+tower  types,  enemy  variants,  hero  characters,  and  synergy  combinations,  providing  
+continuous mechanical evolution alongside historical progression.
+The chronological approach is non-negotiable. Georgian history is a continuous story where  
+events in one era directly shape the next. The Arab invasions of the 7th century created the  
+conditions for David IV's reforms in the 11th century. The Mongol devastation of the 13th  
+century led directly to the fragmentation that made Georgia vulnerable to Ottoman and  
+Persian domination. By maintaining strict chronological order, the game preserves historical  
+cause-and-effect relationships that would be lost with a thematic or arbitrary ordering.
+EraNamePeriodLevelsKey Figures
+0Ancient Colchis~1500 BC – ~300 
+BC20Medea, Aeëtes, 
+Jason
+1Kingdom of Iberia~300 BC – ~630 
+AD20Pharnavaz, St. 
+Nino, Vakhtang 
+Gorgasali
+2Age of Invasions~630 – ~1089 AD20Arab Emirs, 
+Bagrationi Kings
+3The Georgian 
+Golden Age~1089 – ~1225 
+AD20David IV, Queen 
+Tamar
+4The Mongol 
+Catastrophe~1225 – ~1500 
+AD20Mongol Generals, 
+Fragmented Kings
+5Between Empires~1500 – ~1801 
+AD20Erekle II, 
+Persian/Ottoman 
+Rivals
+6Russian Empire~1801 – ~1918 
+AD20Annexed Nobility, 
+Cultural Figures
+7First Democratic 
+Republic1918 – 1921 AD20Noe Jordania, 
+Independence 
+Fighters
+8The Soviet 
+Century1921 – ~1991 AD20Stalin (historical), 
+Soviet Era Figures
+
+--- Page 9 ---
+
+Sakartvelo Defenders | Game Design Bible v3.0
+4EraNamePeriodLevelsKey Figures
+9Modern Georgia~1991 – Present20Zviad 
+Gamsakhurdia, 
+Saakashvili
+3.1 Era 0: Ancient Colchis (~1500 BC – ~300 BC)
+The opening era of Sakartvelo Defenders transports players to the ancient Kingdom of  
+Colchis, the land of the Golden Fleece. This era draws from Greek mythological sources and  
+archaeological evidence to recreate the earliest period of Georgian statehood. Colchis was a  
+wealthy kingdom located on the eastern shore of the Black Sea, known for its gold mining,  
+metalworking, and advanced agricultural practices. The Greek myth of Jason and the  
+Argonauts reflects the historical reality of Greek interest in Colchian gold and trade routes.
+Gameplay in this era introduces fundamental tower defense mechanics with a primitive,  
+bronze-age aesthetic. Towers are stylized as wooden watchtowers, stone fortifications, and  
+archer platforms. Enemy waves represent tribal raiders, early Greek expeditionary forces,  
+and mythological creatures drawn from Georgian folklore such as the devi (giant demons).  
+The environment features lush Colchian forests, river valleys, and the ancient city of Vani,  
+one of the most important archaeological sites of the Colchian civilization.
+The hero for this era is Medea, the Colchian princess from Greek mythology. In Georgian  
+tradition, Medea is reclaimed as a powerful local figure rather than a Greek villain. Her  
+abilities reflect her mythological association with magic and herbalism, providing healing  
+buffs for nearby towers and poison damage to enemies. The educational pop-ups for this era  
+cover the archaeological evidence for Colchian civilization, the reality behind the Golden  
+Fleece legend (possibly a reference to gold-panning techniques using sheep fleeces), and the  
+cultural exchange between Colchis and the ancient Greek world.
+3.2 Era 1: Kingdom of Iberia (~300 BC – ~630 AD)
+The Kingdom of Iberia (Kartli in Georgian) represents the formation of the Georgian state as  
+a major regional power. This era spans over nine centuries, from the establishment of the  
+Iberian kingdom under King Pharnavaz to the Arab conquest of Tbilisi in the 7th century. It  
+encompasses the Roman-Parthian rivalry for control of the Caucasus, the Christianization of  
+Georgia by Saint Nino in the 4th century, and the reign of King Vakhtang Gorgasali, who  
+founded Tbilisi as the capital.
+Towers in this era evolve from simple wooden structures to stone fortifications and early  
+siege equipment. New enemy types include Roman legionaries, Parthian cavalry, Sassanid  
+Persian forces, and early Arab raiders. The introduction of Christianity as the state religion
+
+--- Page 10 ---
+
+Sakartvelo Defenders | Game Design Bible v3.0
+5provides  narrative  context  for  the  era,  with  churches  and  monasteries  appearing  as  
+defendable structures on maps. Environment art shifts to reflect the growing urbanization of  
+Iberia, with maps set in the ancient capital of Mtskheta, the fortress of Uplistsikhe, and the  
+newly founded city of Tbilisi.
+Three heroes are available in this era: King Pharnavaz (founder of the kingdom, provides  
+kingdom-wide buff abilities), Saint Nino (healer and protector, with abilities that shield  
+towers  and  slow  enemies),  and  King  Vakhtang  Gorgasali  (military  commander  with  
+offensive  abilities  that  boost  tower  damage  in  an  area).  The  era  concludes  with  the  
+devastating Arab invasions that will set the stage for the next era.
+3.3 Era 2: Age of Invasions (~630 – ~1089 AD)
+The  Age of Invasions covers  nearly five centuries  of continuous foreign pressure  on  
+Georgian lands. Following the Arab conquest of Tbilisi in 645 AD, Georgia entered one of  
+the most challenging periods in its history. The Tbilisi Emirate became a center of Islamic  
+power in the Caucasus, while Byzantine and later Seljuk Turkish forces competed for  
+influence over the fragmented Georgian principalities. This era is defined by the slow,  
+determined consolidation of power by the Bagrationi dynasty, who would eventually unify  
+Georgia and launch its golden age.
+Mechanically, this era introduces the concept of fortified positions and defensive sieges.  
+Maps feature crumbling Iberian fortresses being held against numerically superior Arab and  
+Seljuk forces. New tower types include fortified gatehouses and mounted archer platforms.  
+Enemy waves are larger and more aggressive, reflecting the overwhelming military pressure  
+of the period. The difficulty curve increases significantly, as players must defend against  
+sustained multi-wave assaults from enemies with greater variety and strength.
+The heroes of this era represent the resistance and resilience of the Georgian people during  
+centuries of foreign domination. Bagrationi princes and kings who led the slow reconquest  
+feature as playable heroes, alongside religious figures who maintained Georgian cultural  
+identity during the occupation. The educational content covers the Tbilisi Emirate, the Battle  
+of Shirimni, the Battle of Sasireti, and the broader geopolitical context of Arab-Byzantine-
+Seljuk rivalry in the Caucasus.
+3.4 Era 3: The Georgian Golden Age (~1089 – ~1225 AD)
+The Georgian Golden Age is the centerpiece of the game, representing the period when  
+Georgia  reached  its  greatest  territorial  extent,  cultural  flowering,  and  military  power.  
+Initiated by King David IV (David the Builder), who reformed the military, reunited the  
+Georgian territories, and defeated the Seljuk Turks at the Battle of Didgori in 1121, this era
+
+--- Page 11 ---
+
+Sakartvelo Defenders | Game Design Bible v3.0
+6culminated under Queen Tamar (r. 1184-1213), during whose reign Georgia controlled  
+territories from the Black Sea to the Caspian and from the Caucasus Mountains to northern  
+Iran.
+This era features the most diverse tower roster in the game. Advanced fortifications,  
+including  the  massive  stone  castles  that  dot  the  Georgian  countryside,  are  joined  by  
+specialized units reflecting the professionalized Georgian military of the period. Monaspa  
+royal guard towers, elite cavalry platforms, and siege defense emplacements provide players  
+with  powerful  defensive  options.  Enemy  waves  represent  the  various  peoples  who  
+challenged Georgian hegemony: remnants of Seljuk forces, Turkmen tribes, and northern  
+Caucasian mountaineers.
+Both David IV and Queen Tamar are playable heroes in this era, as the user has confirmed  
+that more heroes is better and both figures are essential to the period. David IV provides  
+military leadership buffs that increase tower damage and reduce upgrade costs, reflecting his  
+historical reputation as the great reformer. Queen Tamar offers diplomatic and governance  
+abilities that generate bonus resources and provide temporary invulnerability to structures,  
+reflecting her reign of prosperity. Additional heroes from this era may include the poet Shota  
+Rustaveli and the military commander Zakaria Mkhargrdzeli.
+3.5 Era 4: The Mongol Catastrophe (~1225 – ~1500 AD)
+The Mongol Catastrophe marks the abrupt end of the Georgian Golden Age. Beginning with  
+the first Mongol expeditions into the Caucasus in the 1220s and culminating in the complete  
+subjugation of Georgia by 1243, this era represents the most devastating period in Georgian  
+history. The Mongol conquest destroyed the centralized Georgian state, decimated the  
+population, and ushered in nearly three centuries of fragmentation and decline. Georgia was  
+divided into competing kingdoms and principalities that paid tribute to the Mongol Golden  
+Horde and later the Ilkhanate.
+Gameplay in this era shifts dramatically in tone. Players are no longer defending a unified,  
+prosperous  kingdom  but  rather struggling to survive  overwhelming odds  with limited  
+resources. Tower placement is constrained by crumbling infrastructure, and enemy waves  
+are  massive  Mongol  armies  with  superior  mobility  and  firepower.  New  mechanics  
+introduced in this era include retreat and evacuation objectives, where players must protect  
+civilian populations as they withdraw to mountain fortresses. The environment art reflects  
+the devastation: burned cities, abandoned villages, and fortified mountain redoubts.
+The hero for this era represents the last generation of unified Georgian resistance, figures  
+who  fought  desperately  against  the  Mongol  advance  before  the  kingdom  fractured.  
+Educational pop-ups cover the Mongol administrative system in Georgia, the economic  
+exploitation that drained the kingdom's wealth, and the cultural resilience that kept Georgian
+
+--- Page 12 ---
+
+Sakartvelo Defenders | Game Design Bible v3.0
+7identity alive even under foreign domination. This era sets the stage for the fragmentation  
+that defines the subsequent era.
+3.6 Era 5: Between Empires (~1500 – ~1801 AD)
+Between Empires covers the period of Georgian history when the fragmented Georgian  
+kingdoms found themselves caught between the Ottoman Empire and Safavid (later Afsharid  
+and Qajar) Persia. This era saw both devastating wars and remarkable cultural achievements.  
+King Erekle II of Kartli-Kakheti stands as the towering figure of this period, attempting to  
+unite the eastern Georgian kingdoms and navigate the impossible diplomatic situation  
+between rival empires. Despite his efforts, including a disastrous alliance with Catherine the  
+Great of Russia, Georgia was ultimately unable to maintain its independence.
+Towers in this era reflect the evolving military technology of the early modern period.  
+Gunpowder weapons appear for the first time, alongside traditional Georgian defensive  
+structures. Maps are set in the three major Georgian kingdoms of the period: Kartli, Kakheti,  
+and Imereti, each with its own architectural style and strategic challenges. Enemy waves  
+alternate between Ottoman and Persian forces, each with distinct unit compositions and  
+attack patterns that require different defensive strategies.
+King Erekle II is the primary hero of this era, providing abilities that combine military  
+leadership  with  diplomatic  finesse.  His  special  ability  temporarily  reduces  all  enemy  
+damage, reflecting his historical skill at negotiation even in wartime. The educational content  
+covers the Battle of Krtsanisi (1795), one of the most tragic events in Georgian history,  
+where the Persian army of Agha Mohammad Khan devastated Tbilisi despite Erekle's  
+desperate defense. This event directly led to Georgia's incorporation into the Russian  
+Empire.
+3.7 Era 6: Russian Empire (~1801 – ~1918 AD)
+The Russian Empire era covers the period from Georgia's annexation by Russia in 1801 to  
+the collapse of the empire in 1918. Despite the loss of political independence, this era was  
+marked by a remarkable cultural renaissance. Georgian literature flourished with the works  
+of Ilia Chavchavadze and Akaki Tsereteli, theater and music experienced a golden age, and  
+Georgian national identity was consciously preserved and strengthened. The era also saw  
+major infrastructure development, including the construction of the Transcaucasian Railway  
+connecting the Black and Caspian Seas.
+Gameplay in this era introduces industrial-age military technology. Towers include fortified  
+machine gun positions, artillery emplacements, and barricaded urban streets. Enemy waves  
+represent the various conflicts of the period: the Caucasian War against Imam Shamil's
+
+--- Page 13 ---
+
+Sakartvelo Defenders | Game Design Bible v3.0
+8forces, the 1905 Russian Revolution, and the chaos of World War I on the Caucasus Front.  
+Maps are set in rapidly modernizing Tbilisi, the mountain villages of Svaneti, and the Black  
+Sea port city of Batumi.
+The heroes of this era are primarily cultural and intellectual figures rather than military  
+commanders. Ilia Chavchavadze provides abilities that boost tower efficiency and resource  
+generation, reflecting his role as a national leader and modernizer. Other potential heroes  
+include the poet and publicist Akaki Tsereteli and the military leader Gia Abesalomashvili.  
+The educational content covers the Georgian national awakening, the abolition of serfdom,  
+and the growing independence movement that would culminate in the next era.
+3.8 Era 7: First Democratic Republic (1918 – 1921 AD)
+The First Democratic Republic of Georgia (1918-1921) was the first modern democratic  
+state in the Caucasus and one of the first democratic republics to emerge from the ruins of the  
+Russian Empire. Led by the Social Democratic (Menshevik) government of Noe Jordania,  
+Georgia declared independence on May 26, 1918, and spent three chaotic years building a  
+multi-ethnic, multi-party democratic state while fighting wars against Armenia, Azerbaijan,  
+White Russian forces, and the Bolshevik Red Army.
+Despite its brief existence, the First Republic achieved remarkable accomplishments: a  
+constitution  guaranteeing  universal  suffrage  and  minority  rights,  land  reform,  judicial  
+independence, and recognition by major international powers including the League of  
+Nations. The era ended when the Bolshevik Red Army invaded in February 1921, forcing the  
+democratic government into exile. This brief democratic experiment remains a powerful  
+symbol in modern Georgian politics and national identity.
+Gameplay in this era features early 20th-century military technology: rifles, machine guns,  
+and  artillery.  Enemy  waves  represent  the  multiple  threats  faced  by  the  republic  
+simultaneously. Maps are set in Tbilisi, the Black Sea coast, and the border regions where the  
+republic fought its defensive wars. The hero is Noe Jordania, whose abilities focus on  
+diplomatic coordination that temporarily strengthens all towers and generates emergency  
+resources.  Educational  pop-ups  cover  the  constitution,  the  international  recognition  
+campaign, and the tragic circumstances of the Bolshevik invasion.
+3.9 Era 8: The Soviet Century (1921 – ~1991 AD)
+The Soviet Century covers the seventy years of Georgian history within the Soviet Union.  
+This era is presented with historical honesty, neither glorifying the Soviet period nor erasing  
+its complexities. Georgia experienced both severe repression and significant modernization  
+during this time. The most controversial figure is Joseph Stalin (born Ioseb Jughashvili in
+
+--- Page 14 ---
+
+Sakartvelo Defenders | Game Design Bible v3.0
+9Gori, Georgia), who rose from Georgian origins to become the Soviet dictator responsible for  
+millions  of  deaths.  The  game  handles  Stalin  by  presenting  historical  facts  without  
+commentary, allowing players to engage with this difficult history through the gameplay  
+context.
+Towers in this era reflect Soviet military technology: reinforced concrete bunkers, anti-
+aircraft positions, and fortified checkpoints. Enemy waves represent the various conflicts  
+that touched Georgia during the Soviet period, including World War II (where approximately  
+350,000 Georgian soldiers died), anti-Soviet partisan resistance in the mountains, and the  
+environmental and social disruptions of late Soviet industrialization. Maps are set in Soviet-
+era Tbilisi, industrial zones, and mountain villages that served as centers of resistance.
+The hero selection for this era requires careful handling. Historical figures from the Soviet  
+period are presented factually, with educational pop-ups providing context about their roles  
+and the human cost of their actions. The game does not make Stalin a hero character in the  
+playable sense but may reference him in historical context. Other potential heroes include  
+World War II heroes, dissident writers, and cultural figures who preserved Georgian identity  
+during  the  Soviet  period.  The  educational  content  covers  the  Great  Purge  (which  
+disproportionately affected Georgia), World War II, the 1978 language protests, and the  
+growing independence movement of the late 1980s.
+3.10 Era 9: Modern Georgia (~1991 – Present)
+The final era brings players to the modern Republic of Georgia, from the chaotic first years of  
+independence through the Rose Revolution of 2003 to the present day. This era covers the  
+1991-1993 civil war and war in Abkhazia, the economic collapse of the 1990s, the peaceful  
+Rose Revolution that ousted the Shevardnadze government, the 2008 war with Russia, and  
+the ongoing process of democratic consolidation and Euro-Atlantic integration.
+Towers in this era represent modern military technology: precision-guided weapon systems,  
+drone surveillance platforms, and fortified military outposts. Enemy waves reflect the  
+conflicts of modern Georgia: separatist forces, irregular militias, and conventional military  
+threats. Maps are set in modern Tbilisi, the conflict zones of South Ossetia and Abkhazia, and  
+the strategic Georgian Military Highway connecting Tbilisi to Russia through the Caucasus  
+Mountains.
+This era's heroes are drawn from modern Georgian history, figures who shaped the country's  
+transition from Soviet republic to independent democracy. The educational content covers  
+the challenges of post-Soviet state-building, the achievements and controversies of the  
+Saakashvili era, and Georgia's current strategic position as a Western-oriented democracy in  
+a region of renewed Russian assertiveness. The final levels of this era serve as the game's
+
+--- Page 15 ---
+
+Sakartvelo Defenders | Game Design Bible v3.0
+10climax, bringing together all the mechanical systems and historical themes developed across  
+the previous nine eras.
+4. Tower System
+The tower system is the mechanical core of Sakartvelo Defenders. Ten distinct tower types  
+provide the player's defensive toolkit, each filling a specific strategic role. Towers are  
+introduced gradually across the ten eras, with each era introducing one new tower type that  
+reflects the military technology of that historical period. Every tower receives era-specific  
+visual  skins  to  maintain  historical  authenticity  while  preserving  the  underlying  game  
+mechanics that players have mastered.
+The tower progression follows a clear design principle: newer towers add strategic options  
+rather than rendering older ones obsolete. An Archer Tower from Era 0 remains viable in Era  
+9 because it occupies a unique niche (fast single-target damage at low cost) that no later  
+tower perfectly replicates. This ensures that all ten tower types remain relevant throughout  
+the  full  200-level  campaign,  rewarding  players  who  have  mastered  diverse  tower  
+compositions.
+Tower Type Role Introduced Era Skin Example
+Archer Tower Basic single-target DPS Era 0 Colchian Watchtower /  
+Iberian Fort
+Catapult/Trebuchet Area-of-effect splash 
+damageEra 0 Stone Thrower / Siege 
+Engine
+Wall/Barrier Path blocking, enemy 
+redirectingEra 0 Wooden Palisade / 
+Stone Wall
+Cavalry Outpost Fast patrol, 
+intercepting enemiesEra 1 Iberian Horsemen / 
+Georgian Knights
+Siege Tower Heavy damage, slow 
+attack, anti-structureEra 2 Fortified Gatehouse / 
+Battlement
+Magic/Shrine Tower Buff/debuff, crowd 
+controlEra 3 Church Shrine / 
+Monastery
+Gunpowder Tower Long-range, piercing 
+projectilesEra 5 Cannon 
+Emplacement / 
+Musketry
+Industrial Tower Rapid-fire, multi-target  
+suppressionEra 6 Machine Gun Nest / 
+Artillery
+
+--- Page 16 ---
+
+Sakartvelo Defenders | Game Design Bible v3.0
+11Tower Type Role Introduced Era Skin Example
+Bunker Tower Heavy armor, high 
+survivabilityEra 8 Soviet Bunker / 
+Concrete Pillbox
+Tech Tower Precision strikes, drone  
+supportEra 9 Modern Outpost / 
+Drone Platform
+4.1 Tower Upgrade System
+Each tower can be upgraded through three levels, with each upgrade increasing damage,  
+range,  attack  speed,  or  adding  special  effects.  Upgrade  costs  scale  exponentially,  
+encouraging players to invest in a focused defense rather than spreading resources thinly  
+across many weak towers. At maximum upgrade level (Level 3), towers gain a unique special  
+ability specific to their type: Archer Towers gain a chance for critical hits, Catapults gain  
+increased splash radius, and so on.
+Tower upgrades are purchased with in-game resources earned from defeating enemies. This  
+resource economy is entirely separate from the SAKART token economy and functions as  
+the core gameplay loop driver. Players must make strategic decisions about when to invest in  
+upgrades versus placing additional towers, creating meaningful choices every level. The  
+upgrade  system  is  designed  to  feel  impactful:  a  Level  3  Archer  Tower  should  feel  
+dramatically more powerful than a Level 1, both visually and mechanically.
+4.2 Tower Synergy System
+Synergies  are  activated  when  specific  tower  combinations  are  placed  within  a  3-tile  
+adjacency radius of each other. Synergies provide powerful bonuses that encourage diverse  
+tower compositions and strategic map planning. Each synergy combination is introduced in  
+the  era  where  its  component  towers  are  most  thematically  appropriate,  with  new  
+combinations becoming available as players unlock more tower types.
+The synergy system creates emergent strategic depth. A player who places an Archer Tower  
+near a Cavalry Outpost might discover a synergy that increases both units' attack speed,  
+creating a rapid-response kill zone. Another player might combine a Magic/Shrine Tower  
+with a Wall/Barrier to create a slowing zone that funnels enemies into a devastating Catapult  
+kill zone. The system rewards experimentation and map-specific planning, ensuring that no  
+single strategy dominates across all levels.
+A comprehensive list of synergy combinations is documented in the Synergy Reference  
+appendix (see Section 24). With ten tower types, there are 45 possible two-tower pairs and  
+120 possible three-tower triples, though only a curated subset of the most strategically  
+interesting  and  thematically  appropriate  combinations  will  be  implemented.  Each  era
+
+--- Page 17 ---
+
+Sakartvelo Defenders | Game Design Bible v3.0
+12introduces approximately 2-3 new synergy combinations, building up to a rich strategic  
+toolkit by the final era.
+5. Enemies
+Enemy design in Sakartvelo Defenders follows two core principles: historical authenticity  
+and mechanical clarity. Every enemy type is based on a real historical military unit or cultural  
+archetype from Georgian history, modified as needed for gameplay balance. Enemies are  
+visually designed to be instantly distinguishable, with clear silhouettes, color coding by  
+threat level, and animation that communicates their behavior (fast enemies move erratically,  
+armored enemies have deliberate, heavy animations).
+Enemy HP and damage scale progressively across the 200 levels, but the scaling is carefully  
+calibrated to maintain challenge without requiring numerical inflation that makes earlier  
+towers irrelevant. Instead of simply increasing HP values, later eras introduce enemy types  
+with new mechanics: shields that block frontal damage, healing abilities that restore HP to  
+nearby enemies, flying units that bypass ground-based tower ranges, and boss enemies with  
+unique phase-based attack patterns.
+5.1 Enemy Categories
+Enemies are divided into five broad categories that define their mechanical behavior.  
+Infantry units follow standard path movement at moderate speed and HP, forming the  
+backbone of most waves. Cavalry units move faster and have higher HP but follow the same  
+paths as infantry. Siege units are slow but devastating, capable of damaging player towers  
+directly. Flying units ignore path constraints and can only be targeted by towers with anti-air  
+capabilities. Boss enemies appear at the end of specific levels as challenging multi-phase  
+encounters.
+Each era introduces era-specific variants within these categories. Era 0 enemies are tribal  
+warriors and mythological creatures with low HP but fast movement. Era 2 enemies include  
+heavily armored Arab cavalry and siege engines. Era 4 Mongol enemies feature devastating  
+horse archers with hit-and-run tactics. Era 9 enemies include mechanized infantry and drone  
+swarms that require modern tower capabilities to counter. The visual evolution of enemies  
+across eras serves as both a gameplay progression mechanic and a visual history lesson.
+5.2 Boss Encounters
+Boss encounters appear at the end of every 5th level within each era (levels 5, 10, 15, and 20).  
+Each boss is a named historical or mythological figure with a multi-phase fight that requires  
+specific strategies to defeat. Bosses have dramatically higher HP than standard enemies and
+
+--- Page 18 ---
+
+Sakartvelo Defenders | Game Design Bible v3.0
+13feature  unique  abilities  that  challenge  the  player's  tower  placement  and  resource  
+management.
+Examples of planned bosses include the Colchian Dragon (Era 0), a mythical beast requiring  
+coordinated multi-tower attacks; the Arab Emir of Tbilisi (Era 2), who summons reinforcing  
+waves; the Mongol General Subutai's proxy (Era 4), who speeds up all enemy movement  
+across the map; and Agha Mohammad Khan (Era 5), who deals area damage to nearby  
+towers. Each boss fight is designed to be a memorable set-piece moment that rewards  
+strategic thinking and diverse tower compositions.
+6. Heroes
+Heroes are special units that players deploy alongside their tower defenses. Each hero has a  
+unique set of active abilities that the player triggers manually during combat, adding a layer  
+of real-time decision-making to the tower defense formula. Heroes are era-specific, meaning  
+they can only be used in levels belonging to their historical period. This design encourages  
+players to engage with each era's historical context and ensures that hero abilities feel  
+thematically appropriate.
+The user has confirmed that more heroes is better. The design philosophy is to provide at  
+least one hero per era, with major eras featuring two to three heroes to reflect the abundance  
+of notable historical figures. As confirmed, both David IV and Queen Tamar are playable  
+heroes in Era 3, representing the two most important figures of the Georgian Golden Age.  
+Stalin is handled historically in Era 8, presented factually in educational content but not as a  
+playable hero character.
+Era Hero Type Key Ability
+0 Medea Support/Control Poison damage + 
+tower healing
+1 King Pharnavaz Kingdom Buff Economy boost, 
+reduced tower costs
+1 Saint Nino Healer Tower shield, enemy 
+slow aura
+1 Vakhtang Gorgasali Offense Area damage boost for  
+nearby towers
+3 David IV (David the 
+Builder)Offense/Leadership Global damage buff, 
+upgrade cost reduction
+
+--- Page 19 ---
+
+Sakartvelo Defenders | Game Design Bible v3.0
+14Era Hero Type Key Ability
+3 Queen Tamar Defense/Economy Resource generation, 
+temporary tower 
+invulnerability
+3 Shota Rustaveli Morale Boost Attack speed increase 
+for all towers
+5 King Erekle II Defense/Diplomacy Enemy damage 
+reduction, emergency 
+resources
+6 Ilia Chavchavadze Economy/Culture Tower efficiency, 
+resource generation
+7 Noe Jordania Diplomacy Temporary global 
+tower strength boost
+8 WWII Georgian Hero Offense Targeted strike ability
+9 Modern Era Figure Tech/Precision Drone recon, precision 
+targeting
+6.1 Hero Abilities and Cooldowns
+Each hero has three abilities: one basic ability on a short cooldown (15-20 seconds), one  
+advanced ability on a medium cooldown (45-60 seconds), and one ultimate ability on a long  
+cooldown (120-180 seconds). Basic abilities provide tactical benefits like minor damage  
+buffs or healing. Advanced abilities can shift the flow of an individual wave. Ultimate  
+abilities are game-changing effects that, when timed correctly, can save a failing defense or  
+enable a perfect three-star run.
+When a hero is defeated (all HP depleted), they enter a cooldown period before they can be  
+redeployed. During this cooldown, the player must rely solely on their tower defenses. The  
+cooldown duration scales with the hero's power level, ensuring that losing a powerful hero  
+like Queen Tamar is more punishing than losing a support-oriented hero. This mechanic  
+encourages players to position heroes strategically rather than exposing them to unnecessary  
+damage.
+6.2 Hero Progression
+Heroes level up through gameplay by participating in battles. Each battle a hero participates  
+in grants experience points based on the enemies defeated. Leveling up improves hero base  
+stats (HP, damage) and reduces ability cooldowns. Hero levels are stored on-chain as part of  
+the player's account data, ensuring that progression is persistent and portable. The maximum
+
+--- Page 20 ---
+
+Sakartvelo Defenders | Game Design Bible v3.0
+15hero level is capped to prevent power inflation, with the cap set to ensure that a max-level  
+hero is powerful but not capable of solo-carrying a level without tower support.
+7. Maps
+Each of the 200 levels is set on a unique map inspired by real Georgian landscapes,  
+fortifications, and cities. Maps are designed with the isometric 2D perspective in mind,  
+ensuring clear visibility of enemy paths, tower placement zones, and strategic elevation  
+points. The art style for each map reflects the architectural and environmental characteristics  
+of the era, creating a visual journey through Georgian history that parallels the mechanical  
+progression.
+Map design follows several key principles. First, every map must have at least three viable  
+tower placement strategies to encourage replay and experimentation. Second, maps must  
+feature at least one elevation mechanic, where towers placed on higher ground receive  
+increased range, adding a spatial dimension to tower placement decisions. Third, each map  
+must include at least one chokepoint where players can concentrate defensive fire, balanced  
+by at least one wide-open section that requires spread defenses. These principles ensure  
+strategic variety across all 200 levels.
+7.1 Map Themes by Era
+Era 0 maps feature prehistoric Colchian landscapes: dense forests, river crossings, and the  
+ancient gold-panning sites of the Rioni River. Era 1 maps showcase the early urban centers of  
+Mtskheta and Uplistsikhe, with cave-city layouts providing unique pathing challenges. Era 2  
+maps depict fortified monasteries and mountain passes under siege from Arab and Seljuk  
+forces. Era 3 maps feature the grand castles and cathedrals of the golden age, including Gelati  
+Monastery and the cave city of Vardzia.
+Era 4 maps show the devastation of the Mongol period: burning cities, abandoned fortresses,  
+and desperate mountain retreats. Era 5 maps are set in the three kingdoms of Kartli, Kakheti,  
+and  Imereti,  with  distinct  architectural  styles  for  each.  Era  6  maps  feature  rapidly  
+modernizing Tbilisi with its mix of old and new architecture. Era 7 maps depict the war-torn  
+landscapes of the independence period. Era 8 maps showcase Soviet-era industrial zones and  
+mountain  villages.  Era  9  maps  present  modern  Georgia  with  contemporary  military  
+installations and urban environments.
+7.2 Elevation Mechanic
+The elevation mechanic is a core map feature that rewards strategic tower placement. Maps  
+are divided into ground-level and elevated positions, with higher positions providing a range
+
+--- Page 21 ---
+
+Sakartvelo Defenders | Game Design Bible v3.0
+16bonus to any tower placed there. The range bonus is approximately 15-20%, giving elevated  
+towers a meaningful but not overwhelming advantage. Maps are designed so that the best  
+elevated positions are also the most exposed or hardest to defend, creating risk-reward  
+decisions for players.
+Additionally, arrow-type and projectile towers benefit disproportionately from elevation,  
+gaining both increased range and a damage bonus due to the improved angle of attack. This  
+means an Archer Tower on a hill is dramatically more effective than one on flat ground,  
+encouraging players to prioritize elevated positions for their projectile-based defenses while  
+using melee-adjacent towers like Wall/Barrier units to control ground-level approaches.
+8. Tutorial
+The tutorial is integrated into the first five levels of Era 0, teaching core mechanics  
+organically through gameplay rather than separate tutorial screens. The philosophy is that  
+players learn by doing, with contextual hints appearing only when the game detects that a  
+player is struggling. The tutorial levels are designed to be completable by any player  
+regardless of experience with tower defense games, while still being engaging enough to  
+retain experienced players.
+Level 1 introduces tower placement: the player is given a single Archer Tower and must  
+place it to defend against a slow, weak enemy wave. Level 2 introduces the economy system,  
+requiring players to earn resources from kills and invest them in a second tower. Level 3  
+introduces tower upgrades by presenting a wave that cannot be defeated with Level 1 towers  
+alone. Level 4 introduces the hero system with Medea's basic ability. Level 5 introduces  
+scrolls as a consumable resource and features the first mini-boss encounter. By the end of  
+these five levels, players have mastered all core systems and are ready for the full campaign  
+experience.
+Each tutorial level includes a brief historical pop-up between levels that introduces the world  
+of Ancient Colchis. These pop-ups are concise (2-3 sentences) and focus on creating intrigue  
+rather than delivering encyclopedic information. The deeper educational content is reserved  
+for the main campaign, where players who are already invested in the gameplay will be more  
+receptive to historical context.
+9. Progression
+Progression in Sakartvelo Defenders operates on two parallel tracks: gameplay progression  
+and economic progression. Gameplay progression is the journey through 200 levels across  
+10 eras, with each level unlocked by completing the previous one. Economic progression is
+
+--- Page 22 ---
+
+Sakartvelo Defenders | Game Design Bible v3.0
+17the accumulation of SAKART tokens earned from star completions, which can be used to  
+purchase cosmetic items, mastery scrolls, and access to competitive features.
+The progression system is designed to be generous with gameplay content while strictly  
+controlling economic rewards. All 200 levels are accessible to every player without any  
+payment requirements. The SAKART economy is driven entirely by in-game achievement:  
+each star earned on a level grants a one-time token reward, with higher stars granting larger  
+rewards. Because each star can only be earned once per level, there is zero incentive for  
+replay farming, and the total token supply is mathematically bounded by the number of  
+players and levels.
+9.1 Era Unlock Requirements
+Eras are unlocked sequentially. To unlock the next era, a player must earn at least 1 star (the  
+basic completion star) on a minimum number of levels in the current era. The requirement is  
+set at 15 out of 20 levels, allowing players to skip the most difficult levels while still  
+demonstrating sufficient mastery. This ensures that players experience most of each era's  
+content before moving forward, maintaining the chronological educational narrative without  
+creating frustrating progression blockers.
+The era unlock requirement is intentionally permissive rather than restrictive. The game's  
+philosophy is that players should be encouraged to explore, not punished for difficulty. A  
+player who struggles with specific levels can move forward after completing the majority,  
+then return later with better towers, higher-level heroes, and more experience to tackle the  
+challenges they skipped. The three-star system provides the difficulty ceiling for dedicated  
+players, while the one-star unlock provides the accessible floor for casual players.
+9.2 Star System
+Each level offers three stars, representing three tiers of completion challenge. The first star is  
+earned by surviving all enemy waves without losing all lives. The second star requires  
+completing the level while retaining a minimum percentage of lives (typically 50% or more).  
+The third star requires completing the level under an additional constraint, which varies by  
+level  and  may  include  time  limits,  resource  caps,  tower  count  limits,  or  no-upgrade  
+restrictions.
+Each star grants a one-time SAKART reward. The reward amounts scale with the difficulty  
+of the era: early era stars grant fewer tokens, while later era stars grant progressively more.  
+This scaling reflects both the increased difficulty of later content and the economic design  
+goal of distributing tokens over the long term rather than front-loading rewards in early
+
+--- Page 23 ---
+
+Sakartvelo Defenders | Game Design Bible v3.0
+18content. Once a star is earned, replaying the level generates zero additional SAKART,  
+eliminating replay farming as a concern entirely.
+10. Scrolls and Mastery
+Scrolls are consumable items that provide powerful temporary effects during gameplay.  
+They are the primary tactical resource that players manage during a level, alongside tower  
+placement and hero ability usage. Scrolls are single-use: activating a scroll consumes it  
+permanently, and players must acquire new scrolls to replenish their inventory. Each player  
+account can hold a maximum of 50 scrolls at any time, preventing hoarding and encouraging  
+strategic use.
+Scrolls are divided into two categories: standard scrolls and mastery scrolls. Standard scrolls  
+provide gameplay effects during levels (damage boosts, resource generation, crowd control,  
+healing, etc.) and are earned through gameplay progression or purchased with SAKART  
+tokens. Mastery scrolls provide permanent passive bonuses to specific tower types or heroes  
+and are represented as ERC-721 NFTs on the blockchain, making them tradeable on the  
+marketplace.
+10.1 Standard Scrolls
+Standard scrolls come in several types, each providing a different tactical effect. Damage  
+scrolls boost tower damage output for a limited duration. Economy scrolls generate bonus in-
+game resources. Crowd control scrolls freeze or slow all enemies on the map. Healing scrolls  
+restore HP to damaged towers. Shield scrolls grant temporary invulnerability to a targeted  
+tower or hero. Each scroll type has multiple tiers of potency, with higher tiers providing  
+stronger effects.
+Standard scrolls are consumed when activated during a level. They are not blockchain assets  
+and cannot be traded between players. This design keeps the tactical resource economy  
+simple and predictable. Standard scrolls can be earned as rewards for completing levels with  
+3 stars, purchased from an in-game shop using in-game currency (not SAKART), or  
+occasionally received as daily login bonuses. The scroll inventory cap of 50 ensures that  
+players must make meaningful choices about which scrolls to bring into each level.
+10.2 Mastery Scrolls (ERC-721)
+Mastery scrolls are NFT-based permanent passive bonuses. Unlike standard scrolls, mastery  
+scrolls are not consumed during gameplay. Instead, they are activated in the player's loadout  
+before a level begins and provide their bonus for the entire level duration. Mastery scrolls are  
+type-based, not unique: there is no limit on how many copies of a specific mastery scroll can
+
+--- Page 24 ---
+
+Sakartvelo Defenders | Game Design Bible v3.0
+19exist, but each player can only activate each type of mastery scroll once per level, with a  
+maximum stack of 3 copies of the same type providing increasing bonuses.
+The stack system works as follows: activating 1 copy of a mastery scroll provides a 3% bonus  
+to the relevant stat, 2 copies provide 6%, and 3 copies provide the maximum of 9%. This cap  
+ensures that mastery scrolls enhance gameplay without breaking balance. For example, a  
+player with 3 copies of the 'Archer Tower Mastery' scroll would have their Archer Towers  
+deal 9% more damage for the duration of any level where the scroll is activated. Mastery  
+scrolls  are  tradeable  on  the  marketplace,  creating  a  player-driven  economy  for  these  
+permanent upgrades.
+10.3 SAKART Boost Scroll
+As confirmed during design review, there is NO SAKART Boost scroll. The token economy  
+is driven entirely by star-based earning, and no consumable item should exist that accelerates  
+or modifies SAKART rewards. This prevents economic exploits and keeps the token  
+distribution system clean and predictable.
+11. Skins and Binding
+Cosmetic skins are the primary visual customization system and the main use case for the  
+SAKART token economy. Skins change the visual appearance of towers and heroes without  
+affecting  gameplay  mechanics.  They  are  implemented  as  ERC-1155  tokens  on  the  
+Immutable zkEVM blockchain, enabling frictionless trading on the marketplace. Skins are  
+purely cosmetic: a tower with a skin has identical stats and abilities to the same tower without  
+a skin.
+The skin system is designed around the era structure. Each tower type has one default skin  
+per era (automatically applied when playing levels in that era) and multiple premium skins  
+that players can acquire through gameplay rewards or marketplace purchases. Premium skins  
+feature more detailed art, special effects, and animation variations that make them visually  
+distinct from the default era skins.
+11.1 Skin Binding
+When a player equips a skin to a tower, the skin becomes bound to that specific tower  
+instance. Bound skins cannot be traded on the marketplace until they are unbound, which  
+costs a small amount of SAKART. This binding mechanism serves two purposes: it creates a  
+SAKART  token  sink  (burn  mechanism)  through  the  bind/unbind  fee,  and  it  prevents  
+marketplace speculation on skins that are actively being used in gameplay.
+
+--- Page 25 ---
+
+Sakartvelo Defenders | Game Design Bible v3.0
+20The bind/unbind fee is set low enough to not discourage players from experimenting with  
+different skins, but high enough to create meaningful economic friction against rapid  
+marketplace trading. The exact fee amount is subject to balance testing and may vary based  
+on the skin's rarity tier. Common skins have minimal bind/unbind fees, while rare and  
+legendary skins have higher fees, reflecting their greater marketplace value.
+11.2 Marketplace Tooltip
+As confirmed during the design review with Hermes, every item on the marketplace displays  
+a clear tooltip showing: what the item does, which era/level it applies to, its current bind  
+status, and the cost to unbind if applicable. This transparency ensures that players can make  
+informed purchasing decisions without needing to consult external resources. The tooltip  
+system is especially important for mastery scrolls, where the stack bonus progression (3%,  
+6%, 9%) must be clearly communicated.
+12. Player vs. Player (PvP)
+PvP in Sakartvelo Defenders is an asynchronous attack-then-defend format designed for  
+fairness and accessibility. Unlike synchronous PvP tower defense, which requires both  
+players to be online simultaneously, the asynchronous format allows players to attack an  
+opponent's preset defense at their convenience, and defend against incoming attacks with AI-
+managed towers. This design respects the player's time while maintaining competitive depth.
+12.1 Attack-Then-Defend Format
+Each PvP engagement consists of two phases. In the Attack phase, the player selects a  
+league-level map and sends enemy waves against the opponent's pre-built defense. In the  
+Defend phase, the player's own defense is tested against waves sent by their opponent. The  
+winner is determined by total score across both phases, where score is based on lives  
+remaining, time survived, and enemies defeated.
+The turn order for who attacks first is determined by a Rock-Paper-Scissors (RPS) mechanic  
+at the start of each engagement. Both players secretly choose their throw, and the winner  
+attacks first. Attacking first provides a slight psychological advantage (knowing the defense  
+layout) but also reveals information that the defender can use in the second phase. This  
+simple RPS mechanic adds a layer of pre-game strategy without introducing complexity that  
+would alienate casual players.
+
+--- Page 26 ---
+
+Sakartvelo Defenders | Game Design Bible v3.0
+2112.2 Loadout System
+PvP uses identical loadouts for both players to ensure absolute fairness. When a PvP  
+engagement begins, both players are assigned the same tower roster, hero, and scroll  
+selection. This eliminates pay-to-win concerns, as no player can gain an advantage through  
+superior NFTs or token spending. The skill expression in PvP comes entirely from tower  
+placement strategy, timing of hero abilities, and scroll usage.
+There are no re-rolls on scrolls in PvP. As confirmed during design review, allowing re-rolls  
+would create imbalance by letting players gamble for optimal scroll draws. Each player  
+receives a fixed scroll selection at the start of the engagement and must make the best use of  
+what they are given. This constraint encourages strategic planning and rewards players who  
+can adapt their tactics to available resources rather than relying on lucky draws.
+12.3 Defense Setup
+Players build their defense on a standardized PvP map layout before entering matchmaking.  
+The defense setup uses pre-built tower configurations that are executed by AI when the  
+player is being attacked. The AI uses a predefined priority system: towers target the enemy  
+closest to the exit, use abilities when enough enemies are in range, and do not make  
+placement changes during the defense. This ensures that the defense performs consistently  
+regardless of whether the player is online.
+The PvP league system is organized by skill tiers rather than eras. As confirmed during  
+design  review,  PvP  should  not  have  era  restrictions;  only  league  levels  should  gate  
+matchmaking. This means a player who has completed Era 5 can compete in PvP against  
+players at the same league level regardless of their campaign progress. The league system  
+uses a standard ELO-based rating with promotion and demotion between tiers.
+12.4 Hero and Scroll Selection
+For the launch version, PvP uses a fixed rotating roster of heroes and scrolls that changes  
+weekly. This design ensures balance without requiring continuous meta adjustments, and it  
+keeps the PvP experience fresh by regularly changing the available strategic options. The  
+rotating  roster  is  selected  by  the  development  team  based  on  balance  testing,  with  
+community feedback incorporated through regular surveys. Future versions may introduce a  
+draft-pick system where players alternately select heroes and scrolls from a shared pool.
+
+--- Page 27 ---
+
+Sakartvelo Defenders | Game Design Bible v3.0
+2213. Survival Mode
+Survival Mode is an endless wave defense challenge separate from the main campaign.  
+Players select a map and defend against increasingly difficult waves that continue until all  
+lives are lost. There is no win condition in Survival Mode; the goal is to survive as many  
+waves as possible and achieve the highest score on the global leaderboard. Survival Mode is  
+the primary competitive format for players who have completed the campaign and seek  
+ongoing challenges.
+Survival Mode uses the player's full tower roster, hero collection, and scroll inventory from  
+the campaign. Unlike PvP, there are no loadout restrictions, allowing players to use their best  
+available assets. However, the scaling difficulty ensures that even the most powerful loadout  
+will eventually be overwhelmed, typically around wave 50-100 depending on player skill.  
+The global leaderboard tracks the highest wave reached, total enemies defeated, and score,  
+with seasonal resets that award SAKART tokens to top performers.
+14. Seasons
+Seasons are quarterly content updates that introduce new gameplay features, limited-time  
+events, and exclusive cosmetic rewards. Each season lasts approximately three months and is  
+themed around a specific aspect of Georgian culture or history that may not fit into the main  
+chronological  campaign.  For  example,  a  season  might  focus  on  Georgian  mythology  
+(featuring  folklore-based  enemies  and  towers),  Georgian  cuisine  (with  food-themed  
+cosmetic skins), or specific historical events like the Battle of Didgori.
+Seasons serve several design purposes. They provide ongoing content for players who have  
+completed the campaign, creating reasons to return regularly. They introduce variety into the  
+gameplay experience by temporarily modifying core rules (such as double damage for a  
+specific tower type, or altered enemy compositions). They generate marketplace activity  
+through limited-edition cosmetic skins that are only available during the season. And they  
+provide additional SAKART burn mechanisms through season pass purchases and exclusive  
+item acquisition.
+Each season includes a free track with basic rewards available to all players, and a premium  
+track purchased with SAKART that offers enhanced rewards including exclusive skins,  
+scroll packs, and mastery scroll fragments. The season pass price is set to create a meaningful  
+but not punitive SAKART sink, contributing to the target annual deflation rate.
+
+--- Page 28 ---
+
+Sakartvelo Defenders | Game Design Bible v3.0
+2315. Endgame
+The endgame begins when a player completes all 200 campaign levels and has access to the  
+full tower roster, hero collection, and competitive modes. The endgame is designed to  
+provide  long-term  engagement  through  three  pillars:  mastery  (perfecting  three-star  
+completions and Survival Mode performance), collection (acquiring rare skins and mastery  
+scrolls through the marketplace), and competition (climbing PvP and Survival leaderboards).
+Mastery challenges include achieving three stars on all 200 levels, completing levels under  
+self-imposed restrictions (no upgrades, single tower type only, hero-only runs), and setting  
+high scores in Survival Mode. These challenges provide bragging rights and are tracked on  
+the player's public profile. Collection goals revolve around acquiring the full set of cosmetic  
+skins for each tower type and hero, including rare limited-edition skins from past seasons.  
+Competition is maintained through seasonal leaderboard resets and regular PvP tournaments  
+with SAKART prize pools.
+The endgame economy is critical for long-term token health. With campaign star rewards  
+largely earned by this point, the endgame introduces additional SAKART sinks through  
+cosmetic  purchases,  season  passes,  and  tournament  entry  fees.  The  balance  between  
+endgame sinks and remaining campaign earning ensures that the token economy remains  
+healthy without requiring players to spend real money to continue enjoying the game.
+16. Educational System
+The educational system is one of the three foundational pillars of Sakartvelo Defenders. The  
+game is designed to teach Georgian history organically through gameplay, with educational  
+content woven into the fabric of the experience rather than presented as separate lessons. The  
+educational system operates on three levels: passive learning through visual design and  
+environmental storytelling, active learning through historical pop-ups between levels, and  
+deep learning through an optional in-game encyclopedia.
+Passive learning happens naturally as players progress through the campaign. The era-
+specific art styles, tower designs, enemy types, and map environments all communicate  
+historical information visually. A player who spends 20 levels defending against Mongol  
+armies in Era 4 will develop an intuitive understanding of the Mongol period's impact on  
+Georgia, even if they never read a single educational pop-up. The visual design language is  
+the most powerful educational tool in the game.
+Historical pop-ups appear between every level and provide 2-4 sentences of context about  
+the events, figures, or locations featured in the upcoming level. These pop-ups are skippable  
+for players who want to focus on gameplay, but they are designed to be engaging enough that
+
+--- Page 29 ---
+
+Sakartvelo Defenders | Game Design Bible v3.0
+24most players will read them. As confirmed during design review, historical pop-ups do NOT  
+cost SAKART to read. Making education paywalled would undermine the game's core  
+philosophy of cultural preservation and accessibility.
+16.1 Cultural Footer
+As confirmed during the design review, the game includes a cultural footer on the main menu  
+and loading screens that displays rotating Georgian cultural facts, proverbs, and historical  
+quotes. This passive educational element adds flavor without interrupting gameplay and  
+reinforces the game's identity as a cultural product. The cultural footer content is curated to  
+be interesting and diverse, covering topics ranging from Georgian wine-making traditions  
+(the  world's  oldest)  to  the  unique  Georgian  alphabet,  a  UNESCO  Intangible  Cultural  
+Heritage.
+16.2 Historical Accuracy Policy
+The game is committed to historical accuracy wherever possible. All historical events,  
+figures,  and  cultural  elements  depicted  in  the  game  are  based  on  accepted  historical  
+scholarship and Georgian historical sources. Where the historical record is ambiguous or  
+contested, the game presents the most widely accepted interpretation and notes the existence  
+of alternative views. The Stalin era (Era 8) is handled with particular care, presenting factual  
+information about his actions and their consequences without glorification or erasure.
+The historical accuracy policy extends to visual design. Tower skins, enemy designs, map  
+environments, and hero appearances are all based on historical research and archaeological  
+evidence. The Art Style Guide (see companion document) provides detailed reference  
+material for each era's visual language, ensuring that the AI-generated art assets maintain  
+consistency with historical reality. Anachronistic elements are avoided unless they serve a  
+specific gameplay purpose and are clearly identified as non-historical.
+17. Mythology Integration
+Georgian  mythology  is  deeply  intertwined  with  the  country's  historical  identity,  and  
+Sakartvelo  Defenders  incorporates  mythological  elements  as  complementary  to  the  
+historical narrative rather than as a separate system. Mythological creatures and heroes  
+appear primarily in Era 0 (Ancient Colchis, where the boundary between myth and history is  
+naturally blurred) and in special seasonal events that explore specific aspects of Georgian  
+folklore.
+Key mythological elements include the devi (giant demons from Georgian folklore who  
+serve as boss enemies), the kaji (magical blacksmiths who serve as tower upgrade mechanics
+
+--- Page 30 ---
+
+Sakartvelo Defenders | Game Design Bible v3.0
+25in  the  early  eras),  and the  myth  of  the  Golden  Fleece  (which provides  the  narrative  
+framework for Era 0). The game also draws on the epic poem 'The Knight in the Panther's  
+Skin' by Shota Rustaveli for heroic inspiration, with characters and themes from the poem  
+influencing hero designs and ability concepts.
+The mythology system is designed to enhance rather than replace the historical content.  
+Players who are interested in mythology will find rich references and references throughout  
+the game, while players who prefer pure history can focus on the historical eras without  
+missing any core gameplay content. The distinction between mythological and historical  
+content is always clearly communicated through the educational system, ensuring that  
+players understand which elements are based on historical records and which are drawn from  
+folklore.
+18. SAKART Token Economy
+SAKART is the ERC-20 utility token that powers the Sakartvelo Defenders economy. The  
+token has a fixed hard cap of 1 billion (1,000,000,000) SAKART, with zero pre-mine and  
+zero team allocation. All tokens enter circulation exclusively through player gameplay: stars  
+earned on campaign levels are the sole distribution mechanism. This design ensures that the  
+token economy is entirely player-driven, with no inflation from team unlocks, investor  
+allocations, or algorithmic minting.
+18.1 Token Distribution
+Token distribution follows a star-based system. Each of the 200 campaign levels offers 3  
+stars (600 total stars). Each star, when earned for the first time, grants a one-time SAKART  
+reward. The reward per star scales with the era, with early eras granting smaller rewards and  
+later eras granting larger ones. The total token supply allocated to campaign rewards is  
+approximately 700 million SAKART (70% of the hard cap), with the remaining 300 million  
+reserved for seasonal rewards, competitive prizes, and marketplace liquidity incentives.
+Because each star can only be earned once per player, the total number of SAKART tokens in  
+circulation is directly proportional to the number of active players and their campaign  
+progress. A player who earns all 600 stars across the full campaign will have accumulated a  
+substantial but finite amount of SAKART. There is no mechanism for earning SAKART  
+through  replay,  grinding,  or  any  activity  other  than  first-time  star  completions.  This  
+structural design makes replay farming mathematically impossible.
+
+--- Page 31 ---
+
+Sakartvelo Defenders | Game Design Bible v3.0
+2618.2 Burn Mechanisms
+The SAKART economy includes multiple burn mechanisms designed to create sustained  
+deflationary pressure. The primary burn mechanisms are: skin purchases on the marketplace  
+(marketplace fees are partially burned), skin bind/unbind fees, season pass purchases, and  
+cosmetic effect unlocks. Additional burn mechanisms under consideration include scroll  
+reroll fees (allowing players to reroll their scroll selection for a level at a SAKART cost),  
+cosmetic tower effects (visual effects applied to towers that cost SAKART per activation),  
+and leaderboard entry fees for competitive tournaments.
+The  target  annual  deflation  rate  is  2-5%  of  circulating  supply,  achieved  through  the  
+combination of all burn mechanisms. This deflation is not aggressive enough to create  
+hoarding behavior (which would harm the gameplay economy) but sufficient to offset the  
+slow trickle of new tokens entering circulation as new players join and earn stars. The fee  
+structure is designed to be invisible to casual players while providing meaningful economic  
+activity for engaged players.
+18.3 Anti-Inflation Design
+The SAKART economy is structurally anti-inflationary due to several design choices. First,  
+the star-based earning system caps total possible earnings per player. Second, the absence of  
+replay farming eliminates the most common Web3 game inflation vector. Third, the fixed  
+hard cap of 1 billion tokens provides an absolute ceiling on supply. Fourth, the multiple burn  
+mechanisms create continuous deflationary pressure. Fifth, the gameplay economy (in-game  
+resources  for  tower  placement  and  upgrades)  is  entirely  separate  from  the  SAKART  
+economy, preventing token inflation from affecting gameplay balance.
+19. Fees and Revenue Model
+The revenue model for Sakartvelo Defenders is built around a transparent transaction fee  
+applied to all marketplace trades. The total fee is 1.8% per transaction, distributed as follows:  
+1.3% to the development treasury for ongoing game development, server costs (minimal due  
+to PWA architecture), and team compensation; 0.5% automatically compounded into the  
+marketplace liquidity pool to ensure healthy trading conditions. No additional fees are  
+charged for gameplay, account creation, or any other activity.
+The 1.8% fee structure is designed to be low enough to encourage active marketplace trading  
+while generating sufficient revenue to sustain development. As a solo developer with a  
+$100/month budget, the minimal server costs (PWA has zero server hosting) mean that  
+marketplace fees are almost entirely profit. The automatic LP compounding (0.5%) ensures
+
+--- Page 32 ---
+
+Sakartvelo Defenders | Game Design Bible v3.0
+27that  the  marketplace  remains  liquid  even  during  low-activity  periods,  preventing  the  
+common Web3 problem of illiquid markets that discourage trading.
+19.1 Treasury and Developer Withdrawal
+The  development  treasury  accumulates  the  1.3%  developer  fee  from  all  marketplace  
+transactions. Withdrawals from the treasury are subject to a monthly cap to prevent sudden  
+large withdrawals that could harm community trust. The monthly cap is set to cover  
+development costs plus a reasonable developer salary, with any excess remaining in the  
+treasury for future development needs. Treasury activity is fully transparent and auditable  
+on-chain.
+The withdrawal mechanism requires a timelock: withdrawal requests are queued for 48 hours  
+before  execution,  during  which  they  are  publicly  visible  on  the  blockchain.  This  
+transparency mechanism ensures that the community can verify that treasury funds are being  
+used for legitimate development purposes. As a solo developer, this level of transparency is  
+both  a  business  practice  and  a  competitive  advantage,  building  trust  with  the  player  
+community that the game will be maintained and improved over the long term.
+20. Smart Contracts
+Sakartvelo Defenders deploys on the Immutable zkEVM Layer 2 network, which provides  
+zero gas fee transactions for players while maintaining the security guarantees of Ethereum.  
+The smart contract architecture consists of three primary contracts: the SAKART token  
+contract  (ERC-20),  the  Skin  contract  (ERC-1155),  and  the  Mastery  Scroll  contract  
+(ERC-721). All contracts follow established security best practices and will be audited  
+before mainnet deployment.
+20.1 SAKART Token Contract (ERC-20)
+The SAKART token contract implements the standard ERC-20 interface with custom  
+modifications for the game's requirements. The total supply is fixed at 1 billion tokens with  
+no  minting  function.  Token  transfers  to  and  from  the  game's  designated  contracts  
+(marketplace,  season  pass,  bind/unbind)  are  gasless  through  Immutable's  account  
+abstraction. The contract includes a blacklist function for fraud prevention and multi-account  
+detection, governed by a multisig wallet controlled by the developer.
+
+--- Page 33 ---
+
+Sakartvelo Defenders | Game Design Bible v3.0
+2820.2 Skin Contract (ERC-1155)
+The ERC-1155 standard is used for cosmetic skins because it supports both fungible and  
+non-fungible tokens within a single contract. Common skins are semi-fungible (multiple  
+identical copies exist), while rare and legendary skins are non-fungible (unique or limited  
+edition). The contract includes metadata URI pointers to decentralized storage (IPFS) for  
+skin artwork and description data, ensuring that skin assets remain accessible even if the  
+game's servers go offline.
+20.3 Mastery Scroll Contract (ERC-721)
+Mastery scrolls use the ERC-721 standard because each scroll is a distinct non-fungible  
+asset, even when multiple scrolls of the same type exist. The contract tracks scroll type, stack  
+count, and activation status. When a player activates a mastery scroll for a level, the contract  
+verifies ownership and stack count before applying the bonus. The contract also manages the  
+bind/unbind mechanism, requiring a SAKART payment for unbinding that is automatically  
+burned.
+21. Blockchain Integration
+The blockchain integration follows the 'invisible blockchain' design philosophy: players  
+should never feel like they are interacting with a blockchain product unless they choose to  
+engage with the marketplace or token features. All core gameplay, including the full 200-
+level campaign, PvP, Survival Mode, and hero progression, functions identically whether or  
+not the player has connected a wallet. Blockchain features enhance the experience for players  
+who want true asset ownership and tradable items, but they are never required for gameplay.
+21.1 Wallet Integration
+Wallet  connection is handled through Immutable's Passport  wallet abstraction system.  
+Passport provides a seamless onboarding experience that allows players to create a wallet  
+using  social  login  (email,  Google,  Apple)  without  needing  to  understand  blockchain  
+concepts. For players who already have Web3 wallets, Passport supports direct connection  
+through  MetaMask,  WalletConnect,  and  other  popular  wallet  providers.  The  wallet  
+connection is optional and can be deferred indefinitely without affecting gameplay access.
+21.2 Chain Outage Fallback
+As confirmed during design review with Hermes, the game implements a chain outage  
+fallback  system.  If  the  Immutable  zkEVM  network  experiences  downtime,  gameplay
+
+--- Page 34 ---
+
+Sakartvelo Defenders | Game Design Bible v3.0
+29continues  uninterrupted.  All  gameplay  state  (level  progress,  star  completions,  hero  
+experience) is tracked locally and synced to the blockchain when connectivity resumes.  
+Blockchain-specific transactions (marketplace trades, token transfers, NFT operations) are  
+queued locally and submitted automatically in order when the chain comes back online. This  
+ensures that players never lose progress due to infrastructure issues.
+21.3 Invisible Blockchain Philosophy
+The invisible blockchain philosophy extends to every aspect of the game's design. There is  
+no blockchain tutorial, no crypto jargon in the UI, and no requirement to understand gas,  
+wallets, or smart contracts to enjoy the full gameplay experience. The UI uses standard  
+gaming terminology ('Shop' instead of 'Marketplace,' 'Items' instead of 'NFTs,' 'Coins'  
+instead of 'Tokens') for all core gameplay interactions. Blockchain-specific terminology is  
+only used in the dedicated marketplace section, which players only see if they choose to  
+explore trading features.
+22. Multi-Account Prevention
+Multi-account prevention is critical for the SAKART economy because each account can  
+earn SAKART through star completions. Without prevention, a single person could create  
+multiple accounts, complete the early (easier) levels on each account to farm SAKART, and  
+then consolidate the tokens through marketplace trades. This would undermine the structural  
+anti-inflation design and devalue the token for legitimate players.
+The prevention system uses multiple layers. At the wallet level, Passport's identity system  
+ties each account to a verified identity (email, phone, or social login), making it difficult to  
+create large numbers of accounts. At the gameplay level, progression requirements (15/20  
+stars to unlock the next era) ensure that farming accounts must invest significant time before  
+earning  meaningful  SAKART.  At  the  transaction  level,  the  marketplace  monitors  for  
+patterns consistent with multi-account farming (multiple accounts sending tokens to a single  
+address within a short timeframe) and flags suspicious activity for investigation.
+The  blacklist  function in  the  SAKART  token contract  allows  flagged accounts  to  be  
+suspended from token transactions while preserving their gameplay progress. This ensures  
+that legitimate players who happen to share IP addresses (family members, university  
+networks)  are  not  unfairly  penalized.  The  threshold  for  blacklisting  is  intentionally  
+conservative, requiring multiple indicators of farming behavior before action is taken.
+
+--- Page 35 ---
+
+Sakartvelo Defenders | Game Design Bible v3.0
+3023. Competitive Analysis
+The competitive landscape for tower defense games includes established Web2 titles and a  
+growing  number  of  Web3  gaming  projects.  Sakartvelo  Defenders  differentiates  itself  
+through the unique combination of historical education, invisible blockchain integration, and  
+a solo-developer-friendly PWA architecture. The following comparison highlights key  
+differences between Sakartvelo Defenders and the most relevant competitors in the tower  
+defense genre.
+FeatureSakartvelo 
+DefendersKingdom RushBloons TD 6Arknights
+Historical Theme10 Georgian erasGeneric fantasyNonePost-apocalyptic
+BlockchainInvisible 
+(ERC-20/721/115
+5)NoneNoneNone
+PlatformPWA (browser, 
+any device)Mobile onlyMobile + PCMobile + PC
+EconomyPlayer-owned 
+(SAKART)Premium 
+currencyPremium 
+currencyGacha system
+Asset OwnershipTrue (NFT 
+skins/scrolls)NoneNoneNone
+Offline PlayFull campaignYesYesRequires internet
+EducationalGeorgian history 
+focusNoneNoneLore-based
+Solo Dev Budget$100/month 
+feasibleTeam requiredTeam requiredTeam required
+23.1 Web2 Tower Defense Landscape
+The Web2 tower defense market is dominated by Kingdom Rush, Bloons TD 6, and  
+Arknights. These games represent the gold standard for tower defense gameplay and provide  
+the benchmark for quality that Sakartvelo Defenders must meet. Kingdom Rush is known for  
+its tight level design and tower upgrade system. Bloons TD 6 offers enormous content depth  
+with hundreds of upgrades and game modes. Arknights combines tower defense with gacha  
+collection mechanics and a rich narrative.
+Sakartvelo Defenders borrows the best elements from each: Kingdom Rush's focused level  
+design and upgrade clarity, Bloons TD 6's content volume and replayability, and Arknights'  
+narrative engagement (adapted to historical rather than fictional storytelling). The key
+
+--- Page 36 ---
+
+Sakartvelo Defenders | Game Design Bible v3.0
+31differentiator  is  the  historical  education  component,  which  provides  a  unique  value  
+proposition that none of these competitors offer. Additionally, the invisible blockchain  
+integration provides true asset ownership without the friction that has prevented Web3  
+games from competing with Web2 quality.
+23.2 Web3 Gaming Landscape
+Web3 tower defense games are a nascent category with few established titles. Most Web3  
+games in this space have failed because they prioritize tokenomics over gameplay, resulting  
+in products that are essentially financial instruments with game-like interfaces. Sakartvelo  
+Defenders takes the opposite approach: the gameplay is designed to be competitive with  
+Web2 titles, and blockchain is an invisible infrastructure layer that enhances the experience  
+without defining it.
+The invisible blockchain philosophy is the primary competitive advantage in the Web3  
+space. By eliminating wallet requirements, gas fees, and crypto jargon from the core  
+experience, Sakartvelo Defenders can attract the much larger Web2 gaming audience while  
+still  providing  Web3  benefits  (true  ownership,  player-driven  economy,  transparent  
+governance) to players who choose to engage with those features. This bridge between Web2  
+and Web3 audiences is the game's most significant market opportunity.
+24. Art Pipeline
+The art pipeline is designed around the constraints of solo development with AI-generated  
+art. All visual assets are created using AI image generation tools, guided by a comprehensive  
+Art Style Guide (see companion document) that ensures consistency across all 10 eras, 10  
+tower types, 200 maps, and hundreds of enemy and hero designs. The Art Style Guide  
+provides era-specific color palettes, architectural reference keywords, character proportion  
+standards, and prompt templates that enable reproducible, consistent output from AI tools.
+24.1 Style Bible System
+The Art Style Guide v2.0 (to be updated with the new 10-era structure) provides the  
+authoritative reference for all visual assets. The guide defines a 2D isometric art style with  
+cel-shaded lighting, a consistent character proportion system (10-unit body scale), era-
+specific color palettes (8 colors per era), and tower silhouette guidelines that ensure each  
+tower type is visually distinct at small sizes. Every AI generation prompt includes era-
+appropriate keywords drawn from the style guide, ensuring that assets from different eras are  
+visually cohesive within their period while being clearly distinct across periods.
+
+--- Page 37 ---
+
+Sakartvelo Defenders | Game Design Bible v3.0
+3224.2 AI Generation Workflow
+The workflow begins with a prompt template that incorporates the style guide parameters for  
+the target era and asset type. The prompt includes era-specific color palette references,  
+architectural keywords (e.g., 'Svan medieval stone tower' for Era 4, 'Soviet brutalist concrete'  
+for Era 8), and composition guidelines (isometric perspective, cel-shaded lighting, no text  
+overlays). Generated images are reviewed against the style guide consistency checklist,  
+which verifies color accuracy, proportion correctness, silhouette clarity, and era-appropriate  
+architectural details.
+Assets that pass the consistency check are composited into the game at the appropriate  
+resolution.  The  isometric  perspective  and  2D  art  style  make  asset  compositing  
+straightforward, as all elements share the same perspective and lighting model. The style  
+guide's standardization enables efficient batch generation: a single prompt template with era-
+specific parameter substitutions can produce an entire era's worth of tower skins, map  
+backgrounds, and character art in a single generation session.
+25. Tech Stack
+The technology choices for Sakartvelo Defenders are driven by the constraint of solo  
+development on a $100/month budget. Every technology in the stack is either free or within  
+the budget envelope, and the architecture is designed to minimize ongoing costs while  
+maximizing  scalability.  The  combination  of  Godot  for  game  development,  PWA  for  
+deployment, and Immutable zkEVM for blockchain creates a complete, production-ready  
+stack with zero server hosting costs.
+Component Technology Rationale
+Game Engine Godot 4.x Free, open-source, excellent 2D  
+support, PWA export
+Deployment PWA (Progressive Web App) Zero server costs, offline play, 
+browser-based
+Blockchain Immutable zkEVM Zero gas, EVM compatible, 
+Passport wallet
+Token Standard ERC-20 (SAKART) Well-established, wide tooling 
+support
+Skin Standard ERC-1155 Fungible + non-fungible in one 
+contract
+Scroll Standard ERC-721 Distinct NFT assets with 
+metadata
+
+--- Page 38 ---
+
+Sakartvelo Defenders | Game Design Bible v3.0
+33Component Technology Rationale
+AI Art Stable Diffusion / DALL-E Style guide-driven prompt 
+architecture
+Asset Storage IPFS Decentralized, persistent, 
+censorship-resistant
+Website Vercel (static) Free tier, fast CDN, automatic 
+HTTPS
+Budget $100/month Vercel free + Immutable free + 
+domain only
+25.1 Godot 4.x and PWA Architecture
+Godot 4.x was selected as the game engine for several reasons: it is free and open-source, it  
+has excellent 2D rendering capabilities, it supports PWA export natively, and it has a small  
+but active community. The PWA deployment model means the game runs entirely in the  
+browser with no server-side game logic. All gameplay computation happens on the player's  
+device, eliminating the need for game servers. The only server interactions are blockchain  
+transactions  (handled  by  Immutable's  infrastructure)  and  website  hosting  (handled  by  
+Vercel's free tier).
+The PWA architecture also provides offline gameplay capabilities. The full campaign, all  
+tower and hero data, and all map assets are cached locally through the PWA service worker.  
+Players can continue playing the campaign even without internet access, with blockchain  
+transactions queued for later submission. This offline capability is a significant competitive  
+advantage over cloud-dependent games and aligns with the design philosophy of removing  
+all friction from the player experience.
+25.2 Blockchain Infrastructure
+Immutable zkEVM provides the blockchain infrastructure with two critical advantages: zero  
+gas fees for players and EVM compatibility. Zero gas is essential for the invisible blockchain  
+philosophy, as any visible transaction cost would immediately break the illusion of a  
+traditional game. EVM compatibility ensures that the smart contracts can use established  
+standards (ERC-20, ERC-721, ERC-1155) and benefit from the extensive Ethereum tooling  
+ecosystem.
+Passport, Immutable's wallet abstraction layer, handles wallet creation and management.  
+Players who have never used blockchain before can create a wallet through a simple email  
+signup, while experienced Web3 users can connect their existing wallets. The Passport
+
+--- Page 39 ---
+
+Sakartvelo Defenders | Game Design Bible v3.0
+34system  handles  private  key  management,  transaction  signing,  and  network  switching  
+automatically, abstracting all blockchain complexity away from the player.
+26. Design Principles
+The following principles are the non-negotiable rules that govern all design decisions in  
+Sakartvelo  Defenders.  When  any  design  question  arises,  these  principles  provide  the  
+definitive answer. They are not suggestions or guidelines; they are hard constraints that  
+cannot be overridden without a deliberate design review.
+26.1 No-Nerf Rule
+Once a tower, hero, scroll, or ability is released, its core functionality will never be nerfed  
+(reduced in power). If something is too powerful, the response is to buff everything else to  
+match, not to weaken the overperforming element. This principle protects player investment  
+and builds trust. A player who spends time and resources mastering a specific strategy should  
+never wake up to find that strategy has been intentionally weakened. The no-nerf rule is the  
+most important design principle in the game.
+26.2 Invisible Blockchain
+No player should ever feel like they are interacting with a blockchain product unless they  
+choose to engage with marketplace or token features. All UI language uses standard gaming  
+terminology. No blockchain tutorial is required. No gas fees are visible to players. Wallet  
+creation uses familiar social login methods. The blockchain exists as infrastructure, not as a  
+feature that players must understand or engage with.
+26.3 Historical Accuracy
+The game is chronologically accurate and committed to truthful representation of Georgian  
+history. Eras follow the correct historical sequence. Towers, enemies, and heroes are based  
+on real historical references. The Stalin era is presented factually, with neither glorification  
+nor  erasure.  When  the  historical  record  is  ambiguous,  the  game  acknowledges  the  
+uncertainty rather than presenting speculation as fact.
+26.4 Solo Developer Feasibility
+Every feature must be implementable by a solo developer on a $100/month budget. This  
+constraint drives technology choices (PWA over dedicated servers, AI-generated art over  
+hand-drawn assets, Immutable zkEVM over custom blockchain), content scope (10 eras with
+
+--- Page 40 ---
+
+Sakartvelo Defenders | Game Design Bible v3.0
+3520 levels each rather than open-ended content), and feature prioritization. Features that  
+cannot be implemented within these constraints are deferred to post-launch community  
+contributions or removed from the design entirely.
+26.5 Accessibility
+The game must be accessible to players with no prior experience with tower defense games,  
+blockchain technology, or Georgian history. The tutorial system teaches core mechanics  
+organically. Difficulty is calibrated to allow casual players to progress while providing  
+meaningful challenges for dedicated players. Educational content is available but never  
+forced. The blockchain is invisible to players who do not seek it out. Cultural references are  
+explained in context rather than assumed as prior knowledge.
+27. Roadmap
+The roadmap is organized into six phases spanning approximately 19 months from project  
+start to full launch. Each phase has clearly defined deliverables and budget requirements. The  
+phased approach ensures that the game is playable at each stage (a minimum viable product  
+after Phase 2, a blockchain-integrated product after Phase 3, and the full product after Phase  
+4), allowing for early playtesting and community feedback throughout development.
+Phase Timeline Key Deliverables Budget
+Phase 1: Foundation Months 1-3 Core gameplay loop, 
+Era 0-1 (40 levels), 
+basic UI, Godot PWA 
+setup$0 (free tools)
+Phase 2: Expansion Months 4-6 Era 2-4 (60 more 
+levels), hero system, 
+scroll system, synergy 
+system$0 (free tools)
+Phase 3: Blockchain Months 7-9 Immutable integration,  
+SAKART contract, 
+ERC-1155 skins, 
+marketplace MVP$0 (Immutable free 
+tier)
+Phase 4: Full Campaign Months 10-14 Era 5-9 (100 more 
+levels), all 10 tower 
+types, PvP system, 
+Survival Mode$0 (free tools)
+
+--- Page 41 ---
+
+Sakartvelo Defenders | Game Design Bible v3.0
+36Phase Timeline Key Deliverables Budget
+Phase 5: Polish Months 15-18 Art refinement, 
+educational system, 
+seasons, competitive 
+features$300 (domain + basic 
+marketing)
+Phase 6: Launch Month 19 Full game launch, 
+marketing push, 
+community building, 
+marketplace open$100/month ongoing
+27.1 Phase 1: Foundation (Months 1-3)
+The foundation phase establishes the core game engine, the fundamental gameplay loop, and  
+the first 40 levels of content (Era 0 and Era 1). Key technical deliverables include the Godot  
+4.x project setup, PWA export configuration, the tower placement system, enemy wave  
+system, hero ability framework, and the basic UI/UX for level selection, gameplay HUD, and  
+settings. Art deliverables include the Art Style Guide, era-specific color palettes for Era 0 and  
+Era 1, and all tower and enemy visual assets for the first two eras.
+By the end of Phase 1, the game should be a playable tower defense experience with 40  
+levels, 2 tower types (Archer Tower and Catapult/Trebuchet), 1 hero per era (Medea and  
+King Pharnavaz), and the basic star-based progression system. This playable prototype will  
+be used for initial playtesting and feedback collection, informing the design decisions for  
+subsequent phases.
+27.2 Phase 2: Expansion (Months 4-6)
+The expansion phase adds 60 more levels (Era 2, 3, and 4), introduces the remaining initial  
+tower types, implements the scroll system, and builds out the synergy system. This phase  
+covers the most dramatic period of Georgian history, from the Arab invasions through the  
+Golden Age to the Mongol Catastrophe, and requires the most diverse set of visual assets.  
+The hero roster expands to include David IV, Queen Tamar, and the Bagrationi resistance  
+heroes.
+By the end of Phase 2, the game should have 100 playable levels across 5 eras, 6-7 tower  
+types, 6-7 heroes, the full scroll system (both standard and mastery), and the synergy system  
+with at least 10 active combinations. This represents a substantial playable experience that  
+can be shared with a wider audience for testing.
+
+--- Page 42 ---
+
+Sakartvelo Defenders | Game Design Bible v3.0
+3727.3 Phase 3: Blockchain Integration (Months 7-9)
+The blockchain phase integrates Immutable zkEVM into the existing game. Key deliverables  
+include:  SAKART  ERC-20  token  contract  deployment,  Passport  wallet  integration,  
+ERC-1155  skin  contract  with  marketplace,  ERC-721  mastery  scroll  contract,  and  the  
+marketplace UI with the confirmed tooltip system. This phase also implements the chain  
+outage  fallback  system,  ensuring  that  gameplay  continues  uninterrupted  during  any  
+blockchain downtime.
+By the end of Phase 3, the game should be a fully functional Web3-integrated tower defense  
+game with 100 levels, real token economics, tradable cosmetic skins, and mastery scroll  
+NFTs. The invisible blockchain philosophy must be validated: players with no blockchain  
+experience should be able to play the full 100-level campaign without ever encountering  
+crypto jargon or gas fees.
+27.4 Phase 4: Full Campaign (Months 10-14)
+The full campaign phase adds the remaining 100 levels (Era 5 through Era 9), completing the  
+200-level campaign. This phase also implements the final tower types (Gunpowder through  
+Tech towers), the PvP system, and Survival Mode. The five eras in this phase cover the most  
+diverse range of historical periods, from early modern warfare to the Soviet era to modern  
+Georgia, requiring the broadest range of visual assets in the entire project.
+The PvP system implementation follows the attack-then-defend format with RPS turn order  
+determination, identical loadouts, no re-rolls, and AI-managed defenses. The competitive  
+system must be balanced and fair from launch, with a league system organized by skill tiers.  
+Survival Mode provides the endless challenge format with a global leaderboard.
+27.5 Phase 5: Polish and Phase 6: Launch
+The polish phase (months 15-18) focuses on art refinement, educational content completion,  
+seasonal event system, and competitive feature tuning. The historical pop-up system is  
+finalized with content for all 200 levels, the cultural footer is implemented, and the in-game  
+encyclopedia is populated. The art pipeline is optimized for consistency, and any AI-
+generated assets that do not meet the style guide standards are regenerated.
+The launch phase (month 19) is the public release of the complete game. Marketing efforts  
+focus  on  tower  defense  communities,  Web3  gaming  forums,  the  Georgian  diaspora  
+community, and educational gaming advocates. The marketplace opens for full trading, the  
+first season begins, and community management systems (Discord, social media) are fully  
+operational.  Post-launch  development  continues  with  seasonal  content  updates  and  
+community-driven feature requests.
+
+--- Page 43 ---
+
+Sakartvelo Defenders | Game Design Bible v3.0
+3828. Changelog (v2.0 to v3.0)
+This section documents all changes made to the Game Design Bible between version 2.0 and  
+version 3.0. The changes are driven by comprehensive Georgian history research that  
+revealed significant historical inaccuracies in the previous era structure, user feedback on  
+specific game systems, and design review feedback from Hermes. The v3.0 update is the  
+most substantial revision to the Bible since the initial creation.
+Section Change Reason
+3: Eras Expanded from 9 to 10 eras First Democratic Republic kept 
+separate (no merging)
+3.2 Renamed era Era 2: Age of Invasions replaces 
+Golden Age of Svaneti
+3.4 New era content Era 3: Georgian Golden Age 
+(David IV + Tamar, both heroes)
+3.5 New era Era 4: Mongol Catastrophe 
+(1225-1500 AD) added
+3.6 Renamed era Era 5: Between Empires 
+replaces Kakheti Wine Country
+3.8 New era Era 7: First Democratic Republic  
+(1918-1921) separated
+3.9 New era content Era 8: Soviet Century (Stalin 
+handled historically)
+5: Enemies Updated per-era enemy 
+examplesAligned with new chronological 
+era structure
+6: Heroes Added David IV + Tamar as 
+separate heroesUser confirmed: more heroes is  
+better
+6: Heroes Stalin NOT a playable hero Historical content only, factual 
+presentation
+7: Maps Elevation mechanic confirmed Towers on higher ground get 
++15-20% range
+10: Scrolls Removed SAKART Boost scroll User confirmed: no SAKART 
+boost
+10: Scrolls Mastery scroll stack system 
+defined3-stack max = +9% per type
+11: Skins Added marketplace tooltip 
+requirementHermes feedback: item info 
+transparency
+
+--- Page 44 ---
+
+Sakartvelo Defenders | Game Design Bible v3.0
+39Section Change Reason
+12: PvP No re-rolls, identical loadouts, 
+AI defenseUser-confirmed PvP design
+16: Education Added cultural footer 
+requirementHermes feedback: cultural 
+touch
+16: Education Historical pop-ups are free (no 
+SAKART)Hermes feedback: education 
+should be free
+18: Economy Burn mechanisms expanded Bind/unbind, seasons, 
+cosmetics, potential reroll
