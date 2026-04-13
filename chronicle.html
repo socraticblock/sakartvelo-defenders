@@ -6,6 +6,7 @@
   <title>Chronicle — Sakartvelo Defenders</title>
   <meta name="description" content="The complete historical chronicle of Sakartvelo Defenders -- every era, hero, and battle documented in Georgian history.">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
 </head>
 <body>
 
@@ -21,9 +22,11 @@
         <li><a href="about.html">About</a></li>
         <li><a href="gameplay.html">Gameplay</a></li>
         <li><a href="heroes.html">Heroes</a></li>
-        <li><a href="https://sakartvelo-defenders.vercel.app/game" target="_blank">Game</a></li>
+        <li><a href="chronicle.html" class="active">Chronicle</a></li>
+        <li><a href="blockchain.html">Blockchain</a></li>
         <li><a href="faq.html">FAQ</a></li>
-        <li><a href="#waitlist" class="nav-cta">Join Waitlist</a></li>
+        <li><a href="https://sakartvelo-defenders.vercel.app/game" target="_blank">Game</a></li>
+        <li><a href="index.html#waitlist" class="nav-cta">Join Waitlist</a></li>
       </ul>
       <button class="nav-toggle" id="navToggle" aria-label="Menu">
         <span></span><span></span><span></span>
@@ -61,9 +64,9 @@
           <div class="timeline-content">
             <div class="timeline-header">
               <h3>Era 0: Ancient Colchis</h3>
-              <span class="badge badge-gold">~1500 BC - ~300 BC</span>
+              <span class="badge badge-gold">~600 BC - ~100 BC</span>
             </div>
-            <p>The legendary kingdom of the Golden Fleece. Jason and the Argonauts sailed here seeking the Golden Fleece, guided by the sorceress Medea. Dense Colchian forests, river deltas, and Black Sea coastal fortifications.</p>
+            <p>The legendary kingdom of the Golden Fleece. The Medea statue in Batumi overlooks the Black Sea coast. Explore the archaeological site of Vani, gold-panning with sheep fleeces, and battle devi -- many-headed ogres from Georgian myth. Dense Colchian forests, river deltas, and Black Sea coastal fortifications.</p>
             <div class="timeline-battles">
               <h4>Key Battles & Events</h4>
               <ul>
@@ -348,8 +351,8 @@
           <p>Phase 1: Mongol cavalry swarm. Phase 2: Archer volley formation. Phase 3: Duel -- requires hero ability timing.</p>
         </div>
         <div class="card fade-in-up">
-          <h4>Era 4 -- Mongol General Subutai (Proxy)</h4>
-          <p>Phase 1: Heavy cavalry. Phase 2: Siege engines. Phase 3: Must be killed quickly -- respawns with double HP after 30 seconds.</p>
+          <h4>Era 4 -- General Chormaqan and Timur (Tamerlane)</h4>
+          <p>Phase 1: Heavy cavalry. Phase 2: Siege engines. Phase 3: Must be killed quickly -- respawns with double HP after 30 seconds. General Chormaqan led the actual 1236-1243 conquest; Timur (Tamerlane) appears as second boss representing later Mongol destruction.</p>
         </div>
         <div class="card fade-in-up">
           <h4>Era 5 -- Agha Mohammad Khan</h4>
@@ -424,6 +427,7 @@
             <li><a href="gameplay.html">Gameplay</a></li>
             <li><a href="heroes.html">Heroes</a></li>
             <li><a href="chronicle.html">Chronicle</a></li>
+            <li><a href="blockchain.html">Blockchain</a></li>
             <li><a href="faq.html">FAQ</a></li>
           </ul>
         </div>
@@ -436,6 +440,13 @@
       </div>
     </div>
   </footer>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24">
+      <path d="M12 4l-8 8h6v8h4v-8h6z"></path>
+    </svg>
+  </button>
 
   <script>
     // Mobile nav toggle
@@ -453,17 +464,32 @@
       });
     });
 
-    // Intersection Observer for fade-in animations
+    // Intersection Observer for scroll animations
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('fade-in-up');
+          entry.target.classList.add('visible');
           observer.unobserve(entry.target);
         }
       });
     }, { threshold: 0.1 });
 
-    document.querySelectorAll('.card, .game-card, .timeline-item').forEach(el => observer.observe(el));
+    document.querySelectorAll('.card, .game-card, .timeline-item, .era-card, .hero-card').forEach(el => observer.observe(el));
+
+    // Back to top button
+    const backToTop = document.getElementById('backToTop');
+    
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 500) {
+        backToTop.classList.add('visible');
+      } else {
+        backToTop.classList.remove('visible');
+      }
+    });
+    
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
   </script>
 
 </body>

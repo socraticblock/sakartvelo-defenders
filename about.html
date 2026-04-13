@@ -6,6 +6,7 @@
   <title>About -- Sakartvelo Defenders</title>
   <meta name="description" content="The vision behind Sakartvelo Defenders: cultural education through tower defense gameplay spanning 3,000 years of Georgian history.">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
 </head>
 <body>
 
@@ -20,7 +21,12 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html" class="active">About</a></li>
         <li><a href="gameplay.html">Gameplay</a></li>
-        <li><a href="#waitlist" class="nav-cta">Join Waitlist</a></li>
+        <li><a href="heroes.html">Heroes</a></li>
+        <li><a href="chronicle.html">Chronicle</a></li>
+        <li><a href="blockchain.html">Blockchain</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="https://sakartvelo-defenders.vercel.app/game" target="_blank">Game</a></li>
+        <li><a href="index.html#waitlist" class="nav-cta">Join Waitlist</a></li>
       </ul>
       <button class="nav-toggle" id="navToggle" aria-label="Menu">
         <span></span><span></span><span></span>
@@ -95,24 +101,29 @@
       </p>
       <div class="grid grid-2 stagger" style="max-width: 900px; margin: 0 auto;">
         <div class="card fade-in-up">
-          <div class="card-icon gold">&#10023;</div>
-          <h3>Cultural Sovereignty</h3>
-          <p>Georgia sits at the intersection of Europe and Asia, pulled between empires for millennia. Sakartvelo Defenders doesn't soften this history -- it embraces it. Every era, every battle, every hero is drawn from documented Georgian history and legend. Players finish the campaign knowing more about Georgia than when they started. This is cultural sovereignty in game form.</p>
+          <div class="card-icon green">&#9760;</div>
+          <h3>Historical Accuracy</h3>
+          <p>Chronologically accurate. When the historical record is ambiguous, the game acknowledges uncertainty rather than presenting speculation as fact. Every era, every battle, every hero is drawn from documented Georgian history and legend. Players finish the campaign knowing more about Georgia than when they started.</p>
         </div>
         <div class="card fade-in-up">
           <div class="card-icon red">&#9876;</div>
           <h3>The No-Nerf Rule</h3>
-          <p>When something is too strong, traditional games nerf it. We don't. If the community discovers a strategy that breaks the game, we ask: "Why does this work? Is it fun for everyone?" If yes, we balance around it -- adding counter-strategies rather than removing player agency. Players who master a system should keep their mastery.</p>
+          <p>Once released, core functionality is never nerfed. If the community discovers a strategy that breaks the game, we ask: "Why does this work? Is it fun for everyone?" If yes, we balance around it -- adding counter-strategies rather than removing player agency. Players who master a system should keep their mastery.</p>
         </div>
         <div class="card fade-in-up">
           <div class="card-icon green">&#9650;</div>
-          <h3>Solo-Dev Sustainable</h3>
+          <h3>Solo-Dev Feasibility</h3>
           <p>One person building this. Godot 4.x for the game engine, HTML/CSS/JS for the marketing site, zero external dependencies beyond fonts and icons. PWA architecture means no app store friction, no platform take rates, no server costs beyond static hosting. Revenue from a 1.8% marketplace fee scales naturally with player activity -- if no one plays, nothing is spent.</p>
         </div>
         <div class="card fade-in-up">
           <div class="card-icon blue">&#9734;</div>
           <h3>Invisible Blockchain</h3>
           <p>The blockchain is infrastructure, not a feature. Players create an account with email, receive an automatically-generated wallet, and earn SAKART tokens through gameplay without knowing a private key exists. The complexity is hidden; the ownership is real. Players can export their wallet credentials once they're ready.</p>
+        </div>
+        <div class="card fade-in-up">
+          <div class="card-icon blue">&#9881;</div>
+          <h3>Accessibility</h3>
+          <p>Must be accessible to players with no prior experience with tower defense, blockchain, or Georgian history. The tutorial teaches core mechanics organically -- no walls of text, no prerequisite knowledge. If a player has never touched a TD game, they should still be able to pick this up and enjoy it from level one.</p>
         </div>
       </div>
     </div>
@@ -130,7 +141,7 @@
         <div class="prose">
           <h3>From the Black Sea to the Caucasus Peaks</h3>
           <p>
-            Imagine starting in ancient Colchis -- dense forests, stone ruins, the salt air of the Black Sea coast. You're learning the basics: placing towers, building mazes, timing hero abilities. The enemies are simple, the stakes are low. This is 1500 BC, and you're defending one of the world's oldest civilizations.
+            Imagine starting in ancient Colchis -- dense forests, stone ruins, the salt air of the Black Sea coast. You're learning the basics: placing towers, building mazes, timing hero abilities. The enemies are simple, the stakes are low. This is 600 BC, and you're defending one of the world's oldest civilizations.
           </p>
           <p>
             Fast forward through the centuries. Era by era, the mechanics deepen. By Era 3 -- The Georgian Golden Age -- you're commanding the forces of David IV and Queen Tamar, managing complex tower synergy chains, commanding multiple heroes with interlocking abilities, and defending against the most diverse enemy compositions in the game. Every level is a real historical engagement, researched and adapted for gameplay.
@@ -150,7 +161,7 @@
         <div>
           <div class="card fade-in-up" style="border-left: 3px solid var(--red);">
             <h4>Era 0: Ancient Colchis</h4>
-            <p style="color: var(--slate-light);">~1500 BC - ~300 BC. The Golden Fleece. Tutorial and onboarding.</p>
+            <p style="color: var(--slate-light);">~600 BC - ~100 BC. The Golden Fleece. Tutorial and onboarding.</p>
           </div>
           <div class="card fade-in-up" style="border-left: 3px solid var(--gold);">
             <h4>Era 1: Kingdom of Iberia</h4>
@@ -207,18 +218,36 @@
     <div class="container">
       <div class="footer-inner">
         <div class="footer-left">
-          <p>&copy; 2026 Sakartvelo Defenders. A cultural celebration through historical gameplay.</p>
-          <p class="footer-georgian">საქართველო</p>
+          <div class="footer-content">
+            <p>&copy; 2026 Sakartvelo Defenders. A cultural celebration through historical gameplay.</p>
+            <p class="footer-georgian">საქართველო</p>
+          </div>
+          <ul class="footer-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gameplay.html">Gameplay</a></li>
+            <li><a href="heroes.html">Heroes</a></li>
+            <li><a href="chronicle.html">Chronicle</a></li>
+            <li><a href="blockchain.html">Blockchain</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
         </div>
         <div class="footer-right">
           <a href="https://x.com" target="_blank" rel="noopener">X</a>
-          <a href="https://discord.gg" target="_blank">Discord</a>
-          <a href="https://github.com" target="_blank">GitHub</a>
-          <a href="https://youtube.com" target="_blank">YouTube</a>
+          <a href="https://discord.gg" target="_blank" rel="noopener">Discord</a>
+          <a href="https://github.com/socraticblock/sakartvelo-defenders" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://youtube.com" target="_blank" rel="noopener">YouTube</a>
         </div>
       </div>
     </div>
   </footer>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24">
+      <path d="M12 4l-8 8h6v8h4v-8h6z"></path>
+    </svg>
+  </button>
 
   <script>
     // Mobile nav toggle
@@ -236,17 +265,32 @@
       });
     });
 
-    // Intersection Observer for fade-in animations
+    // Intersection Observer for scroll animations
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('fade-in-up');
+          entry.target.classList.add('visible');
           observer.unobserve(entry.target);
         }
       });
     }, { threshold: 0.1 });
 
-    document.querySelectorAll('.card').forEach(el => observer.observe(el));
+    document.querySelectorAll('.card, .game-card, .timeline-item, .era-card, .hero-card').forEach(el => observer.observe(el));
+
+    // Back to top button
+    const backToTop = document.getElementById('backToTop');
+    
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 500) {
+        backToTop.classList.add('visible');
+      } else {
+        backToTop.classList.remove('visible');
+      }
+    });
+    
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
   </script>
 
 </body>

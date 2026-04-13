@@ -22,11 +22,15 @@
         <li><a href="about.html">About</a></li>
         <li><a href="gameplay.html">Gameplay</a></li>
         <li><a href="heroes.html">Heroes</a></li>
-        <li><a href="https://sakartvelo-defenders.vercel.app/game" target="_blank">Game</a></li>
+        <li><a href="chronicle.html">Chronicle</a></li>
+        <li><a href="blockchain.html">Blockchain</a></li>
         <li><a href="faq.html">FAQ</a></li>
-        <li><a href="#waitlist" class="nav-cta">Join Waitlist</a></li>
+        <li><a href="https://sakartvelo-defenders.vercel.app/game" target="_blank">Game</a></li>
+        <li><a href="index.html#waitlist" class="nav-cta">Join Waitlist</a></li>
       </ul>
-      
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </nav>
 
@@ -63,8 +67,8 @@
           <div class="stat-label">Levels</div>
         </div>
         <div class="stat">
-          <div class="stat-value">200</div>
-          <div class="stat-label">Levels at Launch</div>
+          <div class="stat-value">0</div>
+          <div class="stat-label">Pay-to-Win</div>
         </div>
       </div>
     </div>
@@ -79,9 +83,9 @@
       <h2 class="text-center">Built Different. Built Right.</h2>
       <div class="grid grid-3 stagger">
         <div class="card">
-          <div class="card-icon red">&#9876;</div>
-          <h3>Play First, Blockchain Second</h3>
-          <p>Players log in with email -- wallet is created automatically. No MetaMask tutorials. No seed phrases. Just play.</p>
+          <div class="card-icon blue">&#9734;</div>
+          <h3>Invisible Blockchain</h3>
+          <p>Players log in with email -- wallet is created automatically. No MetaMask tutorials. No seed phrases. The blockchain is infrastructure, not a feature. Just play.</p>
         </div>
         <div class="card">
           <div class="card-icon gold">&#9733;</div>
@@ -90,8 +94,18 @@
         </div>
         <div class="card">
           <div class="card-icon green">&#9760;</div>
-          <h3>History Drives Gameplay</h3>
-          <p>This isn't "culture as skin." Tower types, enemy formations, hero abilities, and map designs are all drawn from real Georgian history. You're not just playing a tower defense -- you're defending actual historical battles. This is cultural sovereignty in game form.</p>
+          <h3>Historical Accuracy</h3>
+          <p>Chronologically accurate. When the historical record is ambiguous, the game acknowledges uncertainty rather than presenting speculation as fact. Tower types, enemy formations, hero abilities, and map designs are all drawn from real Georgian history.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon red">&#9876;</div>
+          <h3>No-Nerf Rule</h3>
+          <p>Once released, core functionality is never nerfed. If a strategy is too strong, we buff everything else to match -- adding counter-strategies rather than removing player agency. Players who master a system keep their mastery.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon blue">&#9881;</div>
+          <h3>Accessibility</h3>
+          <p>Must be accessible to players with no prior experience with tower defense, blockchain, or Georgian history. The tutorial teaches core mechanics organically -- no walls of text, no prerequisite knowledge.</p>
         </div>
       </div>
     </div>
@@ -112,8 +126,8 @@
         <div class="era-card" data-era="0">
           <div class="era-number">Era 0 / Tutorial</div>
           <h4>Ancient Colchis</h4>
-          <div class="era-period">~1500 BC - ~300 BC</div>
-          <p>The legendary kingdom of the Golden Fleece. Medea, Aeetes, Jason. Dense Colchian forests, the Golden Fleece. New player onboarding with simpler mechanics.</p>
+          <div class="era-period">~600 BC - ~100 BC</div>
+          <p>The legendary kingdom of the Golden Fleece. The Medea statue in Batumi overlooks the Black Sea coast. Explore the archaeological site of Vani, gold-panning with sheep fleeces, and battle devi -- many-headed ogres from Georgian myth. New player onboarding with simpler mechanics.</p>
         </div>
 
         <div class="era-card" data-era="1">
@@ -127,35 +141,35 @@
           <div class="era-number">Era 2</div>
           <h4>Age of Invasions</h4>
           <div class="era-period">~630 - 1089 AD</div>
-          <p>Arab Emirs, Bagrationi Kings. Fortified sieges against Arab and Seljuk forces. Advanced synergy chains in snow-capped fortresses.</p>
+          <p>Arab Emirs, Bagrat III the Unifier, Didi Turkoba (Great Turkish Onslaught). Fortified sieges against Arab and Seljuk forces. Advanced synergy chains in snow-capped fortresses.</p>
         </div>
 
         <div class="era-card" data-era="3">
           <div class="era-number">Era 3</div>
           <h4>The Georgian Golden Age</h4>
           <div class="era-period">~1089 - 1225 AD</div>
-          <p>David IV, Queen Tamar. The zenith of Georgian power and culture. Royal guard towers, cathedral cannons, battlefield engineering.</p>
+          <p>David IV, Queen Tamar, Zakare Zakarian, Empire of Trebizond. The zenith of Georgian power and culture. Royal guard towers, cathedral cannons, battlefield engineering.</p>
         </div>
 
         <div class="era-card" data-era="4">
           <div class="era-number">Era 4</div>
           <h4>The Mongol Catastrophe</h4>
           <div class="era-period">~1225 - 1500 AD</div>
-          <p>Mongol Generals, Fragmented Kings. Devastation and retreat to mountain fortresses. Introduces mastery scroll system.</p>
+          <p>General Chormaqan, Fragmented Kings. Devastation and retreat to mountain fortresses. Introduces mastery scroll system.</p>
         </div>
 
         <div class="era-card" data-era="5">
           <div class="era-number">Era 5</div>
           <h4>Between Empires</h4>
           <div class="era-period">~1500 - 1801 AD</div>
-          <p>King Erekle II, Persian/Ottoman Rivals. Gunpowder appears. Caught between Ottoman and Persian empires.</p>
+          <p>Vakhtang VI the Lawgiver, King Erekle II, Totleben betrayal at Aspindza (1770). Gunpowder appears. Caught between Ottoman and Persian empires.</p>
         </div>
 
         <div class="era-card" data-era="6">
           <div class="era-number">Era 6</div>
           <h4>Russian Empire</h4>
           <div class="era-period">~1801 - 1918 AD</div>
-          <p>Annexed Nobility, Cultural Figures. Industrial-age technology, cultural renaissance under occupation.</p>
+          <p>Prince Pyotr Bagration, Cultural Figures. Industrial-age technology, cultural renaissance under occupation.</p>
         </div>
 
         <div class="era-card" data-era="7">
@@ -169,14 +183,14 @@
           <div class="era-number">Era 8</div>
           <h4>The Soviet Century</h4>
           <div class="era-period">~1921 - ~1991 AD</div>
-          <p>Soviet Era Figures. Soviet military tech, WWII, independence movement. Introduces survival mode.</p>
+          <p>Soviet Era Figures. Soviet military tech, ~190,000 Georgian KIA in WWII, 1956 Tbilisi Massacre, independence movement. Introduces survival mode.</p>
         </div>
 
         <div class="era-card" data-era="9">
           <div class="era-number">Era 9</div>
           <h4>Modern Georgia</h4>
           <div class="era-period">~1991 - Present</div>
-          <p>Modern democratic Georgia. Precision weapons, drone platforms, 2008 war. Endgame content.</p>
+          <p>Modern democratic Georgia. Precision weapons, drone platforms, 2008 war with Russian military. 2023-2024 political crisis context. Endgame content.</p>
         </div>
 
       </div>
@@ -201,7 +215,7 @@
         </div>
         <div class="card">
           <h3>Earn Stars</h3>
-          <p>Replay replays earn XP and in-game currency -- no SAKART. Farming is mathematically impossible.</p>
+          <p>1-3 stars per level. First-time star unlocks earn SAKART tokens. Each star can only be earned once -- replay farming is mathematically impossible.</p>
         </div>
         <div class="card">
           <h3>Unlock Eras</h3>
@@ -290,13 +304,14 @@
             <li><a href="gameplay.html">Gameplay</a></li>
             <li><a href="heroes.html">Heroes</a></li>
             <li><a href="chronicle.html">Chronicle</a></li>
+            <li><a href="blockchain.html">Blockchain</a></li>
             <li><a href="faq.html">FAQ</a></li>
           </ul>
         </div>
         <div class="footer-right">
           <a href="https://x.com" target="_blank" rel="noopener">X</a>
           <a href="https://discord.gg" target="_blank" rel="noopener">Discord</a>
-          <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://github.com/socraticblock/sakartvelo-defenders" target="_blank" rel="noopener">GitHub</a>
           <a href="https://youtube.com" target="_blank" rel="noopener">YouTube</a>
         </div>
       </div>
@@ -327,11 +342,6 @@
     });
 
     // Intersection Observer for scroll animations
-    const animateElements = document.querySelectorAll('.card, .era-card, .hero-card');
-    
-    // Add animate-on-scroll class to elements that should animate
-    animateElements.forEach(el => el.classList.add('animate-on-scroll'));
-    
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -340,21 +350,8 @@
         }
       });
     }, { threshold: 0.1 });
-    
-    // Observe elements
-    animateElements.forEach(el => observer.observe(el));
-    
-    // For elements already in viewport, show them immediately
-    setTimeout(() => {
-      animateElements.forEach(el => {
-        const rect = el.getBoundingClientRect();
-        if (rect.top < window.innerHeight && rect.bottom > 0) {
-          el.classList.add('visible');
-        }
-      });
-    }, 100);
 
-    // Dark mode handled via system preference
+    document.querySelectorAll('.card, .game-card, .timeline-item, .era-card, .hero-card').forEach(el => observer.observe(el));
 
     // Back to top button
     const backToTop = document.getElementById('backToTop');
