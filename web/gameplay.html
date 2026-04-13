@@ -6,6 +6,7 @@
   <title>Gameplay — Sakartvelo Defenders</title>
   <meta name="description" content="Master the core mechanics of Sakartvelo Defenders: 10 tower types, hero command, tower synergies, scrolls, PvP, survival mode, and the progression system across 10 eras of Georgian history.">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
 </head>
 <body>
 
@@ -20,8 +21,12 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="gameplay.html" class="active">Gameplay</a></li>
+        <li><a href="heroes.html">Heroes</a></li>
+        <li><a href="chronicle.html">Chronicle</a></li>
         <li><a href="blockchain.html">Blockchain</a></li>
-        <li><a href="#waitlist" class="nav-cta">Join Waitlist</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="https://sakartvelo-defenders.vercel.app/game" target="_blank">Game</a></li>
+        <li><a href="index.html#waitlist" class="nav-cta">Join Waitlist</a></li>
       </ul>
       <button class="nav-toggle" id="navToggle" aria-label="Menu">
         <span></span><span></span><span></span>
@@ -131,7 +136,7 @@
               <span class="badge badge-green">Era 0 — Path Control</span>
             </div>
           </div>
-          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">Blocks enemy paths and redirects movement. Creates winding mazes that maximize tower coverage. Wooden palisades evolve into stone walls, Soviet barricades, and modern barriers across eras.</p>
+          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">Blocks enemy paths and redirects movement. Creates winding mazes that maximize tower coverage. Wooden palisades evolve into stone walls, Soviet barricades, and modern barriers across eras. Level 3 gains damage reflection.</p>
           <div class="gc-stats">
             <div class="gc-stat">Cost <span>Low</span></div>
             <div class="gc-stat">Damage <span>None</span></div>
@@ -148,7 +153,7 @@
               <span class="badge badge-red">Era 1 — Fast Patrol</span>
             </div>
           </div>
-          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">Fast patrol units that intercept enemies along the path. High mobility, ideal for catching speed runners and plugging gaps in your defense. Iberian horsemen evolve through Georgian knights to modern cavalry.</p>
+          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">Fast patrol units that intercept enemies along the path. High mobility, ideal for catching speed runners and plugging gaps in your defense. Iberian horsemen evolve through Georgian knights to modern cavalry. Level 3 gains charge attack.</p>
           <div class="gc-stats">
             <div class="gc-stat">Cost <span>Medium</span></div>
             <div class="gc-stat">Damage <span>Medium</span></div>
@@ -165,7 +170,7 @@
               <span class="badge badge-gold">Era 2 — Heavy Damage</span>
             </div>
           </div>
-          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">Heavy damage, slow attack speed, excels against armored targets and structures. Fortified gatehouses and battlements designed to crack the toughest enemies of the Age of Invasions.</p>
+          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">Heavy damage, slow attack speed, excels against armored targets and structures. Fortified gatehouses and battlements designed to crack the toughest enemies of the Age of Invasions. Level 3 gains armor penetration.</p>
           <div class="gc-stats">
             <div class="gc-stat">Cost <span>High</span></div>
             <div class="gc-stat">Damage <span>Very High</span></div>
@@ -173,20 +178,20 @@
           </div>
         </div>
 
-        <!-- Magic/Shrine Tower -->
+        <!-- Church Shrine Tower -->
         <div class="game-card fade-in-up">
           <div class="gc-header">
             <div class="gc-icon" style="background: rgba(240,192,64,0.15); color: var(--geo-gold);">&#10023;</div>
             <div>
-              <h4>Magic / Shrine Tower</h4>
+              <h4>Church Shrine Tower</h4>
               <span class="badge badge-gold">Era 3 — Buff/Debuff</span>
             </div>
           </div>
-          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">Crowd control and buff/debuff effects. Church shrines and monasteries that slow enemies, weaken armor, or boost nearby towers. Essential for Golden Age synergy combinations.</p>
+          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">Church shrines and monasteries inspired by the Georgian Orthodox Church, which preserved Georgian national identity during centuries of Arab occupation. Abilities: <strong>"Bell Toll"</strong> slows enemies in a wide radius — church bells rallying defenders; <strong>"Sanctuary"</strong> creates a shield around nearby towers — fortified church walls; <strong>"Divine Light"</strong> (Level 3) increases nearby tower damage — spiritual inspiration that turns the tide of battle.</p>
           <div class="gc-stats">
             <div class="gc-stat">Cost <span>High</span></div>
             <div class="gc-stat">Damage <span>Low</span></div>
-            <div class="gc-stat">Effect <span>Crowd Control</span></div>
+            <div class="gc-stat">Effect <span>Crowd Control / Buff</span></div>
           </div>
         </div>
 
@@ -199,7 +204,7 @@
               <span class="badge badge-red">Era 5 — Long Range</span>
             </div>
           </div>
-          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">Long-range piercing projectiles that hit multiple enemies in a line. Cannon emplacements and musketry positions reflecting the early modern warfare between Ottoman and Persian empires.</p>
+          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">Long-range piercing projectiles that hit multiple enemies in a line. Cannon emplacements and musketry positions reflecting the early modern warfare between Ottoman and Persian empires. Level 3 gains explosive rounds.</p>
           <div class="gc-stats">
             <div class="gc-stat">Cost <span>High</span></div>
             <div class="gc-stat">Damage <span>High (Piercing)</span></div>
@@ -216,7 +221,7 @@
               <span class="badge badge-green">Era 6 — Rapid Fire</span>
             </div>
           </div>
-          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">Rapid-fire multi-target suppression. Machine gun nests and artillery emplacements of the Russian Empire era. Hoses down infantry swarms and suppresses cavalry charges with overwhelming fire rate.</p>
+          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">Rapid-fire multi-target suppression. Machine gun nests and artillery emplacements of the Russian Empire era. Hoses down infantry swarms and suppresses cavalry charges with overwhelming fire rate. Level 3 gains area suppression.</p>
           <div class="gc-stats">
             <div class="gc-stat">Cost <span>Medium-High</span></div>
             <div class="gc-stat">Damage <span>Medium (Multi)</span></div>
@@ -233,7 +238,7 @@
               <span class="badge badge-green">Era 8 — Heavy Armor</span>
             </div>
           </div>
-          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">Reinforced concrete bunkers and pillboxes. Massive survivability — can absorb damage that would destroy other towers. Soviet-era fortifications that hold the line when all else fails.</p>
+          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">Reinforced concrete bunkers and pillboxes. Massive survivability — can absorb damage that would destroy other towers. Soviet-era fortifications that hold the line when all else fails. Level 3 gains self-repair.</p>
           <div class="gc-stats">
             <div class="gc-stat">Cost <span>Very High</span></div>
             <div class="gc-stat">Armor <span>Extreme</span></div>
@@ -250,7 +255,7 @@
               <span class="badge badge-gold">Era 9 — Precision</span>
             </div>
           </div>
-          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">Precision strikes and drone support platforms. Modern military outposts with guided targeting. Can mark enemies for other towers to focus. The pinnacle of tower technology in the final era.</p>
+          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">Precision strikes and drone support platforms. Modern military outposts with guided targeting. Can mark enemies for other towers to focus. The pinnacle of tower technology in the final era. Level 3 gains target-locking precision strikes.</p>
           <div class="gc-stats">
             <div class="gc-stat">Cost <span>Very High</span></div>
             <div class="gc-stat">Damage <span>High (Precision)</span></div>
@@ -265,7 +270,8 @@
         <div class="card fade-in-up" style="border-left: 3px solid var(--geo-gold);">
           <div class="card-icon gold">&#9874;</div>
           <h3>Tower Synergy System</h3>
-          <p>Place specific tower combinations within a 3-tile adjacency radius to activate powerful synergy bonuses. Archer + Cavalry increases attack speed. Shrine + Wall creates a slowing zone. Each era introduces 2-3 new combos, building to a rich strategic toolkit.</p>
+          <p>Place specific tower combinations within a 3-tile adjacency radius to activate powerful synergy bonuses. Archer + Cavalry increases attack speed. Church Shrine + Wall creates a slowing zone. Each era introduces 2-3 new combos, building to a rich strategic toolkit.</p>
+          <p style="margin-bottom: 0;"><strong>Named Synergy Combos:</strong> <em>"Didgori Formation"</em> — military synergy reflecting David IV's legendary tactical formations, boosting adjacent tower damage and attack speed. <em>"Tamar's Grace"</em> — shrine-based defensive synergy that grants nearby towers damage resistance and slow regeneration. <em>"Caucasus Wall"</em> — barrier-heavy fortification synergy where multiple walls and barriers link together to create impassable fortified zones with shared damage reduction.</p>
         </div>
         <div class="card fade-in-up" style="border-left: 3px solid var(--geo-green);">
           <div class="card-icon green">&#9968;</div>
@@ -291,19 +297,19 @@
         <div class="card fade-in-up">
           <div class="card-icon red">&#9876;</div>
           <h3>Infantry</h3>
-          <p>Standard path movement at moderate speed and HP. The backbone of most waves. Ancient tribal warriors, Arab raiders, Ottoman janissaries, Soviet conscripts. Splash towers and chokepoints handle them.</p>
+          <p>Standard path movement at moderate speed and HP. The backbone of most waves. Splash towers and chokepoints handle them. Era variants: Colchian tribal warriors (Era 0), Arab foot soldiers (Era 2), Mongol infantry (Era 4), Ottoman janissaries (Era 5), Soviet conscripts (Era 8).</p>
         </div>
 
         <div class="card fade-in-up">
           <div class="card-icon gold">&#9760;</div>
           <h3>Cavalry</h3>
-          <p>Faster movement and higher HP than infantry. Mongol horse archers with hit-and-run tactics, Persian heavy cavalry, Soviet armor. Require focused fire and speed-reducing effects to counter.</p>
+          <p>Faster movement and higher HP than infantry. Require focused fire and speed-reducing effects to counter. Era variants: Iberian mounted archers (Era 1), Seljuk horsemen (Era 2), Mongol horse archers (Era 4), Persian qizilbash (Era 5), Cossack cavalry (Era 6).</p>
         </div>
 
         <div class="card fade-in-up">
           <div class="card-icon green">&#9762;</div>
           <h3>Siege Units</h3>
-          <p>Slow but devastating — they attack your towers directly. Battering rams, catapults, cannon. They don't follow the path — they destroy it. Forces you to defend the maze itself.</p>
+          <p>Slow but devastating — they attack your towers directly. They don't follow the path — they destroy it. Forces you to defend the maze itself. Era variants: Greek siege engines (Era 0), Arab siege towers (Era 2), Mongol catapults (Era 4), Ottoman bombards (Era 5), Russian artillery (Era 6).</p>
         </div>
 
         <div class="card fade-in-up">
@@ -323,7 +329,7 @@
       <div class="card fade-in-up" style="max-width: 700px; margin: var(--space-2xl) auto 0; text-align: center; border-top: 3px solid var(--geo-red);">
         <h3>Boss Encounters</h3>
         <p style="margin-bottom: 0;">
-          At the end of every 5th level (levels 5, 10, 15, 20), face named historical or mythological bosses with multi-phase fights. The Colchian Dragon, the Arab Emir of Tbilisi, Mongol General Subutai's proxy, Agha Mohammad Khan — each requires specific strategies and diverse tower compositions to defeat.
+          At the end of every 5th level (levels 5, 10, 15, 20), face named historical or mythological bosses with multi-phase fights. Aeetes, King of Colchis (Era 0), the Arab Emir of Tbilisi (Era 1), Seljuk Turk Warlord (Era 2), Jalal ad-Din (Era 3), General Chormaqan (Era 4, led the actual Mongol conquest of Georgia 1236-1243), Timur (Tamerlane) (Era 4, second boss — the devastating conqueror who sacked Tbilisi), Agha Mohammad Khan (Era 5), Russian Imperial General (Era 6), Soviet Red Army Commander (Era 7), Soviet General (Era 8), and Russian Modern General (Era 9) — each requires specific strategies and diverse tower compositions to defeat.
         </p>
       </div>
     </div>
@@ -350,10 +356,12 @@
               <span class="badge badge-green">Era 0 — Ancient Colchis</span>
             </div>
           </div>
-          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">The Colchian princess and legendary sorceress. Reclaimed in Georgian tradition as a powerful local figure. Provides poison damage to enemies and healing buffs for nearby towers.</p>
+          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">The Colchian princess and legendary sorceress. Reclaimed in Georgian tradition as a powerful local figure. Provides poison damage to enemies and healing buffs for nearby towers. Ultimate: "Colchian Alchemy" — transmutes the battlefield, granting massive temporary buffs to all nearby towers.</p>
           <div class="gc-stats">
             <div class="gc-stat">Type <span>Support / Control</span></div>
-            <div class="gc-stat">Key Ability <span>Poison + Tower Healing</span></div>
+            <div class="gc-stat">Basic CD <span>18s</span></div>
+            <div class="gc-stat">Adv CD <span>50s</span></div>
+            <div class="gc-stat">Ult CD <span>150s</span></div>
           </div>
         </div>
 
@@ -369,7 +377,9 @@
           <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">Founder of the Iberian kingdom. Provides kingdom-wide buff abilities that boost the economy and reduce tower costs — reflecting his historical role as state builder and reformer.</p>
           <div class="gc-stats">
             <div class="gc-stat">Type <span>Kingdom Buff</span></div>
-            <div class="gc-stat">Key Ability <span>Economy Boost, Reduced Costs</span></div>
+            <div class="gc-stat">Basic CD <span>20s</span></div>
+            <div class="gc-stat">Adv CD <span>55s</span></div>
+            <div class="gc-stat">Ult CD <span>160s</span></div>
           </div>
         </div>
 
@@ -382,10 +392,12 @@
               <span class="badge badge-green">Era 1 — Kingdom of Iberia</span>
             </div>
           </div>
-          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">The woman who Christianized Georgia in the 4th century. Healer and protector — shields towers from damage and projects a slow aura that reduces enemy movement speed in a wide radius.</p>
+          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">The woman who Christianized Georgia in the 4th century. Healer and protector — shields towers from damage and projects a slow aura that reduces enemy movement speed in a wide radius. Ultimate: "Vine Cross" — Saint Nino's cross of grape vines blooms across the battlefield, healing all towers and stunning enemies in a massive area.</p>
           <div class="gc-stats">
             <div class="gc-stat">Type <span>Healer</span></div>
-            <div class="gc-stat">Key Ability <span>Tower Shield, Enemy Slow Aura</span></div>
+            <div class="gc-stat">Basic CD <span>16s</span></div>
+            <div class="gc-stat">Adv CD <span>45s</span></div>
+            <div class="gc-stat">Ult CD <span>140s</span></div>
           </div>
         </div>
 
@@ -398,10 +410,12 @@
               <span class="badge badge-red">Era 1 — Kingdom of Iberia</span>
             </div>
           </div>
-          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">The Wolf-Lion King who founded Tbilisi. Military commander whose aggressive abilities boost tower damage in an area, reflecting his legendary battlefield prowess and relentless campaigns.</p>
+          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">The Wolf-Lion King who founded Tbilisi. Military commander whose aggressive abilities boost tower damage in an area, reflecting his legendary battlefield prowess and relentless campaigns. Advanced ability: "Wolf's Head" — a devastating charge attack that damages and fears enemies in a line.</p>
           <div class="gc-stats">
             <div class="gc-stat">Type <span>Offense</span></div>
-            <div class="gc-stat">Key Ability <span>Area Damage Boost</span></div>
+            <div class="gc-stat">Basic CD <span>15s</span></div>
+            <div class="gc-stat">Adv CD <span>48s</span></div>
+            <div class="gc-stat">Ult CD <span>145s</span></div>
           </div>
         </div>
 
@@ -417,7 +431,9 @@
           <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">The great reformer king who defeated the Seljuk Turks at the Battle of Didgori. Provides military leadership buffs that increase global tower damage and reduce upgrade costs across the map.</p>
           <div class="gc-stats">
             <div class="gc-stat">Type <span>Offense / Leadership</span></div>
-            <div class="gc-stat">Key Ability <span>Global Damage Buff, Cost Reduction</span></div>
+            <div class="gc-stat">Basic CD <span>20s</span></div>
+            <div class="gc-stat">Adv CD <span>55s</span></div>
+            <div class="gc-stat">Ult CD <span>165s</span></div>
           </div>
         </div>
 
@@ -433,7 +449,9 @@
           <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">The warrior queen. Tamar's diplomatic and governance abilities generate bonus resources and provide temporary invulnerability to structures, reflecting her reign of unprecedented prosperity and strength.</p>
           <div class="gc-stats">
             <div class="gc-stat">Type <span>Defense / Economy</span></div>
-            <div class="gc-stat">Key Ability <span>Resource Gen, Tower Invulnerability</span></div>
+            <div class="gc-stat">Basic CD <span>18s</span></div>
+            <div class="gc-stat">Adv CD <span>52s</span></div>
+            <div class="gc-stat">Ult CD <span>155s</span></div>
           </div>
         </div>
 
@@ -446,10 +464,12 @@
               <span class="badge badge-green">Era 3 — Georgian Golden Age</span>
             </div>
           </div>
-          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">Georgia's greatest poet, author of 'The Knight in the Panther's Skin.' His morale-boosting presence increases attack speed for all towers on the map — an inspired defense is a deadly defense.</p>
+          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">Georgia's greatest poet, author of 'The Knight in the Panther's Skin.' His cultural inspiration increases attack speed for all towers on the map — an inspired defense is a deadly defense.</p>
           <div class="gc-stats">
-            <div class="gc-stat">Type <span>Morale Boost</span></div>
-            <div class="gc-stat">Key Ability <span>Global Attack Speed Increase</span></div>
+            <div class="gc-stat">Type <span>Cultural Inspiration</span></div>
+            <div class="gc-stat">Basic CD <span>17s</span></div>
+            <div class="gc-stat">Adv CD <span>48s</span></div>
+            <div class="gc-stat">Ult CD <span>148s</span></div>
           </div>
         </div>
 
@@ -462,10 +482,12 @@
               <span class="badge badge-green">Era 5 — Between Empires</span>
             </div>
           </div>
-          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">The last great Georgian king, caught between Ottoman and Persian empires. Combines military leadership with diplomatic finesse — temporarily reduces all enemy damage and generates emergency resources.</p>
+          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">The last great Georgian king, caught between Ottoman and Persian empires. Combines military leadership with diplomatic finesse — temporarily reduces all enemy damage and generates emergency resources. Advanced ability: "Desperate Alliance" — calls in temporary allied reinforcements. Ultimate: "Last Stand" — all towers gain massive damage and armor for a brief, heroic final push.</p>
           <div class="gc-stats">
             <div class="gc-stat">Type <span>Defense / Diplomacy</span></div>
-            <div class="gc-stat">Key Ability <span>Enemy Damage Reduction</span></div>
+            <div class="gc-stat">Basic CD <span>19s</span></div>
+            <div class="gc-stat">Adv CD <span>54s</span></div>
+            <div class="gc-stat">Ult CD <span>158s</span></div>
           </div>
         </div>
 
@@ -481,7 +503,9 @@
           <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">The father of modern Georgia. Cultural leader and modernizer whose abilities boost tower efficiency and resource generation — reflecting his historical role in Georgian national awakening and modernization.</p>
           <div class="gc-stats">
             <div class="gc-stat">Type <span>Economy / Culture</span></div>
-            <div class="gc-stat">Key Ability <span>Tower Efficiency, Resource Gen</span></div>
+            <div class="gc-stat">Basic CD <span>21s</span></div>
+            <div class="gc-stat">Adv CD <span>58s</span></div>
+            <div class="gc-stat">Ult CD <span>168s</span></div>
           </div>
         </div>
 
@@ -497,7 +521,135 @@
           <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">Leader of Georgia's first democratic government. Diplomatic coordination abilities that temporarily strengthen all towers and generate emergency resources — holding the republic together against overwhelming odds.</p>
           <div class="gc-stats">
             <div class="gc-stat">Type <span>Diplomacy</span></div>
-            <div class="gc-stat">Key Ability <span>Global Tower Strength Boost</span></div>
+            <div class="gc-stat">Basic CD <span>18s</span></div>
+            <div class="gc-stat">Adv CD <span>50s</span></div>
+            <div class="gc-stat">Ult CD <span>152s</span></div>
+          </div>
+        </div>
+
+        <!-- Bagrat III the Unifier -->
+        <div class="game-card fade-in-up">
+          <div class="gc-header">
+            <div class="gc-icon" style="background: var(--geo-gold-dim); color: var(--geo-gold); font-size: 1.25rem;">&#9813;</div>
+            <div>
+              <h4>Bagrat III the Unifier</h4>
+              <span class="badge badge-gold">Era 2 — Age of Invasions</span>
+            </div>
+          </div>
+          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">The king who unified Georgia into a single realm. His presence provides a tower stat boost across the entire map. Ultimate: "Kingdom United" — all towers temporarily gain bonus damage and reduced cooldowns, reflecting the strength of a united Georgia.</p>
+          <div class="gc-stats">
+            <div class="gc-stat">Type <span>Leadership / Unification</span></div>
+            <div class="gc-stat">Basic CD <span>20s</span></div>
+            <div class="gc-stat">Adv CD <span>55s</span></div>
+            <div class="gc-stat">Ult CD <span>160s</span></div>
+          </div>
+        </div>
+
+        <!-- Zakare Zakarian -->
+        <div class="game-card fade-in-up">
+          <div class="gc-header">
+            <div class="gc-icon" style="background: rgba(214,46,45,0.12); color: var(--geo-red); font-size: 1.25rem;">&#9876;</div>
+            <div>
+              <h4>Zakare Zakarian</h4>
+              <span class="badge badge-red">Era 3 — Georgian Golden Age</span>
+            </div>
+          </div>
+          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">The brilliant military commander who led Georgian armies to reconquer Tbilisi and expand the kingdom's borders. Boosts cavalry tower effectiveness and patrol speed. Ultimate: "Caucasian Conquest" — all cavalry towers launch a coordinated assault wave dealing massive burst damage.</p>
+          <div class="gc-stats">
+            <div class="gc-stat">Type <span>Cavalry Command</span></div>
+            <div class="gc-stat">Basic CD <span>18s</span></div>
+            <div class="gc-stat">Adv CD <span>50s</span></div>
+            <div class="gc-stat">Ult CD <span>155s</span></div>
+          </div>
+        </div>
+
+        <!-- Queen Rusudan -->
+        <div class="game-card fade-in-up">
+          <div class="gc-header">
+            <div class="gc-icon" style="background: rgba(0,123,61,0.12); color: var(--geo-green); font-size: 1.25rem;">&#9813;</div>
+            <div>
+              <h4>Queen Rusudan</h4>
+              <span class="badge badge-green">Era 4 — Mongol Domination</span>
+            </div>
+          </div>
+          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">The queen who ruled during Georgia's darkest hour under Mongol occupation. Generates emergency resources when the defense is under severe pressure. Ultimate: "Last Appeal" — a desperate diplomatic plea that temporarily halts all enemy movement and buys critical rebuilding time.</p>
+          <div class="gc-stats">
+            <div class="gc-stat">Type <span>Economy / Survival</span></div>
+            <div class="gc-stat">Basic CD <span>19s</span></div>
+            <div class="gc-stat">Adv CD <span>52s</span></div>
+            <div class="gc-stat">Ult CD <span>165s</span></div>
+          </div>
+        </div>
+
+        <!-- George V the Brilliant -->
+        <div class="game-card fade-in-up">
+          <div class="gc-header">
+            <div class="gc-icon" style="background: var(--geo-gold-dim); color: var(--geo-gold); font-size: 1.25rem;">&#9733;</div>
+            <div>
+              <h4>George V the Brilliant</h4>
+              <span class="badge badge-gold">Era 4 — Mongol Domination</span>
+            </div>
+          </div>
+          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">The king who freed Georgia from Mongol rule and restored the kingdom. His abilities repair and restore damaged towers, reversing the destruction of war. Ultimate: "Reunification" — all destroyed towers are temporarily rebuilt and all surviving towers are fully restored to peak performance.</p>
+          <div class="gc-stats">
+            <div class="gc-stat">Type <span>Restoration / Defense</span></div>
+            <div class="gc-stat">Basic CD <span>20s</span></div>
+            <div class="gc-stat">Adv CD <span>55s</span></div>
+            <div class="gc-stat">Ult CD <span>170s</span></div>
+          </div>
+        </div>
+
+        <!-- Vakhtang VI the Lawgiver -->
+        <div class="game-card fade-in-up">
+          <div class="gc-header">
+            <div class="gc-icon" style="background: rgba(100,116,139,0.15); color: var(--slate-light); font-size: 1.25rem;">&#128220;</div>
+            <div>
+              <h4>Vakhtang VI the Lawgiver</h4>
+              <span class="badge badge-green">Era 5 — Between Empires</span>
+            </div>
+          </div>
+          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">The scholar-king who codified Georgian law and modernized the state. Passive ability: "Legal Code" — permanently reduces all tower costs and upgrade times while he is active, reflecting his systematic reforms and efficient governance.</p>
+          <div class="gc-stats">
+            <div class="gc-stat">Type <span>Economy / Law</span></div>
+            <div class="gc-stat">Basic CD <span>22s</span></div>
+            <div class="gc-stat">Adv CD <span>58s</span></div>
+            <div class="gc-stat">Passive <span>Always Active</span></div>
+          </div>
+        </div>
+
+        <!-- Prince Pyotr Bagration -->
+        <div class="game-card fade-in-up">
+          <div class="gc-header">
+            <div class="gc-icon" style="background: rgba(214,46,45,0.12); color: var(--geo-red); font-size: 1.25rem;">&#9670;</div>
+            <div>
+              <h4>Prince Pyotr Bagration</h4>
+              <span class="badge badge-red">Era 6 — Russian Empire</span>
+            </div>
+          </div>
+          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">The Georgian-born Russian general, hero of the Napoleonic Wars. Pure defense specialist — fortifies tower positions and increases armor ratings. Ultimate: "Borodino Defense" — all towers enter a fortified state with maximum damage resistance, inspired by his legendary defensive stand at the Battle of Borodino.</p>
+          <div class="gc-stats">
+            <div class="gc-stat">Type <span>Fortification / Defense</span></div>
+            <div class="gc-stat">Basic CD <span>17s</span></div>
+            <div class="gc-stat">Adv CD <span>48s</span></div>
+            <div class="gc-stat">Ult CD <span>160s</span></div>
+          </div>
+        </div>
+
+        <!-- Merab Kostava -->
+        <div class="game-card fade-in-up">
+          <div class="gc-header">
+            <div class="gc-icon" style="background: rgba(0,123,61,0.12); color: var(--geo-green); font-size: 1.25rem;">&#9998;</div>
+            <div>
+              <h4>Merab Kostava</h4>
+              <span class="badge badge-green">Era 8 — Soviet Occupation</span>
+            </div>
+          </div>
+          <p style="font-size: 0.9375rem; margin-bottom: var(--space-md);">The dissident leader and national hero who championed Georgian independence against Soviet rule. Resistance-focused abilities that weaken enemy units and inspire tower performance under pressure. Ultimate: "National Will" — an unbreakable resolve sweeps the battlefield, making all towers temporarily invulnerable and dramatically increasing their fire rate.</p>
+          <div class="gc-stats">
+            <div class="gc-stat">Type <span>Resistance / Inspiration</span></div>
+            <div class="gc-stat">Basic CD <span>18s</span></div>
+            <div class="gc-stat">Adv CD <span>52s</span></div>
+            <div class="gc-stat">Ult CD <span>165s</span></div>
           </div>
         </div>
 
@@ -692,18 +844,36 @@
     <div class="container">
       <div class="footer-inner">
         <div class="footer-left">
-          <p>&copy; 2026 Sakartvelo Defenders. A cultural celebration through historical gameplay.</p>
-          <p class="footer-georgian">საქართველო</p>
+          <div class="footer-content">
+            <p>&copy; 2026 Sakartvelo Defenders. A cultural celebration through historical gameplay.</p>
+            <p class="footer-georgian">საქართველო</p>
+          </div>
+          <ul class="footer-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gameplay.html">Gameplay</a></li>
+            <li><a href="heroes.html">Heroes</a></li>
+            <li><a href="chronicle.html">Chronicle</a></li>
+            <li><a href="blockchain.html">Blockchain</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
         </div>
         <div class="footer-right">
-          <a href="https://twitter.com" target="_blank">Twitter</a>
-          <a href="https://discord.gg" target="_blank">Discord</a>
-          <a href="https://github.com" target="_blank">GitHub</a>
-          <a href="https://youtube.com" target="_blank">YouTube</a>
+          <a href="https://x.com" target="_blank" rel="noopener">X</a>
+          <a href="https://discord.gg" target="_blank" rel="noopener">Discord</a>
+          <a href="https://github.com/socraticblock/sakartvelo-defenders" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://youtube.com" target="_blank" rel="noopener">YouTube</a>
         </div>
       </div>
     </div>
   </footer>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24">
+      <path d="M12 4l-8 8h6v8h4v-8h6z"></path>
+    </svg>
+  </button>
 
   <script>
     // Mobile nav toggle
@@ -721,17 +891,32 @@
       });
     });
 
-    // Intersection Observer for fade-in animations
+    // Intersection Observer for scroll animations
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('fade-in-up');
+          entry.target.classList.add('visible');
           observer.unobserve(entry.target);
         }
       });
     }, { threshold: 0.1 });
 
-    document.querySelectorAll('.card, .game-card').forEach(el => observer.observe(el));
+    document.querySelectorAll('.card, .game-card, .timeline-item, .era-card, .hero-card').forEach(el => observer.observe(el));
+
+    // Back to top button
+    const backToTop = document.getElementById('backToTop');
+    
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 500) {
+        backToTop.classList.add('visible');
+      } else {
+        backToTop.classList.remove('visible');
+      }
+    });
+    
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
   </script>
 
 </body>

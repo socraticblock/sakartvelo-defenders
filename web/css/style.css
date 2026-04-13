@@ -1316,6 +1316,157 @@ body::after {
   line-height: 1.5;
 }
 
+
+
+/* --- TIMELINE (Chronicle Page) --- */
+.era-timeline {
+  position: relative;
+}
+
+.era-timeline::before {
+  content: '';
+  position: absolute;
+  left: 24px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, var(--geo-gold), var(--geo-red), var(--geo-gold));
+}
+
+@media (min-width: 640px) {
+  .era-timeline::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 60px;
+  padding-bottom: var(--space-2xl);
+}
+
+@media (min-width: 640px) {
+  .timeline-item {
+    padding-left: 0;
+    padding-right: 0;
+    width: 50%;
+  }
+  
+  .timeline-item:nth-child(even) {
+    margin-left: 50%;
+    padding-left: var(--space-2xl);
+  }
+  
+  .timeline-item:nth-child(odd) {
+    text-align: right;
+    padding-right: var(--space-2xl);
+  }
+}
+
+.timeline-marker {
+  position: absolute;
+  left: 12px;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 3px solid var(--parchment);
+  box-shadow: var(--shadow-card);
+  z-index: 1;
+}
+
+@media (min-width: 640px) {
+  .timeline-marker {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .timeline-item:nth-child(even) .timeline-marker {
+    left: -12px;
+    transform: none;
+  }
+  
+  .timeline-item:nth-child(odd) .timeline-marker {
+    left: auto;
+    right: -12px;
+    transform: none;
+  }
+}
+
+.timeline-content {
+  background: var(--parchment);
+  border: 1px solid var(--ghost-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-xl);
+  box-shadow: var(--shadow-card);
+}
+
+.timeline-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.timeline-header h3 {
+  margin-bottom: 0;
+}
+
+.timeline-battles,
+.timeline-heroes,
+.timeline-mechanics {
+  margin-top: var(--space-md);
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--ghost-border);
+}
+
+.timeline-battles h4,
+.timeline-heroes h4,
+.timeline-mechanics h4 {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  margin-bottom: var(--space-sm);
+}
+
+.timeline-battles ul {
+  list-style: none;
+  padding: 0;
+}
+
+.timeline-battles li {
+  position: relative;
+  padding-left: var(--space-lg);
+  margin-bottom: var(--space-xs);
+  font-size: 0.9375rem;
+}
+
+.timeline-battles li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--geo-red);
+}
+
+.timeline-heroes p {
+  margin-bottom: 0;
+  font-size: 0.9375rem;
+}
+
+.timeline-mechanics p {
+  margin-bottom: 0;
+  font-size: 0.9375rem;
+}
+
+
 /* --- 23. FAQ STYLES --- */
 .faq-item {
   background: var(--ivory);
