@@ -3,393 +3,115 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sakartvelo Defenders -- Tower Defense Across 10 Eras and 200 Levels of Georgian History</title>
-  <meta name="description" content="Sakartvelo Defenders: A tower defense game spanning 10 historical eras and 200 levels of Georgian history. Build mazes, command heroes, earn SAKART tokens. Free to play, zero server costs, play-to-earn done right.">
+  <title>Sakartvelo Defenders — Georgian History Tower Defense</title>
+  <meta name="description" content="Sakartvelo Defenders is a mobile-first tower defense game inspired by Georgian history, archaeology, myth, and memory. Begin in Ancient Colchis with Medea.">
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-  <!-- Navigation -->
   <nav class="nav">
     <div class="nav-inner">
-      <a href="index.html" class="nav-brand">
-        <span class="brand-icon">SD</span>
-        Sakartvelo Defenders
-      </a>
+      <a href="index.html" class="nav-brand"><span class="brand-icon">SD</span>Sakartvelo Defenders</a>
       <ul class="nav-links" id="navLinks">
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="gameplay.html">Gameplay</a></li>
         <li><a href="heroes.html">Heroes</a></li>
         <li><a href="chronicle.html">Chronicle</a></li>
-        <li><a href="blockchain.html">Blockchain</a></li>
+        <li><a href="sources.html">Sources</a></li>
+        <li><a href="blockchain.html">Future Systems</a></li>
         <li><a href="faq.html">FAQ</a></li>
-        <li><a href="https://sakartvelo-defenders.vercel.app/game" target="_blank">Game</a></li>
-        <li><a href="index.html#waitlist" class="nav-cta">Join Waitlist</a></li>
+        <li><a href="https://sakartvelo-defenders.vercel.app/game" target="_blank" rel="noopener" class="nav-cta">Play</a></li>
       </ul>
-      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
-        <svg class="moon-icon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-        <svg class="sun-icon" viewBox="0 0 24 24"><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/><circle cx="12" cy="12" r="5"/></svg>
-      </button>
-      <button class="nav-toggle" id="navToggle" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
   </nav>
 
-  <!-- Hero -->
   <section class="hero">
     <div class="hero-content">
       <div class="hero-line"></div>
-      <span class="small-caps" style="margin-bottom: 16px; display: block;">Tower Defense x Georgian History x Blockchain</span>
-      <h1>Defend a Nation.<br>Across <span class="accent">10 Eras</span>.</h1>
+      <span class="small-caps" style="margin-bottom: 16px; display: block;">Game first. Historically honest.</span>
+      <h1>Defend <span class="accent">Sakartvelo</span> through history, myth, and memory.</h1>
       <p class="subtitle">
-        Build mazes. Command heroes from Georgian legend. Earn SAKART through skill, not wallet size. Ten historical eras. One epic saga.
+        A mobile-first tower defense game beginning in Ancient Colchis. Move Medea, build defenses, survive waves, and learn Georgian history through clearly labeled lore: history, archaeology, myth, and gameplay adaptation.
       </p>
       <div class="btn-group">
-        <a href="#features" class="btn btn-primary">Discover the Vision</a>
-        <a href="#waitlist" class="btn btn-ghost">Join Waitlist</a>
-        <a href="https://sakartvelo-defenders.vercel.app/game" class="btn btn-ghost" target="_blank">Play the Godot Demo</a>
+        <a href="https://sakartvelo-defenders.vercel.app/game" class="btn btn-primary" target="_blank" rel="noopener">Play Current Build</a>
+        <a href="chronicle.html" class="btn btn-ghost">Read the Chronicle</a>
+        <a href="sources.html" class="btn btn-ghost">Check Sources</a>
       </div>
       <p style="font-size: 0.75rem; color: var(--slate); margin-top: var(--space-md);">
-        Built with Godot 4.x &middot; PWA Installable &middot; Runs in any browser
+        Current playable focus: Era 0 — Ancient Colchis and its Bronze-Age roots. Long-term vision: a careful ten-era campaign.
       </p>
     </div>
   </section>
 
-  <!-- Stats Bar -->
   <div class="section-dark">
     <div class="container">
       <div class="stat-row" style="padding: 48px 0;">
-        <div class="stat">
-          <div class="stat-value">10</div>
-          <div class="stat-label">Historical Eras</div>
-        </div>
-        <div class="stat">
-          <div class="stat-value">200</div>
-          <div class="stat-label">Levels</div>
-        </div>
-        <div class="stat">
-          <div class="stat-value">0</div>
-          <div class="stat-label">Pay-to-Win</div>
-        </div>
+        <div class="stat"><div class="stat-value">Era 0</div><div class="stat-label">Playable Focus</div></div>
+        <div class="stat"><div class="stat-value">4</div><div class="stat-label">Truth Labels</div></div>
+        <div class="stat"><div class="stat-value">10</div><div class="stat-label">Long-Term Eras</div></div>
       </div>
     </div>
   </div>
 
   <div class="section-divider"></div>
 
-  <!-- Core Pillars -->
-  <section id="features">
+  <section id="truth-policy">
     <div class="container">
-      <span class="section-label text-center">Core Design Principles</span>
-      <h2 class="text-center">Built Different. Built Right.</h2>
-      <div class="grid grid-3 stagger">
-        <div class="card">
-          <div class="card-icon blue">&#9734;</div>
-          <h3>Invisible Blockchain</h3>
-          <p>Players log in with email -- wallet is created automatically. No MetaMask tutorials. No seed phrases. The blockchain is infrastructure, not a feature. Just play.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon gold">&#9733;</div>
-          <h3>Skill &gt; Wallet</h3>
-          <p>Every gameplay-affecting item is earned through skill -- towers, heroes, scrolls, and skins. A player who spends $0 has the exact same experience as someone who spends $1,000.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon green">&#9760;</div>
-          <h3>Historical Accuracy</h3>
-          <p>Chronologically accurate. When the historical record is ambiguous, the game acknowledges uncertainty rather than presenting speculation as fact. Tower types, enemy formations, hero abilities, and map designs are all drawn from real Georgian history.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon red">&#9876;</div>
-          <h3>No-Nerf Rule</h3>
-          <p>Once released, core functionality is never nerfed. If a strategy is too strong, we buff everything else to match -- adding counter-strategies rather than removing player agency. Players who master a system keep their mastery.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon blue">&#9881;</div>
-          <h3>Accessibility</h3>
-          <p>Must be accessible to players with no prior experience with tower defense, blockchain, or Georgian history. The tutorial teaches core mechanics organically -- no walls of text, no prerequisite knowledge.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="section-divider"></div>
-
-  <!-- The Ten Eras -->
-  <section class="section-dark" id="eras">
-    <div class="container">
-      <span class="section-label text-center">Ten Eras of Georgian History</span>
-      <h2 class="text-center">3,000 Years. One Epic Journey.</h2>
-      <p class="text-center" style="max-width: 640px; margin: 0 auto var(--space-2xl); color: var(--slate-light);">
-        Each era introduces unique towers, enemies, heroes, and mechanics. Eras are unlocked sequentially -- complete 15 of 20 levels in the current era to proceed.
+      <span class="section-label text-center">Historical Accuracy Policy</span>
+      <h2 class="text-center">We label what kind of truth each story uses.</h2>
+      <p class="text-center" style="max-width: 760px; margin: 0 auto var(--space-2xl); color: var(--slate-light);">
+        This is not a textbook, but Georgian history deserves respect. When a detail is documented, mythic, debated, or adapted for gameplay, the game should say so clearly.
       </p>
-      <div class="era-grid stagger">
-
-        <div class="era-card" data-era="0">
-          <div class="era-number">Era 0 / Tutorial</div>
-          <h4>Ancient Colchis</h4>
-          <div class="era-period">~600 BC - ~100 BC</div>
-          <p>The legendary kingdom of the Golden Fleece. The Medea statue in Batumi overlooks the Black Sea coast. Explore the archaeological site of Vani, gold-panning with sheep fleeces, and battle devi -- many-headed ogres from Georgian myth. New player onboarding with simpler mechanics.</p>
-        </div>
-
-        <div class="era-card" data-era="1">
-          <div class="era-number">Era 1</div>
-          <h4>Kingdom of Iberia</h4>
-          <div class="era-period">~300 BC - 630 AD</div>
-          <p>Pharnavaz, St. Nino, Vakhtang Gorgasali. Roman-Parthian rivalry, Christianization of Georgia. Introduces hero abilities and synergy mechanics.</p>
-        </div>
-
-        <div class="era-card" data-era="2">
-          <div class="era-number">Era 2</div>
-          <h4>Age of Invasions</h4>
-          <div class="era-period">~630 - 1089 AD</div>
-          <p>Arab Emirs, Bagrat III the Unifier, Didi Turkoba (Great Turkish Onslaught). Fortified sieges against Arab and Seljuk forces. Advanced synergy chains in snow-capped fortresses.</p>
-        </div>
-
-        <div class="era-card" data-era="3">
-          <div class="era-number">Era 3</div>
-          <h4>The Georgian Golden Age</h4>
-          <div class="era-period">~1089 - 1225 AD</div>
-          <p>David IV, Queen Tamar, Zakare Zakarian, Empire of Trebizond. The zenith of Georgian power and culture. Royal guard towers, cathedral cannons, battlefield engineering.</p>
-        </div>
-
-        <div class="era-card" data-era="4">
-          <div class="era-number">Era 4</div>
-          <h4>The Mongol Catastrophe</h4>
-          <div class="era-period">~1225 - 1500 AD</div>
-          <p>Queen Rusudan, George V the Brilliant, General Chormaqan. Jalal ad-Din's devastation, then Mongol conquest. Timur's second invasion shatters the remnant. Mountain fortress survival. Introduces mastery scroll system.</p>
-        </div>
-
-        <div class="era-card" data-era="5">
-          <div class="era-number">Era 5</div>
-          <h4>Between Empires</h4>
-          <div class="era-period">~1500 - 1801 AD</div>
-          <p>Vakhtang VI the Lawgiver, King Erekle II, Totleben betrayal at Aspindza (1770). Gunpowder appears. Caught between Ottoman and Persian empires.</p>
-        </div>
-
-        <div class="era-card" data-era="6">
-          <div class="era-number">Era 6</div>
-          <h4>Russian Empire</h4>
-          <div class="era-period">~1801 - 1918 AD</div>
-          <p>Prince Pyotr Bagration, Cultural Figures. Industrial-age technology, cultural renaissance under occupation.</p>
-        </div>
-
-        <div class="era-card" data-era="7">
-          <div class="era-number">Era 7</div>
-          <h4>First Democratic Republic</h4>
-          <div class="era-period">~1918 - 1921 AD</div>
-          <p>Noe Jordania, Transcaucasian Federation. Brief democracy between empires -- British military presence 1918-1920, League of Nations application postponed. Three years of sovereignty before Soviet invasion.</p>
-        </div>
-
-        <div class="era-card" data-era="8">
-          <div class="era-number">Era 8</div>
-          <h4>The Soviet Century</h4>
-          <div class="era-period">~1921 - ~1991 AD</div>
-          <p>Soviet Era Figures. Soviet military tech, ~190,000 Georgian KIA in WWII, 1956 Tbilisi Massacre, independence movement. Introduces survival mode.</p>
-        </div>
-
-        <div class="era-card" data-era="9">
-          <div class="era-number">Era 9</div>
-          <h4>Modern Georgia</h4>
-          <div class="era-period">~1991 - Present</div>
-          <p>Gamsakhurdia, Saakashvili, Modern Democratic Georgia. Precision weapons, drone platforms. 2008 war with Russian military (not separatists). 2023-2024 political crisis and frozen EU candidacy. Endgame content.</p>
-        </div>
-
+      <div class="grid grid-4 stagger">
+        <div class="card"><div class="card-icon green">H</div><h3>History</h3><p>Documented events, people, places, and long-standing historical traditions presented with careful wording.</p></div>
+        <div class="card"><div class="card-icon gold">A</div><h3>Archaeology</h3><p>Material culture, sites, artifacts, landscapes, and visual design based on archaeological evidence.</p></div>
+        <div class="card"><div class="card-icon blue">M</div><h3>Myth</h3><p>Medea, Aeetes, the Golden Fleece, devi, dragons, and folklore are treated as mythic memory, not battlefield records.</p></div>
+        <div class="card"><div class="card-icon red">G</div><h3>Game Adaptation</h3><p>Invented battles, towers, abilities, and boss mechanics are clearly framed as playable dramatization.</p></div>
       </div>
     </div>
   </section>
 
   <div class="section-divider"></div>
 
-  <!-- How It Works -->
-  <section>
+  <section class="section-dark" id="current-build">
     <div class="container">
-      <span class="section-label text-center">Core Game Loop</span>
-      <h2 class="text-center">How It Works</h2>
-      <div class="grid grid-2 stagger" style="max-width: 900px; margin: 0 auto;">
+      <span class="section-label text-center">Current Direction</span>
+      <h2 class="text-center">Ancient Colchis without fake certainty.</h2>
+      <div class="grid grid-2 stagger" style="max-width: 980px; margin: 0 auto;">
         <div class="card">
-          <h3>Build Mazes</h3>
-          <p>Place walls to create winding paths. Position towers for overlapping kill zones. Every wall segment and tower position matters -- a well-designed maze turns basic towers into a devastating defense.</p>
+          <h3>Era 0: Ancient Colchis and Bronze-Age Roots</h3>
+          <p>The active game uses a broad playable arc from c. 1500 BC to 83 BC. Early chapters draw on Bronze-Age and proto-Colchian roots; later chapters focus on the Kingdom of Colchis known to Greek sources and archaeology.</p>
+          <p><strong>Public wording:</strong> “Ancient Colchis and its Bronze-Age roots,” not “every level is a documented battle.”</p>
         </div>
         <div class="card">
-          <h3>Command Heroes</h3>
-          <p>Directly control heroes from Georgian history and legend. Medea's toxic clouds, Queen Tamar's global damage boost, David the Builder's instant tower upgrades. Each hero has 2-3 active abilities with cooldowns.</p>
-        </div>
-        <div class="card">
-          <h3>Earn Stars</h3>
-          <p>1-3 stars per level. First-time star unlocks earn SAKART tokens. Each star can only be earned once -- replay farming is mathematically impossible.</p>
-        </div>
-        <div class="card">
-          <h3>Unlock Eras</h3>
-          <p>Complete 15 of 20 levels in the current era to unlock the next. No SAKART fee required -- progression is purely skill-based. Each era brings new tower types, enemies, heroes, maps, and mechanics.</p>
+          <h3>Medea as mythic guide</h3>
+          <p>Medea is presented as a mythic Colchian princess and symbolic hero-guide. Her abilities are game mechanics inspired by mythic associations with herbs, ritual knowledge, and transformation.</p>
+          <p><strong>Public wording:</strong> “mythic guide,” not “verified commander.”</p>
         </div>
       </div>
     </div>
   </section>
 
-  <div class="section-divider"></div>
-
-  <!-- Tech Stack -->
-  <section class="section-dark">
+  <section class="cta-section" id="play">
     <div class="container">
-      <span class="section-label text-center">Technology</span>
-      <h2 class="text-center">Solo-Dev Sustainable</h2>
-      <div class="grid grid-4 stagger" style="margin-top: var(--space-xl);">
-        <div class="card" style="text-align: center;">
-          <div class="card-icon blue" style="margin: 0 auto var(--space-md);">G</div>
-          <h4>Godot 4.x</h4>
-          <p>Free, open source, built-in PWA export. GDScript is fast for solo dev.</p>
-        </div>
-        <div class="card" style="text-align: center;">
-          <div class="card-icon blue" style="margin: 0 auto var(--space-md);">P</div>
-          <h4>PWA</h4>
-          <p>Zero server costs. Runs in any browser. Installable on mobile. No app store needed.</p>
-        </div>
-        <div class="card" style="text-align: center;">
-          <div class="card-icon blue" style="margin: 0 auto var(--space-md);">Z</div>
-          <h4>Immutable zkEVM</h4>
-          <p>Zero gas fees. Passport wallet abstraction. Players log in with email -- wallet is created automatically.</p>
-        </div>
-        <div class="card" style="text-align: center;">
-          <div class="card-icon green" style="margin: 0 auto var(--space-md);">$</div>
-          <h4>$100/month</h4>
-          <p>Total operating cost. Revenue from 1.8% marketplace fee scales naturally with player activity.</p>
-        </div>
-      </div>
+      <span class="section-label text-center">Play the Build</span>
+      <h2 class="text-center">Start with Medea in Ancient Colchis.</h2>
+      <p class="text-center" style="max-width: 560px; margin: 0 auto var(--space-xl); color: var(--slate-light);">The active build is the source of truth for the current direction. The website now supports that direction instead of the older concept.</p>
+      <a href="https://sakartvelo-defenders.vercel.app/game" class="btn btn-primary" target="_blank" rel="noopener">Play Current Build</a>
     </div>
   </section>
 
-  <div class="section-divider"></div>
-
-  <!-- CTA / Waitlist -->
-  <section class="cta-section" id="waitlist">
-    <div class="container">
-      <span class="section-label text-center">Early Access</span>
-      <h2 class="text-center">Join the Waitlist</h2>
-      <p class="text-center" style="max-width: 480px; margin: 0 auto var(--space-xl); color: var(--slate-light);">
-        Get notified when the full campaign launches -- all 10 eras, 200 levels of historical tower defense gameplay. No spam, no crypto required.
-      </p>
-      <form style="display: flex; gap: var(--space-sm); max-width: 420px; margin: 0 auto; flex-wrap: wrap; justify-content: center;">
-        <input type="email" placeholder="Your email address" style="
-          flex: 1;
-          min-width: 200px;
-          padding: 12px 16px;
-          background: var(--surface-1);
-          border: 1px solid rgba(238,238,242,0.1);
-          border-radius: var(--radius-sm);
-          color: var(--spectral);
-          font-family: var(--font-primary);
-          font-size: 0.9375rem;
-          outline: none;
-          transition: border-color 0.3s;
-        " onfocus="this.style.borderColor='rgba(238,238,242,0.3)'" onblur="this.style.borderColor='rgba(238,238,242,0.1)'">
-        <button type="submit" class="btn btn-primary">Join Waitlist</button>
-      </form>
-      <p style="font-size: 0.75rem; color: var(--slate); margin-top: var(--space-md); margin-bottom: 0;">
-        We'll never share your email. No blockchain knowledge required.
-      </p>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-inner">
-        <div class="footer-left">
-          <div class="footer-content">
-            <p>&copy; 2026 Sakartvelo Defenders. A cultural celebration through historical gameplay.</p>
-            <p class="footer-georgian">საქართველო</p>
-          </div>
-          <ul class="footer-nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="gameplay.html">Gameplay</a></li>
-            <li><a href="heroes.html">Heroes</a></li>
-            <li><a href="chronicle.html">Chronicle</a></li>
-            <li><a href="blockchain.html">Blockchain</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-          </ul>
-        </div>
-        <div class="footer-right">
-          <a href="https://x.com" target="_blank" rel="noopener">X</a>
-          <a href="https://discord.gg" target="_blank" rel="noopener">Discord</a>
-          <a href="https://github.com/socraticblock/sakartvelo-defenders" target="_blank" rel="noopener">GitHub</a>
-          <a href="https://youtube.com" target="_blank" rel="noopener">YouTube</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Back to top button -->
-  <button class="back-to-top" id="backToTop" aria-label="Back to top">
-    <svg viewBox="0 0 24 24">
-      <path d="M12 4l-8 8h6v8h4v-8h6z"></path>
-    </svg>
-  </button>
+  <footer class="footer"><div class="container"><div class="footer-inner"><div class="footer-left"><div class="footer-content"><p>&copy; 2026 Sakartvelo Defenders. A game-first celebration of Georgian history, myth, and survival.</p><p class="footer-georgian">საქართველო</p></div><ul class="footer-nav"><li><a href="index.html">Home</a></li><li><a href="chronicle.html">Chronicle</a></li><li><a href="sources.html">Sources</a></li><li><a href="https://github.com/socraticblock/sakartvelo-defenders" target="_blank" rel="noopener">GitHub</a></li></ul></div></div></div></footer>
 
   <script>
-    // Mobile nav toggle
     const toggle = document.getElementById('navToggle');
     const links = document.getElementById('navLinks');
-    toggle.addEventListener('click', () => links.classList.toggle('open'));
-
-    // Smooth scroll
-    document.querySelectorAll('a[href^="#"]').forEach(a => {
-      a.addEventListener('click', e => {
-        e.preventDefault();
-        const target = document.querySelector(a.getAttribute('href'));
-        if (target) target.scrollIntoView({ behavior: 'smooth' });
-        links.classList.remove('open');
-      });
-    });
-
-    // Intersection Observer for scroll animations
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.1 });
-
-    document.querySelectorAll('.card, .game-card, .timeline-item, .era-card, .hero-card').forEach(el => observer.observe(el));
-
-    // Back to top button
-    const backToTop = document.getElementById('backToTop');
-    
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 500) {
-        backToTop.classList.add('visible');
-      } else {
-        backToTop.classList.remove('visible');
-      }
-    });
-    
-    backToTop.addEventListener('click', () => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-
-    // Dark mode toggle
-    const themeToggle = document.getElementById('themeToggle');
-    const root = document.documentElement;
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'dark') root.setAttribute('data-theme', 'dark');
-    if (themeToggle) {
-      themeToggle.addEventListener('click', () => {
-        const isDark = root.getAttribute('data-theme') === 'dark';
-        if (isDark) {
-          root.removeAttribute('data-theme');
-          localStorage.setItem('theme', 'light');
-        } else {
-          root.setAttribute('data-theme', 'dark');
-          localStorage.setItem('theme', 'dark');
-        }
-      });
-    }
+    if (toggle && links) toggle.addEventListener('click', () => links.classList.toggle('open'));
+    const observer = new IntersectionObserver((entries) => entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); } }), { threshold: 0.1 });
+    document.querySelectorAll('.card, .era-card').forEach(el => observer.observe(el));
   </script>
-
 </body>
 </html>
